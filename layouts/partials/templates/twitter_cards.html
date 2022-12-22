@@ -1,0 +1,38 @@
+{{- if .Params.cover.image -}}
+<meta name="twitter:card" content="summary_large_image">
+{{- if (ne $.Params.cover.relative true) }}
+<meta name="twitter:image" content="{{ .Params.cover.image | absURL }}">
+{{- else }}
+<meta name="twitter:image" content="{{ (path.Join .RelPermalink .Params.cover.image ) | absURL }}">
+{{- end}}
+{{- else }}
+{{- $images := partial "templates/_funcs/get-page-images" . -}}
+{{- with index $images 0 -}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ .Permalink }}">
+{{- else -}}
+<meta name="twitter:card" content="summary">
+{{- end -}}
+{{- end }}
+<meta name="twitter:title" content="{{ .Title }}">
+
+{{- /* Adjust Twitter description for taxonomy term pages */ -}}
+{{- $default := site.Params.description -}}
+{{- $termText := printf "Research by Pascal Michaillat on: %s" .Title -}}
+{{- $desc := cond (eq .Kind "term") $termText $default | default "" -}}
+{{- $desc = .Description | default .Summary | default $desc -}}
+<meta name="twitter:description" content="{{ $desc | plainify | htmlUnescape | chomp }}">
+
+{{- $twitterSite := "" }}
+{{- with site.Params.social }}
+  {{- if reflect.IsMap . }}
+    {{- with .twitter }}
+      {{- $content := . }}
+      {{- if not (strings.HasPrefix . "@") }}
+        {{- $content = printf "@%v" . }}
+      {{- end }}
+      <meta name="twitter:site" content="{{ $content }}">
+    {{- end }}
+  {{- end }}
+{{- end }}
+
