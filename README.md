@@ -8,7 +8,7 @@ The website is built with [Hugo](https://github.com/gohugoio/hugo). The source c
 
 ## Assets
 
-The website's assets include [research papers](https://pascalmichaillat.org/papers/) and [course materials](https://pascalmichaillat.org/courses/). The assets are stored in the `static` folder (mostly as PDF files) and `content` folder (mostly as Markdown files), and they can be batch downloaded from there.
+The website's assets include [research papers](https://pascalmichaillat.org/papers/) and [course materials](https://pascalmichaillat.org/courses/). The assets are stored in the `static` folder (mostly as PDF files) and `content` folder (mostly as Markdown files). They can be batch downloaded from here.
 
 ## License
 
