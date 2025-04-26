@@ -17,6 +17,6 @@ The website contains [research papers](https://pascalmichaillat.org/papers/), [c
 
 ## License
 
-+ The website source code is licensed under the [MIT License](LICENSE).
++ The website source code is licensed under the [MIT License](LICENSE.md).
 + Except where otherwise noted, the website content is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
