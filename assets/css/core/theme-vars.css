@@ -18,6 +18,7 @@
     --theme: rgb(255, 255, 255);
 /*Custom variables*/
     --purple: #6e55c3; /*links*/
+    --lightpurple: #a08cd9; /*hovered links - slightly lighter than icon color #8e7bd0*/
     --graypurple: #e5e1f4; /*hovered buttons*/
     --gray: rgb(165, 165, 165); /*labels*/
     --archive: rgb(200, 200, 200); /*archive lines*/

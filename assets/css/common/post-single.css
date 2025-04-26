@@ -79,6 +79,12 @@
     color: currentColor; 
 }
 
+.post-content a:hover,
+.post-meta a:hover {
+    box-shadow: 0 2px 0 var(--lightpurple);
+    color: currentColor; 
+}
+
 .post-content a code {
     margin: auto 0;
     border-radius: 0;
