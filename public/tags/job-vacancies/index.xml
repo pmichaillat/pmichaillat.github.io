@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pascalmichaillat.org/tags/job-vacancies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Has the Recession Started?</title>
+      <link>https://pascalmichaillat.org/16/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/16/</guid>
+      <description>This paper introduces the Michez rule, a method to detect US recessions from unemployment and vacancy data. The rule detected a recession in March 2024.</description>
+    </item>
     <item>
       <title>Early and Accurate Recession Detection Using Classifiers on the Anticipation-Precision Frontier</title>
       <link>https://pascalmichaillat.org/17/</link>
@@ -26,13 +33,6 @@
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://pascalmichaillat.org/13/</guid>
       <description>This paper argues that in the United States the full-employment rate of unemployment (FERU) is the geometric average of the unemployment and vacancy rates.</description>
-    </item>
-    <item>
-      <title>Has the Recession Started?</title>
-      <link>https://pascalmichaillat.org/16/</link>
-      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://pascalmichaillat.org/16/</guid>
-      <description>This note uses data on unemployment and job vacancies to build a real-time recession indicator. It shows that the US may be in recession since March 2024.</description>
     </item>
     <item>
       <title>Do Matching Frictions Explain Unemployment? Not in Bad Times</title>

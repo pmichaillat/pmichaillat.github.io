@@ -11,8 +11,78 @@
     </image>
     <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pascalmichaillat.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beveridge curve</title>
+      <link>https://pascalmichaillat.org/tags/beveridge-curve/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/tags/beveridge-curve/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>job vacancies</title>
+      <link>https://pascalmichaillat.org/tags/job-vacancies/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/tags/job-vacancies/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Michez rule</title>
+      <link>https://pascalmichaillat.org/tags/michez-rule/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/tags/michez-rule/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>nowcasting</title>
+      <link>https://pascalmichaillat.org/tags/nowcasting/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/tags/nowcasting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>recession indicator</title>
+      <link>https://pascalmichaillat.org/tags/recession-indicator/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/tags/recession-indicator/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>recession probability</title>
+      <link>https://pascalmichaillat.org/tags/recession-probability/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/tags/recession-probability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>recession threshold</title>
+      <link>https://pascalmichaillat.org/tags/recession-threshold/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/tags/recession-threshold/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>recessions</title>
+      <link>https://pascalmichaillat.org/tags/recessions/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/tags/recessions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sahm rule</title>
+      <link>https://pascalmichaillat.org/tags/sahm-rule/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/tags/sahm-rule/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>unemployment</title>
+      <link>https://pascalmichaillat.org/tags/unemployment/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/tags/unemployment/</guid>
+      <description></description>
+    </item>
     <item>
       <title>anticipation-precision frontier</title>
       <link>https://pascalmichaillat.org/tags/anticipation-precision-frontier/</link>
@@ -28,66 +98,10 @@
       <description></description>
     </item>
     <item>
-      <title>job vacancies</title>
-      <link>https://pascalmichaillat.org/tags/job-vacancies/</link>
-      <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://pascalmichaillat.org/tags/job-vacancies/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>nowcasting</title>
-      <link>https://pascalmichaillat.org/tags/nowcasting/</link>
-      <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://pascalmichaillat.org/tags/nowcasting/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>recession classifier</title>
       <link>https://pascalmichaillat.org/tags/recession-classifier/</link>
       <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://pascalmichaillat.org/tags/recession-classifier/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>recession probability</title>
-      <link>https://pascalmichaillat.org/tags/recession-probability/</link>
-      <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://pascalmichaillat.org/tags/recession-probability/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>recession threshold</title>
-      <link>https://pascalmichaillat.org/tags/recession-threshold/</link>
-      <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://pascalmichaillat.org/tags/recession-threshold/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>recessions</title>
-      <link>https://pascalmichaillat.org/tags/recessions/</link>
-      <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://pascalmichaillat.org/tags/recessions/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sahm rule</title>
-      <link>https://pascalmichaillat.org/tags/sahm-rule/</link>
-      <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://pascalmichaillat.org/tags/sahm-rule/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>unemployment</title>
-      <link>https://pascalmichaillat.org/tags/unemployment/</link>
-      <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://pascalmichaillat.org/tags/unemployment/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Beveridge curve</title>
-      <link>https://pascalmichaillat.org/tags/beveridge-curve/</link>
-      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://pascalmichaillat.org/tags/beveridge-curve/</guid>
       <description></description>
     </item>
     <item>
@@ -291,20 +305,6 @@
       <link>https://pascalmichaillat.org/tags/labor-force-participation/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://pascalmichaillat.org/tags/labor-force-participation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Michez rule</title>
-      <link>https://pascalmichaillat.org/tags/michez-rule/</link>
-      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://pascalmichaillat.org/tags/michez-rule/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>recession indicator</title>
-      <link>https://pascalmichaillat.org/tags/recession-indicator/</link>
-      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://pascalmichaillat.org/tags/recession-indicator/</guid>
       <description></description>
     </item>
     <item>

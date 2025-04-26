@@ -2,6 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://pascalmichaillat.org/tags/beveridge-curve/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pascalmichaillat.org/16/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pascalmichaillat.org/tags/job-vacancies/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pascalmichaillat.org/tags/michez-rule/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pascalmichaillat.org/tags/nowcasting/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pascalmichaillat.org/papers/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pascalmichaillat.org/</loc>
+    <lastmod>2025-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pascalmichaillat.org/tags/recession-indicator/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pascalmichaillat.org/tags/recession-probability/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pascalmichaillat.org/tags/recession-threshold/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pascalmichaillat.org/tags/recessions/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pascalmichaillat.org/tags/sahm-rule/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pascalmichaillat.org/tags/unemployment/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://pascalmichaillat.org/tags/anticipation-precision-frontier/</loc>
     <lastmod>2025-03-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,41 +50,11 @@
     <loc>https://pascalmichaillat.org/17/</loc>
     <lastmod>2025-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://pascalmichaillat.org/tags/job-vacancies/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pascalmichaillat.org/tags/nowcasting/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pascalmichaillat.org/officehours/</loc>
     <lastmod>2025-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://pascalmichaillat.org/papers/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pascalmichaillat.org/</loc>
-    <lastmod>2025-04-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pascalmichaillat.org/tags/recession-classifier/</loc>
     <lastmod>2025-03-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pascalmichaillat.org/tags/recession-probability/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pascalmichaillat.org/tags/recession-threshold/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pascalmichaillat.org/tags/recessions/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pascalmichaillat.org/tags/sahm-rule/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pascalmichaillat.org/tags/unemployment/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pascalmichaillat.org/tags/beveridge-curve/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pascalmichaillat.org/courses/</loc>
     <lastmod>2025-01-30T00:00:00+00:00</lastmod>
@@ -148,15 +157,6 @@
   </url><url>
     <loc>https://pascalmichaillat.org/13/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pascalmichaillat.org/16/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pascalmichaillat.org/tags/michez-rule/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pascalmichaillat.org/tags/recession-indicator/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pascalmichaillat.org/tags/</loc>
     <lastmod>2024-08-24T00:00:00+00:00</lastmod>

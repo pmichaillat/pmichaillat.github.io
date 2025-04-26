@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Has the Recession Started? | Pascal Michaillat</title>
 <meta name="keywords" content="Beveridge curve, job vacancies, Michez rule, nowcasting, recession indicator, recession probability, recession threshold, recessions, Sahm rule, unemployment">
-<meta name="description" content="This note uses data on unemployment and job vacancies to build a real-time recession indicator. It shows that the US may be in recession since March 2024.">
+<meta name="description" content="This paper introduces the Michez rule, a method to detect US recessions from unemployment and vacancy data. The rule detected a recession in March 2024.">
 <meta name="author" content="Pascal Michaillat,&thinsp;Emmanuel Saez">
 <link rel="canonical" href="https://pascalmichaillat.org/16/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f3b29133eb4e0eb9c454453f2fe0532e0c6188faa44862f117a0b2af38c18449.css" integrity="sha256-87KRM&#43;tODrnEVEU/L&#43;BTLgxhiPqkSGLxF6CyrzjBhEk=" rel="preload stylesheet" as="style">
@@ -19,17 +19,17 @@
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" hreflang="en" href="https://pascalmichaillat.org/16/">
 <meta property="og:title" content="Has the Recession Started?" />
-<meta property="og:description" content="This note uses data on unemployment and job vacancies to build a real-time recession indicator. It shows that the US may be in recession since March 2024." />
+<meta property="og:description" content="This paper introduces the Michez rule, a method to detect US recessions from unemployment and vacancy data. The rule detected a recession in March 2024." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pascalmichaillat.org/16/" />
 <meta property="og:image" content="https://pascalmichaillat.org/16s.png" /><meta property="article:section" content="papers" />
-<meta property="article:published_time" content="2024-09-09T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-04-04T00:00:00+00:00" />
+<meta property="article:published_time" content="2025-04-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-04-05T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://pascalmichaillat.org/16s.png" />
 <meta name="twitter:title" content="Has the Recession Started?"/>
-<meta name="twitter:description" content="This note uses data on unemployment and job vacancies to build a real-time recession indicator. It shows that the US may be in recession since March 2024."/>
+<meta name="twitter:description" content="This paper introduces the Michez rule, a method to detect US recessions from unemployment and vacancy data. The rule detected a recession in March 2024."/>
 
 
 <script type="application/ld+json">
@@ -58,15 +58,15 @@
   "@type": "BlogPosting",
   "headline": "Has the Recession Started?",
   "name": "Has the Recession Started?",
-  "description": "This note uses data on unemployment and job vacancies to build a real-time recession indicator. It shows that the US may be in recession since March 2024.",
+  "description": "This paper introduces the Michez rule, a method to detect US recessions from unemployment and vacancy data. The rule detected a recession in March 2024.",
   "keywords": [
     "Beveridge curve", "job vacancies", "Michez rule", "nowcasting", "recession indicator", "recession probability", "recession threshold", "recessions", "Sahm rule", "unemployment"
   ],
-  "articleBody": " Paper Code and data Abstract To answer this question, we develop a new Sahm-type recession indicator that combines vacancy and unemployment data. The indicator is the minimum of the Sahm indicator—the difference between the 3-month trailing average of the unemployment rate and its minimum over the past 12 months—and a similar indicator constructed with the vacancy rate—the difference between the 3-month trailing average of the vacancy rate and its maximum over the past 12 months. We then propose a two-sided recession rule: When our indicator reaches 0.3pp, a recession may have started; when the indicator reaches 0.8pp, a recession has started for sure. This new rule is triggered earlier than the Sahm rule: on average it detects recessions 0.8 month after they have started, while the Sahm rule detects them 2.1 months after their start. The new rule also has a better historical track record: it perfectly identifies all recessions since 1929, while the Sahm rule breaks down before 1960. With August 2024 data, our indicator is at 0.54pp, so the probability that the US economy is now in recession is 48%. In fact, the recession may have started as early as March 2024.\nFigure 2B: Construction of the recession indicator in the United States, 1960–2024 Figure 4: Recession indicator with two-sided recession rule in the United States, 1960–2024 Citation Michaillat, Pascal, and Emmanuel Saez. 2024. “Has the Recession Started?” arXiv:2408.05856v2. https://doi.org/10.48550/arXiv.2408.05856.\n@techreport{MS24, author = {Pascal Michaillat and Emmanuel Saez}, year = {2024}, title = {Has the Recession Started?}, number = {arXiv:2408.05856v2}, url = {https://doi.org/10.48550/arXiv.2408.05856}} Related material Coverage by the Financial Times Coverage by the Economist Coverage by the Wall Street Journal ",
-  "wordCount" : "272",
+  "articleBody": " Paper Code and data Abstract This paper develops a new rule to detect US recessions by combining data on job vacancies and unemployment. We first construct a new recession indicator: the minimum of the Sahm rule indicator (the increase in the 3-month average of the unemployment rate above its 12-month low) and a vacancy analogue. The minimum indicator captures simultaneous rises in unemployment and declines in vacancies. We then set the recession threshold to 0.29 percentage points (pp), so a recession is detected whenever the minimum indicator crosses 0.29pp. This new rule detects recessions faster than the Sahm rule: with an average delay of 1.2 months instead of 2.7 months, and a maximum delay of 3 months instead of 7 months. It is also more robust: it identifies all 15 recessions since 1929 without false positives, whereas the Sahm rule breaks down before 1960. By adding a second threshold, we can also compute recession probabilities: values between 0.29pp and 0.81pp signal a probable recession; values above 0.81pp signal a certain recession. In December 2024, the minimum indicator is at 0.43pp, implying a recession probability of 27%. This recession risk was first detected in March 2024.\nFigure 2: Construction of the Michez rule: unemployment and vacancy indicators, 1960–2024 Figure 3: Michez rule in the United States, 1960–2024 Figure 6: Michez rule in the United States, 1929–1959 Figure 7: Dual-threshold Michez rule in the United States, 1960–2024 Citation Michaillat, Pascal, and Emmanuel Saez. 2025. “Has the Recession Started?” Oxford Bulletin of Economics and Statistics. https://doi.org/10.1111/obes.12685.\n@techreport{MS25, author = {Pascal Michaillat and Emmanuel Saez}, year = {2025}, title = {Has the Recession Started?}, journal = {Oxford Bulletin of Economics and Statistics}, url = {https://doi.org/10.1111/obes.12685}} Related material Coverage by the Financial Times Coverage by the Economist Coverage by the Wall Street Journal ",
+  "wordCount" : "298",
   "inLanguage": "en",
-  "image":"https://pascalmichaillat.org/16s.png","datePublished": "2024-09-09T00:00:00Z",
-  "dateModified": "2025-04-04T00:00:00Z",
+  "image":"https://pascalmichaillat.org/16s.png","datePublished": "2025-04-05T00:00:00Z",
+  "dateModified": "2025-04-05T00:00:00Z",
   "author":[{
     "@type": "Person",
     "name": "Pascal Michaillat"
@@ -178,7 +178,7 @@
     <h1 class="post-title entry-hint-parent">
       Has the Recession Started?
     </h1>
-    <div class="post-meta"><span title='2024-09-09 00:00:00 +0000 UTC'>September 2024</span>&nbsp;&middot;&nbsp;Pascal Michaillat,&thinsp;Emmanuel Saez&nbsp;&middot;&nbsp;<a href="https://doi.org/10.48550/arXiv.2408.05856" rel="noopener noreferrer" target="_blank">arXiv</a>
+    <div class="post-meta"><span title='2025-04-05 00:00:00 +0000 UTC'>April 2025</span>&nbsp;&middot;&nbsp;Pascal Michaillat,&thinsp;Emmanuel Saez&nbsp;&middot;&nbsp;<a href="https://doi.org/10.1111/obes.12685" rel="noopener noreferrer" target="_blank">Oxford Bulletin of Economics and Statistics</a>
 
 </div>
   </header> 
@@ -189,23 +189,29 @@
 </ul>
 <hr>
 <h5 id="abstract">Abstract</h5>
-<p>To answer this question, we develop a new Sahm-type recession indicator that combines vacancy and unemployment data. The indicator is the minimum of the Sahm indicator—the difference between the 3-month trailing average of the unemployment rate and its minimum over the past 12 months—and a similar indicator constructed with the vacancy rate—the difference between the 3-month trailing average of the vacancy rate and its maximum over the past 12 months. We then propose a two-sided recession rule: When our indicator reaches 0.3pp, a recession may have started; when the indicator reaches 0.8pp, a recession has started for sure. This new rule is triggered earlier than the Sahm rule: on average it detects recessions 0.8 month after they have started, while the Sahm rule detects them 2.1 months after their start. The new rule also has a better historical track record: it perfectly identifies all recessions since 1929, while the Sahm rule breaks down before 1960. With August 2024 data, our indicator is at 0.54pp, so the probability that the US economy is now in recession is 48%. In fact, the recession may have started as early as March 2024.</p>
+<p>This paper develops a new rule to detect US recessions by combining data on job vacancies and unemployment. We first construct a new recession indicator: the minimum of the Sahm rule indicator (the increase in the 3-month average of the unemployment rate above its 12-month low) and a vacancy analogue. The minimum indicator captures simultaneous rises in unemployment and declines in vacancies. We then set the recession threshold to 0.29 percentage points (pp), so a recession is detected whenever the minimum indicator crosses 0.29pp. This new rule detects recessions faster than the Sahm rule: with an average delay of 1.2 months instead of 2.7 months, and a maximum delay of 3 months instead of 7 months. It is also more robust: it identifies all 15 recessions since 1929 without false positives, whereas the Sahm rule breaks down before 1960. By adding a second threshold, we can also compute recession probabilities: values between 0.29pp and 0.81pp signal a probable recession; values above 0.81pp signal a certain recession. In December 2024, the minimum indicator is at 0.43pp, implying a recession probability of 27%. This recession risk was first detected in March 2024.</p>
 <hr>
-<h5 id="figure-2b--construction-of-the-recession-indicator-in-the-united-states-19602024">Figure 2B:  Construction of the recession indicator in the United States, 1960–2024</h5>
+<h5 id="figure-2--construction-of-the-michez-rule-unemployment-and-vacancy-indicators-19602024">Figure 2:  Construction of the Michez rule: unemployment and vacancy indicators, 1960–2024</h5>
 <p><img loading="lazy" src="/16a.png" alt=""  />
 </p>
-<h5 id="figure-4--recession-indicator-with-two-sided-recession-rule-in-the-united-states-19602024">Figure 4:  Recession indicator with two-sided recession rule in the United States, 1960–2024</h5>
+<h5 id="figure-3--michez-rule-in-the-united-states-19602024">Figure 3:  Michez rule in the United States, 1960–2024</h5>
 <p><img loading="lazy" src="/16b.png" alt=""  />
+</p>
+<h5 id="figure-6--michez-rule-in-the-united-states-19291959">Figure 6:  Michez rule in the United States, 1929–1959</h5>
+<p><img loading="lazy" src="/16c.png" alt=""  />
+</p>
+<h5 id="figure-7--dual-threshold-michez-rule-in-the-united-states-19602024">Figure 7:  Dual-threshold Michez rule in the United States, 1960–2024</h5>
+<p><img loading="lazy" src="/16d.png" alt=""  />
 </p>
 <hr>
 <h5 id="citation">Citation</h5>
-<p>Michaillat, Pascal, and Emmanuel Saez. 2024. &ldquo;Has the Recession Started?&rdquo; arXiv:2408.05856v2. <a href="https://doi.org/10.48550/arXiv.2408.05856" target="_blank">https://doi.org/10.48550/arXiv.2408.05856</a>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BibTeX" data-lang="BibTeX"><span style="display:flex;"><span><span style="color:#3f6e75">@techreport</span>{<span style="color:#000">MS24</span>,
+<p>Michaillat, Pascal, and Emmanuel Saez. 2025. &ldquo;Has the Recession Started?&rdquo; <em>Oxford Bulletin of Economics and Statistics</em>. <a href="https://doi.org/10.1111/obes.12685" target="_blank">https://doi.org/10.1111/obes.12685</a>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BibTeX" data-lang="BibTeX"><span style="display:flex;"><span><span style="color:#3f6e75">@techreport</span>{<span style="color:#000">MS25</span>,
 </span></span><span style="display:flex;"><span><span style="color:#836c28">author</span> = <span style="color:#c41a16">{Pascal Michaillat and Emmanuel Saez}</span>,
-</span></span><span style="display:flex;"><span><span style="color:#836c28">year</span> = <span style="color:#c41a16">{2024}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#836c28">year</span> = <span style="color:#c41a16">{2025}</span>,
 </span></span><span style="display:flex;"><span><span style="color:#836c28">title</span> = <span style="color:#c41a16">{Has the Recession Started?}</span>,
-</span></span><span style="display:flex;"><span><span style="color:#836c28">number</span> = <span style="color:#c41a16">{arXiv:2408.05856v2}</span>,
-</span></span><span style="display:flex;"><span><span style="color:#836c28">url</span> = <span style="color:#c41a16">{https://doi.org/10.48550/arXiv.2408.05856}</span>}
+</span></span><span style="display:flex;"><span><span style="color:#836c28">journal</span> = <span style="color:#c41a16">{Oxford Bulletin of Economics and Statistics}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#836c28">url</span> = <span style="color:#c41a16">{https://doi.org/10.1111/obes.12685}</span>}
 </span></span></code></pre></div><hr>
 <h5 id="related-material">Related material</h5>
 <ul>
