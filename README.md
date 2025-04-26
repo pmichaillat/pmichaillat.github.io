@@ -1,15 +1,22 @@
-# Source Code and Assets of pascalmichaillat.org
+# pascalmichaillat.org - Source Code and Content
 
-This repository contains the source code and assets of Pascal Michaillat's website at https://pascalmichaillat.org. 
+This repository contains the source code and content for Pascal Michaillat's website at https://pascalmichaillat.org. 
 
 ## Source code
 
-The website is built with [Hugo](https://github.com/gohugoio/hugo). The source code comes from the minimalist website template at [pmichaillat/hugo-website](https://github.com/pmichaillat/hugo-website).
++ The website is generated with [Hugo](https://github.com/gohugoio/hugo). 
++ The source code is adapted from [hugo-website](https://github.com/pmichaillat/hugo-website), a minimalist template for academic websites.
 
-## Assets
+## Content
 
-The website's assets include [research papers](https://pascalmichaillat.org/papers/) and [course materials](https://pascalmichaillat.org/courses/). The assets are stored in the `static` folder (mostly as PDF files) and `content` folder (mostly as Markdown files). They can be batch downloaded from here.
+The website contains [research papers](https://pascalmichaillat.org/papers/), [course materials](https://pascalmichaillat.org/courses/), and [design templates](https://pascalmichaillat.org/design/). All content can be batch downloaded from this repository.
+
++ Research papers - Papers and online appendices are stored as PDF files in the `static` folder. Metadata are stored as Markdown files in the `content/papers` folder.
++ Course materials - Lecture notes, lecture slides, and homework are stored as PDF files in the `static` folder. Course plans are stored as Markdown files in the `content/courses` folder.
++ Design templates - Template documentations are stored as Markdown files in the `content/design` folder.
 
 ## License
 
-Except where otherwise noted, the website's content was created by Pascal Michaillat and is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
++ The website source code is licensed under the [MIT License](LICENSE).
++ Except where otherwise noted, the website content is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
