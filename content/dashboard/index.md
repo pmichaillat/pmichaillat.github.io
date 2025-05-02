@@ -68,5 +68,5 @@ disableAnchoredHeadings: false
 
 ---
 
-##### {{< lastmod >}}
+{{< lastmod >}}
 
