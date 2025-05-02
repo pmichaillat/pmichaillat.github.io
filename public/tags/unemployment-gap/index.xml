@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Apr 2025 09:53:32 +0530</lastBuildDate>
     <atom:link href="https://pascalmichaillat.org/tags/unemployment-gap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unemployment</title>
@@ -68,6 +68,13 @@
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       <guid>https://pascalmichaillat.org/6/</guid>
       <description>This paper shows that public expenditure should deviate from the Samuelson rule to reduce the unemployment gap, when it exists. Published in REStud, 2019.</description>
+    </item>
+    <item>
+      <title>Automated Business Cycle Dashboard</title>
+      <link>https://pascalmichaillat.org/dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/dashboard/</guid>
+      <description>This webapge hosts an interactive dashboard with real-time charts on US unemployment rate, vacancy rate, labor market tightness, FERU, unemployment gap, recession indicator, and recession probability. Updated daily using FRED data.</description>
     </item>
   </channel>
 </rss>

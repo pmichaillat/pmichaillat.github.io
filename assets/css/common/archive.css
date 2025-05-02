@@ -12,7 +12,7 @@
 }
 
 .archive-year:not(:last-of-type) {
-    border-bottom: 2px solid var(--archive);
+    border-bottom: 1.5px solid var(--archive);
 }
 
 .archive-month {
@@ -29,7 +29,7 @@
 }
 
 .archive-month:not(:last-of-type) {
-    border-bottom: 1px solid var(--archive);
+    border-bottom: 0.75px solid var(--archive);
 }
 
 .archive-entry {

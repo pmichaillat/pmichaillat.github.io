@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Apr 2025 16:19:09 +0530</lastBuildDate>
     <atom:link href="https://pascalmichaillat.org/tags/recession-indicator/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Has the Recession Started?</title>
@@ -19,6 +19,13 @@
       <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://pascalmichaillat.org/16/</guid>
       <description>This paper builds the Michez rule, a method to detect US recessions from unemployment and vacancy data. The rule has signaled a recession since March 2024.</description>
+    </item>
+    <item>
+      <title>Automated Business Cycle Dashboard</title>
+      <link>https://pascalmichaillat.org/dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/dashboard/</guid>
+      <description>This webapge hosts an interactive dashboard with real-time charts on US unemployment rate, vacancy rate, labor market tightness, FERU, unemployment gap, recession indicator, and recession probability. Updated daily using FRED data.</description>
     </item>
   </channel>
 </rss>

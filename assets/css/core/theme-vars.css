@@ -10,7 +10,7 @@
     --content: rgb(30, 30, 30); /*text*/
     --primary: rgb(30, 30, 30);
     --secondary: rgb(108, 108, 108); /*metadata*/
-    --tertiary: rgb(165, 165, 165); /*lines & items*/
+    --tertiary: rgb(165, 165, 165); /* items*/
     --border: rgb(230, 230, 230); /*borders*/
     --code-bg: rgb(245, 245, 245); /*areas*/
     --code-block-bg: rgb(245, 245, 245);
@@ -20,8 +20,8 @@
     --purple: #6e55c3; /*links*/
     --lightpurple: #8e7bd0; /*hovered links - slightly darker than #a08cd9  */
     --graypurple: #e5e1f4; /*hovered buttons*/
-    --gray: rgb(165, 165, 165); /*labels*/
-    --archive: rgb(200, 200, 200); /*archive lines*/
+    --gray: rgb(165, 165, 165); /*labels and h5 and h4 titles*/
+    --archive: rgb(200, 200, 200); /* lines in archive and webpages*/
     --semibold: 500;
     --content-size:1.15rem;
     --home-size: 1rem;

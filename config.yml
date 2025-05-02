@@ -5,27 +5,29 @@ enableInlineShortcodes: true
 enableRobotsTXT: true
 paginate: 20
 
-
 taxonomies:
     tag: tags
 
 menu:
     main:
+        - name: Dashboard
+          url: /dashboard/
+          weight: 1
         - name: Papers
           url: /papers/
-          weight: 1
+          weight: 2
         - name: Courses
           url: /courses/
-          weight: 2
+          weight: 3
         - name: Design
           url: /design/
-          weight: 3        
+          weight: 4        
         - name: Tags
           url: /tags/
-          weight: 4
+          weight: 5
         - name: Archive
           url: /archive/
-          weight: 5
+          weight: 6
 
 params:
     description: "This website hosts Pascal Michaillat's research papers, course materials, design templates, curriculum vitae, and contact information."
@@ -60,6 +62,8 @@ params:
           imageWidth: 160
           imageHeight: 160
           buttons:
+            - name: Dashboard
+              url: /dashboard/
             - name: Papers
               url: /papers/
             - name: Courses
@@ -70,6 +74,7 @@ params:
               url: /tags/
             - name: Archive
               url: /archive/
+
 
     socialIcons:
         - name: CV
@@ -110,3 +115,4 @@ markup:
         startLevel: 2
 
 titleCaseStyle: 'none'
+enableGitInfo: true

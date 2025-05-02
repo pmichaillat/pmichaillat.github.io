@@ -75,13 +75,13 @@
 .post-content a,
 .post-meta a,
 .toc a:hover {
-    box-shadow: 0 2px 0 var(--purple);
+    box-shadow: 0 1.5px 0 var(--purple);
     color: currentColor; 
 }
 
 .post-content a:hover,
 .post-meta a:hover {
-    box-shadow: 0 2px 0 var(--lightpurple);
+    box-shadow: 0 1.5px 0 var(--lightpurple);
     color: currentColor; 
 }
 
@@ -235,8 +235,8 @@
 
 .post-content hr {
     margin: 30px 0;
-    height: 1px;
-    background: var(--tertiary);
+    height: 1.5px;
+    background: var(--archive);
     border: 0;
 }
 
@@ -399,7 +399,6 @@ a[href^="#fn:"]:hover, a[href^="#fnref:"]:hover {
 .paginav .next {
     width: 50%;
 }
-
 
 .paginav .next {
     margin-inline-start: auto;

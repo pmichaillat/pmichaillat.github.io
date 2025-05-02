@@ -53,5 +53,5 @@
 
 #menu .active {
     padding-bottom: 2px;
-    border-bottom: 3px solid var(--purple);
+    border-bottom: 2px solid var(--purple);
 }

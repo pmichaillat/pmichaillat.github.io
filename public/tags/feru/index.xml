@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Apr 2025 09:53:32 +0530</lastBuildDate>
     <atom:link href="https://pascalmichaillat.org/tags/feru/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>u* = √uv: The Full-Employment Rate of Unemployment in the United States</title>
@@ -19,6 +19,13 @@
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://pascalmichaillat.org/13/</guid>
       <description>This paper argues that in the United States the full-employment rate of unemployment (FERU) is the geometric average of the unemployment and vacancy rates.</description>
+    </item>
+    <item>
+      <title>Automated Business Cycle Dashboard</title>
+      <link>https://pascalmichaillat.org/dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/dashboard/</guid>
+      <description>This webapge hosts an interactive dashboard with real-time charts on US unemployment rate, vacancy rate, labor market tightness, FERU, unemployment gap, recession indicator, and recession probability. Updated daily using FRED data.</description>
     </item>
   </channel>
 </rss>

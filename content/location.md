@@ -1,7 +1,6 @@
 ---
 title: "Location"
 date: 2024-07-02
-url: /location/
 aliases:
     - /contact.html
 author: "Pascal Michaillat"

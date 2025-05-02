@@ -1,7 +1,6 @@
 ---
 title: "Office Hours"
 date: 2025-03-14
-url: /officehours/
 aliases:
     - /oh.html
 author: "Pascal Michaillat"

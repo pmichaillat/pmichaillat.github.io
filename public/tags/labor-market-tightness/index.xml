@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Mar 2025 16:54:23 -0700</lastBuildDate>
     <atom:link href="https://pascalmichaillat.org/tags/labor-market-tightness/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unemployment</title>
@@ -47,6 +47,13 @@
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       <guid>https://pascalmichaillat.org/2/</guid>
       <description>This paper develops a New Keynesian model in which the government multiplier doubles when unemployment rises from 5% to 8%. Published in AEJ Macro, 2014.</description>
+    </item>
+    <item>
+      <title>Automated Business Cycle Dashboard</title>
+      <link>https://pascalmichaillat.org/dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pascalmichaillat.org/dashboard/</guid>
+      <description>This webapge hosts an interactive dashboard with real-time charts on US unemployment rate, vacancy rate, labor market tightness, FERU, unemployment gap, recession indicator, and recession probability. Updated daily using FRED data.</description>
     </item>
   </channel>
 </rss>
