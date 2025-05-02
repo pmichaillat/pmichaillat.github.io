@@ -28,7 +28,7 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
         x=df.index, y=df[y_column],
         mode='lines',
         line=dict(color='#6e55c3', width=3),
-        hovertemplate='%{y:.2f}<extra></extra>'  # <- format to 2 decimal places
+        hovertemplate='%{x|%b %Y}<br>%{y:.2f}<extra></extra>'  # <- format to 2 decimal places
     ))
 
     # Add shaded recession bands
@@ -193,8 +193,6 @@ x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.1
 
-print(df.head())
-print(df.info())
 make_plot(df, "data", title, "unemployment.html", "Share of labor force (%)",x_min, x_max, y_min, y_max)
 
 # Plot vacancy rate
@@ -210,8 +208,6 @@ x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.1
 
-print(df.head())
-print(df.info())
 make_plot(df, "data", title, "vacancy.html", "Share of labor force (%)", x_min, x_max, y_min, y_max)
 
 # Plot labor market tightness
@@ -227,8 +223,6 @@ x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.1
 
-print(df.head())
-print(df.info())
 make_plot(df, "data", title, "tightness.html", "Tightness", x_min, x_max, y_min, y_max, hline=1)
 
 # Plot FERU
@@ -244,8 +238,6 @@ x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.1
 
-print(df.head())
-print(df.info())
 make_plot(df, "data", title, "feru.html", "Share of labor force (%)", x_min, x_max, y_min, y_max)
 
 # Plot unemployment gap
@@ -261,8 +253,6 @@ x_max = df.index.max()
 y_min = min(0, df["data"].min() * 1.1)
 y_max = df["data"].max() * 1.1
 
-print(df.head())
-print(df.info())
 make_plot(df, "data", title, "gap.html", "Share of labor force (pp)", x_min, x_max, y_min, y_max, hline=0)
 
 # Plot minimum indicator
@@ -278,8 +268,6 @@ x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.1
 
-print(df.head())
-print(df.info())
 make_plot(df, "data", title, "indicator.html", "Share of labor force (pp)", x_min, x_max, y_min, y_max, hline=0.29)
 
 # Plot recession probability
@@ -295,6 +283,4 @@ x_max = df.index.max()
 y_min = 0
 y_max = 1.01
 
-print(df.head())
-print(df.info())
 make_plot(df, "data", title, "probability.html", "Probability", x_min, x_max, y_min, y_max)
