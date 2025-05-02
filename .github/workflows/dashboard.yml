@@ -27,7 +27,7 @@ jobs:
       - name: Run graph generation script
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-        run: python dashboard.py
+        run: python content/dashboard/dashboard.py
 
       - name: Commit and push updated charts
         run: |
