@@ -52,7 +52,7 @@ The recession indicator is the minimum of the Sahm-rule indicator (the increase 
 
 <iframe src="/dashboard/probability.html" width="100%" height="600" style="border:none;"></iframe>
 
-The recession probability is computed from the dual-threshold extension of the Michz rule. The dual-threshold rule works as follows: values of the indicator between 0.29pp and 0.81pp signal a probable recession; values above 0.81pp signal a certain recession. The recession probability is the fraction of the 0.29pp–0.81pp band that the indicator has covered.
+The recession probability is computed from the dual-threshold extension of the Michz rule. The dual-threshold rule works as follows: values of the indicator between 0.29pp and 0.81pp signal a probable recession; values above 0.81pp signal a certain recession. This dual-threshold extension accounts for uncertainty in the true recession threshold and provides a simple way to nowcast recession risk. Then, the recession probability is the fraction of the 0.29pp–0.81pp band that the indicator has covered.
 
 ---
 
