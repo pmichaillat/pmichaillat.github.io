@@ -1,14 +1,16 @@
 ---
 title: "Business Cycles and How to Tame Them" 
 date: 2023-12-08
-lastmod: 2024-08-18
-url: /c5/
+lastmod: 2025-05-03
+url: /z/
+aliases:
+    - /c5/
 tags: ["Beveridge curve", "business cycles", "economic slack", "efficient tightness", "fiscal policy", "matching model", "monetary policy", "unemployment gap", "wealth in the utility", "zero lower bound"]
 author: "Pascal Michaillat"
 description: "This minicourse describes business cycles, develops a matching model to explain them, and discusses how monetary and fiscal policy can tame them."
 summary: "This minicourse presents basic facts about business cycles. It then develops a matching model to explain these business-cycle facts. Finally, it explains how monetary policy and government spending should be designed to tame business cycles." 
 cover:
-    image: "/c5s.png"
+    image: "/zs.png"
     alt: "Unemployment and GDP over the business cycle"
     relative: false
 editPost:
