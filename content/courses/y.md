@@ -1,10 +1,11 @@
 ---
 title: "Intermediate Macroeconomics" 
 date: 2019-01-01
-lastmod: 2024-08-18
-url: /c4/
+lastmod: 2025-05-03
+url: /y/
 aliases:
     - /t2.html
+    - /c4/
     - /uploads/7/0/2/0/70200055/t2a.pdf
     - /uploads/7/0/2/0/70200055/t2o.pdf
     - /uploads/7/0/2/0/70200055/t2z.pdf
@@ -24,7 +25,7 @@ author: "Pascal Michaillat"
 description: "This undergraduate course covers IS-LM model of business cycles, matching model of unemployment, inflation, and Malthusian and Solowian models of growth."
 summary: "This undergraduate course introduces macroeconomic concepts—such as GDP and inflation—and covers the IS-LM model of business cycles, matching model of unemployment, Phillips curve, Malthusian model of growth, and Solowian model of growth."
 cover:
-    image: "/c4s.png"
+    image: "/ys.png"
     alt: "Comparative statics in a matching model of unemployment"
     relative: false
 editPost:
