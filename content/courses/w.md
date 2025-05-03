@@ -1,10 +1,11 @@
 ---
 title: "Economic Slack" 
 date: 2024-01-15
-lastmod: 2025-01-05
-url: /c2/
+lastmod: 2025-05-03
+url: /w/
 aliases: 
     - /b1/
+    - /c2/
     - /t5.html
     - /t4.html
     - /w1.html
@@ -36,7 +37,7 @@ author: "Pascal Michaillat"
 description: "This graduate course presents matching models of economic slack and uses them to study business-cycle fluctuations, monetary policy, and fiscal policy." 
 summary: "This graduate course presents various matching models of economic slack. It uses them to study business-cycle fluctuations; Keynesian, classical, and frictional unemployment; optimal monetary policy and the zero lower bound; and optimal government spending." 
 cover:
-    image: "/c2s.png"
+    image: "/ws.png"
     alt: "Optimal monetary policy and optimal government spending in the dynamic model of slack"
     relative: false
 editPost:
