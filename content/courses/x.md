@@ -1,9 +1,10 @@
 ---
 title: "Mathematics for Macroeconomics" 
 date: 2013-10-01
-lastmod: 2024-08-19
-url: /c3/
+lastmod: 2025-05-03
+url: /x/
 aliases:
+    - /c3/
     - /t3.html
     - /uploads/7/0/2/0/70200055/t3a.pdf
     - /uploads/7/0/2/0/70200055/t3b.pdf
@@ -15,7 +16,7 @@ author: "Pascal Michaillat"
 description: "This graduate course covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations." 
 summary: "This graduate course covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations. The methods are used to study dynamical macroeconomic systems in discrete time and continuous time." 
 cover:
-    image: "/c3s.png"
+    image: "/xs.png"
     alt: "Phase diagram depicting a saddle path"
     relative: false
 editPost:
