@@ -12,7 +12,7 @@ menu:
     main:
         - name: Dashboard
           url: /dashboard/
-          weight: 1
+          weight: 5
         - name: Papers
           url: /papers/
           weight: 2
@@ -22,12 +22,12 @@ menu:
         - name: Design
           url: /design/
           weight: 4        
-        - name: Tags
-          url: /tags/
-          weight: 5
-        - name: Archive
-          url: /archive/
-          weight: 6
+        # - name: Tags
+        #   url: /tags/
+        #   weight: 5
+        # - name: Archive
+        #   url: /archive/
+        #   weight: 6
 
 params:
     description: "This website hosts Pascal Michaillat's research papers, course materials, design templates, curriculum vitae, and contact information."
@@ -62,14 +62,14 @@ params:
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Dashboard
-              url: /dashboard/
             - name: Papers
               url: /papers/
             - name: Courses
               url: /courses/
             - name: Design
               url: /design/
+            - name: Dashboard
+              url: /dashboard/  
             - name: Tags
               url: /tags/
             - name: Archive
