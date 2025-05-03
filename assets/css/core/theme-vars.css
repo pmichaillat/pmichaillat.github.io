@@ -17,8 +17,8 @@
     --entry: rgb(255, 255, 255); /*background*/
     --theme: rgb(255, 255, 255);
 /*Custom variables*/
-    --purple: #6e55c3; /*links*/
-    --lightpurple: #8e7bd0; /*hovered links - slightly darker than #a08cd9  */
+    --purple: #8e7bd0; /*links -- icon color*/
+    --lightpurple: #5e42bc; /*hovered links - slightly darker */
     --graypurple: #e5e1f4; /*hovered buttons*/
     --gray: rgb(165, 165, 165); /*labels and h5 and h4 titles*/
     --archive: rgb(200, 200, 200); /* lines in archive and webpages*/

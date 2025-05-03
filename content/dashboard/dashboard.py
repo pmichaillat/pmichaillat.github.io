@@ -38,7 +38,7 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
     fig.add_trace(go.Scatter(
         x=df.index, y=df[y_column],
         mode='lines',
-        line=dict(color='#6e55c3', width=3),
+        line=dict(color='#59539d', width=3), # livelier color: #6e55c3
         hovertemplate='%{x|%b %Y}<br>%{y:.2f}<extra></extra>'  # <- format to 2 decimal places
     ))
 
@@ -50,8 +50,9 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             fig.add_vrect(
                 x0=start,
                 x1=end,
-                fillcolor='gray',
+                fillcolor='lightgray',
                 opacity=0.3,
+                layer='below',
                 line_width=0
             )
     except Exception as e:
@@ -64,12 +65,13 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             x1=df.index.max(),
             y0=hline,
             y1=hline,
-            line=dict(color='rgba(231, 41, 138, 0.5)', width=1),
+            line=dict(color='rgba(217, 95, 2, 0.8)', width=1),# pink: rgba(231, 41, 138, 0.8)
             layer='above'
             )
 
     fig.update_layout(
         title=title,
+        dragmode=False,  # disables active tools on load
         title_font=dict(size=15),
         font=dict(family="Helvetica", size=15),
         margin=dict(l=20, r=20, t=40, b=20),
@@ -79,25 +81,28 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             showgrid=True,
             side='bottom',
             showline=True, 
-            linecolor='lightgray',
+            linecolor='#e9e9e9',
             mirror=False,
             ticklabelposition="outside",
             ticklabelstandoff=10,
-            gridcolor='lightgray',
+            gridcolor='#e9e9e9',
             range=[x_min, x_max] if x_min is not None and x_max is not None  else None
         ),
         yaxis=dict(
             showgrid=True, 
             side='left',
             showline=True, 
-            linecolor='lightgray',
+            linecolor='#e9e9e9',
             mirror=False,
             ticklabelposition="outside",
             ticklabelstandoff=10,
-            gridcolor='lightgray',
+            gridcolor='#e9e9e9',
             range=[y_min, y_max] if y_min is not None and y_max is not None else None
         ),
-        yaxis_title=y_label,
+       yaxis_title=dict(
+            text=y_label,
+            font=dict(size=15)  # Adjust as needed (default is usually ~16)
+        ),
         showlegend=False
     )
 
@@ -193,14 +198,14 @@ df = pd.DataFrame({"data": u_rate}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"UNEMPLOYMENT RATE — {last_date} value: {last_value:.2f}%"
+title = f"{last_date} value: {last_value:.2f}%"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.05
 
-make_plot(df, "data", title, "unemployment.html", "Share of labor force (%)",x_min, x_max, y_min, y_max)
+make_plot(df, "data", title, "unemployment.html", "Unemployment rate (%)",x_min, x_max, y_min, y_max)
 
 # Plot vacancy rate
 
@@ -208,14 +213,14 @@ df = pd.DataFrame({"data": v_rate}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"VACANCY RATE — {last_date} value: {last_value:.2f}%"
+title = f"{last_date} value: {last_value:.2f}%"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.05
 
-make_plot(df, "data", title, "vacancy.html", "Share of labor force (%)", x_min, x_max, y_min, y_max)
+make_plot(df, "data", title, "vacancy.html", "Vacancy rate (%)", x_min, x_max, y_min, y_max)
 
 # Plot labor market tightness
 
@@ -223,14 +228,14 @@ df = pd.DataFrame({"data": tightness}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"LABOR MARKET TIGHTNESS — {last_date} value: {last_value:.2f}"
+title = f"{last_date} value: {last_value:.2f}"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.05
 
-make_plot(df, "data", title, "tightness.html", "Tightness", x_min, x_max, y_min, y_max, hline=1)
+make_plot(df, "data", title, "tightness.html", "Labor market tightness", x_min, x_max, y_min, y_max, hline=1)
 
 # Plot FERU
 
@@ -238,14 +243,14 @@ df = pd.DataFrame({"data": feru}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"FERU — {last_date} value: {last_value:.2f}%"
+title = f"{last_date} value: {last_value:.2f}%"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.05
 
-make_plot(df, "data", title, "feru.html", "Share of labor force (%)", x_min, x_max, y_min, y_max)
+make_plot(df, "data", title, "feru.html", "FERU (%)", x_min, x_max, y_min, y_max)
 
 # Plot unemployment gap
 
@@ -253,14 +258,14 @@ df = pd.DataFrame({"data": u_gap}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"UNEMPLOYMENT GAP — {last_date} value: {last_value:.2f}pp"
+title = f"{last_date} value: {last_value:.2f}pp"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
 y_min = min(0, df["data"].min() * 1.05)
 y_max = df["data"].max() * 1.05
 
-make_plot(df, "data", title, "gap.html", "Share of labor force (pp)", x_min, x_max, y_min, y_max, hline=0)
+make_plot(df, "data", title, "gap.html", "Unemployment gap (pp)", x_min, x_max, y_min, y_max, hline=0)
 
 # Plot minimum indicator
 
@@ -268,14 +273,14 @@ df = pd.DataFrame({"data": m}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"RECESSION INDICATOR — Threshold: 0.29pp— {last_date} value: {last_value:.2f}pp"
+title = f"{last_date} value: {last_value:.2f}pp"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.05
 
-make_plot(df, "data", title, "indicator.html", "Share of labor force (pp)", x_min, x_max, y_min, y_max, hline=0.29)
+make_plot(df, "data", title, "indicator.html", "Recession indicator (pp)", x_min, x_max, y_min, y_max, hline=0.29)
 
 # Plot recession probability
 
@@ -283,11 +288,11 @@ df = pd.DataFrame({"data": p}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1] * 100
-title = f"RECESSION PROBABILITY — {last_date} value: {last_value:.0f}%"
+title = f"{last_date} value: {last_value:.0f}%"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
 y_min = 0
 y_max = 1.005
 
-make_plot(df, "data", title, "probability.html", "Probability", x_min, x_max, y_min, y_max)
+make_plot(df, "data", title, "probability.html", "Recession probability", x_min, x_max, y_min, y_max)
