@@ -1,7 +1,7 @@
 ---
 title: "Minimalist Hugo Template for Academic Websites" 
 date: 2024-07-16
-lastmod: 2025-05-02
+lastmod: 2025-05-04
 url: /b/
 aliases: 
     - /d5/
@@ -148,7 +148,7 @@ It is possible to add any number of files in the `content` folder. By default, a
 The `static` folder contains the static files (files not processed or rendered by Hugo) for the website. The `static` folder contains a few files used in the homepage:
 
 + `picture.jpeg` – Picture appearing on the homepage.
-+ `cv.pdf` – Curriculum vitae linked to the [CV icon](#social-icons) on the homepage. This CV is based on the CV template created by [Matthew Butterick](https://practicaltypography.com/resumes.html).
++ `cv.pdf` – Curriculum vitae linked to the [CV icon](#social-icons) on the homepage. This CV is built from the [latex-cv](https://github.com/pmichaillat/latex-cv) template.
 + `favicon.io`, `favicon-32x32.png`, `favicon-16x16.png`, `apple-touch-icon.png` – Favicon appearing in the menu bar next to the website title, and in the browser next to the URL. It is easy to produce [new favicons](https://favicon.io).
 
 The `static` folder could also include the PDF files and images to which the website links. It could contain:
