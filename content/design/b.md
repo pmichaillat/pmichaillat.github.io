@@ -2,12 +2,14 @@
 title: "Minimalist Hugo Template for Academic Websites" 
 date: 2024-07-16
 lastmod: 2025-05-02
-url: /d5/
+url: /b/
+aliases: 
+    - /d5/
 author: "Pascal Michaillat"
 description: "This template produces a personal academic website with Hugo. The website has a minimalist design and is hosted on GitHub Pages."
 summary: "This template produces a personal academic website with Hugo. The website has a minimalist design based on the PaperMod theme and is hosted on GitHub Pages." 
 cover:
-    image: "/d5s.png"
+    image: "/bs.png"
     alt: "Webpage produced with template"
     relative: false
 editPost:

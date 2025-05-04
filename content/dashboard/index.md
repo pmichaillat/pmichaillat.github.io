@@ -4,7 +4,7 @@ tags: ["business cycle", "FERU", "job vacancies", "labor market tightness", "Mic
 author: ["Pascal Michaillat","Emmanuel Saez"]
 description: "This webapge hosts an interactive dashboard with real-time charts on US unemployment rate, vacancy rate, labor market tightness, FERU, unemployment gap, recession indicator, and recession probability. Updated daily using FRED data."
 cover:
-    image: "dashboard.png"
+    image: "/dashboard.png"
     alt: "US recession probability from dual-threshold Michez rule"
     relative: false
 editPost:

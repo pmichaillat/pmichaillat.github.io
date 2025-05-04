@@ -2,12 +2,14 @@
 title: "Minimalist LaTeX Template for Academic Papers" 
 date: 2024-04-02
 lastmod: 2024-06-29
-url: /d2
+url: /a/
+aliases: 
+    - /d2/
 author: "Pascal Michaillat"
 description: "This template produces an academic paper with LaTeX. The paper follows typographical best practices and has a minimalist design."
 summary: "This template produces an academic paper with LaTeX. The paper follows typographical best practices and has a minimalist design." 
 cover:
-    image: "/d2s.png"
+    image: "/as.png"
     alt: "Paper page produced with template"
     relative: false
 editPost:
@@ -24,8 +26,8 @@ The template produces an academic paper with [LaTeX](https://www.latex-project.o
 ## View
 
 + [LaTeX template for academic papers](https://github.com/pmichaillat/latex-paper)
-+ [Research paper produced by the template](/d2.pdf)
-+ [Online appendix produced by the template](/d2a.pdf)
++ [Research paper produced by the template](/a.pdf)
++ [Online appendix produced by the template](/aa.pdf)
 
 ---
 

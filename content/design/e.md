@@ -2,12 +2,14 @@
 title: "LaTeX Commands to Write Math" 
 date: 2024-06-26
 lastmod: 2024-07-10
-url: /d3/
+url: /e/
+aliases: 
+    - /d3/
 author: "Pascal Michaillat"
 description: "This collection of commands makes it easy to write mathematical expressions with LaTeX while automatically respecting the rules of mathematical typography." 
 summary: "This collection of commands makes it easy to write mathematical expressions with LaTeX while automatically respecting the rules of mathematical typography." 
 cover:
-    image: "/d3s.png"
+    image: "/es.png"
     alt: "Mathematical expressions produced with commands"
     relative: false
 editPost:

@@ -2,12 +2,14 @@
 title: "Minimalist LaTeX Template for Academic Presentations" 
 date: 2024-06-28
 lastmod: 2024-07-05
-url: /d1/
+url: /c/
+aliases: 
+    - /d1/
 author: "Pascal Michaillat"
 description: "This template produces an academic presentation with LaTeX and Beamer. The presentation follows typographical best practices and has a minimalist design."
 summary: "This template produces an academic presentation with LaTeX and the Beamer class. The presentation follows typographical best practices and has a minimalist design."
 cover:
-    image: "/d1s.png"
+    image: "/cs.png"
     alt: "Presentation slide produced with template"
     relative: false
 editPost:
@@ -25,7 +27,7 @@ The template produces an academic presentation using [LaTeX](https://www.latex-p
 ## View
 
 + [LaTeX template for academic presentations](https://github.com/pmichaillat/latex-presentation)
-+ [Research presentation produced by the template](/d1.pdf)
++ [Research presentation produced by the template](/c.pdf)
 
 ---
 

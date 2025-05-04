@@ -1,12 +1,14 @@
 ---
 title: "Minimalist MATLAB Template for Scientific Figures" 
 date: 2023-10-07
-url: /d4/
+url: /d/
+aliases: 
+    - /d4/
 author: "Pascal Michaillat"
 description: "This template produces a set of scientific figures with MATLAB. The figures adhere to best practices for the visual display of quantitative information."
 summary: "This template produces a set of scientific figures with MATLAB. The figures adhere to best practices for the visual display of quantitative information."
 cover:
-    image: "/d4s.png"
+    image: "/ds.png"
     alt: "Figure produced with template"
     relative: false
 editPost:
@@ -24,7 +26,7 @@ The template produces basic scientific figures using [MATLAB](hhttps://matlab.ma
 ## View
 
 + [MATLAB template for scientific figures](https://github.com/pmichaillat/matlab-figures)
-+ [Figures produced by the template](/d4.pdf)
++ [Figures produced by the template](/d.pdf)
 
 ---
 
