@@ -137,11 +137,6 @@ u.index = pd.to_datetime(u.index)
 v.index = pd.to_datetime(v.index)
 lf.index = pd.to_datetime(lf.index)
 
-
-# Align data
-# Shift job vacancies forward by 1 month to match unemployment timing
-# v_shifted = v.shift(1)
-
 # Extend v's index by 1 month at the end
 last_date = v.index.max()
 next_date = last_date + pd.offsets.MonthBegin(1)
@@ -190,7 +185,7 @@ m = pd.DataFrame({'u_hat': u_hat, 'v_hat': v_hat}).min(axis=1)
 p = (m - 0.29) / (0.81 - 0.29)
 
 # Apply dual threshold: clamp values between 0 and 1
-p = p.clip(lower=0, upper=1)
+p = p.clip(lower=0, upper=1) * 100
 
 # Plot unemployment rate
 
@@ -207,6 +202,13 @@ y_max = df["data"].max() * 1.05
 
 make_plot(df, "data", title, "unemployment.html", "Unemployment rate (%)",x_min, x_max, y_min, y_max)
 
+# Save data
+csv_path = "../../static/dashboard/unemployment.csv"
+df_out = df.copy()
+df_out.columns = ["Unemployment rate (%)"]
+df_out.index.name = "Date"
+df_out.to_csv(csv_path) 
+
 # Plot vacancy rate
 
 df = pd.DataFrame({"data": v_rate}).dropna()
@@ -221,6 +223,13 @@ y_min = 0
 y_max = df["data"].max() * 1.05
 
 make_plot(df, "data", title, "vacancy.html", "Vacancy rate (%)", x_min, x_max, y_min, y_max)
+
+# Save data
+csv_path = "../../static/dashboard/vacancy.csv"
+df_out = df.copy()
+df_out.columns = ["Vacancy rate (%)"]
+df_out.index.name = "Date"
+df_out.to_csv(csv_path) 
 
 # Plot labor market tightness
 
@@ -237,6 +246,13 @@ y_max = df["data"].max() * 1.05
 
 make_plot(df, "data", title, "tightness.html", "Labor market tightness", x_min, x_max, y_min, y_max, hline=1)
 
+# Save data
+csv_path = "../../static/dashboard/tightness.csv"
+df_out = df.copy()
+df_out.columns = ["Labor market tightness"]
+df_out.index.name = "Date"
+df_out.to_csv(csv_path) 
+
 # Plot FERU
 
 df = pd.DataFrame({"data": feru}).dropna()
@@ -251,6 +267,13 @@ y_min = 0
 y_max = df["data"].max() * 1.05
 
 make_plot(df, "data", title, "feru.html", "FERU (%)", x_min, x_max, y_min, y_max)
+
+# Save data
+csv_path = "../../static/dashboard/feru.csv"
+df_out = df.copy()
+df_out.columns = ["FERU (%)"]
+df_out.index.name = "Date"
+df_out.to_csv(csv_path) 
 
 # Plot unemployment gap
 
@@ -267,7 +290,14 @@ y_max = df["data"].max() * 1.05
 
 make_plot(df, "data", title, "gap.html", "Unemployment gap (pp)", x_min, x_max, y_min, y_max, hline=0)
 
-# Plot minimum indicator
+# Save data
+csv_path = "../../static/dashboard/gap.csv"
+df_out = df.copy()
+df_out.columns = ["Unemployment gap (pp)"]
+df_out.index.name = "Date"
+df_out.to_csv(csv_path) 
+
+# Plot recession indicator
 
 df = pd.DataFrame({"data": m}).dropna()
 
@@ -282,17 +312,31 @@ y_max = df["data"].max() * 1.05
 
 make_plot(df, "data", title, "indicator.html", "Recession indicator (pp)", x_min, x_max, y_min, y_max, hline=0.29)
 
+# Save data
+csv_path = "../../static/dashboard/indicator.csv"
+df_out = df.copy()
+df_out.columns = ["Recession indicator (pp)"]
+df_out.index.name = "Date"
+df_out.to_csv(csv_path) 
+
 # Plot recession probability
 
 df = pd.DataFrame({"data": p}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
-last_value = df["data"].iloc[-1] * 100
+last_value = df["data"].iloc[-1]
 title = f"{last_date} value: {last_value:.0f}%"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
 y_min = 0
-y_max = 1.005
+y_max = 100.5
 
 make_plot(df, "data", title, "probability.html", "Recession probability", x_min, x_max, y_min, y_max)
+
+# Save data
+csv_path = "../../static/dashboard/probability.csv"
+df_out = df.copy()
+df_out.columns = ["Recession probability (%)"]
+df_out.index.name = "Date"
+df_out.to_csv(csv_path) 

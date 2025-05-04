@@ -61,23 +61,33 @@ The recession probability is computed from the dual-threshold extension of the M
 
 <iframe src="/dashboard/probability.html" width="100%" height="600" style="border:none;"></iframe>
 
+---
+
+## Download data (CSV)
+
++ [Unemployment rate](/dashboard/unemployment.csv)
++ [Vacancy rate](/dashboard/vacancy.csv)
++ [Labor market tightness](/dashboard/tightness.csv)
++ [Full-employment rate of unemployment (FERU)](/dashboard/feru.csv)
++ [Unemployment gap](/dashboard/gap.csv)
++ [Recession indicator](/dashboard/indicator.csv)
++ [Recession probability](/dashboard/probability.csv)
 
 ---
 
 ## References
 
-
 + [u* = √uv: The Full-Employment Rate of Unemployment in the United States](https://pascalmichaillat.org/13/) – *Brookings Papers on Economic Activity*, 2024 – This paper obtains the formula for the FERU. The formula implies that the labor market is at full employment whenever there are as many job seekers as job openings ($u = v$); inefficiently tight when there are fewer job seekers than job openings ($u < v$); and inefficiently slack when there are more job seekers than job openings ($u > v$).
 
 + [Has the Recession Started?](https://pascalmichaillat.org/16/) – *Oxford Bulletin of Economics and Statistics*, 2025 – This paper develops the recession indicator and recession threshold, and computes the recession probability. The Michez rule, based on the recession indicator and threshold, detects recessions faster than the Sahm rule. It is also more robust in that it works between 1929 and 2024, whereas the Sahm rule breaks down before 1960.
 
-## Data sources
+## Data sources (FRED)
 
 + [Vacancy level, 2001–present](https://fred.stlouisfed.org/series/JTSJOL)
 + [Unemployment level, 1948–present](https://fred.stlouisfed.org/series/UNEMPLOY)
 + [Labor force level, 1948–present](https://fred.stlouisfed.org/series/CLF16OV)
 
-## Bureau of Labor Statistics resources
+## BLS resources
 
 + [Latest JOLTS data release](https://www.bls.gov/news.release/jolts.nr0.htm)
 + [Latest CPS data release](https://www.bls.gov/news.release/empsit.nr0.htm)
