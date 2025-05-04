@@ -56,7 +56,7 @@ div.highlight,
 pre {
     position: relative;
 }
-
+/*
 .copy-code {
     display: none;
     position: absolute;
@@ -74,4 +74,61 @@ pre {
 div.highlight:hover .copy-code,
 pre:hover .copy-code {
     display: block;
+}*/
+
+/*.copy-code {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background: none;
+  border: none;
+  padding: 0.25em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: currentColor;
+  transition: color 0.2s ease;
 }
+*/
+
+.copy-code {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background: none;
+  border: none;
+  padding: 0.25em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* start hidden and gray by default */
+  opacity: 0;
+  color: var(--tertiary);
+  transition: 
+    opacity 0.2s ease, 
+    color   0.2s ease;
+}
+
+/* when the user “activates” the code block (here: hovers it), show the icon */
+.highlight:hover  .copy-code,
+pre:hover         .copy-code {
+  opacity: 1;
+}
+
+/* when they hover the icon itself, switch to purple */
+.copy-code:hover {
+  color: var(--purple);
+}
+
+.copy-code.copied {
+  color: var(--purple);
+}
+
+.copy-code svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+

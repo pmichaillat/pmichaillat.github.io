@@ -72,6 +72,7 @@
     color: var(--secondary);
 }
 
+
 .post-content a,
 .post-meta a,
 .toc a:hover {
@@ -364,19 +365,28 @@ h4:hover .anchor,
 h5:hover .anchor,
 h6:hover .anchor {
     display: inline-flex;
-    color: var(--purple);
+/*    color: var(--purple);*/
     margin-inline-start: 10px;
     font-weight: 700;
     user-select: none;
-    box-shadow: 0 0px 0 var(--purple);
+    text-decoration: none;
 }
 
+h1:hover .anchor:hover,
+h2:hover .anchor:hover,
+h3:hover .anchor:hover,
+h4:hover .anchor:hover,
+h5:hover .anchor:hover,
+h6:hover .anchor:hover {
+    color: var(--purple);
+}
 
 a[href^="#fn:"], a[href^="#fnref:"] {
-     box-shadow: 0 0px 0 var(--purple);
+    text-decoration: none;
 }
 
 a[href^="#fn:"]:hover, a[href^="#fnref:"]:hover {
+    text-decoration: none;
     color: var(--purple);
 }
 
