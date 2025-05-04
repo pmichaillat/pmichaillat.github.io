@@ -75,14 +75,20 @@
 .post-content a,
 .post-meta a,
 .toc a:hover {
-    box-shadow: 0 1.5px 0 var(--purple);
-    color: currentColor; 
+    text-decoration: underline;
+    text-decoration-color: var(--purple);
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 2px;
+    color: currentColor;
 }
 
 .post-content a:hover,
 .post-meta a:hover {
-    box-shadow: 0 1.5px 0 var(--lightpurple);
-    color: currentColor; 
+    text-decoration: underline;
+    text-decoration-color: var(--lightpurple);
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 2px;
+    color: currentColor;
 }
 
 .post-content a code {

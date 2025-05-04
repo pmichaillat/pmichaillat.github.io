@@ -34,5 +34,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add static/dashboard/*.html
-          git commit -m "Update business cycle dashboard [skip ci]" || echo "No changes"
+          git commit -m "Fetch FRED data for business cycle dashboard [skip ci]" || echo "No changes"
           git push

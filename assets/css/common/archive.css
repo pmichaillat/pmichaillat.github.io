@@ -28,10 +28,6 @@
     font-size: var(--home-size);
 }
 
-.archive-month:not(:last-of-type) {
-    border-bottom: 0.75px solid var(--archive);
-}
-
 .archive-entry {
     position: relative;
     padding: 5px 0;
@@ -42,5 +38,13 @@
     margin: 5px 0;
     font-size: var(--home-size);
     font-weight: normal;
+}
+
+.archive-entry:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--purple);
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 2px;
+    color: currentColor;
 }
 
