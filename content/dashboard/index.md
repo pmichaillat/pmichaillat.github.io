@@ -30,7 +30,7 @@ The vacancy rate is the number of job openings divided by the number of labor fo
 ## US labor market tightness
 
 
-The labor market tightness is the vacancy rate divided by the unemployment rate. A tightness of 1 marks full employment, or equivalently labor market efficiency. When tightness is below 1, the labor market is inefficiently slack. When tightness is above 1, the labor market is inefficiently tight. In other words, the labor market is at full employment whenever there are as many job seekers as job openings ($u = v$); inefficiently tight when there are fewer job seekers than job openings ($u < v$); and inefficiently slack when there are more job seekers than job openings ($u > v$).
+The labor market tightness is the vacancy rate divided by the unemployment rate. A tightness of 1 marks full employment, or equivalently labor market efficiency. When tightness is below 1, the labor market is inefficiently slack. When tightness is above 1, the labor market is inefficiently tight.
 
 <iframe src="/dashboard/tightness.html" width="100%" height="600" style="border:none;"></iframe>
 
