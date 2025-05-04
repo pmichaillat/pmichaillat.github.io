@@ -1,10 +1,10 @@
+# MacOs files
+.DS_Store
+
 # Hugo build artifacts
 public/
 resources/
 .hugo_build.lock
-
-# System files
-.DS_Store
 
 # Python virtual environment
 .venv/
