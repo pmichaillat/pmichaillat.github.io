@@ -19,13 +19,14 @@ disableAnchoredHeadings: false
 
 <iframe src="/dashboard/unemployment.html" style="width: 100%; aspect-ratio: 16 / 9; border: none;"></iframe>
 
-The unemployment rate is the number of job seekers divided by the number of labor force participants. It measures the share of the labor force that is unemployed. The numbers of job seekers and labor force participants are both measured by the Bureau of Labor Statistics (BLS) from the Current Population Survey (CPS), which is a large-scale household survey. 
+The unemployment rate is the number of job seekers divided by the number of labor force participants. It measures the share of the labor force that is unemployed. The numbers of job seekers and labor force participants are both measured by the US Bureau of Labor Statistics (BLS) from the Current Population Survey (CPS), which is a large-scale household survey. 
 
 ## US vacancy rate
 
 <iframe src="/dashboard/vacancy.html" style="width: 100%; aspect-ratio: 16 / 9; border: none;"></iframe>
 
 The vacancy rate is the number of job openings divided by the number of labor force participants. It measures the number of job openings per labor force participant. The number of job openings is measured by the BLS from the Job Openings and Labor Turnover Survey (JOLTS), which is a large-scale firm survey.
+
 
 ## US labor market tightness
 
@@ -70,6 +71,60 @@ The recession probability is computed from the dual-threshold extension of the M
 + [Recession indicator](/dashboard/indicator.csv)
 + [Recession probability](/dashboard/probability.csv)
 
+## Frequently asked questions
+
+#### When do the numbers for the current month become available?
+
+The unemployment and vacancy data required to apply the Michez rule in any given month are released in the first week of the following month, usually [on a Tuesday for the JOLTS data and on a Friday for the CPS data](https://www.bls.gov/schedule/2025/home.htm). Accordingly, the dashboard will generally provide a complete picture for the current month on the first Friday of the following month.
+
+To best align labor force and vacancy data, we shift forward by one month the number of job openings from JOLTS. For instance, we assign to December 2023 the number of job openings that the BLS assigns to November 2023. The motivation for this shift is that the number of job openings from the JOLTS refers to the last business day of the month (Thursday 30 November, 2023), while the civilian labor force from the CPS refers to the Sunday--Saturday week including the 12th of the month (Sunday 10 December 2023 to Saturday 16 December 2023). So the number of job openings refers to a day that is closer to the next month's CPS reference week than to the current month's CPS reference week. 
+
+This is another advantage of shifting forward by one month the number of job openings reported in the JOLTS: we have access to the vacancy and unemployment rates required to compute the minimum indicator in the same week, as soon as the month is over. 
+
+#### Are the numbers final upon release? Or will they be revised?
+
+The value of the variables constructed in real time might not be final because the unemployment, vacancy, and labor force data are revised after their initial release. 
+
+The number of job openings released by the BLS is preliminary and updated one month after its initial release, to incorporate additional survey responses received from businesses and government agencies and from the recalculation of seasonal factors. 
+
+Additionally, the BLS revises the prior five years of CPS and JOLTS data each year at the beginning of January, to account for revisions to seasonal factors, population estimates, and employment estimates. 
+
+Yet, revisions to labor market data are generally minimal, especially compared to GDP revisions, so the information provided in real time is [almost indistinguishable from the information provided in the final version](https://libertystreeteconomics.newyorkfed.org/2020/02/reading-the-tea-leaves-of-the-us-business-cyclepart-one/).
+
+#### Is the vacancy rate inflated by ghost job postings?
+
+
+
+### Is the FERU the same as the NAIRU?
+
+#### Is the FERU the same as the NAIRU?
+
+##### Is the FERU the same as the NAIRU?
+
+No. In recent times, the US government has used the non-accelerating-inflation rate of unemployment (NAIRU) as full-employment target. For instance, the [Joint Economic Committee recently wrote](https://perma.cc/E9V8-XTFH):
+
+> Today, full employment is considered by many to be synonymous with the non-accelerating inflationary rate of unemployment (NAIRU)—the rate of unemployment that neither stokes nor slows inflation.
+
+Similarly, the [Council of Economic Advisers described](https://perma.cc/2JGM-QG4Z) the concept of full employment as follows: 
+
+> Modern economics has generally defined full employment by citing the theoretical concept of the lowest unemployment rate consistent with stable inflation, which is referred to as $u^*$, the non-accelerating inflationary rate of unemployment (termed NAIRU).
+
+These quotes are particularly meaningful because the Joint Economic Committee and Council of Economic Advisers were both created by the Employment Act of 1946 to ensure that the government achieved its full-employment mandate.
+
+But this is a misconception. The NAIRU is the unemployment rate at which inflation remains stable. Although the NAIRU contains information relevant to the Fed's price-stability mandate, it does not represent the efficient rate of unemployment \citep[p.~90]{R97}. In modern models of the labor market, workers and firms meet through a matching function and form long-term employment relationships \citep{P00}. In these models, infinitely many real wages are acceptable in equilibrium \citep{H05}. However, only one of those wages yields the efficient rate of unemployment. There is no guarantee that the real wage arising under stable inflation coincides with this efficient real wage \citep{BG10}. Accordingly, there is no guarantee that the unemployment rate prevailing under stable inflation---the NAIRU---is efficient. Since we have defined full employment as a socially efficient allocation of labor, the NAIRU cannot be a measure of full employment.
+
+#### Is the FERU the same as the NRU computed by CBO?
+
+
+
+#### Isn't the FERU set by law?
+
+
+
+#### Shouldn't the FERU be fixed, just like the inflation target of 2%?
+
+
+
 ---
 
 ## References
@@ -80,18 +135,19 @@ The recession probability is computed from the dual-threshold extension of the M
 
 ## Data sources on FRED
 
-+ [Vacancy level, 2001–present](https://fred.stlouisfed.org/series/JTSJOL)
-+ [Unemployment level, 1948–present](https://fred.stlouisfed.org/series/UNEMPLOY)
-+ [Labor force level, 1948–present](https://fred.stlouisfed.org/series/CLF16OV)
++ [Number of job seekers, 1948–present](https://fred.stlouisfed.org/series/UNEMPLOY)
++ [Number of labor force participants, 1948–present](https://fred.stlouisfed.org/series/CLF16OV)
++ [Number of job openings, 2001–present](https://fred.stlouisfed.org/series/JTSJOL)
 
 ## BLS resources
 
++ [Latest CPS data release](https://www.bls.gov/news.release/empsit.nr0.htm)
++ [Latest JOLTS data release](https://www.bls.gov/news.release/jolts.nr0.htm)
 + [CPS homepage](https://www.bls.gov/cps/home.htm)
 + [CPS documentation](https://www.bls.gov/cps/documentation.htm)
-+ [Latest CPS data release](https://www.bls.gov/news.release/empsit.nr0.htm)
 + [JOLTS homepage](https://www.bls.gov/jlt/)
 + [JOLTS documentation](https://www.bls.gov/jlt/jltfaq.htm)
-+ [Latest JOLTS data release](https://www.bls.gov/news.release/jolts.nr0.htm)
+
 
 ---
 

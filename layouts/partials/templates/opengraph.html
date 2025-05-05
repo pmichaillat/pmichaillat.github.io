@@ -10,7 +10,7 @@
 {{- end}}
 {{- else }}
 
-{{- $images := partial "partials/templates/_funcs/get-page-images" . -}}
+{{- $images := partial "templates/_funcs/get-page-images" . -}}
 {{- range first 6 $images }}
 <meta property="og:image" content="{{ .Permalink }}" />
 {{ end -}}
