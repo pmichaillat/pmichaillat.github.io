@@ -94,9 +94,11 @@ Yet, revisions to labor market data are generally minimal, especially compared t
 
 Vacancy data have recently been critized for being polluted by ghost or fake vacancies. These vacancies do not actually represent an open position, and will not lead to a new hire. A [recent article by CBS News](https://perma.cc/JUR9-W4AA) explains that fake job listings are a growing problem in the labor market. [Employ America](https://perma.cc/XZ2B-LTNH) has gone one step further and argued that vacancy numbers are vacuous in general and should never used by policymakers. Let's go over the various criticisms raised by such pieces and address them.
 
-###### Vacancies are not well measured in official statistics
+###### "Vacancies are not well measured"
 
-A first claim is that vacancies are not well measured in official statistics. But vacancies are measured by the BLS, just like all other labor market statistics. Specifically, the JOLTS asks firms to report the number of vacancies that they currently have, where a vacancy is defined as follows:
+A first claim is that vacancy numbers are polluted by ghost vacancies. But vacancies are measured by the BLS, just like all other labor market statistics; they are not measured from online job postings. 
+
+Specifically, the JOLTS asks firms to report the number of vacancies that they currently have, where a vacancy is defined as follows:
 
 + A specific position exists and work is available.
 + The job could start within 30 days.
@@ -104,23 +106,23 @@ A first claim is that vacancies are not well measured in official statistics. Bu
 
 These questions are similar to the questions asked by the BLS to workers in the CPS in order to assess their labor force status. Workers have to say whether they are willing to work, available to start work immediately, and actively searching for a job. The threshold for reporting a vacancy is that same as the threshold for reporting being unemployed. The firm and the worker have to answer that they have been actively searching on the labor market—for instance through online job portals.
 
-###### It is very easy to post vacancies on online job boards
+###### "It is very easy to post vacancies on online job boards"
 
-A second point relates to online job boards: it is very easy for firms to list job advertisements online. As noted above, our vacancy numbers do not come from online job boards: they are measured by the BLS through JOLTS. So what happens on online job boards is irrelevant.
+A second point relates to online job boards: it is very easy for firms to list job advertisements online, so the number of online job postings might not be meaningful. As noted above, our vacancy numbers do not come from online job boards: they are measured by the BLS through JOLTS. So what happens on online job boards is irrelevant.
 
 In fact, the internet and online job portals [do not seem to have much effect on the job market](https://doi.org/10.1257/000282804322970779). So there is no reason to believe that the job market is going to become fundamentally different because of online job portals. Looking at the academic job market, it does not seem that the amount of effort required to recruit colleagues is appreciably diminished by online job portals. Most of the recruiting time is spent on four things: reading applications and papers; interviewing candidates; flying out candidates; debating with colleagues. None of these four tasks are affected by online job boards.
 
-###### Firms post more than one vacancy per hire
+###### "Firms post more than one vacancy per hire"
 
 A third supposed issue is that firms post more than one vacancy per hire—which leads some to believe that some vacancies are fake since they do not result in a hire. But this is exactly [how firms behave in matching models](https://youtu.be/45W3coPEObY)! In these models, if a firm wants to recruit one worker this month but knows that a vacancy is only filled with probability 1/3, then the firm will post 3 vacancies to hire one worker in expectation.
 
-The key point is that in matching models, vacancies do not represent actual positions but *recruiting effort*—an effort to try to find workers through the matching process. And this is also what vacancies represent in reality, as ZipRecruiter's Julia Pollak explains in the CBS article:
+The key point is that in matching models, vacancies do not represent actual positions but *recruiting effort*—an effort to try to find workers through the matching process. This is also what vacancies represent in reality, as ZipRecruiter's Julia Pollak explains in the CBS article:
 
 > When you have fewer candidates per opening, you have to be more creative. The high openings figure does partly reflect recruiting intensity, and not actual roles and seats and slots.
 
 The bottom line is firms behave in reality exactly as in the model. The fact that firms post several vacancies per position does not mean that we should discount vacancy data. This behavior is what matching models predict.
 
-###### Vacancies are just noise
+###### "Vacancies are just noise"
 
 Another complaint is that vacancy numbers are just too noisy to be helpful. But, if vacancies were a vacant metric, we would expect them to be just noise. But vacancies and unemployment are strongly negatively correlated. They describe a well-defined Beveridge curve. In fact the Beveridge curve is one of the most robust macro relationships—how would it arise if vacancy data were vacuous? Given that unemployment and vacancies come from two entirely different sources (JOLTS and CPS), it is striking that they comove so closely.
 
@@ -186,7 +188,6 @@ But, without a theory of full employment, it is impossible to know whether the U
 + [CPS documentation](https://www.bls.gov/cps/documentation.htm)
 + [JOLTS homepage](https://www.bls.gov/jlt/)
 + [JOLTS documentation](https://www.bls.gov/jlt/jltfaq.htm)
-
 
 ---
 
