@@ -10,13 +10,14 @@ from fredapi import Fred
 from dotenv import load_dotenv
 import plotly.graph_objects as go
 
+# Load FRED API key
 load_dotenv()
 fred = Fred(api_key=os.getenv("FRED_API_KEY"))
 
 # Ensure output directory exists
 os.makedirs("../../static/dashboard", exist_ok=True)
 
-# Helper function to fetch recessions
+# Create helper function to fetch recessions
 def get_recession_periods(rec_series):
     in_recession = rec_series == 1
     rec_series = rec_series.loc[rec_series.first_valid_index():rec_series.last_valid_index()]
@@ -33,16 +34,17 @@ def get_recession_periods(rec_series):
 
     return zip(starts, ends)
 
+# Create function to make plots
 def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_min=None, y_max=None, hline=None):
     fig = go.Figure()
     fig.add_trace(go.Scatter(
         x=df.index, y=df[y_column],
         mode='lines',
-        line=dict(color='#59539d', width=3), # livelier color: #6e55c3
-        hovertemplate='%{x|%b %Y}<br>%{y:.2f}<extra></extra>'  # <- format to 2 decimal places
+        line=dict(color='#59539d', width=3),
+        hovertemplate='%{x|%b %Y}<br>%{y:.2f}<extra></extra>'
     ))
 
-    # Add shaded recession bands
+    # Shade recession months
     try:
         rec = fred.get_series("USREC", observation_start=df.index.min(), observation_end=df.index.max())
         rec.index = pd.to_datetime(rec.index)
@@ -65,15 +67,15 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             x1=df.index.max(),
             y0=hline,
             y1=hline,
-            line=dict(color='rgba(217, 95, 2, 0.8)', width=1),# pink: rgba(231, 41, 138, 0.8)
+            line=dict(color='rgba(217, 95, 2, 0.8)', width=1),
             layer='above'
             )
 
     fig.update_layout(
         title=title,
-        dragmode=False,  # disables active tools on load
-        title_font=dict(size=15),
-        font=dict(family="Helvetica", size=15),
+        dragmode=False,
+        title_font=dict(size=16),
+        font=dict(family="Helvetica", size=16),
         margin=dict(l=20, r=20, t=40, b=20),
         plot_bgcolor='white',
         paper_bgcolor='white',
@@ -101,7 +103,7 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
         ),
        yaxis_title=dict(
             text=y_label,
-            font=dict(size=15)  # Adjust as needed (default is usually ~16)
+            font=dict(size=16)
         ),
         showlegend=False
     )
@@ -119,9 +121,9 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             "toImageButtonOptions": {
             "format": "png",
             "filename": "dashboard",
-            "height": 800,
+            "height": 675,
             "width": 1200,
-            "scale": 3  # ↑ export resolution multiplier
+            "scale": 3
             }
         }
     )
@@ -137,14 +139,14 @@ u.index = pd.to_datetime(u.index)
 v.index = pd.to_datetime(v.index)
 lf.index = pd.to_datetime(lf.index)
 
-# Extend v's index by 1 month at the end
+# Extend vacancy index by 1 month at the end
 last_date = v.index.max()
 next_date = last_date + pd.offsets.MonthBegin(1)
 
 # Append NaN at the new date
 v_extended = v.reindex(v.index.union([next_date]))
 
-# Now shift values forward by 1 month
+# Now shift vacancy values forward by 1 month
 v_shifted = v_extended.shift(1)
 
 data = pd.concat([u, v_shifted, lf], axis=1, join='inner')
@@ -158,11 +160,11 @@ tightness = v_rate / u_rate
 feru = (u_rate * v_rate).pow(0.5)
 u_gap = u_rate - feru
 
-# Compute recession indicator
+# Compute Michez-rule variables
 # Compute 3-month trailing average of unemployment rate
 u_bar = u_rate.rolling(window=3, min_periods=1).mean()
 
-# Compute unemployment indicator from equation (1)
+# Compute unemployment indicator
 u_hat_exact = u_bar - u_bar.rolling(window=13, min_periods=1).min()
 
 # Round to 2 decimal places (basis point precision)
@@ -171,17 +173,16 @@ u_hat = u_hat_exact.round(2)
 # Compute 3-month trailing average of vacancy rate
 v_bar = v_rate.rolling(window=3, min_periods=1).mean()
 
-# Compute vacancy indicator from equation (2)
+# Compute vacancy indicator
 v_hat_exact = v_bar.rolling(window=13, min_periods=1).max() - v_bar
 
 # Round to 2 decimal places (basis point precision)
 v_hat = v_hat_exact.round(2)
 
-# Compute minimum indicator from equation (3)
+# Compute minimum indicator
 m = pd.DataFrame({'u_hat': u_hat, 'v_hat': v_hat}).min(axis=1)
 
 # Compute recession probability
-# Compute recession probability from equation (6)
 p = (m - 0.29) / (0.81 - 0.29)
 
 # Apply dual threshold: clamp values between 0 and 1
