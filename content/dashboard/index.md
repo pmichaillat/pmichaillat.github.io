@@ -106,9 +106,9 @@ These questions are similar to the questions asked by the BLS to workers in the 
 
 ###### It is very easy to post vacancies on online job boards
 
-A second point relates to online job boards: it is very easy for firms to list job advertisements online. As noted above, our vacancy numbers do not come from online job boards: they are measured by the BLS through JOLTS. So what happens on online job boards is irrelevant.[^1]
+A second point relates to online job boards: it is very easy for firms to list job advertisements online. As noted above, our vacancy numbers do not come from online job boards: they are measured by the BLS through JOLTS. So what happens on online job boards is irrelevant.
 
-[^1]: [Earlier research](https://www.aeaweb.org/articles?id=10.1257/000282804322970779) finds that the internet and online job portals do not have much effect on the job market. So there is no reason to believe that the job market is going to become fundamentally different because of online job portals. Looking at the academic job market, it does not seem that the amount of effort required to recruit colleagues is appreciably diminished by online job portals. Most of the recruiting time is spent on four things: reading applications and papers; interviewing candidates; flying out candidates; debating with colleagues. None of these four tasks are affected by the presence of online job boards.
+In fact, the internet and online job portals [do not seem to have much effect on the job market](https://doi.org/10.1257/000282804322970779). So there is no reason to believe that the job market is going to become fundamentally different because of online job portals. Looking at the academic job market, it does not seem that the amount of effort required to recruit colleagues is appreciably diminished by online job portals. Most of the recruiting time is spent on four things: reading applications and papers; interviewing candidates; flying out candidates; debating with colleagues. None of these four tasks are affected by online job boards.
 
 ###### Firms post more than one vacancy per hire
 
@@ -163,10 +163,6 @@ But this is a misconception: the NAIRU is a entirely different concept than the 
 Another full-employment target used by the US government is the natural rate of unemployment (NRU)—recently rebranded oncyclical rate of unemployment—constructed by the Congressional Budget Office (CBO). The [CBO's NRU is a slow-moving trend](https://perma.cc/NU5V-8ZY4) of the unemployment rate computed by assuming that the labor market was at full employment in 2005 and then incorporating changes in the demographic composition of the labor force over time. 
 
 But, without a theory of full employment, it is impossible to know whether the US labor market really was at full employment in 2005, and by induction, whether the NRU in any year measures full employment. The NRU can therefore not be a satisfactory measure of full employment.
-
-<!-- ### Shouldn't the FERU be fixed, just like the inflation target of 2%? -->
-
-
 
 ---
 
