@@ -121,7 +121,7 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             "toImageButtonOptions": {
             "format": "png",
             "filename": "dashboard",
-            "height": 675,
+            "height": 900,
             "width": 1200,
             "scale": 3
             }
@@ -194,7 +194,7 @@ df = pd.DataFrame({"data": u_rate}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"{last_date} value: {last_value:.2f}%"
+title = f"{last_date}: {last_value:.2f}%"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
@@ -216,7 +216,7 @@ df = pd.DataFrame({"data": v_rate}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"{last_date} value: {last_value:.2f}%"
+title = f"{last_date}: {last_value:.2f}%"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
@@ -238,7 +238,7 @@ df = pd.DataFrame({"data": tightness}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"{last_date} value: {last_value:.2f}"
+title = f"{last_date}: {last_value:.2f}"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
@@ -260,7 +260,7 @@ df = pd.DataFrame({"data": feru}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"{last_date} value: {last_value:.2f}%"
+title = f"{last_date}: {last_value:.2f}%"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
@@ -282,7 +282,7 @@ df = pd.DataFrame({"data": u_gap}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"{last_date} value: {last_value:.2f}pp"
+title = f"{last_date}: {last_value:.2f}pp"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
@@ -304,7 +304,7 @@ df = pd.DataFrame({"data": m}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"{last_date} value: {last_value:.2f}pp"
+title = f"{last_date}: {last_value:.2f}pp"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
@@ -326,7 +326,7 @@ df = pd.DataFrame({"data": p}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"{last_date} value: {last_value:.0f}%"
+title = f"{last_date}: {last_value:.0f}%"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
