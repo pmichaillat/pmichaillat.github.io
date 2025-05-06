@@ -5,6 +5,7 @@ lastmod: 2024-07-05
 url: /c/
 aliases: 
     - /d1/
+    - /d1.pdf
 author: "Pascal Michaillat"
 description: "This template produces an academic presentation with LaTeX and Beamer. The presentation follows typographical best practices and has a minimalist design."
 summary: "This template produces an academic presentation with LaTeX and the Beamer class. The presentation follows typographical best practices and has a minimalist design."

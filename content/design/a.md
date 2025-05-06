@@ -5,6 +5,8 @@ lastmod: 2024-06-29
 url: /a/
 aliases: 
     - /d2/
+    - /d2.pdf
+    - /d2a.pdf
 author: "Pascal Michaillat"
 description: "This template produces an academic paper with LaTeX. The paper follows typographical best practices and has a minimalist design."
 summary: "This template produces an academic paper with LaTeX. The paper follows typographical best practices and has a minimalist design." 

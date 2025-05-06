@@ -4,6 +4,7 @@ date: 2023-10-07
 url: /d/
 aliases: 
     - /d4/
+    - /d4.pdf
 author: "Pascal Michaillat"
 description: "This template produces a set of scientific figures with MATLAB. The figures adhere to best practices for the visual display of quantitative information."
 summary: "This template produces a set of scientific figures with MATLAB. The figures adhere to best practices for the visual display of quantitative information."
