@@ -39,7 +39,7 @@ Labor market tightness is the vacancy rate divided by the unemployment rate. It 
 
 <iframe src="/dashboard/feru.html" style="width: 100%; aspect-ratio: 4 / 3; border: none;"></iframe>
 
-The full-employment rate of unemployment (FERU) is given by the formula $u^\ast = \sqrt{u \times v}$, where $u$ is the unemployment rate and $v$ is the vacancy rate.  The FERU marks full employment and, by construction, labor market efficiency.
+The full-employment rate of unemployment (FERU) is the geometric average of the unemployment and vacancy rates: $u^\ast = \sqrt{u \times v}$, where $u$ is the unemployment rate, $v$ is the vacancy rate, and $u^\ast$ is the FERU. The FERU marks full employment and, by construction, labor market efficiency.
 
 ## US unemployment gap
 
@@ -104,7 +104,13 @@ Specifically, the JOLTS asks firms to report the number of vacancies that they c
 + The job could start within 30 days.
 + The firm is actively recruiting workers from the outside to fill the position.
 
-These questions are similar to the questions asked by the BLS to workers in the CPS in order to assess their labor force status. Workers have to say whether they are willing to work, available to start work immediately, and actively searching for a job. The threshold for reporting a vacancy is that same as the threshold for reporting being unemployed. The firm and the worker have to answer that they have been actively searching on the labor market—for instance through online job portals.
+These questions are similar to the questions asked by the BLS to workers in the CPS in order to assess their labor force status. To be classified as a job seeker, a respondent must confirm that:
+
++ They do not currently  work but are willing to work.
++ They are available to start work immediately.
++ They have been actively searching for a job in the last four weeks. 
+
+The threshold for reporting a vacancy is that same as the threshold for reporting being unemployed. The firm and the worker have to answer that they have been actively searching on the labor market—for instance through online job portals.
 
 ###### "It is very easy to post vacancies on online job boards"
 
@@ -116,7 +122,7 @@ In fact, the internet and online job portals [do not seem to have much effect on
 
 A third supposed issue is that firms post more than one vacancy per hire—which leads some to believe that some vacancies are fake since they do not result in a hire. But this is exactly [how firms behave in matching models](https://youtu.be/45W3coPEObY)! In these models, if a firm wants to recruit one worker this month but knows that a vacancy is only filled with probability 1/3, then the firm will post 3 vacancies to hire one worker in expectation.
 
-The key point is that in matching models, vacancies do not represent actual positions but *recruiting effort*—an effort to try to find workers through the matching process. This is also what vacancies represent in reality, as ZipRecruiter's Julia Pollak explains in the CBS article:
+The key point is that in matching models, vacancies do not represent actual positions but recruiting effort—an effort to try to find workers through the matching process. This is also what vacancies represent in reality, as ZipRecruiter's Julia Pollak explains in the CBS article:
 
 > When you have fewer candidates per opening, you have to be more creative. The high openings figure does partly reflect recruiting intensity, and not actual roles and seats and slots.
 
@@ -124,11 +130,11 @@ The bottom line is firms behave in reality exactly as in the model. The fact tha
 
 ###### "Vacancies are just noise"
 
-Another complaint is that vacancy numbers are just too noisy to be helpful. But, if vacancies were a vacant metric, we would expect them to be just noise. But vacancies and unemployment are strongly negatively correlated. They describe a well-defined Beveridge curve. In fact the Beveridge curve is one of the most robust macro relationships—how would it arise if vacancy data were vacuous? Given that unemployment and vacancies come from two entirely different sources (JOLTS and CPS), it is striking that they comove so closely.
+Another complaint is that vacancy numbers are just too noisy to be helpful. But, if vacancies were a vacant metric, we would expect them to be just noise. But vacancies and unemployment are [strongly negatively correlated](https://www.brookings.edu/interactive/historical-comparison-of-vacancy-and-unemployment-rates-and-full-employment-rate-of-unemployment-feru/?r=1788407&b=1), tracing a hyperbolic Beveridge curve. The Beveridge curve is [one of the most robust macro relationships](https://youtu.be/rA4S9lFiU3o)—how would it arise if vacancy data were vacuous? Given that unemployment and vacancies come from two entirely different sources—a firm survey, JOLTS, and a household survey, CPS—it is striking that they comove so closely.
 
 ###### Why are fake vacancies an issue now?
 
-Firms have been posting vacancies for a century at least, so why do vacancies only appear fake now? The reason is that in 2022–2024, the labor market was exceptionally tight: the tightest it had been since the end of World War 2. Such exceptional tightness means that vacancies are filled at the slowest rate in the postwar period. Indeed, in a tight market, jobseekers find jobs at a high rate, but [firms fill vacancies at a slow rate](https://youtu.be/t58mkFJ2Zlo)—as [predicted by matching models](https://youtu.be/TQ_fAN7rd6Q).
+Firms have been posting vacancies for a century at least, so why do vacancies only appear fake now? The reason is that in 2022–2024, the labor market was exceptionally tight: the tightest it had been since the end of World War 2. Such exceptional tightness means that vacancies are filled at the slowest rate in the postwar period. Indeed, in a tight market, job seekers find jobs at a high rate, but [firms fill vacancies at a slow rate](https://youtu.be/t58mkFJ2Zlo)—as [predicted by matching models](https://youtu.be/TQ_fAN7rd6Q).
 
 Because vacancies are filled at such slow rate, the number of vacancies posted for one actual position has exploded—reinforcing the impression of fake vacancies. But this was expected: this is exactly what matching models predict. Firms post several vacancies per position because they realize that the yield of each vacancy is low.
 
@@ -158,7 +164,7 @@ Similarly, in 2024, the [Council of Economic Advisers described](https://perma.c
 
 These quotes are particularly meaningful because the Joint Economic Committee and Council of Economic Advisers were both created by the Employment Act of 1946 to ensure that the government achieved its full-employment mandate.
 
-But this is a misconception: the NAIRU is a entirely different concept than the FERU. The FERU is the socially efficient unemployment rate. The NAIRU is the unemployment rate at which inflation remains stable. Since there is no guarantee that the unemployment rate prevailing under stable inflation is efficient, there is no guarantee that the NAIRU and FERU are the same.
+But this is a misconception: the NAIRU is an entirely different concept than the FERU. The FERU is the socially efficient unemployment rate. The NAIRU is the unemployment rate at which inflation remains stable. Since there is no guarantee that the unemployment rate prevailing under stable inflation is efficient, there is no guarantee that the NAIRU and FERU are the same.
 
 ### Is the FERU the same as the CBO's NRU?
 
@@ -166,15 +172,24 @@ Another full-employment target used by the US government is the natural rate of 
 
 But, without a theory of full employment, it is impossible to know whether the US labor market really was at full employment in 2005, and by induction, whether the NRU in any year measures full employment. The NRU can therefore not be a satisfactory measure of full employment.
 
+### Why is the FERU not constant?
+
+The FERU is computed as the unemployment rate that maximizes social welfare, or equivalently that minimizes the nonproductive use of labor: both unemployment and recruiting. As it takes one worker to service one job vacancy, the nonproductive use of labor is measured by the number of job seekers and job vacancies. Through the Beveridge curve, the numbers of job seekers and vacancies are inversely related, so it is not possible to reduce the numbers of job seekers and job vacancies at the same time. Instead the social planner faces a tradeoff which is resolved by the FERU.
+
+Because the FERU the describes the socially efficient position of the labor market on the Beverige curve, it is not constant but determined by the location of the Beverige curve. 
+When the Beveridge curve shifts outward, the FERU increases; when the Beveridge cur shifts inward, the FERU decreases. Typical Beverige curve shifts do not affect the FERU much. For instance, between 1951 and 2019, the FERU remained between 3.1% and 5.5%, with an average value of 4.3%. The Beveridge curve did shift in and out during the postwar period, but the shifts were not large enough to produce noteworthy changes in the FERU. 
+
+During the coronavirus pandemic, the Beveridge curve shifted out dramatically. The Beveridge curve then slowly shifted back inward. In 2025, the curve is almost back to its pre-pandemic position, although it remains somewhat further out. The dramatic shift raised the FERU signicantly: from 3.8% in January 2020 to 7.5% in April 2020. As the Beveridge curve normalized in the years after the pandemic, the FERU returned to normal levels. The FERU increase that followed the pandemic is extraordinary: such a large increase had never been recorded before. The pandemic was also the first time in the past century that the FERU crossed 6%.
+
 ---
 
 ## References
 
-+ [u* = √uv: The Full-Employment Rate of Unemployment in the United States](https://pascalmichaillat.org/13/) – *Brookings Papers on Economic Activity*, 2024 – This paper obtains the formula for the FERU. The formula implies that the labor market is at full employment whenever there are as many job seekers as job openings ($u = v$); inefficiently tight when there are fewer job seekers than job openings ($u < v$); and inefficiently slack when there are more job seekers than job openings ($u > v$).
++ [u* = √uv: The Full-Employment Rate of Unemployment in the United States](https://pascalmichaillat.org/13/) (*Brookings Papers on Economic Activity*, 2024) – This paper obtains the formula for the FERU: $u^\ast = \sqrt{uv}$. The formula implies that the labor market is at full employment whenever there are as many job seekers as job vacancies ($u = v$); inefficiently tight when there are fewer job seekers than vacancies ($u < v$); and inefficiently slack when there are more job seekers than vacancies ($u > v$).
 
-+ [Has the Recession Started?](https://pascalmichaillat.org/16/) – *Oxford Bulletin of Economics and Statistics*, 2025 – This paper develops the recession indicator and recession threshold, and computes the recession probability. The Michez rule, based on the recession indicator and threshold, detects recessions faster than the Sahm rule. It is also more robust in that it works between 1929 and 2024, whereas the Sahm rule breaks down before 1960.
++ [Has the Recession Started?](https://pascalmichaillat.org/16/) (*Oxford Bulletin of Economics and Statistics*, 2025) – This paper develops the recession indicator and recession threshold, and computes the recession probability. The Michez rule, based on the recession indicator and threshold, detects recessions faster than the Sahm rule. It is also more robust in that it works between 1929 and 2024, whereas the Sahm rule breaks down before 1960.
 
-## Data sources on FRED
+## Raw data via FRED
 
 + [Number of job seekers, 1948–present](https://fred.stlouisfed.org/series/UNEMPLOY)
 + [Number of labor force participants, 1948–present](https://fred.stlouisfed.org/series/CLF16OV)
