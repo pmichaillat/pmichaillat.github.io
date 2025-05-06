@@ -3,7 +3,8 @@ title: Pascal Michaillat
 theme: PaperMod
 enableInlineShortcodes: true
 enableRobotsTXT: true
-paginate: 20
+pagination:
+  pagerSize: 30
 
 taxonomies:
     tag: tags
