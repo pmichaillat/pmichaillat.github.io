@@ -46,5 +46,4 @@
 .button:hover {
     background: var(--graypurple);
     border: 1px solid var(--purple);
-
 }
