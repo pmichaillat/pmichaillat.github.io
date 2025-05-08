@@ -219,7 +219,7 @@
 .post-content code {
     margin: auto 1px;
     padding: 3px 3px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: var(--line-height);
     background: var(--code-bg);
     border-radius: 2px;
