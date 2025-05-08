@@ -9,8 +9,7 @@ description: "This template produces a personal academic website with Hugo. The 
 summary: "This template produces a personal academic website with Hugo. The website has a minimalist design based on the PaperMod theme and is hosted on GitHub Pages." 
 cover:
     image: "/bs.png"
-    alt: "Webpage produced with template"
-    relative: false
+    alt: "Webpage produced with template
 editPost:
     URL: "https://github.com/pmichaillat/hugo-website"
     Text: "GitHub repository"

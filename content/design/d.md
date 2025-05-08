@@ -11,7 +11,6 @@ summary: "This template produces a set of scientific figures with MATLAB. The fi
 cover:
     image: "/ds.png"
     alt: "Figure produced with template"
-    relative: false
 editPost:
     URL: "https://github.com/pmichaillat/matlab-figures"
     Text: "GitHub repository"

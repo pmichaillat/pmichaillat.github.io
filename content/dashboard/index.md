@@ -5,8 +5,7 @@ author: ["Pascal Michaillat","Emmanuel Saez"]
 description: "A dashboard with real-time charts on US unemployment rate, vacancy rate, labor market tightness, FERU, unemployment gap, and recession probability."
 cover:
     image: "/dashboard.png"
-    alt: "US recession probability from dual-threshold Michez rule"
-    relative: false
+    alt: "US recession probability from dual-threshold Michez rule
 editPost:
     URL: "https://github.com/pmichaillat/pmichaillat.github.io/tree/main/content/dashboard"
     Text: "Source code"

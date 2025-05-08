@@ -11,8 +11,7 @@ description: "This template produces an academic paper with LaTeX. The paper fol
 summary: "This template produces an academic paper with LaTeX. The paper follows typographical best practices and has a minimalist design." 
 cover:
     image: "/as.png"
-    alt: "Paper page produced with template"
-    relative: false
+    alt: "Paper page produced with template
 editPost:
     URL: "https://github.com/pmichaillat/latex-paper"
     Text: "GitHub repository"

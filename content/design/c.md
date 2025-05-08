@@ -11,7 +11,6 @@ summary: "This template produces an academic presentation with LaTeX and the Bea
 cover:
     image: "/cs.png"
     alt: "Presentation slide produced with template"
-    relative: false
 editPost:
     URL: "https://github.com/pmichaillat/latex-presentation"
     Text: "GitHub repository"

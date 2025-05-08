@@ -10,7 +10,6 @@ summary: "This collection of commands makes it easy to write mathematical expres
 cover:
     image: "/es.png"
     alt: "Mathematical expressions produced with commands"
-    relative: false
 editPost:
     URL: "https://github.com/pmichaillat/latex-math"
     Text: "GitHub repository"
