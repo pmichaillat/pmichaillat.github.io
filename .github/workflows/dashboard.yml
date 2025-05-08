@@ -2,8 +2,8 @@
 name: Fetch FRED data and update dashboard graphs
 
 on:
-  push:
-    branches: [ main ]
+  # push:
+  #   branches: [ main ]
   schedule:
     - cron: '30 14 * * *'  # Daily at 14:30 UTC (9:30 EST or 10:30 EDT)
   workflow_dispatch:
