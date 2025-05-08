@@ -17,7 +17,6 @@ summary: "This graduate course covers basic mathematical methods for macroeconom
 cover:
     image: "/xs.png"
     alt: "Phase diagram depicting a saddle path"
-    relative: false
 editPost:
     URL: "https://github.com/pmichaillat/math-for-macro"
     Text: "Source files"

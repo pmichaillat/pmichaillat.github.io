@@ -56,7 +56,6 @@ summary: "This course presents a matching model of unemployment. It uses the mod
 cover:
     image: "/vs.png"
     alt: "Rationing and frictional unemployment in the United States, 1964–2009"
-    relative: false
 editPost:
     URL: "https://github.com/pmichaillat/unemployment"
     Text: "Course portal – Winter 2025"

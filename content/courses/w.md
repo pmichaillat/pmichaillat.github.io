@@ -38,7 +38,6 @@ summary: "This graduate course presents various matching models of economic slac
 cover:
     image: "/ws.png"
     alt: "Optimal monetary policy and optimal government spending in the dynamic model of slack"
-    relative: false
 editPost:
     URL: "https://github.com/pmichaillat/economic-slack"
     Text: "Course portal – Winter 2024"

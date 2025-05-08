@@ -10,8 +10,7 @@ description: "This minicourse describes business cycles, develops a matching mod
 summary: "This minicourse presents basic facts about business cycles. It then develops a matching model to explain these business-cycle facts. Finally, it explains how monetary policy and government spending should be designed to tame business cycles." 
 cover:
     image: "/zs.png"
-    alt: "Unemployment and GDP over the business cycle"
-    relative: false
+    alt: "Slack and GDP over the business cycle"
 editPost:
     URL: "https://github.com/pmichaillat/business-cycles/"
     Text: "Source files"

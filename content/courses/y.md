@@ -26,7 +26,6 @@ summary: "This undergraduate course introduces macroeconomic concepts—such as 
 cover:
     image: "/ys.png"
     alt: "Comparative statics in a matching model of unemployment"
-    relative: false
 editPost:
     URL: "https://github.com/pmichaillat/intermediate-macro"
     Text: "Source files"
