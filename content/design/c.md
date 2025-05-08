@@ -1,7 +1,6 @@
 ---
 title: "Minimalist LaTeX Template for Academic Presentations" 
 date: 2024-06-28
-lastmod: 2024-07-05
 url: /c/
 aliases: 
     - /d1/

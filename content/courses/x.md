@@ -1,7 +1,6 @@
 ---
 title: "Mathematics for Macroeconomics" 
 date: 2013-10-01
-lastmod: 2025-05-03
 url: /x/
 aliases:
     - /c3/

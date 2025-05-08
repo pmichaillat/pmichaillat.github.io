@@ -1,7 +1,6 @@
 ---
 title: "Business Cycles and How to Tame Them" 
 date: 2023-12-08
-lastmod: 2025-05-03
 url: /z/
 aliases:
     - /c5/

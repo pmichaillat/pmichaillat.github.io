@@ -1,7 +1,6 @@
 ---
 title: "Intermediate Macroeconomics" 
 date: 2019-01-01
-lastmod: 2025-05-03
 url: /y/
 aliases:
     - /t2.html

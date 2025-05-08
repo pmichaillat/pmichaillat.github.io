@@ -1,7 +1,6 @@
 ---
 title: "Economic Slack" 
 date: 2024-01-15
-lastmod: 2025-05-03
 url: /w/
 aliases: 
     - /b1/

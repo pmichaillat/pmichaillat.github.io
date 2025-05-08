@@ -1,7 +1,6 @@
 ---
 title: "LaTeX Commands to Write Math" 
 date: 2024-06-26
-lastmod: 2024-07-10
 url: /e/
 aliases: 
     - /d3/
