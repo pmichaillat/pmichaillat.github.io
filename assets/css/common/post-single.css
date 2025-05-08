@@ -68,8 +68,8 @@
 }
 
 .post-content h6 {
-    font-size: 1.05rem;    
-    font-weight: var(--semibold);
+    font-size: var(--content-size);
+    color: var(--secondary);
 }
 
 
