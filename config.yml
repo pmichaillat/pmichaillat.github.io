@@ -12,16 +12,16 @@ taxonomies:
 menu:
     main:
         - name: Dashboard
-          url: /dashboard/
+          url: dashboard/
           weight: 5
         - name: Papers
-          url: /papers/
+          url: papers/
           weight: 2
         - name: Courses
-          url: /courses/
+          url: courses/
           weight: 3
         - name: Design
-          url: /design/
+          url: design/
           weight: 4        
         # - name: Tags
         #   url: /tags/
@@ -79,7 +79,7 @@ params:
 
     socialIcons:
         - name: CV
-          url: /cv.pdf
+          url: cv.pdf
         - name: Email
           url: mailto:pascal.michaillat@gmail.com
         - name: Location

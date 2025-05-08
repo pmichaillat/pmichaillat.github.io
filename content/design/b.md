@@ -1,7 +1,6 @@
 ---
 title: "Minimalist Hugo Template for Academic Websites" 
-date: 2024-07-16
-lastmod: 2025-05-04
+date: 2025-05-08
 url: /b/
 aliases: 
     - /d5/
@@ -44,24 +43,24 @@ The design has been customized for academic websites. The first goal was to obta
 + Color scheme, font, spacing, and general appearance are streamlined and as minimalist as possible.
 + Tables, code blocks, quote blocks, itemized and numbered lists are formatted to fit seamlessly with the rest of the website.
 
-
 ---
 
 ## Installation
 
 ### On your local machine
 
-+ Clone the repository to your local machine
-+ Install [Hugo](https://gohugo.io/installation/). On a Mac, this is easily done with [Homebrew](https://brew.sh). Simply run the following command in the terminal: `brew install hugo`.
-+ Since the website is hosted on GitHub Pages, it is convenient to install [GitHub Desktop](https://desktop.github.com). The website can conveniently be updated from your local machine via GitHub Desktop without going to GitHub.
++ Since the website is hosted on GitHub Pages, it is convenient to install [GitHub Desktop](https://desktop.github.com) first. Via GitHub Desktop, you will be able to install the website on your local machine and update the website from your local machine—without ever going to GitHub.
++ Next, install [Hugo](https://gohugo.io/installation/). On a Mac, this is easily done with [Homebrew](https://brew.sh). Simply run the following command in the terminal: `brew install hugo`.
++ If you already have Hugo on your machine, make sure to install the latest version. You can verify the installed version with: `hugo version`. To update Hugo if it is outdated on your local machine, run: `brew upgrade hugo`. 
++ Then, clone the repository to your local machine using GitHub Desktop or by downloading the ZIP file.
 + Update the `baseURL` parameter in `config.yml` with the website URL that you plan to use.
 
 ### On your GitHub account
 
 + The first time that you push your repository to GitHub, you need to allow GitHub Actions and GitHub Pages so the website can be built and deployed to GitHub Pages.
-+ The first step is to ask GitHub to [publish the website](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow) with a GitHub Action.  GitHub offers a ready-made action to publish a Hugo website, called `Deploy Hugo site to Pages`. This action must be enabled in the [Pages Settings](https://github.com/pmichaillat/hugo-website/settings/pages) of your GitHub repository. You can view the workflow triggered by the action in the `.github/workflows/hugo.yml` file.
-+ Once the GitHub Actions are enabled, GitHub will build and publish the website as soon as the repository is updated. 
-+ If you would like to update the GitHub action (for instance because it became outdated and fails to deploy the site), you can find the [most recent action on GitHub]( https://github.com/actions/starter-workflows/blob/main/pages/hugo.yml). You can place this file directly in the `.github/workflows` folder to replace the old `hugo.yml` file.
++ The first step is to ask GitHub to [publish the website](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow) with a GitHub Actions workflow.  GitHub offers a ready-made workflow to publish a Hugo website, called `Deploy Hugo site to Pages`. This workflow must be enabled in the [Pages Settings](https://github.com/pmichaillat/hugo-website/settings/pages) of your GitHub repository. You can view the workflow in the `.github/workflows/hugo.yml` file.
++ Once GitHub Actions are enabled, GitHub will build and publish the website as soon as the repository is updated. 
++ If you would like to update the GitHub Actions workflow (for instance because it became outdated and fails to deploy the site), you can find the [most recent workflow on GitHub]( https://github.com/actions/starter-workflows/blob/main/pages/hugo.yml). You can place this file directly in the `.github/workflows` folder to replace the old `hugo.yml` file.
 
 ---
 
@@ -69,11 +68,25 @@ The design has been customized for academic websites. The first goal was to obta
 
 ### Local development
 
-To check that everything works, to experiment with the code, and to slowly develop your website, start by rebuilding the website locally. In the terminal, navigate to the website directory via `cd` and run `hugo server` from there. The command builds the website with Hugo and starts a local web server. The website is available at http://localhost:1313 in any web browser. Hugo automatically rebuilds the site and refreshes the webpage in the browser as you change the content and template files in the repository. This allows you to see changes instantly as you are developing the website. 
+To check that everything works and to slowly develop your website, start by rebuilding the website locally. In the terminal, navigate to the website directory via `cd` and run:
+
+```console
+hugo server
+```
+
+The command builds the website with Hugo and starts a local web server. The website is available at [http://localhost:1313](http://localhost:1313) in any web browser. 
+
+Hugo automatically rebuilds the site and refreshes the webpage in the browser as you change the content and template files in the repository. This allows you to see changes instantly as you are developing the website. 
 
 ### Online deployment
 
-Once your website is ready to be made public, commit the changes and push them to the GitHub repository online via GitHub Desktop. Then, the GitHub Actions workflow will build the website with Hugo and deploy it to GitHub Pages. The workflow used by GitHub Actions is in the `hugo.yml` file stored in the `.github/workflows` folder. It usually takes a few minutes for the website to be deployed and go live. Using Hugo, the workflow will convert content files into HTML pages, handles static assets, generates URLs and organizes pages, and finally create a static website. The [current version of the website](https://pascalmichaillat.org/hugo-website/) is built with Hugo v0.128.0.
+Once your website is ready to be made public, commit the changes to the content and template files and push them to your GitHub repository via GitHub Desktop. 
+
+Then, the GitHub Actions workflow will build the website with Hugo and deploy it to GitHub Pages. The workflow used by GitHub Actions is in the `hugo.yml` file stored in the `.github/workflows` folder. 
+
+It usually takes a few minutes for the website to be deployed and go live. Using Hugo, the workflow will convert content files into HTML pages, handles static assets, generates URLs and organizes pages, and finally create a static website. 
+
+The current version of the website is built with Hugo v0.147.2 via GitHub Actions.
 
 ---
 
@@ -243,11 +256,18 @@ Similarly, if your GitHub profile is located at `https://github.com/user`, link 
   url: https://github.com/user
 ```
 
-Finally, if your email is `user@gmail.com`, you can link to it by adding the following snippet:
+If your email is `user@gmail.com`, you can link to it by adding the following snippet:
 
 ```yml
 - name: Email
   url: mailto:user@gmail.com
+```
+
+Finally, if you have a Bluesky account `@user.bsky.social`, you can link to it by adding the following snippet:
+
+```yml
+- name: Bluesky
+  url: https://bsky.app/profile/user.bsky.social
 ```
 
 ---
@@ -380,14 +400,6 @@ aliases:
     - /courses/course2/slides3.pdf
     - /courses/course2/slides2.pdf
     - /courses/course2/notes3.pdf
-    - /courses/course2/notes4.pdf
-    - /courses/course2/ps3.pdf
-    - /courses/course2/ps4.pdf
-    - /courses/course1/quiz1.pdf
-    - /courses/course1/quiz2.pdf
-    - /courses/course2/quiz3.pdf
-    - /courses/course2/quiz4.pdf
-    - /courses/course1/ps1.pdf
 ```
 
 Hugo will then automatically generate the necessary redirect HTML pages during the build process. These HTML pages will be stored in the `public` folder. When a visitor navigates to any of the URLs listed in the aliases (such as `baseURL/courses/course2/slides4.pdf`), they will be redirected to the page where the alias is defined (`baseURL/courses/course1/`). 
@@ -400,7 +412,7 @@ This method is useful to manage redirects and ensure a seamless user experience 
 
 In your local website repository, you will find a `public` folder. The folder is created when you run `hugo server` or `hugo`. The `hugo` commands process your content, templates, and other project files, and create a fully generated static website files that is ready to be deployed locally or online. The resulting output is placed in the `public` folder by default.
 
-The `public` folder is not sent to the GitHub repository (it is in the `.gitignore` file) because it is not needed there. During the GitHub Actions workflow, a fresh `public` folder is generated at build time by Hugo. That folder is then used ephemerally in the GitHub Actions runner. (As a result, there is no `public` folder at all in the GitHub repository.)
+The `public` folder is not sent to the GitHub repository because it is not needed there (it is in the `.gitignore` file). During the GitHub Actions workflow, a fresh `public` folder is generated at build time by Hugo. That folder is then used ephemerally in the GitHub Actions runner. As a result, there is no `public` folder at all in the GitHub repository.
 
 ---
 
