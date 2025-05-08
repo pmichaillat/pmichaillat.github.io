@@ -50,27 +50,26 @@
 }
 
 .post-content h3 {
-    font-size: 1.15rem;    
+    font-size: var(--content-size);    
 }
 
 .post-content h4 {
     font-size: 0.95rem;    
     font-weight: var(--semibold);
     text-transform: uppercase;
-    color: var(--gray);
+    color: var(--tertiary);
 }
 
 .post-content h5 {
     font-size: 0.85rem;
     font-weight: var(--semibold);
     text-transform: uppercase;
-    color: var(--gray);
+    color: var(--tertiary);
 }
 
 .post-content h6 {
-    font-size: 1.05rem;
+    font-size: 1.05rem;    
     font-weight: var(--semibold);
-    color: var(--secondary);
 }
 
 
@@ -168,7 +167,7 @@
     font-size: 0.9rem;
     font-weight: var(--semibold);
     text-transform: uppercase;
-    color: var(--gray);
+    color: var(--tertiary);
     border-bottom: 2px solid var(--border);
 }
 
@@ -366,7 +365,6 @@ h4:hover .anchor,
 h5:hover .anchor,
 h6:hover .anchor {
     display: inline-flex;
-/*    color: var(--purple);*/
     margin-inline-start: 10px;
     font-weight: 700;
     user-select: none;
