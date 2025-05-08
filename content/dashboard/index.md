@@ -94,7 +94,7 @@ Yet, revisions to labor market data are generally minimal, especially compared t
 
 Vacancy data have recently been criticized for being polluted by ghost or fake vacancies. These vacancies do not actually represent an open position, and will not lead to a new hire. A [recent article by CBS News](https://perma.cc/JUR9-W4AA) explains that fake job listings are a growing problem in the labor market. [Employ America](https://perma.cc/XZ2B-LTNH) has gone one step further and argued that vacancy numbers are vacuous in general and should never used by policymakers. Let's go over the various criticisms raised by such pieces and address them.
 
-###### "Vacancies are not well measured"
+###### Aren't vacancies poorly measured?
 
 A first claim is that vacancy numbers are polluted by ghost vacancies. But vacancies are measured by the BLS, just like all other labor market statistics; they are not measured from online job postings. 
 
@@ -112,13 +112,13 @@ These questions are similar to the questions asked by the BLS to workers in the 
 
 The threshold for reporting a vacancy is that same as the threshold for reporting being unemployed. The firm and the worker have to answer that they have been actively searching on the labor market—for instance through online job portals.
 
-###### "It is very easy to post vacancies on online job boards"
+###### Isn't it exceedingly easy to post vacancies on online job boards?
 
 A second point relates to online job boards: it is very easy for firms to list job advertisements online, so the number of online job postings might not be meaningful. As noted above, our vacancy numbers do not come from online job boards: they are measured by the BLS through JOLTS. So what happens on online job boards is irrelevant.
 
 In fact, the internet and online job portals [do not seem to have much effect on the job market](https://doi.org/10.1257/000282804322970779). So there is no reason to believe that the job market is going to become fundamentally different because of online job portals. Looking at the academic job market, it does not seem that the amount of effort required to recruit colleagues is appreciably diminished by online job portals. Most of the recruiting time is spent on four things: reading applications and papers; interviewing candidates; flying out candidates; debating with colleagues. None of these four tasks are affected by online job boards.
 
-###### "Firms post more than one vacancy per hire"
+###### Don't firms post more than one vacancy per hire?
 
 A third supposed issue is that firms post more than one vacancy per hire—which leads some to believe that some vacancies are fake since they do not result in a hire. But this is exactly [how firms behave in matching models](https://youtu.be/45W3coPEObY)! In these models, if a firm wants to recruit one worker this month but knows that a vacancy is only filled with probability 1/3, then the firm will post 3 vacancies to hire one worker in expectation.
 
@@ -128,7 +128,7 @@ The key point is that in matching models, vacancies do not represent actual posi
 
 The bottom line is firms behave in reality exactly as in the model. The fact that firms post several vacancies per position does not mean that we should discount vacancy data. This behavior is what matching models predict.
 
-###### "Vacancies are just noise"
+###### Aren't vacancies just noise?
 
 Another complaint is that vacancy numbers are just too noisy to be helpful. But, if vacancies were a vacant metric, we would expect them to be just noise. But vacancies and unemployment are [strongly negatively correlated](https://www.brookings.edu/interactive/historical-comparison-of-vacancy-and-unemployment-rates-and-full-employment-rate-of-unemployment-feru/?r=1788407&b=1), tracing a hyperbolic Beveridge curve. The Beveridge curve is [one of the most robust macro relationships](https://youtu.be/rA4S9lFiU3o)—how would it arise if vacancy data were vacuous? Given that unemployment and vacancies come from two entirely different sources—a firm survey, JOLTS, and a household survey, CPS—it is striking that they comove so closely.
 
@@ -150,7 +150,7 @@ The issue is that these texts do not explain what full employment is. The Humphr
 
 > I do not think we should set a target.
 
-But the Employment Act and Full Employment and Balanced Growth Act clearly state that achieving full employment is a way to maximize social welfare. So we translate full employment as social efficiency. Accordingly, we compute the FERU as the unemployment rate that achieves a socially efficient allocation of labor. This allocation maximizes social output by minimizing the uses of labor that are socially unproductive: both jobseeking and recruiting. The result of the computation is the formula $u^\ast = \sqrt{uv}$.
+But the Employment Act and Full Employment and Balanced Growth Act clearly state that achieving full employment is a way to maximize social welfare. So we translate full employment as social efficiency. Accordingly, we compute the FERU as the unemployment rate that achieves a socially efficient allocation of labor. This allocation maximizes social output by minimizing the uses of labor that are socially unproductive: both jobseeking and recruiting. The computation yields the formula $u^\ast = \sqrt{uv}$.
 
 ### Is the FERU the same as the NAIRU?
 
