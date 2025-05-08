@@ -37,7 +37,7 @@ description: "This graduate course presents matching models of economic slack an
 summary: "This graduate course presents various matching models of economic slack. It uses them to study business-cycle fluctuations; Keynesian, classical, and frictional unemployment; optimal monetary policy and the zero lower bound; and optimal government spending." 
 cover:
     image: "/ws.png"
-    alt: "Optimal monetary policy and optimal government spending in the dynamic model of slack"
+    alt: "Optimal monetary policy and government spending in the model of slack"
 editPost:
     URL: "https://github.com/pmichaillat/economic-slack"
     Text: "Course portal – Winter 2024"
