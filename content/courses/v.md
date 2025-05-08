@@ -54,7 +54,7 @@ author: "Pascal Michaillat"
 description: "This course presents a matching model of unemployment and uses it to study unemployment fluctuations, efficient unemployment, and labor market policies." 
 summary: "This course presents a matching model of unemployment. It uses the model to study unemployment fluctuations; job rationing; efficient unemployment and unemployment gap; and labor market policies such as minimum wage, public employment, and unemployment insurance." 
 cover:
-    image: "/vs.png"
+    image: "/v.png"
     alt: "Rationing and frictional unemployment in the United States, 1964–2009"
 editPost:
     URL: "https://github.com/pmichaillat/unemployment"

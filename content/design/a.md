@@ -10,7 +10,7 @@ author: "Pascal Michaillat"
 description: "This template produces an academic paper with LaTeX. The paper follows typographical best practices and has a minimalist design."
 summary: "This template produces an academic paper with LaTeX. The paper follows typographical best practices and has a minimalist design." 
 cover:
-    image: "/as.png"
+    image: "/a.png"
     alt: "Paper page produced with template"
 editPost:
     URL: "https://github.com/pmichaillat/latex-paper"

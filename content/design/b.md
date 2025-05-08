@@ -8,7 +8,7 @@ author: "Pascal Michaillat"
 description: "This template produces a personal academic website with Hugo. The website has a minimalist design and is hosted on GitHub Pages."
 summary: "This template produces a personal academic website with Hugo. The website has a minimalist design based on the PaperMod theme and is hosted on GitHub Pages." 
 cover:
-    image: "/bs.png"
+    image: "/b.png"
     alt: "Webpage produced with template"
 editPost:
     URL: "https://github.com/pmichaillat/hugo-website"

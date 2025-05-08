@@ -9,7 +9,7 @@ author: "Pascal Michaillat"
 description: "This template produces a set of scientific figures with MATLAB. The figures adhere to best practices for the visual display of quantitative information."
 summary: "This template produces a set of scientific figures with MATLAB. The figures adhere to best practices for the visual display of quantitative information."
 cover:
-    image: "/ds.png"
+    image: "/d.png"
     alt: "Figure produced with template"
 editPost:
     URL: "https://github.com/pmichaillat/matlab-figures"

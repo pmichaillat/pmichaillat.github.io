@@ -8,7 +8,7 @@ author: "Pascal Michaillat"
 description: "This collection of commands makes it easy to write mathematical expressions with LaTeX while automatically respecting the rules of mathematical typography." 
 summary: "This collection of commands makes it easy to write mathematical expressions with LaTeX while automatically respecting the rules of mathematical typography." 
 cover:
-    image: "/es.png"
+    image: "/e.png"
     alt: "Mathematical expressions produced with commands"
 editPost:
     URL: "https://github.com/pmichaillat/latex-math"
