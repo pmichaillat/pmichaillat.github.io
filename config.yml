@@ -64,17 +64,17 @@ params:
           imageHeight: 160
           buttons:
             - name: Papers
-              url: /papers/
+              url: papers/
             - name: Courses
-              url: /courses/
+              url: courses/
             - name: Design
-              url: /design/
+              url: design/
             - name: Dashboard
-              url: /dashboard/  
+              url: dashboard/  
             - name: Tags
-              url: /tags/
+              url: tags/
             - name: Archive
-              url: /archive/
+              url: archive/
 
 
     socialIcons:
@@ -83,9 +83,9 @@ params:
         - name: Email
           url: mailto:pascal.michaillat@gmail.com
         - name: Location
-          url: /location/
+          url: location/
         - name: Office Hours
-          url: /officehours/
+          url: officehours/
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
         - name: YouTube
@@ -100,7 +100,7 @@ params:
         hiddenInSingle: true
     label:
       text: "Pascal Michaillat"
-      icon: /favicon.ico
+      icon: favicon.ico
       iconHeight: 18
 
 markup:
