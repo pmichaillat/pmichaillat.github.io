@@ -109,7 +109,7 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
     )
 
     fig.write_html(
-        f"../../static/dashboard/{filename}",
+        f"../../static/dashboard/{filename}.html",
         include_plotlyjs='cdn',
         full_html=False,
         config={
@@ -120,7 +120,7 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             ],
             "toImageButtonOptions": {
             "format": "png",
-            "filename": "dashboard",
+            "filename": filename,
             "height": 900,
             "width": 1200,
             "scale": 3
@@ -201,10 +201,10 @@ x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.05
 
-make_plot(df, "data", title, "unemployment.html", "Unemployment rate (%)",x_min, x_max, y_min, y_max)
+make_plot(df, "data", title, "unemployment_rate", "Unemployment rate (%)",x_min, x_max, y_min, y_max)
 
 # Save data
-csv_path = "../../static/dashboard/unemployment.csv"
+csv_path = "../../static/dashboard/unemployment_rate.csv"
 df_out = df.copy()
 df_out.columns = ["Unemployment rate (%)"]
 df_out.index.name = "Date"
@@ -223,10 +223,10 @@ x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.05
 
-make_plot(df, "data", title, "vacancy.html", "Vacancy rate (%)", x_min, x_max, y_min, y_max)
+make_plot(df, "data", title, "vacancy_rate", "Vacancy rate (%)", x_min, x_max, y_min, y_max)
 
 # Save data
-csv_path = "../../static/dashboard/vacancy.csv"
+csv_path = "../../static/dashboard/vacancy_rate.csv"
 df_out = df.copy()
 df_out.columns = ["Vacancy rate (%)"]
 df_out.index.name = "Date"
@@ -245,10 +245,10 @@ x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.05
 
-make_plot(df, "data", title, "tightness.html", "Labor market tightness", x_min, x_max, y_min, y_max, hline=1)
+make_plot(df, "data", title, "labor_market_tightness", "Labor market tightness", x_min, x_max, y_min, y_max, hline=1)
 
 # Save data
-csv_path = "../../static/dashboard/tightness.csv"
+csv_path = "../../static/dashboard/labor_market_tightness.csv"
 df_out = df.copy()
 df_out.columns = ["Labor market tightness"]
 df_out.index.name = "Date"
@@ -267,7 +267,7 @@ x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.05
 
-make_plot(df, "data", title, "feru.html", "FERU (%)", x_min, x_max, y_min, y_max)
+make_plot(df, "data", title, "feru", "FERU (%)", x_min, x_max, y_min, y_max)
 
 # Save data
 csv_path = "../../static/dashboard/feru.csv"
@@ -289,10 +289,10 @@ x_max = df.index.max()
 y_min = min(0, df["data"].min() * 1.05)
 y_max = df["data"].max() * 1.05
 
-make_plot(df, "data", title, "gap.html", "Unemployment gap (pp)", x_min, x_max, y_min, y_max, hline=0)
+make_plot(df, "data", title, "unemployment_gap", "Unemployment gap (pp)", x_min, x_max, y_min, y_max, hline=0)
 
 # Save data
-csv_path = "../../static/dashboard/gap.csv"
+csv_path = "../../static/dashboard/unemployment_gap.csv"
 df_out = df.copy()
 df_out.columns = ["Unemployment gap (pp)"]
 df_out.index.name = "Date"
@@ -311,10 +311,10 @@ x_max = df.index.max()
 y_min = 0
 y_max = df["data"].max() * 1.05
 
-make_plot(df, "data", title, "indicator.html", "Recession indicator (pp)", x_min, x_max, y_min, y_max, hline=0.29)
+make_plot(df, "data", title, "recession_indicator", "Recession indicator (pp)", x_min, x_max, y_min, y_max, hline=0.29)
 
 # Save data
-csv_path = "../../static/dashboard/indicator.csv"
+csv_path = "../../static/dashboard/recession_indicator.csv"
 df_out = df.copy()
 df_out.columns = ["Recession indicator (pp)"]
 df_out.index.name = "Date"
@@ -333,10 +333,10 @@ x_max = df.index.max()
 y_min = 0
 y_max = 100.5
 
-make_plot(df, "data", title, "probability.html", "Recession probability", x_min, x_max, y_min, y_max)
+make_plot(df, "data", title, "recession_probability", "Recession probability", x_min, x_max, y_min, y_max)
 
 # Save data
-csv_path = "../../static/dashboard/probability.csv"
+csv_path = "../../static/dashboard/recession_probability.csv"
 df_out = df.copy()
 df_out.columns = ["Recession probability (%)"]
 df_out.index.name = "Date"
