@@ -51,7 +51,9 @@ The design has been customized for academic websites. The first goal was to obta
 + Since the website is hosted on GitHub Pages, it is convenient to install [GitHub Desktop](https://desktop.github.com) first. Via GitHub Desktop, you will be able to install the website on your local machine and update the website from your local machine—without ever going to GitHub.
 + Next, install [Hugo](https://gohugo.io/installation/). On a Mac, this is easily done with [Homebrew](https://brew.sh). Simply run the following command in the terminal: `brew install hugo`.
 + If you already have Hugo on your machine, make sure to install the latest version. You can verify the installed version with: `hugo version`. To update Hugo if it is outdated on your local machine, run: `brew upgrade hugo`. 
-+ Then, clone the repository to your local machine using GitHub Desktop or by downloading the ZIP file.
++ Then, clone the template repository to your local machine. This can be done in two steps:
+  1. Click "Use this template" and then "Create a new repository" at the top of the repository [on GitHub](https://github.com/pmichaillat/hugo-website).
+  2. Once the new repository is created on your GitHub account, open GitHub Desktop and click "File" and then "Clone repository". Find the newly created repository under the "GitHub.com" tab and clone it.
 + Update the `baseURL` parameter in `config.yml` with the website URL that you plan to use.
 
 ### On your GitHub account
@@ -315,7 +317,7 @@ A cover image for the page is specified at the top of the `index.md` file in the
 cover:
     image: "paper1.png"
     alt: "Some Uses For Olive Oil"
-    relative: false
+    relative: true
  ``` 
 
 The cover image is `paper1.png`, found in the same folder as the `index.md` file. The image is in PNG format, which is the recommended format for cover images.
