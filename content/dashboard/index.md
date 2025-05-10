@@ -1,6 +1,6 @@
 ---
 title: "Automated Business Cycle Dashboard"
-tags: ["business cycles", "FERU", "job vacancies", "labor market tightness", "Michez rule", "recession indicator", "recession probability", "recessions", "unemployment", "unemployment gap"]
+tags: ["business cycles", "FERU", "job vacancies", "labor market tightness", "Michez rule", "recession indicator", "recession probability", "unemployment", "unemployment gap"]
 author: ["Pascal Michaillat","Emmanuel Saez"]
 description: "A dashboard with real-time charts on US unemployment rate, vacancy rate, labor market tightness, FERU, unemployment gap, and recession probability."
 cover:
