@@ -31,7 +31,6 @@ aliases:
     - /w125.html
     - /w114.html
     - /tags/stabilization-policy/
-tags: ["Beveridge curve", "business cycles", "economic slack", "fiscal policy",  "frictional unemployment", "inequality", "Keynesian unemployment", "Kuhnian model", "matching function", "matching model", "monetary policy", "unemployment gap"]
 author: "Pascal Michaillat"
 description: "This graduate course presents matching models of economic slack and uses them to study business-cycle fluctuations, monetary policy, and fiscal policy." 
 summary: "This graduate course presents various matching models of economic slack. It uses them to study business-cycle fluctuations; Keynesian, classical, and frictional unemployment; optimal monetary policy and the zero lower bound; and optimal government spending." 
