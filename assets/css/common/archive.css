@@ -1,0 +1,50 @@
+.archive-posts {
+    width: 100%;
+}
+
+.archive-year {
+    margin-top: 20px;
+}
+
+.archive-year-header {
+    font-size: 1.4rem;
+    font-weight: var(--semibold);
+}
+
+.archive-year:not(:last-of-type) {
+    border-bottom: 1.5px solid var(--archive);
+}
+
+.archive-month {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.archive-month-header {
+    margin: var(--home-size) 0;
+    width: 150px;
+    font-weight: var(--semibold);
+    font-size: var(--home-size);
+}
+
+.archive-entry {
+    position: relative;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.archive-entry-title {
+    margin: 5px 0;
+    font-size: var(--home-size);
+    font-weight: normal;
+}
+
+.archive-entry:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--purple);
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 2px;
+    color: currentColor;
+}
+
