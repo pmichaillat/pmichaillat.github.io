@@ -313,12 +313,12 @@
 .anchor {
     display: inline-flex;
     opacity: 0;
-    transition: opacity 0.1s ease;
+    transition: opacity 0.15s ease;
     margin-inline-start: 10px;
     font-weight: 700;
     user-select: none;
-    color: var(--tertiary); /* Default color */
-    pointer-events: none; /* Prevents accidental interaction while hidden */
+    color: var(--tertiary);
+    pointer-events: none;
 }
 
 h1:hover .anchor,

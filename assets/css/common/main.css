@@ -53,7 +53,7 @@ pre {
   cursor: pointer;
   opacity: 0;
   color: var(--tertiary);
-  transition: opacity 0.1s ease;
+  transition: opacity 0.15s ease;
 }
 
 /* When users activate the code block, show the icon */
