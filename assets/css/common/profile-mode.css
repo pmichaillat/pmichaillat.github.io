@@ -1,7 +1,7 @@
 .buttons,
 .main .profile {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
 }
 .main .profile {
     align-items: center;
@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
+    gap: 10px;
 }
 
 .profile .profile_inner h1 {
@@ -23,7 +23,7 @@
 
 .profile img {
     border-radius: 50%;
-    border: 1px solid var(--border);
+    border: 1px solid var(--border);    
 }
 
 .buttons {

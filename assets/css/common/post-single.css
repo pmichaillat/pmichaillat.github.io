@@ -15,15 +15,8 @@
 
 .post-meta,
 .breadcrumbs {
-    color: var(--secondary);
+    color: var(--content);
     font-size: var(--meta-size);
-}
-
-.post-meta .i18n_list li {
-    display: inline-flex;
-    list-style: none;
-    margin: auto 3px;
-    box-shadow: 0 1px 0 var(--secondary);
 }
 
 .post-content {
@@ -54,23 +47,26 @@
 }
 
 .post-content h4 {
-    font-size: 0.95rem;    
-    font-weight: var(--semibold);
-    text-transform: uppercase;
-    color: var(--tertiary);
+    font-size: var(--content-size);
+    color: var(--secondary);
+    font-weight: 550;
 }
 
 .post-content h5 {
+    font-size: 0.9rem;    
+    font-weight: var(--semibold);
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
+.post-content h6 {
     font-size: 0.85rem;
     font-weight: var(--semibold);
     text-transform: uppercase;
     color: var(--tertiary);
 }
 
-.post-content h6 {
-    font-size: var(--content-size);
-    color: var(--secondary);
-}
+
 
 .post-content a,
 .post-meta a,
