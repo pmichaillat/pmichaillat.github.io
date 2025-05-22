@@ -9,8 +9,8 @@
     --radius: 8px;
     --content: rgb(30, 30, 30); /*text*/
     --primary: rgb(30, 30, 30);
-    --secondary: rgb(108, 108, 108); /*metadata*/
-    --tertiary: rgb(165, 165, 165); /* items and h5 and h4 titles*/
+    --secondary: rgb(108, 108, 108); /*metadata and h4 and h5 titles*/
+    --tertiary: rgb(165, 165, 165); /* items and h6 titles*/
     --border: rgb(230, 230, 230); /*borders*/
     --code-bg: rgb(245, 245, 245); /*areas*/
     --code-block-bg: rgb(245, 245, 245);
@@ -20,14 +20,12 @@
     --purple: #8e7bd0; /*links -- icon color*/
     --lightpurple: #5e42bc; /*hovered links - slightly darker */
     --graypurple: #e5e1f4; /*hovered buttons*/
-    --archive: rgb(200, 200, 200); /* lines in archive and webpages*/
+    --archive: rgb(200, 200, 200); /* lines in tables and pages*/
     --semibold: 500;
     --content-size:1.15rem;
-    --home-size: 1rem;
     --header-size: 1rem;
     --meta-size: 1rem;
     --entry-size: 0.95rem;
-    --footer-size: 0.8rem;
     --line-height: 1.45;
     --margin-left: 26px;
 }
