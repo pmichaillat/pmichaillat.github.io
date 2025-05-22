@@ -241,7 +241,7 @@
 
 .post-content hr {
     margin: 30px 0;
-    height: 1.5px;
+    height: 1px;
     background: var(--archive);
     border: 0;
 }

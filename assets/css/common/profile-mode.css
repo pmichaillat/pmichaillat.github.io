@@ -5,17 +5,16 @@
 }
 .main .profile {
     align-items: center;
+    max-width: 600px;
     min-height: calc(100vh  - (var(--gap) * 2));
-    font-size: var(--home-size);
     line-height: var(--line-height);
-    padding: var(--gap);
 }
 
 .profile .profile_inner {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 15px;
 }
 
 .profile .profile_inner h1 {

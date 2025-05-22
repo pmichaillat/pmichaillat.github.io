@@ -13,7 +13,7 @@ menu:
     main:
         - name: Dashboard
           url: dashboard/
-          weight: 5
+          weight: 1
         - name: Papers
           url: papers/
           weight: 2
@@ -23,15 +23,9 @@ menu:
         - name: Design
           url: design/
           weight: 4        
-        # - name: Tags
-        #   url: /tags/
-        #   weight: 5
-        # - name: Archive
-        #   url: /archive/
-        #   weight: 6
 
 params:
-    description: "This website hosts Pascal Michaillat's research papers, course materials, design templates, curriculum vitae, and contact information."
+    description: "This website hosts Pascal Michaillat's research papers, course materials, design templates, curriculum vitae, and an automated business cycle dashboard."
     author: Pascal Michaillat
     googleAnalyticsID: "G-97G4MZ4061"
     images: ["cover.png"]
@@ -50,7 +44,7 @@ params:
     MainSections: ["papers","courses","design"]
     ShowToc: false
     disableScrollToTop: true
-    TocOpen: true
+    TocOpen: false
     ShowWordCount: false
     UseHugoToc: true
     comments: false
@@ -60,22 +54,17 @@ params:
           title: Pascal Michaillat
           subtitle: "I am an associate professor of economics at the University of California, Santa Cruz. I work primarily on economic slack, especially unemployment: why it exists, why it fluctuates over the business cycle, and how macroeconomic policies should respond to such fluctuations."
           imageUrl: "/picture.jpeg"
-          imageWidth: 160
-          imageHeight: 160
+          imageWidth: 130
+          imageHeight: 130
           buttons:
+            - name: Dashboard
+              url: dashboard/  
             - name: Papers
               url: papers/
             - name: Courses
               url: courses/
             - name: Design
               url: design/
-            - name: Dashboard
-              url: dashboard/  
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
-
 
     socialIcons:
         - name: CV
