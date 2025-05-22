@@ -8,12 +8,7 @@
     font-size: 2.05rem;
 }
 
-.post-description {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.post-meta {
+.post-meta  {
     color: var(--content);
     font-size: var(--meta-size);
 }
@@ -147,7 +142,7 @@
 }
 
 .post-content table th,
-.post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
+.post-content table:not(.highlight table, .gist .highlight) td {
     min-width: 80px;
     padding: 12px 8px;
     line-height: var(--line-height);
@@ -163,18 +158,18 @@
     border-bottom: 2px solid var(--archive);
 }
 
-.post-content table:not(.highlighttable) td code:only-child {
+.post-content table td code:only-child {
     margin: auto 0;
 }
 
 .post-content .highlight table {
-    border-radius: var(--radius);
+    border-radius: var(--radius-code);
 }
 
 .post-content .highlight:not(table) {
     margin: 10px auto;
     background: var(--code-block-bg) !important;
-    border-radius: var(--radius);
+    border-radius: var(--radius-code);
     direction: ltr;
 }
 
@@ -190,30 +185,13 @@
     margin: 0;
 }
 
-.post-content .highlighttable {
-    table-layout: fixed;
-}
-
-.post-content .highlighttable td:first-child {
-    width: 40px;
-}
-
-.post-content .highlighttable td .linenodiv {
-    padding-inline-end: 0 !important;
-}
-
-.post-content .highlighttable td .highlight,
-.post-content .highlighttable td .linenodiv pre {
-    margin-bottom: 0;
-}
-
 .post-content code {
     margin: auto 1px;
     padding: 3px 3px;
     font-size: 0.85rem;
     line-height: var(--line-height);
     background: var(--code-bg);
-    border-radius: 2px;
+    border-radius: var(--radius-code);
 }
 
 .post-content pre code {
@@ -243,7 +221,7 @@
 }
 
 .post-content img {
-    border-radius: 2px;
+    border-radius: var(--radius-code);
 }
 
 .post-content figure.align-center {
@@ -251,7 +229,7 @@
 }
 
 .toc {
-    margin: 0 2px var(--content-gap) 2px;
+    margin: var(--content-gap) 2px;
     border: 1px solid var(--border);
     background: var(--code-bg);
     border-radius: var(--radius);
@@ -325,10 +303,6 @@
     border: 1px solid var(--purple);
 }
 
-.paginav a:hover {
-    background: var(--graypurple);
-}
-
 .anchor,
 .anchor:hover,
 .anchor:focus,
@@ -373,10 +347,6 @@ a[href^="#fn:"], a[href^="#fnref:"] {
 a[href^="#fn:"]:hover, a[href^="#fnref:"]:hover {
     text-decoration: none;
     color: var(--purple);
-}
-
-[dir="rtl"] .paginav .next {
-    text-align: left;
 }
 
 h1>a>svg {

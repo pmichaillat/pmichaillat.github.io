@@ -28,6 +28,7 @@
     --entry-size: 0.95rem;
     --line-height: 1.45;
     --margin-left: 26px;
+    --radius-code: 2px;
 }
 
 .list {
