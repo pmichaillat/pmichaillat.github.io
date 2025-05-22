@@ -4,7 +4,7 @@
 }
 
 .post-title {
-    margin-bottom: 20px;
+    margin-bottom: var(--content-gap);
     font-size: 2.05rem;
 }
 
@@ -104,7 +104,7 @@
 
 .post-content ol,
 .post-content ul {
-    padding-inline-start: 20px;
+    padding-inline-start: var(--content-gap);
     margin-left: var(--margin-left); 
 }
 
@@ -219,13 +219,13 @@
 .post-content pre code {
     display: grid;
     margin: auto 0;
-    padding: 20px;
+    padding: var(--content-gap);
     overflow-x: auto;
     word-break: break-all;
 }
 
 .post-content blockquote {
-    margin: 20px 0;
+    margin: var(--content-gap) 0;
     padding: 0 17px;
     color: var(--secondary);    
     border-inline-start: 3px solid var(--archive);
@@ -251,7 +251,7 @@
 }
 
 .toc {
-    margin: 0 2px 20px 2px;
+    margin: 0 2px var(--content-gap) 2px;
     border: 1px solid var(--border);
     background: var(--code-bg);
     border-radius: var(--radius);
@@ -275,7 +275,7 @@
 
 .toc .inner {
     margin: 0 calc(var(--margin-left) - 12px);
-    padding: 10px 20px;
+    padding: 10px var(--content-gap);
     font-size: var(--meta-size);
 }
 
