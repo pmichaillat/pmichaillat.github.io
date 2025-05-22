@@ -5,8 +5,8 @@ url: /e/
 aliases: 
     - /d3/
 author: "Pascal Michaillat"
-description: "This collection of commands makes it easy to write mathematical expressions with LaTeX while automatically respecting the rules of mathematical typography." 
-summary: "This collection of commands makes it easy to write mathematical expressions with LaTeX while automatically respecting the rules of mathematical typography." 
+description: "These commands simplify writing mathematical expressions with LaTeX while automatically respecting the rules of mathematical typography." 
+summary: "This collection of commands simplifies writing mathematical expressions with LaTeX while automatically respecting the rules of mathematical typography." 
 cover:
     image: "/e.png"
     alt: "Mathematical expressions produced with commands"
@@ -18,7 +18,7 @@ disableAnchoredHeadings: false
 
 ---
 
-This collection of commands makes it easy to write mathematical expressions with [LaTeX](https://www.latex-project.org) while automatically respecting the rules of mathematical typography. The commands were developed to write math in economics, but they might also be helpful to write math in other fields. 
+This collection of commands simplifies writing mathematical expressions with [LaTeX](https://www.latex-project.org) while automatically respecting the rules of mathematical typography. The commands were developed to write math in economics, but they might also be helpful to write math in other fields. 
 
 ---
 
@@ -61,8 +61,6 @@ The commands below produce brackets that scale automatically.
 
 
 [^1]: Spacing between the function `f` and the argument `(x)` is  appropriate. `f\bp{x}` gives $f\left( x\right)$, which introduces too much space between the function `f` and the argument `(x)`.
-
----
 
 ## Functions and operators
 
@@ -116,8 +114,6 @@ The commands below produce functions and operators with parentheses that scale a
 |                      |    `\inf{S}`    |          $\inf(S)$           |
 |                      |  `\inf[n]{y_n}` |        $\inf_n(y_n)$         |
 
----
-
 ## Derivatives
 
 The commands below produce various derivatives. Some of commands produce derivatives for displays while others produce derivatives for text. Some of the commands have an option to indicate the order of the derivative.
@@ -141,7 +137,6 @@ The commands below produce various derivatives. Some of commands produce derivat
 |                     |  `\pe{y}{x}{z}` | $\left.\frac{\partial\ln(y)}{\partial\ln(x)}\right\vert_{z}$ |
 |                     | `\pex{y}{x}{z}` |     $\left.\partial\ln(y)/\partial\ln(x)\right\vert_{z}$     |
 
----
 
 ## Statistical relations
 
@@ -155,7 +150,6 @@ The commands below are shortcuts to produce statistical relations.
 | Convergence in distribution                       | `\dto`  |   $\overset{d}{\to}$  |
 | Essential infimum and supremum                    | `\ees`  |  $\operatorname{ees}$ |
 
----
 
 ## Accents
 
@@ -169,7 +163,6 @@ The commands below are shortcuts to produce accents that scale automatically.
 | Hat       | `\wh{x}` |    $\widehat{x}$     |
 | Tilde     | `\wt{x}` |   $\widetilde{x}$    |
 
----
 
 ## Blackboard-bold letters
 
@@ -182,8 +175,6 @@ The commands below are shortcuts to produce blackboard-bold letters.
 | Z      |   `\Z`  | $\mathbb{Z}$ |
 | Q      |   `\Q`  | $\mathbb{Q}$ |
 | C      |   `\C`  | $\mathbb{C}$ |
-
----
 
 ## Greek letters
 
@@ -231,7 +222,6 @@ And the commands below are shortcuts to produce uppercase Greek letters.
 | upsilon          |   `\U`  |   $\Upsilon$  |
 | xi               |   `\X`  |     $\Xi$     |
 
----
 
 ## Calligraphic letters
 
@@ -266,8 +256,6 @@ The commands below are shortcuts to produce calligraphic letters.
 | Y      |  `\Yc`  | $\mathcal{Y}$ |
 | Z      |  `\Zc`  | $\mathcal{Z}$ |
 
----
-
 ## Complex numbers
 
 The commands below designate parts of complex numbers.
@@ -277,7 +265,6 @@ The commands below designate parts of complex numbers.
 | Real part      | `\Re(z)` | $\operatorname{Re}(z)$ |
 | Imaginary part | `\Im(z)` | $\operatorname{Im}(z)$ |
 
----
 
 ## Existing LaTeX commands
 

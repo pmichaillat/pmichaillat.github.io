@@ -79,6 +79,7 @@ The command builds the website with Hugo and starts a local web server. The webs
 
 Hugo automatically rebuilds the site and refreshes the webpage in the browser as you change the content and template files in the repository. This allows you to see changes instantly as you are developing the website. 
 
+
 ### Online deployment
 
 Once your website is ready to be made public, commit the changes to the content and template files and push them to your GitHub repository via GitHub Desktop. 
@@ -300,12 +301,6 @@ The two shades of blue are specified by their hex code. Enter [other hex codes](
 
 ---
 
-## Footer
-
-The website has a footer, which contains a copyright notice and a "Powered by" notice. The footer can be customized by modifying the file `layouts/partials/footer.html`. It is possible to hide the footer by setting the parameter `hideFooter` to `true` in the `config.yml` file. 
-
----
-
 ## Cover images
 
 Cover images can be specified for all pages. The cover image will appear in lists on the website. It will also appear if a link to the page is used on social media. 
@@ -332,11 +327,50 @@ magick image.png -resize 1200x675 -gravity center -background white -extent 1280
 
 ---
 
+## Redirects
+
+It is easy to handle redirects on a Hugo website by using the `aliases` parameter within the page front matter. This feature allows you to define old URLs that should redirect to a new page. This is particularly useful when you change the URL structure or move content around in your website, and you want to ensure that visitors are redirected from the old URLs to the new one. This ensures that visitors using the old URLs still find the right content.
+
+The template includes an example showing how to set up redirects using the `aliases` parameter. The redirects are set up in the `/courses/course1/index.md` file. In the preamble, the following snippet of code sets up redirects from old PDF files to the current course page:
+
+```yml
+aliases: 
+    - /courses/course2/slides4.pdf
+    - /courses/course2/slides1.pdf
+    - /courses/course2/slides3.pdf
+    - /courses/course2/slides2.pdf
+    - /courses/course2/notes3.pdf
+```
+
+Hugo will then automatically generate the necessary redirect HTML pages during the build process. These HTML pages will be stored in the `public` folder. When a visitor navigates to any of the URLs listed in the aliases (such as `baseURL/courses/course2/slides4.pdf`), they will be redirected to the page where the alias is defined (`baseURL/courses/course1/`). 
+
+This method is useful to manage redirects and ensure a seamless user experience when restructuring any part of your website. It is also useful to handle 404 issues since outdated links will automatically point to the correct content, preventing users from landing on the [404 error page](https://pascalmichaillat.org/hugo-website/404/).
+
+--- 
+
+## Testing the website on mobile devices
+
+During development, it is possible to test your website on mobile devices—to check that everything is accessible and readable. Testing only requires to adjust the `hugo` command slightly.
+
++ Make sure that your laptop and phone are on the same wifi network, and get your laptop's IP address (say 192.168.1.50). This can be done by running `ipconfig getifaddr en0` in the terminal.
++ Once you have the IP address, run `hugo server --bind 0.0.0.0 --baseURL http://192.168.1.50:1313`.
++ On your phone's browser, go to `http://10.0.0.174:1313`.
++ This gives a true mobile rendering and is useful for final testing. As you modify the website source code on your computer, the modified website appears on your phone.
+
+
+---
+
+## Footer
+
+The website has a footer, which contains a copyright notice and a "Powered by" notice. The footer can be customized by modifying the file `layouts/partials/footer.html`. It is possible to hide the footer by setting the parameter `hideFooter` to `true` in the `config.yml` file. 
+
+---
+
 ## RSS feeds
 
 In the background, Hugo automatically generates RSS feeds in XML format for your site. These feeds enable interested readers to subscribe to your content and be updated whenever you publish new content. The RSS feeds can be found in the `public` folder, and are typically available at `/index.xml` under the appropriate section.
 
-For instance, on this website, the RSS feed for my research papers can be found at `https://pascalmichaillat.org/papers/index.xml`. The RSS feed for my design projects can be found at `https://pascalmichaillat.org/design/index.xml`. Hugo also produces RSS feeds for all keywords. On this website, the RSS feed for the keyword `business cycles` can be found at `https://pascalmichaillat.org/tags/business-cycles/index.xml` and the RSS feed for the keyword `recessions` can be found at `https://pascalmichaillat.org/tags/recessions/index.xml`. 
+For instance, on this website, the RSS feed for my research papers can be found at `https://pascalmichaillat.org/papers/index.xml`. The RSS feed for my design projects can be found at `https://pascalmichaillat.org/design/index.xml`. Hugo also produces RSS feeds for all keywords. On this website, the RSS feed for the keyword `business cycles` can be found at `https://pascalmichaillat.org/tags/business-cycles/index.xml`. 
 
 The XML files can then be submitted to RSS readers, such as the [RSS app](https://rss.app), to [produce RSS feeds](https://rss.app/overview-feed-xml?feedId=44ZDQRZnqIktQJrt&feedXmlId=UaViYplhbFwE97Bd).
 
@@ -388,27 +422,6 @@ Hugo will generate a new content file called `my-new-research-material.md` and p
 
 ---
 
-## Redirects
-
-It is easy to handle redirects on a Hugo website by using the `aliases` parameter within the page front matter. This feature allows you to define old URLs that should redirect to a new page. This is particularly useful when you change the URL structure or move content around in your website, and you want to ensure that visitors are redirected from the old URLs to the new one. This ensures that visitors using the old URLs still find the right content.
-
-The template includes an example showing how to set up redirects using the `aliases` parameter. The redirects are set up in the `/courses/course1/index.md` file. In the preamble, the following snippet of code sets up redirects from old PDF files to the current course page:
-
-```yml
-aliases: 
-    - /courses/course2/slides4.pdf
-    - /courses/course2/slides1.pdf
-    - /courses/course2/slides3.pdf
-    - /courses/course2/slides2.pdf
-    - /courses/course2/notes3.pdf
-```
-
-Hugo will then automatically generate the necessary redirect HTML pages during the build process. These HTML pages will be stored in the `public` folder. When a visitor navigates to any of the URLs listed in the aliases (such as `baseURL/courses/course2/slides4.pdf`), they will be redirected to the page where the alias is defined (`baseURL/courses/course1/`). 
-
-This method is useful to manage redirects and ensure a seamless user experience when restructuring any part of your website. It is also useful to handle 404 issues since outdated links will automatically point to the correct content, preventing users from landing on the [404 error page](https://pascalmichaillat.org/hugo-website/404/).
-
----
-
 ## Public folder
 
 In your local website repository, you will find a `public` folder. The folder is created when you run `hugo server` or `hugo`. The `hugo` commands process your content, templates, and other project files, and create a fully generated static website files that is ready to be deployed locally or online. The resulting output is placed in the `public` folder by default.
@@ -439,7 +452,7 @@ to the text under `params:profileMode:subtitle` in the `config.yml` file.
 
 You could also add more information, such as who your references are, how to contact them, which job-market meetings you will attend, and so on.
 
-### Buttons for job-market paper and CV
+### Job-market paper and CV
 
 I would also advise to place prominent links to your CV and job-market paper on the landing page. This can be easily achieved by adding the following code snippet below `profileMode:buttons:` in the `config.yml` file:
 

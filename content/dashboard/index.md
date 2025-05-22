@@ -22,6 +22,8 @@ Finally, the dashboard presents two metrics derived from the Michez rule—a new
 
 All charts automatically update as new data become [available on FRED](https://fred.stlouisfed.org/), providing an up-to-date view of the US business cycle.
 
+---
+
 ## US unemployment rate
 
 <iframe src="/dashboard/unemployment_rate.html" style="width: 100%; aspect-ratio: 4 / 3; border: none;"></iframe>

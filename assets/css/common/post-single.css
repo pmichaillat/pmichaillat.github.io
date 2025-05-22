@@ -13,8 +13,7 @@
     margin-bottom: 5px;
 }
 
-.post-meta,
-.breadcrumbs {
+.post-meta {
     color: var(--content);
     font-size: var(--meta-size);
 }
@@ -65,8 +64,6 @@
     text-transform: uppercase;
     color: var(--tertiary);
 }
-
-
 
 .post-content a,
 .post-meta a,
@@ -154,7 +151,7 @@
     min-width: 80px;
     padding: 12px 8px;
     line-height: var(--line-height);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--archive);
 }
 
 .post-content table th {
@@ -162,8 +159,8 @@
     font-size: 0.9rem;
     font-weight: var(--semibold);
     text-transform: uppercase;
-    color: var(--tertiary);
-    border-bottom: 2px solid var(--border);
+    color: var(--secondary);
+    border-bottom: 2px solid var(--archive);
 }
 
 .post-content table:not(.highlighttable) td code:only-child {
@@ -213,7 +210,7 @@
 .post-content code {
     margin: auto 1px;
     padding: 3px 3px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: var(--line-height);
     background: var(--code-bg);
     border-radius: 2px;
@@ -223,7 +220,6 @@
     display: grid;
     margin: auto 0;
     padding: 10px;
-    border-radius: var(--radius);
     overflow-x: auto;
     word-break: break-all;
 }
@@ -327,8 +323,7 @@
     display: inline-block;
 }
 
-.post-tags a,
-.paginav {
+.post-tags a {
     border-radius: var(--radius);
     background: var(--code-bg);
     border: 1px solid var(--border);
@@ -396,37 +391,6 @@ a[href^="#fn:"], a[href^="#fnref:"] {
 a[href^="#fn:"]:hover, a[href^="#fnref:"]:hover {
     text-decoration: none;
     color: var(--purple);
-}
-
-.paginav {
-    margin: 10px 0;
-    display: flex;
-    line-height: var(--line-height);
-    font-size: var(--footer-size);
-    border-radius: var(--radius);
-}
-
-.paginav a {
-    padding-inline-start: 15px;
-    padding-inline-end: 15px;
-    border-radius: var(--radius);
-    color: var(--secondary);
-}
-
-.paginav .title {
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--secondary);
-}
-
-.paginav .prev,
-.paginav .next {
-    width: 50%;
-}
-
-.paginav .next {
-    margin-inline-start: auto;
-    text-align: right;
 }
 
 [dir="rtl"] .paginav .next {
