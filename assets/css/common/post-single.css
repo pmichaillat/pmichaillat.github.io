@@ -219,14 +219,14 @@
 .post-content pre code {
     display: grid;
     margin: auto 0;
-    padding: 10px;
+    padding: 20px;
     overflow-x: auto;
     word-break: break-all;
 }
 
 .post-content blockquote {
     margin: 20px 0;
-    padding: 0 20px;
+    padding: 0 17px;
     color: var(--secondary);    
     border-inline-start: 3px solid var(--archive);
 }
@@ -243,29 +243,11 @@
 }
 
 .post-content img {
-    border-radius: 4px;
-    margin: 1rem 0;
-}
-
-.post-content img[src*="#center"] {
-    margin: 1rem auto;
+    border-radius: 2px;
 }
 
 .post-content figure.align-center {
     text-align: center;
-}
-
-.post-content figure > figcaption {
-    color: var(--content);
-    font-size: var(--content-size);
-    font-weight: bold;
-    margin: 8px 0 16px;
-}
-
-.post-content figure > figcaption > p {
-    color: var(--secondary);
-    font-size: var(--meta-size);
-    font-weight: normal;
 }
 
 .toc {
