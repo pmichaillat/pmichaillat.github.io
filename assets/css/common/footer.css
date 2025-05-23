@@ -1,0 +1,33 @@
+.footer {
+    font-size: var(--footer-size);
+    color: var(--secondary);
+}
+
+.footer {
+    margin: auto;
+    padding: calc((var(--footer-height) - var(--gap)) / 2) var(--gap);
+    text-align: center;
+    line-height: 20px;
+    background: var(--code-bg);
+}
+
+.footer span {
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+
+.footer span:last-child {
+    white-space: nowrap;
+}
+
+.footer a {
+    color: var(--secondary);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--purple);
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 2px;
+    color: currentColor;
+}

@@ -1,0 +1,102 @@
+<!-- Insert footer -->
+
+{{- if not (.Param "hideFooter") }}
+<footer class="footer">
+    {{- if not site.Params.footer.hideCopyright }}
+    <span>&copy; {{ now.Year }} {{ site.Title }}</span>
+    {{- print " · "}}
+    {{- end }}
+    {{- with site.Params.footer.text }}
+    {{ . | markdownify }}
+    {{- print " · "}}
+    {{- end }}    
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">hugo</a>, <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">papermod</a>, &amp;
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">hugo-website</a>.
+    </span>
+</footer>
+{{- end }}
+
+<!-- Code for footnotes -->
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+
+<!-- Code to copy code -->
+
+{{- if and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons") }}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const copySVG = `
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 24 24" width="16" height="16"
+         fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+    </svg>`;
+
+  const checkSVG = `
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 24 24" width="16" height="16"
+         fill="none" stroke="currentColor" stroke-width="3"
+         stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </svg>`;
+
+  document.querySelectorAll("pre > code").forEach((code) => {
+    const wrapper = code.closest(".highlight") || code.parentNode;
+    wrapper.style.position = "relative";
+
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "copy-code";
+    btn.title = "Copy to clipboard";
+    btn.innerHTML = copySVG;
+
+    btn.addEventListener("click", () => {
+      navigator.clipboard
+        .writeText(code.textContent)
+        .then(() => {
+          btn.innerHTML = checkSVG;
+          btn.classList.add("copied");
+          setTimeout(() => {
+            btn.innerHTML = copySVG;
+            btn.classList.remove("copied");
+          }, 3000);
+        });
+    });
+
+    wrapper.appendChild(btn);
+  });
+});
+</script>
+{{- end }}
