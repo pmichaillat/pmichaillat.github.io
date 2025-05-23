@@ -14,7 +14,7 @@ disableAnchoredHeadings: false
 
 ---
 
-This dashboard provides real-time indicators of US labor market and business cycle conditions. It starts with three core labor market indicators: the [unemployment rate](#us-unemployment-rate), [vacancy rate](#us-vacancy-rate), and [labor market tightness](#us-labor-market-tightness). These metrics jointly characterize the functioning of the labor market.
+This dashboard provides real-time indicators of US labor market and business cycle conditions. It starts with three core labor market indicators: the [unemployment rate](#us-unemployment-rate), [vacancy rate](#us-vacancy-rate), and [labor market tightness](#us-labor-market-tightness). These metrics jointly characterize the functioning of the labor market. It also plots the [Beveridge curve](#us-beveridge-curve), which relates the unemployment and vacancy rates.
 
 From these, the dashboard calculates two metrics that quantify how far the labor market is from social efficiency: the [full-employment rate of unemployment (FERU)](#us-full-employment-rate-of-unemployment-feru) and the [unemployment gap](#us-unemployment-gap). These two metrics are key determinants of optimal monetary policy and fiscal policy.
 
