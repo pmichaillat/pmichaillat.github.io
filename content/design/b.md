@@ -276,13 +276,15 @@ Finally, if you have a Bluesky account `@user.bsky.social`, you can link to it b
 
 ## Typesetting math
 
-It is easy to typeset math on any website page. Simply enter LaTeX commands into the Markdown file, and the commands will be rendered synchronously with [KaTeX](https://katex.org). 
+It is easy to typeset math on any website page. Simply enter LaTeX commands into the Markdown file, and the commands will be rendered synchronously with [KaTeX](https://katex.org). For instance:
 
-For instance `$x\in \mathbb{N}$` is rendered as $x\in \mathbb{N}$. `$\xi^\ast = \max f(x)$` is rendered as $\xi^\ast = \max f(x)$. And `$4 \ln(\theta+\mathcal{Y}) =4 \int \ln(x^2)dx$` is rendered as $4 \ln(\theta+\mathcal{Y}) =4 \int \ln(x^2)dx$. 
++ `$x\in \mathbb{N}$` gives $x\in \mathbb{N}$
++ `$\xi^\ast = 4 + \max f(x)$` gives $\xi^\ast = 4 + \max f(x)$
++ `$\ln(\theta+\mathcal{Y}) = \int x^2 dx$` gives $\ln(\theta+\mathcal{Y}) = \int x^2dx$. 
 
-It is also possible to display equations on any webpage. For example, `$$1+\lambda\exp{\frac{\beta}{\alpha^2}} = \max_{t\in\mathbb{R}}(x(t)-y(t)+z(t)^2)$$` is rendered as:
+It is also possible to display equations on any webpage. For example, `$$\lambda\exp{\frac{\beta}{\alpha^3}} = \max_{t\in\mathbb{R}}(x(t)+z(t)^2)$$` is rendered as:
 
-$$1+\lambda\exp{\frac{\beta}{\alpha^2}} = \max_{t\in\mathbb{R}}(x(t)-y(t)+z(t)^2).$$
+$$\lambda\exp{\frac{\beta}{\alpha^3}} = \max_{t\in\mathbb{R}}(x(t)+z(t)^2).$$
 
 ---
 
@@ -354,7 +356,7 @@ During development, it is possible to test your website on mobile devices—to c
 
 + Make sure that your laptop and phone are on the same wifi network, and get your laptop's IP address (say 192.168.1.50). This can be done by running `ipconfig getifaddr en0` in the terminal.
 + Once you have the IP address, run `hugo server --bind 0.0.0.0 --baseURL http://192.168.1.50:1313`.
-+ On your phone's browser, go to `http://10.0.0.174:1313`.
++ On your phone's browser, go to `http://192.168.1.50:1313`.
 + This gives a true mobile rendering and is useful for final testing. As you modify the website source code on your computer, the modified website appears on your phone.
 
 

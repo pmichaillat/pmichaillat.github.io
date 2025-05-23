@@ -69,7 +69,7 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             x1=df.index.max(),
             y0=hline,
             y1=hline,
-            line=dict(color='rgba(217, 95, 2, 0.8)', width=1),
+            line=dict(color='rgba(217, 95, 2, 0.7)', width=1),
             layer='above'
             )
 
@@ -82,6 +82,8 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
         plot_bgcolor='white',
         paper_bgcolor='white',
         xaxis=dict(
+            title_font=dict(size=16),
+            tickfont=dict(size=16),
             showgrid=True,
             side='bottom',
             showline=True, 
@@ -93,6 +95,8 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             range=[x_min, x_max] if x_min is not None and x_max is not None  else None
         ),
         yaxis=dict(
+            title_font=dict(size=16),
+            tickfont=dict(size=16),
             showgrid=True, 
             side='left',
             showline=True, 
@@ -119,6 +123,7 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             "modeBarButtonsToRemove": [
             "zoomIn2d",
             "zoomOut2d",
+            "autoscale" 
             ],
             "toImageButtonOptions": {
             "format": "png",
@@ -209,6 +214,7 @@ y_max = df["data"].max() * 1.05
 make_plot(df, "data", title, "unemployment_rate", "Unemployment rate (%)",x_min, x_max, y_min, y_max)
 
 # Save data
+
 csv_path = "../../static/dashboard/unemployment_rate.csv"
 df_out = df.copy()
 df_out.columns = ["Unemployment rate (%)"]
@@ -231,61 +237,12 @@ y_max = df["data"].max() * 1.05
 make_plot(df, "data", title, "vacancy_rate", "Vacancy rate (%)", x_min, x_max, y_min, y_max)
 
 # Save data
+
 csv_path = "../../static/dashboard/vacancy_rate.csv"
 df_out = df.copy()
 df_out.columns = ["Vacancy rate (%)"]
 df_out.index.name = "Date"
 df_out.to_csv(csv_path) 
-
-# Plot Beveridge curve
-df_bc = pd.DataFrame({
-    'Unemployment rate (%)': u_rate,
-    'Vacancy rate (%)': v_rate
-}).dropna()
-
-fig = go.Figure()
-fig.add_trace(go.Scatter(
-    x=df_bc['Unemployment rate (%)'],
-    y=df_bc['Vacancy rate (%)'],
-    mode='markers',
-    marker=dict(size=6, color='#59539d'),
-    hovertemplate='u: %{x:.2f}%<br>v: %{y:.2f}%<extra></extra>'
-))
-
-fig.update_layout(
-    xaxis_title='Unemployment rate (%)',
-    yaxis_title='Vacancy rate (%)',
-    dragmode=False,
-    title_font=dict(size=16),
-    font=dict(family="Helvetica", size=16),
-    margin=dict(l=20, r=20, t=40, b=20),
-    plot_bgcolor='white',
-    paper_bgcolor='white'
-)
-
-fig.write_html(
-    "../../static/dashboard/beveridge_curve.html",
-    include_plotlyjs='cdn',
-    full_html=False,
-    config={
-        "displaylogo": False,
-        "modeBarButtonsToRemove": [
-            "zoomIn2d",
-            "zoomOut2d",
-            "select2d",
-            "lasso2d"
-        ],
-        "toImageButtonOptions": {
-            "format": "png",
-            "filename": "beveridge_curve",
-            "height": 900,
-            "width": 1200,
-            "scale": 3
-        }
-    }
-)
-
-
 
 # Plot labor market tightness
 
@@ -303,11 +260,120 @@ y_max = df["data"].max() * 1.05
 make_plot(df, "data", title, "labor_market_tightness", "Labor market tightness", x_min, x_max, y_min, y_max, hline=1)
 
 # Save data
+
 csv_path = "../../static/dashboard/labor_market_tightness.csv"
 df_out = df.copy()
 df_out.columns = ["Labor market tightness"]
 df_out.index.name = "Date"
 df_out.to_csv(csv_path) 
+
+# Plot Beveridge curve
+
+df = pd.DataFrame({
+    "u": u_rate,
+    "v": v_rate
+}).dropna()
+
+fig = go.Figure()
+
+fig.add_trace(go.Scatter(
+    x=df["u"],
+    y=df["v"],
+    customdata=df.index.strftime("%b %Y"), 
+    mode='markers',
+    marker=dict(size=7, color='#59539d'),
+    showlegend=False,
+    hovertemplate='%{customdata}<br>(%{x:.2f}, %{y:.2f})<extra></extra>'
+))
+
+# Add full employment line
+
+max_val = min(df["u"].max(), df["v"].max())
+
+fig.add_trace(go.Scatter(
+    x=[0, max_val],
+    y=[0, max_val],
+    mode='lines',
+    line=dict(color='rgba(217, 95, 2, 0.7)', width=1),
+    showlegend=False,
+    hoverinfo='skip'
+))
+
+# Add last observation
+
+last_point = df.iloc[[-1]]
+
+fig.add_trace(go.Scatter(
+    x=last_point["u"],
+    y=last_point["v"],
+    customdata=last_point.index.strftime("%b %Y"),
+    mode='markers',
+    marker=dict(size=9, color='#e7298a'),
+    hovertemplate='%{customdata}<br>(%{x:.2f}, %{y:.2f})<extra></extra>',
+    showlegend=False
+))
+
+# Adjust layout of graph
+
+fig.update_layout(
+    xaxis_title='Unemployment rate (%)',
+    yaxis_title='Vacancy rate (%)',
+    dragmode=False,
+    title_font=dict(size=16),
+    font=dict(family="Helvetica", size=16),
+    margin=dict(l=20, r=20, t=20, b=20),
+    plot_bgcolor='white',
+    paper_bgcolor='white',
+    xaxis=dict(
+        range=[0, df["u"].max() * 1.05],
+        title_font=dict(size=16),
+        tickfont=dict(size=16),
+        showgrid=True,
+        showline=True,
+        side='bottom',
+        mirror=False,
+        ticklabelposition="outside",
+        ticklabelstandoff=10,
+        linecolor='#e9e9e9',
+        gridcolor='#e9e9e9'
+    ),
+    yaxis=dict(
+        range=[0, df["v"].max() * 1.05],
+        title_font=dict(size=16),
+        tickfont=dict(size=16),
+        showgrid=True,
+        showline=True,
+        side='left',
+        mirror=False,
+        ticklabelposition="outside",
+        ticklabelstandoff=10,
+        linecolor='#e9e9e9',
+        gridcolor='#e9e9e9'
+    )
+)
+
+fig.write_html(
+    "../../static/dashboard/beveridge_curve.html",
+    include_plotlyjs='cdn',
+    full_html=False,
+    config={
+        "displaylogo": False,
+        "modeBarButtonsToRemove": [
+            "zoomIn2d",
+            "zoomOut2d",
+            "select2d",
+            "lasso2d",
+            "autoscale" 
+        ],
+        "toImageButtonOptions": {
+            "format": "png",
+            "filename": "beveridge_curve",
+            "height": 900,
+            "width": 1200,
+            "scale": 3
+        }
+    }
+)
 
 # Plot FERU
 
@@ -325,6 +391,7 @@ y_max = df["data"].max() * 1.05
 make_plot(df, "data", title, "feru", "FERU (%)", x_min, x_max, y_min, y_max)
 
 # Save data
+
 csv_path = "../../static/dashboard/feru.csv"
 df_out = df.copy()
 df_out.columns = ["FERU (%)"]
@@ -347,6 +414,7 @@ y_max = df["data"].max() * 1.05
 make_plot(df, "data", title, "unemployment_gap", "Unemployment gap (pp)", x_min, x_max, y_min, y_max, hline=0)
 
 # Save data
+
 csv_path = "../../static/dashboard/unemployment_gap.csv"
 df_out = df.copy()
 df_out.columns = ["Unemployment gap (pp)"]
@@ -369,6 +437,7 @@ y_max = df["data"].max() * 1.05
 make_plot(df, "data", title, "recession_indicator", "Recession indicator (pp)", x_min, x_max, y_min, y_max, hline=0.29)
 
 # Save data
+
 csv_path = "../../static/dashboard/recession_indicator.csv"
 df_out = df.copy()
 df_out.columns = ["Recession indicator (pp)"]
@@ -391,6 +460,7 @@ y_max = 100.5
 make_plot(df, "data", title, "recession_probability", "Recession probability", x_min, x_max, y_min, y_max)
 
 # Save data
+
 csv_path = "../../static/dashboard/recession_probability.csv"
 df_out = df.copy()
 df_out.columns = ["Recession probability (%)"]
