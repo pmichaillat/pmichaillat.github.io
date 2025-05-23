@@ -44,7 +44,6 @@ The unemployment rate is the number of job seekers divided by the number of labo
 
 The vacancy rate is the number of job openings divided by the number of labor force participants. It measures the number of job openings per labor force participant. The number of job openings is measured by the BLS from the Job Openings and Labor Turnover Survey (JOLTS), which is a large-scale firm survey.
 
-
 ## US labor market tightness
 
 
@@ -55,6 +54,18 @@ The vacancy rate is the number of job openings divided by the number of labor fo
 </iframe>
 
 Labor market tightness is the vacancy rate divided by the unemployment rate. It measures the number of job openings per job seeker. A tightness of 1 marks full employment, or equivalently labor market efficiency. When tightness is below 1, the labor market is inefficiently slack. When tightness is above 1, the labor market is inefficiently tight.
+
+## US Beveridge curve
+
+<iframe
+    src="/dashboard/beveridge_curve.html"
+    title="US Beveridge curve"
+    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+</iframe>
+
+The Beveridge curve links the unemployment rate to the vacancy rate. During typical business cycles, the economy moves along a stable Beveridge curve. In recessions the unemployment rate increases while the vacancy rate decreases. In expansions the unemployment rate decreases while the vacancy rate increases. 
+
+The labor market is at full employment whenever the unemployment and vacancy rates are equal. Hence, the rate of unemployment at full employment (FERU) is at the intersection of the Beveridge curve and 45° ray. The implication is that the FERU is determined by the location of the Beveridge curve: it is higher whenever the Beveridge curve is futher outward. Furthermore, the labor market is inefficiently tight whenever it is above the 45° ray and inefficiently slack whenever it is below the 45° ray.
 
 ## US full-employment rate of unemployment (FERU)
 
@@ -90,6 +101,7 @@ The recession indicator is the minimum of the Sahm-rule indicator (the increase 
 
 <iframe 
     src="/dashboard/recession_probability.html" 
+    title="US recession probability"
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 

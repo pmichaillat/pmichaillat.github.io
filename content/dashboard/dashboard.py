@@ -2,6 +2,7 @@
 #  python3 -m venv .venv
 # source .venv/bin/activate
 # pip install -r requirements.txt
+# export FRED_API_KEY='YOUR_ACTUAL_API_KEY'
 # python3 dashboard.py
 
 import os
@@ -184,10 +185,13 @@ v_hat = v_hat_exact.round(2)
 m = pd.DataFrame({'u_hat': u_hat, 'v_hat': v_hat}).min(axis=1)
 
 # Compute recession probability
-p = (m - 0.29) / (0.81 - 0.29)
+p_exact = (m - 0.29) / (0.81 - 0.29)
 
-# Apply dual threshold: clamp values between 0 and 1
-p = p.clip(lower=0, upper=1) * 100
+# Clamp values between 0 and 1
+p_exact = p_exact.clip(lower=0, upper=1) * 100
+
+# Round to 1 decimal place
+p = p_exact.round(1)
 
 # Plot unemployment rate
 
@@ -232,6 +236,56 @@ df_out = df.copy()
 df_out.columns = ["Vacancy rate (%)"]
 df_out.index.name = "Date"
 df_out.to_csv(csv_path) 
+
+# Plot Beveridge curve
+df_bc = pd.DataFrame({
+    'Unemployment rate (%)': u_rate,
+    'Vacancy rate (%)': v_rate
+}).dropna()
+
+fig = go.Figure()
+fig.add_trace(go.Scatter(
+    x=df_bc['Unemployment rate (%)'],
+    y=df_bc['Vacancy rate (%)'],
+    mode='markers',
+    marker=dict(size=6, color='#59539d'),
+    hovertemplate='u: %{x:.2f}%<br>v: %{y:.2f}%<extra></extra>'
+))
+
+fig.update_layout(
+    xaxis_title='Unemployment rate (%)',
+    yaxis_title='Vacancy rate (%)',
+    dragmode=False,
+    title_font=dict(size=16),
+    font=dict(family="Helvetica", size=16),
+    margin=dict(l=20, r=20, t=40, b=20),
+    plot_bgcolor='white',
+    paper_bgcolor='white'
+)
+
+fig.write_html(
+    "../../static/dashboard/beveridge_curve.html",
+    include_plotlyjs='cdn',
+    full_html=False,
+    config={
+        "displaylogo": False,
+        "modeBarButtonsToRemove": [
+            "zoomIn2d",
+            "zoomOut2d",
+            "select2d",
+            "lasso2d"
+        ],
+        "toImageButtonOptions": {
+            "format": "png",
+            "filename": "beveridge_curve",
+            "height": 900,
+            "width": 1200,
+            "scale": 3
+        }
+    }
+)
+
+
 
 # Plot labor market tightness
 
@@ -327,7 +381,7 @@ df = pd.DataFrame({"data": p}).dropna()
 
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
-title = f"{last_date}: {last_value:.0f}%"
+title = f"{last_date}: {last_value:.1f}%"
 
 x_min = pd.to_datetime("2005-01-01")
 x_max = df.index.max()
