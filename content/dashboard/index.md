@@ -26,13 +26,21 @@ All charts automatically update as new data become [available on FRED](https://f
 
 ## US unemployment rate
 
-<iframe src="/dashboard/unemployment_rate.html" style="width: 100%; aspect-ratio: 4 / 3; border: none;"></iframe>
+<iframe
+    src="/dashboard/unemployment_rate.html"
+    title="US unemployment rate"
+    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+</iframe>
 
 The unemployment rate is the number of job seekers divided by the number of labor force participants. It measures the share of the labor force that is unemployed. The numbers of job seekers and labor force participants are both measured by the US Bureau of Labor Statistics (BLS) from the Current Population Survey (CPS), which is a large-scale household survey. 
 
 ## US vacancy rate
 
-<iframe src="/dashboard/vacancy_rate.html" style="width: 100%; aspect-ratio: 4 / 3; border: none;"></iframe>
+<iframe
+    src="/dashboard/vacancy_rate.html"
+    title="US vacancy rate"
+    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+</iframe>
 
 The vacancy rate is the number of job openings divided by the number of labor force participants. It measures the number of job openings per labor force participant. The number of job openings is measured by the BLS from the Job Openings and Labor Turnover Survey (JOLTS), which is a large-scale firm survey.
 
@@ -40,31 +48,50 @@ The vacancy rate is the number of job openings divided by the number of labor fo
 ## US labor market tightness
 
 
-<iframe src="/dashboard/labor_market_tightness.html" style="width: 100%; aspect-ratio: 4 / 3; border: none;"></iframe>
+<iframe
+    src="/dashboard/labor_market_tightness.html"
+    title="US labor market tightness"
+    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+</iframe>
 
 Labor market tightness is the vacancy rate divided by the unemployment rate. It measures the number of job openings per job seeker. A tightness of 1 marks full employment, or equivalently labor market efficiency. When tightness is below 1, the labor market is inefficiently slack. When tightness is above 1, the labor market is inefficiently tight.
 
 ## US full-employment rate of unemployment (FERU)
 
-<iframe src="/dashboard/feru.html" style="width: 100%; aspect-ratio: 4 / 3; border: none;"></iframe>
+<iframe 
+    src="/dashboard/feru.html"
+    title="US full-employment rate of unemployment (FERU)"
+    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+</iframe>
 
 The full-employment rate of unemployment (FERU) is the geometric average of the unemployment and vacancy rates: $u^\ast = \sqrt{u \times v}$, where $u$ is the unemployment rate, $v$ is the vacancy rate, and $u^\ast$ is the FERU. The FERU marks full employment and, by construction, labor market efficiency.
 
 ## US unemployment gap
 
-<iframe src="/dashboard/unemployment_gap.html" style="width: 100%; aspect-ratio: 4 / 3; border: none;"></iframe>
+<iframe 
+    src="/dashboard/unemployment_gap.html"
+    title="US unemployment gap"
+    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+</iframe>
 
 The unemployment gap is given by $u - u^\ast$, where $u$ is the unemployment rate and $u^\ast$ is the FERU. The unemployment gap indicates the distance from full employment. A positive gap marks an inefficiently slack labor market. A negative gap marks an inefficiently tight labor market.
 
 ## US recession indicator
 
-<iframe src="/dashboard/recession_indicator.html" style="width: 100%; aspect-ratio: 4 / 3; border: none;"></iframe>
+<iframe 
+    src="/dashboard/recession_indicator.html" 
+    title="US recession indicator"
+    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+</iframe>
 
 The recession indicator is the minimum of the Sahm-rule indicator (the increase of the 3-month average of the unemployment rate above its 12-month low) and a vacancy analogue (the decrease of the 3-month average of the vacancy rate below its 12-month high). The Michez rule signals a recession when the indicator crosses the threshold of 0.29pp.
 
 ## US recession probability
 
-<iframe src="/dashboard/recession_probability.html" style="width: 100%; aspect-ratio: 4 / 3; border: none;"></iframe>
+<iframe 
+    src="/dashboard/recession_probability.html" 
+    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+</iframe>
 
 The recession probability is computed from the dual-threshold extension of the Michez rule. The dual-threshold rule works as follows: values of the indicator between 0.29pp and 0.81pp signal a probable recession; values above 0.81pp signal a certain recession. This dual-threshold extension accounts for uncertainty in the true recession threshold and provides a simple way to nowcast recession risk. The recession probability is the fraction of the 0.29pp–0.81pp band that the indicator has covered.
 
