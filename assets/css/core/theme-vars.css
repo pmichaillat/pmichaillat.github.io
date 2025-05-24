@@ -22,6 +22,7 @@
     --graypurple: #e5e1f4; /*hovered buttons*/
     --archive: rgb(200, 200, 200); /* lines in tables and pages*/
     --semibold: 500;
+    --title-bold: 550;
     --content-size:1.15rem;
     --header-size: 1rem;
     --meta-size: 1rem;

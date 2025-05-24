@@ -19,7 +19,7 @@
 
 .profile .profile_inner h1 {
     font-size: 2.65rem;
-    font-weight: 600;
+    font-weight: var(--title-bold);
 }
 
 .profile img {
