@@ -14,13 +14,13 @@ disableAnchoredHeadings: false
 
 ---
 
-This dashboard provides real-time indicators of US labor market and business cycle conditions. It starts with three core labor market indicators: the [unemployment rate](#us-unemployment-rate), [vacancy rate](#us-vacancy-rate), and [labor market tightness](#us-labor-market-tightness). These metrics jointly characterize the functioning of the labor market. It also plots the [Beveridge curve](#us-beveridge-curve), which relates the unemployment and vacancy rates.
+This dashboard provides real-time indicators of US labor market and business cycle conditions. It starts with three core labor market indicators: the unemployment rate, vacancy rate, and labor market tightness. These metrics jointly characterize the functioning of the labor market. It also plots the Beveridge curve, which relates the unemployment and vacancy rates.
 
-From these, the dashboard calculates two metrics that quantify how far the labor market is from social efficiency: the [full-employment rate of unemployment (FERU)](#us-full-employment-rate-of-unemployment-feru) and the [unemployment gap](#us-unemployment-gap). These two metrics are key determinants of optimal monetary policy and fiscal policy.
+From these, the dashboard calculates two metrics that quantify how far the labor market is from social efficiency: the full-employment rate of unemployment (FERU) and the unemployment gap. These two metrics are key determinants of optimal monetary policy and fiscal policy.
 
-Finally, the dashboard presents two metrics derived from the Michez rule—a new, fast, and robust method to detect recessions. The [recession indicator](#us-recession-indicator) and [recession probability](#us-recession-probability) highlight early signs of labor market weakening and signal upcoming deterioration.
+Finally, the dashboard presents two metrics derived from the Michez rule—a new, fast, and robust method to detect recessions. The recession indicator and recession probability highlight early signs of labor market weakening and signal upcoming deterioration.
 
-All charts automatically update as new data become [available on FRED](https://fred.stlouisfed.org/), providing an up-to-date view of the US business cycle.
+All charts automatically update as new data become [available on FRED](https://fred.stlouisfed.org/), providing a real-time view of the US business cycle.
 
 ---
 
@@ -32,11 +32,11 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
-+ Definition: The unemployment rate is the number of job seekers divided by the number of labor force participants.
-+ Interpretation: The unemployment rate measures the share of the labor force that is unemployed. It gives the share of people who have not found a job, among all those who are able and willing to work. This is the standard, official unemployment rate (U3).
-+ Source: The numbers of job seekers and labor force participants are measured by the US Bureau of Labor Statistics (BLS) from the Current Population Survey (CPS), which is a large-scale household survey. 
-+ [Download data (CSV)](/dashboard/unemployment_rate.csv)
-+ [View full screen (HTML)](/dashboard/unemployment_rate.html)
++ *Construction:* The unemployment rate is the number of job seekers divided by the number of labor force participants.
++ *Interpretation:* The unemployment rate measures the share of people who have not succeeded to find a job, among all those who are able and willing to work. This is the standard, official unemployment rate (U3).
++ *Source:* The numbers of [job seekers](https://fred.stlouisfed.org/series/UNEMPLOY) and [labor force participants](https://fred.stlouisfed.org/series/CLF16OV) are measured by the US Bureau of Labor Statistics (BLS) from the [Current Population Survey](https://www.bls.gov/cps/home.htm) (CPS), which is a large-scale household survey. 
++ [Download unemployment rate](/dashboard/unemployment_rate.csv) (CSV)
++ [Full-screen view](/dashboard/unemployment_rate.html)
 
 ## US vacancy rate
 
@@ -46,11 +46,11 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
-+ Definition: The vacancy rate is the number of job openings divided by the number of labor force participants. 
-+ Interpretation: The vacancy rate measures the number of job openings per labor force participant. 
-+ Source: The number of job openings is measured by the BLS from the Job Openings and Labor Turnover Survey (JOLTS), which is a large-scale firm survey. The number of labor force participants is measured by the BLS from the CPS.
-+ [Download data (CSV)](/dashboard/vacancy_rate.csv)
-+ [View full screen (HTML)](/dashboard/vacancy_rate.html)
++ *Construction:* The vacancy rate is the number of job openings divided by the number of labor force participants. 
++ *Interpretation:* The vacancy rate measures the number of job openings per labor force participant. 
++ *Source:* The [number of job openings](https://fred.stlouisfed.org/series/JTSJOL) is measured by the BLS from the [Job Openings and Labor Turnover Survey](https://www.bls.gov/jlt/) (JOLTS), which is a large-scale firm survey.
++ [Download vacancy rate](/dashboard/vacancy_rate.csv) (CSV)
++ [Full-screen view](/dashboard/vacancy_rate.html)
 
 ## US labor market tightness
 
@@ -60,11 +60,10 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
-+ Definition: Labor market tightness is the vacancy rate divided by the unemployment rate. 
-+ Interpretation: Labor market tightness measures the number of job openings per job seeker. 
-+ Theoretical result: A tightness of 1 marks full employment, or equivalently labor market efficiency. When tightness is below 1, the labor market is inefficiently slack. When tightness is above 1, the labor market is inefficiently tight.
-+ [Download data (CSV)](/dashboard/labor_market_tightness.csv)
-+ [View full screen (HTML)](/dashboard/labor_market_tightness.html)
++ *Construction:* Labor market tightness is the vacancy rate divided by the unemployment rate. 
++ *Interpretation:* Labor market tightness measures the number of job openings per job seeker. A tightness of 1 marks full employment, or equivalently labor market efficiency. When tightness is below 1, the labor market is inefficiently slack. When tightness is above 1, the labor market is inefficiently tight.
++ [Download labor market tightness](/dashboard/labor_market_tightness.csv) (CSV)
++ [Full-screen view](/dashboard/labor_market_tightness.html)
 
 ## US Beveridge curve
 
@@ -74,10 +73,9 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
-+ Definition: The Beveridge curve links the unemployment rate to the vacancy rate. 
-+ Interpretation: During typical business cycles, the economy moves along a stable Beveridge curve. In recessions the unemployment rate increases while the vacancy rate decreases. In expansions the unemployment rate decreases while the vacancy rate increases. 
-+ Theoretical result: The labor market is at full employment whenever the unemployment and vacancy rates are equal. Hence, the rate of unemployment at full employment (FERU) is at the intersection of the Beveridge curve and 45° ray. The implication is that the FERU is determined by the location of the Beveridge curve: it is higher whenever the Beveridge curve is futher outward. Furthermore, the labor market is inefficiently tight whenever it is above the 45° ray and inefficiently slack whenever it is below the 45° ray.
-+ [View full screen (HTML)](/dashboard/beveridge_curve.html)
++ *Construction:* The Beveridge curve links the unemployment rate to the vacancy rate. 
++ *Interpretation:* During typical business cycles, the economy moves along a stable Beveridge curve. In recessions the unemployment rate increases while the vacancy rate decreases; in expansions the unemployment rate decreases while the vacancy rate increases. The labor market is at full employment whenever the unemployment and vacancy rates are equal. Hence, the labor market is inefficiently tight whenever the Beveridge curve is above the 45° ray and inefficiently slack whenever the curve is below the 45° ray.
++ [Full-screen view](/dashboard/beveridge_curve.html)
 
 ## US full-employment rate of unemployment (FERU)
 
@@ -87,10 +85,11 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
-+ Definition: The full-employment rate of unemployment (FERU) is the geometric average of the unemployment and vacancy rates: $u^\ast = \sqrt{u \times v}$, where $u$ is the unemployment rate, $v$ is the vacancy rate, and $u^\ast$ is the FERU. 
-+ Interpretation: The FERU marks full employment and, by construction, labor market efficiency.
-+ [Download data (CSV)](/dashboard/feru.csv)
-+ [View full screen (HTML)](/dashboard/feru.html)
++ *Construction:* The full-employment rate of unemployment (FERU) is the geometric average of the unemployment and vacancy rates: $u^\ast = \sqrt{u \times v}$, where $u$ is the unemployment rate, $v$ is the vacancy rate, and $u^\ast$ is the FERU. 
++ *Interpretation:* The FERU marks full employment and, by construction, labor market efficiency. So the FERU is also the socially efficient unemployment rate.
++ *Visualization:* On the Beveridge diagram, the FERU is at the intersection of the Beveridge curve and 45° ray. The implication is that the FERU is determined by the location of the Beveridge curve: it is higher whenever the Beveridge curve is futher outward.
++ [Download FERU](/dashboard/feru.csv) (CSV)
++ [Full-screen view](/dashboard/feru.html)
 
 ## US unemployment gap
 
@@ -100,10 +99,10 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
-+ Definition: The unemployment gap is given by $u - u^\ast$, where $u$ is the unemployment rate and $u^\ast$ is the FERU. 
-+ Interpretation: The unemployment gap indicates the distance from full employment. A positive gap marks an inefficiently slack labor market. A negative gap marks an inefficiently tight labor market.
-+ [Download data (CSV)](/dashboard/unemployment_gap.csv)
-+ [View full screen (HTML)](/dashboard/unemployment_gap.html)
++ *Construction:* The unemployment gap is given by $u - u^\ast$, where $u$ is the unemployment rate and $u^\ast$ is the FERU. 
++ *Interpretation:* The unemployment gap indicates the distance from full employment. A positive gap marks an inefficiently slack labor market. A negative gap marks an inefficiently tight labor market.
++ [Download unemployment gap](/dashboard/unemployment_gap.csv) (CSV)
++ [Full-screen view](/dashboard/unemployment_gap.html)
 
 ## US recession indicator
 
@@ -114,10 +113,10 @@ All charts automatically update as new data become [available on FRED](https://f
 </iframe>
 
 
-+ Definition: The recession indicator is the minimum of the Sahm-rule indicator (the increase of the 3-month average of the unemployment rate above its 12-month low) and a vacancy analogue (the decrease of the 3-month average of the vacancy rate below its 12-month high). 
-+ Interpretation: The Michez rule signals a recession when the indicator crosses the threshold of 0.29pp.
-+ [Download data (CSV)](/dashboard/recession_indicator.csv)
-+ [View full screen (HTML)](/dashboard/recession_indicator.html)
++ *Construction:* The recession indicator is the minimum of the Sahm-rule indicator (the increase of the 3-month average of the unemployment rate above its 12-month low) and a vacancy analogue (the decrease of the 3-month average of the vacancy rate below its 12-month high). 
++ *Interpretation:* The Michez rule signals a recession when the recession indicator crosses the threshold of 0.29pp.
++ [Download recession indicator](/dashboard/recession_indicator.csv) (CSV)
++ [Full-screen view](/dashboard/recession_indicator.html)
 
 ## US recession probability
 
@@ -127,10 +126,10 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
-+ Definition: The recession probability is computed from the dual-threshold extension of the Michez rule. The recession probability is the fraction of the 0.29pp–0.81pp band that the indicator has covered: $p = (\textrm{indicator} - 0.29) / (0.81 - 0.29)$.
-+ Interpretation: The dual-threshold rule works as follows: values of the indicator between 0.29pp and 0.81pp signal a probable recession; values above 0.81pp signal a certain recession. This dual-threshold extension accounts for uncertainty in the true recession threshold and provides a simple way to nowcast recession risk. 
-+ [Download data (CSV)](/dashboard/recession_probability.csv)
-+ [View full screen (HTML)](/dashboard/recession_probability.html)
++ *Construction:* The recession probability is computed from the dual-threshold extension of the Michez rule. The recession probability is the fraction of the 0.29pp–0.81pp band that the recession indicator has covered: $p=(\textrm{indicator} - 0.29) / (0.81 - 0.29)$.
++ *Interpretation:* The dual-threshold Michez rule works as follows: values of the indicator between 0.29pp and 0.81pp signal a probable recession; values above 0.81pp signal a certain recession. This dual-threshold extension accounts for uncertainty in the true recession threshold and provides a simple way to nowcast recession risk. 
++ [Download recession probability](/dashboard/recession_probability.csv) (CSV)
++ [Full-screen view](/dashboard/recession_probability.html)
 
 ---
 
@@ -138,9 +137,14 @@ All charts automatically update as new data become [available on FRED](https://f
 
 ### When do the numbers for the current month become available?
 
-The data required to populate the dashboard for any given month are released in the first week of the following month, usually [on a Tuesday for the JOLTS data and on a Friday for the CPS data](https://www.bls.gov/schedule/2025/home.htm). Accordingly, the dashboard will usually provide a complete picture for the current month on the first Friday of the following month.
+The data required to populate the dashboard for a given month are released by the BLS in the first week of the following month, usually on a Tuesday for the JOLTS data and on a Friday for the CPS data:
 
-It does appear that the JOLTS data for a given month are released one month after the CPS data for the same month, but to best align labor force and vacancy data, we shift forward by one month the number of job openings from JOLTS. For instance, we assign to December 2023 the number of job openings that the BLS assigns to November 2023. The motivation for this shift is that the number of job openings from the JOLTS refers to the last business day of the month (Thursday 30 November, 2023), while the labor force from the CPS refers to the Sunday--Saturday week including the 12th of the month (Sunday 10 December 2023 to Saturday 16 December 2023). So the number of job openings refers to a day that is closer to the next month's CPS reference week than to the current month's CPS reference week. Another advantage of shifting forward by one month the number of job openings from the JOLTS is that we have access to the data required to populate the dashboard in the same week, as soon as the month is over. 
++ [Latest JOLTS data release](https://www.bls.gov/news.release/jolts.nr0.htm)
++ [Latest CPS data release](https://www.bls.gov/news.release/empsit.nr0.htm)
+
+Accordingly, the dashboard will usually provide a complete picture for the current month on the first Friday of the following month. The schedule of [future data releases](https://www.bls.gov/schedule/2025/home.htm) is announced well in advance by the BLS.
+
+The JOLTS data for a given month appear to be released one month after the CPS data for the same month, but to best align labor force and vacancy data, we shift forward by one month the number of job openings from JOLTS. For instance, we assign to December 2023 the number of job openings that the BLS assigns to November 2023. The motivation for this shift is that the number of job openings from the JOLTS refers [to the last business day of the month](https://perma.cc/Y6EQ-WBXF) (Thursday 30 November 2023, in our example), while the labor force from the CPS refers to the [Sunday--Saturday week including the 12th of the month](https://perma.cc/RN3P-S4SL) (Sunday 10 December 2023 to Saturday 16 December 2023, in our example). So the number of job openings refers to a day that is closer to the next month's CPS reference week than to the current month's CPS reference week. Another advantage of shifting forward by one month the number of job openings from the JOLTS is that we have access to the data required to populate the dashboard in the same week, as soon as the month is over. 
 
 ### Are the numbers final upon release? Or will they be revised?
 
@@ -153,17 +157,17 @@ Yet, revisions to labor market data are generally minimal, especially compared t
 
 ### Is the unemployment rate the same as the BLS unemployment rate?
 
-Yes, almost. The two unemployment rates are computed similarly, but the BLS [reports the unemployment rate](https://fred.stlouisfed.org/series/UNRATE) with one-digit precision, while we report it with two-digit (basis-point) precision. This higher precision is useful for recession detection, as recession indicators are computed and reported at the basis-point level.
+Yes, almost. The two unemployment rates are computed similarly, but the BLS reports the [unemployment rate](https://fred.stlouisfed.org/series/UNRATE) with one-digit precision, while we report it with two-digit (basis-point) precision. This higher precision is useful for recession detection, as recession indicators are computed and reported at the basis-point level.
 
 ### Is the vacancy rate the same as the BLS vacancy rate?
 
-No. The BLS [computes the vacancy rate](https://fred.stlouisfed.org/series/JTSJOR) as the number of job vacancies divided by the number of employed workers plus job openings. This computation is problematic. First, it means that the BLS unemployment and vacancy rates are not consistent with each other, since one uses the number of employed workers plus unemployed workers in the denominator, while the other uses the number of employed workers plus job openings in the denominator. Second, the BLS vacancy rate is not a useful variable in labor market matching models.
+No. The BLS computes the [vacancy rate](https://fred.stlouisfed.org/series/JTSJOR) as the number of job vacancies divided by the number of employed workers plus job openings. This computation is problematic. First, it means that the BLS unemployment and vacancy rates are not consistent with each other, since one uses the number of employed workers plus unemployed workers in the denominator, while the other uses the number of employed workers plus job openings in the denominator. Second, the BLS vacancy rate is not a useful variable in labor market matching models.
 
 By contrast, we compute the vacancy rate as the number of job vacancies divided by the number of employed workers plus unemployed workers. Our unemployment and vacancy rates are consistent with each other. Furthermore, our vacancy rate is a variable that appears directly in labor market matching models.
 
 ### Isn't the vacancy rate inflated by ghost job postings?
 
-Vacancy data have recently been criticized for being polluted by ghost or fake vacancies. These vacancies do not actually represent an open position, and will not lead to a new hire. A [recent article by CBS News](https://perma.cc/JUR9-W4AA) explains that fake job listings are a growing problem in the labor market. [Employ America](https://perma.cc/XZ2B-LTNH) has gone one step further and argued that vacancy numbers are vacuous in general and should never used by policymakers. Let's go over the various criticisms raised by such pieces and address them.
+Vacancy data have recently been criticized for being polluted by ghost or fake vacancies. These vacancies do not actually represent an open position, and will not lead to a new hire. A [recent article](https://perma.cc/JUR9-W4AA) by CBS News explains that fake job listings are a growing problem in the labor market. [Employ America](https://perma.cc/XZ2B-LTNH) has gone one step further and argued that vacancy numbers are vacuous in general and should never used by policymakers. Let's go over the various criticisms raised by such pieces and address them.
 
 #### Aren't vacancies poorly measured?
 
@@ -187,11 +191,11 @@ The threshold for reporting a vacancy is that same as the threshold for reportin
 
 A second point relates to online job boards: it is very easy for firms to list job advertisements online, so the number of online job postings might not be meaningful. As noted above, however, our vacancy numbers do not come from online job boards: they are measured by the BLS through JOLTS. So what happens on online job boards is irrelevant.
 
-In fact, the internet and online job portals [might not have much effect on the job market](https://doi.org/10.1257/000282804322970779). Looking at the academic job market, it does not seem that the amount of time and effort required to recruit colleagues is appreciably diminished by online job portals. Most of the recruiting time is spent on four things: reading applications and papers; interviewing candidates; flying out candidates; and debating with colleagues. None of these four tasks are affected by online job boards.
+In fact, the internet and online job portals might [not have much effect on the job market](https://doi.org/10.1257/000282804322970779). Looking at the academic job market, it does not seem that the amount of time and effort required to recruit colleagues is appreciably diminished by online job portals. Most of the recruiting time is spent on four things: reading applications and papers; interviewing candidates; flying out candidates; and debating with colleagues. None of these four tasks are affected by online job boards.
 
 #### Don't firms post more than one vacancy per hire?
 
-A third supposed issue is that firms post more than one vacancy per hire—which leads some to believe that some vacancies are fake since they do not result in a hire. But this is exactly [how firms behave in matching models](https://youtu.be/45W3coPEObY)! In these models, if a firm wants to recruit one worker this month but knows that a vacancy is only filled with probability 1/3, then the firm will post 3 vacancies to hire one worker in expectation.
+A third supposed issue is that firms post more than one vacancy per hire—which leads some to believe that some vacancies are fake since they do not result in a hire. But this is exactly how [firms behave in matching models](https://youtu.be/45W3coPEObY)! In these models, if a firm wants to recruit one worker this month but knows that a vacancy is only filled with probability 1/3, then the firm will post 3 vacancies to hire one worker in expectation.
 
 The key point is that in matching models, vacancies do not represent actual positions but recruiting effort—an effort to try to find workers through the matching process. This is also what vacancies represent in reality, as ZipRecruiter's Julia Pollak explains in the CBS article:
 
@@ -219,7 +223,7 @@ Although vacancies are not discussed much in the macro literature, there is an o
 
 Unemployment rate, vacancy rate, and labor market tightness can be computed in the same way in other countries in which similar raw data (number of job seekers, number of job vacancies, number of labor force participants) are available.
 
-The FERU formula $u^\ast = \sqrt{uv}$ does require assumptions on the cost of unemployment, cost of recruiting, and especially shape of the Beveridge curve. In countries in which the unemployment and recruiting costs and the shape of the Beveridge curve are different than in the United States, the FERU must be [computed from a more general formula](/9/). 
+The FERU formula $u^\ast = \sqrt{uv}$ does require assumptions on the cost of unemployment, cost of recruiting, and especially shape of the Beveridge curve. In countries in which the unemployment and recruiting costs and the shape of the Beveridge curve are different than in the United States, the FERU must be computed from a [more general formula](/9/). 
 
 The Michez-rule recession indicator can be computed for any country, but the recession threshold of 0.29pp will have to be recalibrated. The value of 0.29pp is the lowest threshold that generates no false positives in the United States between 1960 and 2021. In other countries, the recession indicator will take different values, and recessions will occur at different times, so the threshold will have to be recomputed.
 
@@ -234,7 +238,7 @@ Similarly, the upper threshold of 0.81pp used in the dual-threshold Michez rule 
 
 The federal government and Federal Reserve are mandated to maintain the economy at full employment, or maximum employment. (The two terms have been used interchangeably.). This legislative mandate comes from the [Employment Act of 1946](https://fraser.stlouisfed.org/title/1099), the [Federal Reserve Reform Act of 1977](https://fraser.stlouisfed.org/title/1040), and the [Full Employment and Balanced Growth Act of 1978](https://fraser.stlouisfed.org/title/1034) (known informally as the Humphrey–Hawkins Act).
 
-The issue is that these texts do not explain what full employment is. The Humphrey-Hawkins Act did set an unemployment target of 3% within 5 years of the law (and 4% for young workers). [But these numbers were never taken seriously](https://www.jstor.org/stable/2138518), in part because policymakers rightly understood that the full-employment unemployment rate could not be a fixed number. When testifying in front of Congress in 1975 in his capacity of chair of the CEA, Alan Greenspan was asked what the target for full employment should be. [He responded:](https://doi.org/10.1177/003232927700700101)
+The issue is that these texts do not explain what full employment is. The Humphrey-Hawkins Act did set an unemployment target of 3% within 5 years of the law (and 4% for young workers). But these numbers were [never taken seriously](https://www.jstor.org/stable/2138518), in part because policymakers rightly understood that the full-employment unemployment rate could not be a fixed number. When testifying in front of Congress in 1975 in his capacity of chair of the CEA, Alan Greenspan was asked what the target for full employment should be. [He responded:](https://doi.org/10.1177/003232927700700101)
 
 > I do not think we should set a target.
 
@@ -248,7 +252,7 @@ No. In recent times, the US government has used the non-accelerating-inflation r
 
 Similarly, in 2024, the [Council of Economic Advisers described](https://perma.cc/2JGM-QG4Z) the concept of full employment as follows: 
 
-> Modern economics has generally defined full employment by citing the theoretical concept of the lowest unemployment rate consistent with stable inflation, which is referred to as $u^*$, the non-accelerating inflationary rate of unemployment (termed NAIRU).
+> Modern economics has generally defined full employment by citing the theoretical concept of the lowest unemployment rate consistent with stable inflation, which is referred to as $u^$, the non-accelerating inflationary rate of unemployment (termed NAIRU).
 
 These quotes are particularly meaningful because the Joint Economic Committee and Council of Economic Advisers were both created by the Employment Act of 1946 to ensure that the government achieved its full-employment mandate.
 
@@ -313,19 +317,3 @@ The unemployment gap is not directly useful to compute optimal unemployment insu
 + [u* = √uv: The Full-Employment Rate of Unemployment in the United States](https://pascalmichaillat.org/13/) (*Brookings Papers on Economic Activity*, 2024) – This paper obtains the formula for the FERU: $u^\ast = \sqrt{uv}$. The formula implies that the labor market is at full employment whenever there are as many job seekers as job vacancies ($u = v$); inefficiently tight when there are fewer job seekers than vacancies ($u < v$); and inefficiently slack when there are more job seekers than vacancies ($u > v$).
 
 + [Has the Recession Started?](https://pascalmichaillat.org/16/) (*Oxford Bulletin of Economics and Statistics*, 2025) – This paper develops the recession indicator and recession threshold, and computes the recession probability. The Michez rule, based on the recession indicator and threshold, detects recessions faster than the Sahm rule. It is also more robust in that it works between 1929 and 2024, whereas the Sahm rule breaks down before 1960.
-
-## Raw data via FRED
-
-+ [Number of job seekers, 1948–present](https://fred.stlouisfed.org/series/UNEMPLOY)
-+ [Number of labor force participants, 1948–present](https://fred.stlouisfed.org/series/CLF16OV)
-+ [Number of job openings, 2001–present](https://fred.stlouisfed.org/series/JTSJOL)
-
-## BLS resources
-
-+ [Latest CPS data release](https://www.bls.gov/news.release/empsit.nr0.htm)
-+ [Latest JOLTS data release](https://www.bls.gov/news.release/jolts.nr0.htm)
-+ [CPS homepage](https://www.bls.gov/cps/home.htm)
-+ [CPS documentation](https://www.bls.gov/cps/documentation.htm)
-+ [JOLTS homepage](https://www.bls.gov/jlt/)
-+ [JOLTS documentation](https://www.bls.gov/jlt/jltfaq.htm)
-

@@ -4,7 +4,7 @@ theme: PaperMod
 enableInlineShortcodes: true
 enableRobotsTXT: true
 pagination:
-  pagerSize: 30
+  pagerSize: 40
 
 taxonomies:
     tag: tags
@@ -25,7 +25,7 @@ menu:
           weight: 4        
 
 params:
-    description: "This website hosts Pascal Michaillat's research papers, course materials, design templates, curriculum vitae, and an automated business cycle dashboard."
+    description: "This website hosts Pascal Michaillat's research papers, course materials, design templates, curriculum vitae, and a real-time business cycle dashboard."
     author: Pascal Michaillat
     googleAnalyticsID: "G-97G4MZ4061"
     images: ["cover.png"]
@@ -35,17 +35,15 @@ params:
     disableThemeToggle: true
     ShowShareButtons: false
     ShowReadingTime: false
+    ShowWordCount: false
     disableSpecial1stPost: true
     disableAnchoredHeadings: true
     ShowPostNavLinks: false
     ShowBreadCrumbs: false
-    ShowCodeCopyButtons: true
-    ShowAllPagesInArchive: false
-    MainSections: ["papers","courses","design"]
-    ShowToc: false
     disableScrollToTop: true
+    ShowCodeCopyButtons: true
+    ShowToc: false
     TocOpen: false
-    ShowWordCount: false
     UseHugoToc: true
     comments: false
     math: true

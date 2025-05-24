@@ -16,7 +16,7 @@
     border: 1px solid var(--purple);
 }
 
-.tag-entry .entry-cover {
+.tag-entry {
     display: none;
 }
 
