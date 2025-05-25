@@ -16,10 +16,6 @@
     border: 1px solid var(--purple);
 }
 
-.tag-entry {
-    display: none;
-}
-
 .entry-header h1, h2 {
     font-size: 1.25rem;
     line-height: var(--line-height);
@@ -56,5 +52,4 @@
 .entry-hint-parent {
     display: flex;
     justify-content: space-between;
-}
 }
