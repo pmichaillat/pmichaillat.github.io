@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+    /* theme-vars */
+    :root {
+        --gap: 14px;
+    }
+
+    /* footer */
+    .footer {
+        padding: calc((var(--footer-height) - var(--gap) - 10px) / 2) var(--gap);
+    }
+}
