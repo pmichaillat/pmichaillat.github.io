@@ -1,6 +1,5 @@
 ---
 title: "Office Hours"
-date: 2025-03-14
 aliases:
     - /oh.html
 author: "Pascal Michaillat"
@@ -11,12 +10,10 @@ hidemeta: true
 
 ---
 
-##### Schedule for Spring 2025
+##### Schedule for Summer 2025
 
-<!-- + Day: Wednesday
-+ Time for ECON 182 students: 4:00pm–5:00pm
-+ Time for other UCSC students: 3:00pm–4:00pm -->
-+ Office hours are by appointment. Please [email me](mailto:pamichai@ucsc.edu) to set up a meeting.
++ There are currently no regular office hours. Office hours will resume in Fall 2025.
++ However, if you are a graduate student on the job market or at the research stage, and you would like to talk, please [email me](mailto:pamichai@ucsc.edu) to set up a meeting.
 
 ---
 
