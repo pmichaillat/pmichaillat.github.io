@@ -29,6 +29,26 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python content/dashboard/dashboard.py
 
+     - name: Debug generated files # NEW DEBUGGING STEP
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Listing files in repository root:"
+          ls -la
+          echo "Listing files in content/dashboard:"
+          ls -la content/dashboard/
+          echo "Checking static/dashboard directory:"
+          if [ -d "static/dashboard" ]; then
+            echo "static/dashboard directory exists."
+            echo "Listing files in static/dashboard:"
+            ls -Rla static/dashboard/
+            echo "MD5 checksums of generated files in static/dashboard:"
+            find static/dashboard -type f -print0 | xargs -0 md5sum || echo "No files found to checksum in static/dashboard"
+            echo "Displaying content of a sample CSV (if it exists):"
+            cat static/dashboard/vacancy_rate.csv || echo "unemployment_rate.csv not found in static/dashboard"
+          else
+            echo "static/dashboard directory DOES NOT EXIST."
+          fi
+
       - name: Commit and push updated charts and data
         run: |
           git config user.name "github-actions"

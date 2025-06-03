@@ -1,8 +1,8 @@
 # to run from the console:
-#  python3 -m venv .venv
+# python3 -m venv .venv
 # source .venv/bin/activate
 # pip install -r requirements.txt
-# export FRED_API_KEY='YOUR_ACTUAL_API_KEY'
+# export FRED_API_KEY= 'key'
 # python3 dashboard.py
 
 import os
@@ -12,12 +12,28 @@ from fredapi import Fred
 from dotenv import load_dotenv
 import plotly.graph_objects as go
 
+print("Script starting...") # New log
+
 # Load FRED API key
 load_dotenv()
-fred = Fred(api_key=os.getenv("FRED_API_KEY"))
+# fred = Fred(api_key=os.getenv("FRED_API_KEY"))
+apikey = os.getenv("FRED_API_KEY")
+if apikey:
+    print("FRED_API_KEY environment variable found.") # New log
+    if len(apikey) > 4:
+        print(f"FRED_API_KEY preview: ...{apikey[-4:]}") # New log (shows last 4 chars, be careful if sensitive)
+    else:
+        print("FRED_API_KEY seems very short.") # New log
+else:
+    print("FRED_API_KEY environment variable NOT FOUND.") # New log
+fred = Fred(api_key=apikey)
 
 # Ensure output directory exists
-os.makedirs("../../static/dashboard", exist_ok=True)
+# os.makedirs("../../static/dashboard", exist_ok=True)
+output_dir_relative = "../../static/dashboard"
+output_dir_absolute = os.path.abspath(output_dir_relative)
+print(f"Ensuring output directory exists: {output_dir_absolute}") # New log
+os.makedirs(output_dir_absolute, exist_ok=True)
 
 # Create helper function to fetch recessions
 def get_recession_periods(rec_series):
@@ -114,8 +130,11 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
         showlegend=False
     )
 
+# In your make_plot function, before fig.write_html:
+    html_file_path = os.path.join(output_dir_absolute, f"{filename}.html")
+    print(f"Attempting to write HTML to: {html_file_path}") # New log
     fig.write_html(
-        f"../../static/dashboard/{filename}.html",
+        html_file_path, # Use the absolute path
         include_plotlyjs='cdn',
         full_html=False,
         config={
@@ -135,11 +154,35 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
         }
     )
 
+    print(f"Successfully wrote HTML: {html_file_path}") # New log
+
+
 
 # Fetch raw data from FRED
+print("Fetching UNEMPLOY data...")
 u = fred.get_series("UNEMPLOY")
+if u is not None and not u.empty:
+    print(f"UNEMPLOY data fetched successfully. Shape: {u.shape}, Last date: {u.index.max()}")
+else:
+    print("Failed to fetch UNEMPLOY data or data is empty.")
+
+print("Fetching JTSJOL data...")
 v = fred.get_series("JTSJOL")
+if v is not None and not v.empty:
+    print(f"JTSJOL data fetched successfully. Shape: {v.shape}, Last date: {v.index.max()}")
+else:
+    print("Failed to fetch JTSJOL data or data is empty.")
+
+print("Fetching CLF16OV data...")
 lf = fred.get_series("CLF16OV")
+if lf is not None and not lf.empty:
+    print(f"CLF16OV data fetched successfully. Shape: {lf.shape}, Last date: {lf.index.max()}")
+else:
+    print("Failed to fetch CLF16OV data or data is empty.")
+
+# u = fred.get_series("UNEMPLOY")
+# v = fred.get_series("JTSJOL")
+# lf = fred.get_series("CLF16OV")
 
 # Ensure datetime index for all series
 u.index = pd.to_datetime(u.index)
@@ -215,11 +258,16 @@ make_plot(df, "data", title, "unemployment_rate", "Unemployment rate (%)",x_min,
 
 # Save data
 
-csv_path = "../../static/dashboard/unemployment_rate.csv"
+csv_filename = "unemployment_rate.csv"
+csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
+# csv_path = "../../static/dashboard/unemployment_rate.csv"
 df_out = df.copy()
 df_out.columns = ["Unemployment rate (%)"]
 df_out.index.name = "Date"
-df_out.to_csv(csv_path) 
+# df_out.to_csv(csv_path) 
+df_out.to_csv(csv_path_absolute)
+print(f"Successfully wrote CSV: {csv_path_absolute}") # New log
 
 # Plot vacancy rate
 
@@ -238,11 +286,16 @@ make_plot(df, "data", title, "vacancy_rate", "Vacancy rate (%)", x_min, x_max, y
 
 # Save data
 
-csv_path = "../../static/dashboard/vacancy_rate.csv"
+csv_filename = "vacancy_rate.csv"
+csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
+# csv_path = "../../static/dashboard/vacancy_rate.csv"
 df_out = df.copy()
 df_out.columns = ["Vacancy rate (%)"]
 df_out.index.name = "Date"
-df_out.to_csv(csv_path) 
+# df_out.to_csv(csv_path) 
+df_out.to_csv(csv_path_absolute)
+print(f"Successfully wrote CSV: {csv_path_absolute}") # New log
 
 # Plot labor market tightness
 
@@ -261,11 +314,16 @@ make_plot(df, "data", title, "labor_market_tightness", "Labor market tightness",
 
 # Save data
 
-csv_path = "../../static/dashboard/labor_market_tightness.csv"
+csv_filename = "labor_market_tightness.csv"
+csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
+# csv_path = "../../static/dashboard/labor_market_tightness.csv"
 df_out = df.copy()
 df_out.columns = ["Labor market tightness"]
 df_out.index.name = "Date"
-df_out.to_csv(csv_path) 
+# df_out.to_csv(csv_path) 
+df_out.to_csv(csv_path_absolute)
+print(f"Successfully wrote CSV: {csv_path_absolute}") # New log 
 
 # Plot Beveridge curve
 
@@ -392,11 +450,16 @@ make_plot(df, "data", title, "feru", "FERU (%)", x_min, x_max, y_min, y_max)
 
 # Save data
 
-csv_path = "../../static/dashboard/feru.csv"
+csv_filename = "feru.csv"
+csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
+# csv_path = "../../static/dashboard/feru.csv"
 df_out = df.copy()
 df_out.columns = ["FERU (%)"]
 df_out.index.name = "Date"
-df_out.to_csv(csv_path) 
+# df_out.to_csv(csv_path) 
+df_out.to_csv(csv_path_absolute)
+print(f"Successfully wrote CSV: {csv_path_absolute}") # New log 
 
 # Plot unemployment gap
 
@@ -415,11 +478,16 @@ make_plot(df, "data", title, "unemployment_gap", "Unemployment gap (pp)", x_min,
 
 # Save data
 
-csv_path = "../../static/dashboard/unemployment_gap.csv"
+csv_filename = "unemployment_gap.csv"
+csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
+# csv_path = "../../static/dashboard/unemployment_gap.csv"
 df_out = df.copy()
 df_out.columns = ["Unemployment gap (pp)"]
 df_out.index.name = "Date"
-df_out.to_csv(csv_path) 
+# df_out.to_csv(csv_path) 
+df_out.to_csv(csv_path_absolute)
+print(f"Successfully wrote CSV: {csv_path_absolute}") # New log 
 
 # Plot recession indicator
 
@@ -438,11 +506,16 @@ make_plot(df, "data", title, "recession_indicator", "Recession indicator (pp)", 
 
 # Save data
 
-csv_path = "../../static/dashboard/recession_indicator.csv"
+csv_filename = "recession_indicator.csv"
+csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
+# csv_path = "../../static/dashboard/recession_indicator.csv"
 df_out = df.copy()
 df_out.columns = ["Recession indicator (pp)"]
 df_out.index.name = "Date"
-df_out.to_csv(csv_path) 
+# df_out.to_csv(csv_path) 
+df_out.to_csv(csv_path_absolute)
+print(f"Successfully wrote CSV: {csv_path_absolute}") # New log 
 
 # Plot recession probability
 
@@ -461,8 +534,15 @@ make_plot(df, "data", title, "recession_probability", "Recession probability", x
 
 # Save data
 
-csv_path = "../../static/dashboard/recession_probability.csv"
+csv_filename = "recession_probability.csv"
+csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
+# csv_path = "../../static/dashboard/recession_probability.csv"
 df_out = df.copy()
 df_out.columns = ["Recession probability (%)"]
 df_out.index.name = "Date"
-df_out.to_csv(csv_path) 
+# df_out.to_csv(csv_path) 
+df_out.to_csv(csv_path_absolute)
+print(f"Successfully wrote CSV: {csv_path_absolute}") # New log
+
+print("Script finished.") # New log 
