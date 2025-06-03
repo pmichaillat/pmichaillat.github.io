@@ -287,6 +287,20 @@ print(f"Successfully wrote CSV: {csv_path_absolute}") # New log
 
 df = pd.DataFrame({"data": v_rate}).dropna()
 
+print("--- DETAILED LOG FOR vacancy_rate.csv ---")
+print(f"DataFrame 'df' (v_rate) to be saved to CSV. Shape: {df.shape}")
+if not df.empty:
+    print("Last 5 rows of 'df' (v_rate) about to be written:")
+    # Convert to string to ensure it's captured well in logs, handle potential multi-index
+    print(df.tail(5).to_string())
+    latest_processed_v_date = df.index.max()
+    latest_processed_v_value = df['data'].iloc[-1]
+    previous_processed_v_value = df['data'].iloc[-2]
+    print(f"Vacancy rate latest processed point for CSV: Date='{latest_processed_v_date.strftime('%Y-%m-%d')}', Value='{latest_processed_v_value:.4f}', Other value='{previous_processed_v_value:.4f}'") # More precision
+else:
+    print("'df' (v_rate) is EMPTY before writing CSV.")
+print("--- END DETAILED LOG FOR vacancy_rate.csv ---")
+
 last_date = df.index.max().strftime("%B %Y")
 last_value = df["data"].iloc[-1]
 title = f"{last_date}: {last_value:.2f}%"
@@ -310,6 +324,20 @@ df_out.index.name = "Date"
 # df_out.to_csv(csv_path) 
 df_out.to_csv(csv_path_absolute)
 print(f"Successfully wrote CSV: {csv_path_absolute}") # New log
+
+# Immediately after writing, try to read it back and print tail IN PYTHON
+try:
+    print(f"Python attempting to read back and tail {csv_path_absolute} immediately after write:")
+    df_read_back = pd.read_csv(csv_path_absolute, index_col="Date", parse_dates=True)
+    print("Last 5 rows of vacancy_rate.csv as read by Python immediately after write:")
+    print(df_read_back.tail(5).to_string())
+    latest_read_back_v_date = df_read_back.index.max()
+    latest_read_back_v_value = df_read_back["Vacancy rate (%)"].iloc[-1] # Use correct column name
+    previous_read_back_v_value = df_read_back["Vacancy rate (%)"].iloc[-2] # Use correct column name
+    print(f"Vacancy rate latest read_back point: Date='{latest_read_back_v_date.strftime('%Y-%m-%d')}', Value='{latest_read_back_v_value:.4f}', Other value='{previous_read_back_v_value:.4f}'")
+
+except Exception as e:
+    print(f"Error reading back {csv_path_absolute} in Python: {e}")
 
 # Plot labor market tightness
 
