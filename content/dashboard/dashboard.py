@@ -29,12 +29,24 @@ else:
 fred = Fred(api_key=apikey)
 print("FRED object initialized.")
 
+# Get the absolute directory of the current script (e.g., .../content/dashboard/)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Go up two levels to get to the repository root (from .../content/dashboard/ to .../)
+REPO_ROOT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, '..', '..'))
+
+# Define the output directory relative to the repository root
+OUTPUT_DIR_ABSOLUTE = os.path.join(REPO_ROOT_DIR, 'static', 'dashboard')
+
+print(f"Ensuring output directory exists: {OUTPUT_DIR_ABSOLUTE}") # New log
+os.makedirs(OUTPUT_DIR_ABSOLUTE, exist_ok=True)
+
 # Ensure output directory exists
-# os.makedirs("../../static/dashboard", exist_ok=True)
-output_dir_relative = "../../static/dashboard"
-output_dir_absolute = os.path.abspath(output_dir_relative)
-print(f"Ensuring output directory exists: {output_dir_absolute}") # New log
-os.makedirs(output_dir_absolute, exist_ok=True)
+# # os.makedirs("../../static/dashboard", exist_ok=True)
+# output_dir_relative = "../../static/dashboard"
+# output_dir_absolute = os.path.abspath(output_dir_relative)
+# print(f"Ensuring output directory exists: {output_dir_absolute}") # New log
+# os.makedirs(output_dir_absolute, exist_ok=True)
 
 # Create helper function to fetch recessions
 def get_recession_periods(rec_series):
@@ -132,7 +144,7 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
     )
 
 # In your make_plot function, before fig.write_html:
-    html_file_path = os.path.join(output_dir_absolute, f"{filename}.html")
+    html_file_path = os.path.join(OUTPUT_DIR_ABSOLUTE, f"{filename}.html")
     print(f"Attempting to write HTML to: {html_file_path}") # New log
     fig.write_html(
         html_file_path, # Use the absolute path
@@ -273,7 +285,7 @@ make_plot(df, "data", title, "unemployment_rate", "Unemployment rate (%)",x_min,
 # Save data
 
 csv_filename = "unemployment_rate.csv"
-csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename) # Use absolute path
 print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
 # csv_path = "../../static/dashboard/unemployment_rate.csv"
 df_out = df.copy()
@@ -315,7 +327,7 @@ make_plot(df, "data", title, "vacancy_rate", "Vacancy rate (%)", x_min, x_max, y
 # Save data
 
 csv_filename = "vacancy_rate.csv"
-csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename) # Use absolute path
 print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
 # csv_path = "../../static/dashboard/vacancy_rate.csv"
 df_out = df.copy()
@@ -357,7 +369,7 @@ make_plot(df, "data", title, "labor_market_tightness", "Labor market tightness",
 # Save data
 
 csv_filename = "labor_market_tightness.csv"
-csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename) # Use absolute path
 print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
 # csv_path = "../../static/dashboard/labor_market_tightness.csv"
 df_out = df.copy()
@@ -493,7 +505,7 @@ make_plot(df, "data", title, "feru", "FERU (%)", x_min, x_max, y_min, y_max)
 # Save data
 
 csv_filename = "feru.csv"
-csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename) # Use absolute path
 print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
 # csv_path = "../../static/dashboard/feru.csv"
 df_out = df.copy()
@@ -521,7 +533,7 @@ make_plot(df, "data", title, "unemployment_gap", "Unemployment gap (pp)", x_min,
 # Save data
 
 csv_filename = "unemployment_gap.csv"
-csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename) # Use absolute path
 print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
 # csv_path = "../../static/dashboard/unemployment_gap.csv"
 df_out = df.copy()
@@ -549,7 +561,7 @@ make_plot(df, "data", title, "recession_indicator", "Recession indicator (pp)", 
 # Save data
 
 csv_filename = "recession_indicator.csv"
-csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename) # Use absolute path
 print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
 # csv_path = "../../static/dashboard/recession_indicator.csv"
 df_out = df.copy()
@@ -577,7 +589,7 @@ make_plot(df, "data", title, "recession_probability", "Recession probability", x
 # Save data
 
 csv_filename = "recession_probability.csv"
-csv_path_absolute = os.path.join(output_dir_absolute, csv_filename) # Use absolute path
+csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename) # Use absolute path
 print(f"Attempting to write CSV to: {csv_path_absolute}") # New log
 # csv_path = "../../static/dashboard/recession_probability.csv"
 df_out = df.copy()
