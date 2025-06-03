@@ -1,5 +1,5 @@
 # Workflow for updating dashboard with FRED data
-name: Fetch FRED data and update dashboard
+name: Fetch data and update dashboard
 
 on:
   # push:
@@ -77,5 +77,5 @@ jobs:
           echo "--- Git Status After Add ---"
           git status --porcelain # Shows what Git has staged for commit
 
-          git commit -m "Update dashboard with newly released data [skip ci]" || echo "No changes to commit"
+          git commit -m "Update dashboard with newly released data" || echo "No changes to commit"
           git push
