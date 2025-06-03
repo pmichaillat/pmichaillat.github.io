@@ -29,6 +29,21 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python content/dashboard/dashboard.py
 
+      - name: Debug and Inspect Generated Files on Runner # MODIFIED/ENHANCED STEP
+      run: |
+        echo "--- Current Directory ---"
+        pwd
+        echo "--- Listing static/dashboard/ ---"
+        ls -la static/dashboard/
+        echo "--- Checksum of all files in static/dashboard/ ---"
+        find static/dashboard -type f -print0 | xargs -0 md5sum || echo "No files to checksum"
+        
+        echo "--- Last 10 lines of static/dashboard/vacancy_rate.csv on runner ---"
+        tail -n 10 static/dashboard/vacancy_rate.csv || echo "vacancy_rate.csv not found or empty"
+        
+        echo "--- Last 10 lines of static/dashboard/unemployment_rate.csv on runner ---"
+        tail -n 10 static/dashboard/unemployment_rate.csv || echo "unemployment_rate.csv not found or empty"
+
       - name: Debug generated files
         run: |
           echo "Current directory: $(pwd)"
@@ -53,6 +68,14 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
+
+          echo "--- Git Status Before Add ---"
+          git status --porcelain # Shows what Git thinks is changed/untracked before 'add'
+
           git add static/dashboard/*.html static/dashboard/*.csv
+
+          echo "--- Git Status After Add ---"
+          git status --porcelain # Shows what Git has staged for commit
+
           git commit -m "Update dashboard with newly released data [skip ci]" || echo "No changes to commit"
           git push
