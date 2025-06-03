@@ -30,19 +30,19 @@ jobs:
         run: python content/dashboard/dashboard.py
 
       - name: Debug and Inspect Generated Files on Runner # MODIFIED/ENHANCED STEP
-      run: |
-        echo "--- Current Directory ---"
-        pwd
-        echo "--- Listing static/dashboard/ ---"
-        ls -la static/dashboard/
-        echo "--- Checksum of all files in static/dashboard/ ---"
-        find static/dashboard -type f -print0 | xargs -0 md5sum || echo "No files to checksum"
-        
-        echo "--- Last 10 lines of static/dashboard/vacancy_rate.csv on runner ---"
-        tail -n 10 static/dashboard/vacancy_rate.csv || echo "vacancy_rate.csv not found or empty"
-        
-        echo "--- Last 10 lines of static/dashboard/unemployment_rate.csv on runner ---"
-        tail -n 10 static/dashboard/unemployment_rate.csv || echo "unemployment_rate.csv not found or empty"
+        run: |
+          echo "--- Current Directory ---"
+          pwd
+          echo "--- Listing static/dashboard/ ---"
+          ls -la static/dashboard/
+          echo "--- Checksum of all files in static/dashboard/ ---"
+          find static/dashboard -type f -print0 | xargs -0 md5sum || echo "No files to checksum"
+          
+          echo "--- Last 10 lines of static/dashboard/vacancy_rate.csv on runner ---"
+          tail -n 10 static/dashboard/vacancy_rate.csv || echo "vacancy_rate.csv not found or empty"
+          
+          echo "--- Last 10 lines of static/dashboard/unemployment_rate.csv on runner ---"
+          tail -n 10 static/dashboard/unemployment_rate.csv || echo "unemployment_rate.csv not found or empty"
 
       - name: Debug generated files
         run: |
