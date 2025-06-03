@@ -464,8 +464,13 @@ fig.update_layout(
     )
 )
 
+# Construct the correct absolute path for the Beveridge curve HTML
+beveridge_curve_html_path = os.path.join(OUTPUT_DIR_ABSOLUTE, "beveridge_curve.html")
+
+print(f"Attempting to write HTML to: {beveridge_curve_html_path}") # New log
+
 fig.write_html(
-    "../../static/dashboard/beveridge_curve.html",
+    beveridge_curve_html_path,  # Use the corrected absolute path
     include_plotlyjs='cdn',
     full_html=False,
     config={
@@ -486,6 +491,9 @@ fig.write_html(
         }
     }
 )
+
+print(f"Successfully wrote HTML to: {beveridge_curve_html_path}") # New log
+
 
 # Plot FERU
 
