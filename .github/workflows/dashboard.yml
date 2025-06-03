@@ -29,7 +29,7 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python content/dashboard/dashboard.py
 
-     - name: Debug generated files # NEW DEBUGGING STEP
+      - name: Debug generated files
         run: |
           echo "Current directory: $(pwd)"
           echo "Listing files in repository root:"
