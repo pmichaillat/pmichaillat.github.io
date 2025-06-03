@@ -27,6 +27,7 @@ if apikey:
 else:
     print("FRED_API_KEY environment variable NOT FOUND.") # New log
 fred = Fred(api_key=apikey)
+print("FRED object initialized.")
 
 # Ensure output directory exists
 # os.makedirs("../../static/dashboard", exist_ok=True)
@@ -157,12 +158,15 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
     print(f"Successfully wrote HTML: {html_file_path}") # New log
 
 
-
 # Fetch raw data from FRED
 print("Fetching UNEMPLOY data...")
 u = fred.get_series("UNEMPLOY")
 if u is not None and not u.empty:
     print(f"UNEMPLOY data fetched successfully. Shape: {u.shape}, Last date: {u.index.max()}")
+    u.index = pd.to_datetime(u.index)
+    latest_u_date = u.index.max()
+    latest_u_value = u.iloc[-1]
+    print(f"UNEMPLOY raw latest point: Date='{latest_u_date.strftime('%Y-%m-%d')}', Value='{latest_u_value}'")
 else:
     print("Failed to fetch UNEMPLOY data or data is empty.")
 
@@ -170,6 +174,11 @@ print("Fetching JTSJOL data...")
 v = fred.get_series("JTSJOL")
 if v is not None and not v.empty:
     print(f"JTSJOL data fetched successfully. Shape: {v.shape}, Last date: {v.index.max()}")
+    v.index = pd.to_datetime(v.index)
+    latest_v_date = v.index.max()
+    latest_v_value = v.iloc[-1]
+    previous_v_value = v.iloc[-2]
+    print(f"JTSJOL raw latest point: Date='{latest_v_date.strftime('%Y-%m-%d')}', Latest value='{latest_v_value}', Previous value='{previous_v_value}'")
 else:
     print("Failed to fetch JTSJOL data or data is empty.")
 
@@ -177,6 +186,11 @@ print("Fetching CLF16OV data...")
 lf = fred.get_series("CLF16OV")
 if lf is not None and not lf.empty:
     print(f"CLF16OV data fetched successfully. Shape: {lf.shape}, Last date: {lf.index.max()}")
+    lf.index = pd.to_datetime(lf.index)
+    latest_lf_date = lf.index.max()
+    latest_lf_value = lf.iloc[-1]
+    print(f"CLF16OV raw latest point: Date='{latest_lf_date.strftime('%Y-%m-%d')}', Value='{latest_lf_value}'")
+
 else:
     print("Failed to fetch CLF16OV data or data is empty.")
 
