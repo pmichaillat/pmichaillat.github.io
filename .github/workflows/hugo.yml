@@ -2,14 +2,21 @@
 name: Deploy Hugo website to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Run on pushes targeting the default branch
   push:
     branches: ["main"]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Permission to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+  # Run after the FRED data workflow completes
+  workflow_run:
+    workflows: ["Fetch data and update dashboard"]
+    types:
+      - completed
+    branches: ["main"] # Only run if the workflow was on the main branch
+
+# Set permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -29,6 +36,8 @@ defaults:
 jobs:
   # Build job
   build:
+    # Ensure that the build job only runs for 'push', 'workflow_dispatch', or successful 'workflow_run' events
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.147.2
@@ -63,6 +72,7 @@ jobs:
 
   # Deployment job
   deploy:
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
