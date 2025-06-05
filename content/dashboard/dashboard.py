@@ -133,10 +133,11 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
         showlegend=False
     )
 
-# In your make_plot function, before fig.write_html:
+    # Construct the absolute path for the figure HTML
     html_file_path = os.path.join(OUTPUT_DIR_ABSOLUTE, f"{filename}.html")
+    
     fig.write_html(
-        html_file_path, # Use the absolute path
+        html_file_path,
         include_plotlyjs='cdn',
         full_html=False,
         config={
@@ -310,7 +311,7 @@ df_out.index.name = "Date"
 df_out.to_csv(csv_path_absolute)
 print(f"Successfully wrote CSV: {csv_path_absolute}")
 
-# Immediately after writing, try to read it back and print tail in Python
+# Immediately after writing, read back and print tail in Python
 try:
     df_read_back = pd.read_csv(csv_path_absolute, index_col="Date", parse_dates=True)
     print("Last 5 rows of vacancy_rate.csv as read by Python immediately after write:")
@@ -433,11 +434,11 @@ fig.update_layout(
     )
 )
 
-# Construct the correct absolute path for the Beveridge curve HTML
+# Construct the absolute path for the Beveridge curve HTML
 beveridge_curve_html_path = os.path.join(OUTPUT_DIR_ABSOLUTE, "beveridge_curve.html")
 
 fig.write_html(
-    beveridge_curve_html_path,  # Use the corrected absolute path
+    beveridge_curve_html_path,
     include_plotlyjs='cdn',
     full_html=False,
     config={
