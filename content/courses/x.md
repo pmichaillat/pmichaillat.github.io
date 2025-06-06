@@ -10,6 +10,8 @@ aliases:
     - /uploads/7/0/2/0/70200055/t3c.pdf
     - /uploads/7/0/2/0/70200055/t3d.pdf
     - /uploads/7/0/2/0/70200055/t3f.pdf 
+    - /tags/benveniste-scheinkman-equation/
+    - /tags/dynamic-programming/
 author: "Pascal Michaillat"
 description: "This graduate course covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations." 
 summary: "This graduate course covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations. The methods are used to study dynamical macroeconomic systems in discrete time and continuous time." 
