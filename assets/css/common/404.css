@@ -1,12 +1,11 @@
 .not-found {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    min-height: calc(100dvh - var(--header-height));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 2.5rem;
+    padding: var(--gap);
 }
 
 .not-found h1 {
