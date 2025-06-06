@@ -34,10 +34,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-        # Add generated files from the static/dashboard directory
           git add static/dashboard/*.html static/dashboard/*.csv
 
-          # Check if there are any changes staged for commit
           if ! git diff --staged --quiet; then
             echo "Changes detected in generated files. Committing..."
             git commit -m "Update dashboard with newly released data"
