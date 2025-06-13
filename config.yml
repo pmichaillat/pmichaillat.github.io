@@ -1,0 +1,106 @@
+baseURL: "https://pascalmichaillat.org/" 
+title: Pascal Michaillat
+theme: PaperMod
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 40
+
+taxonomies:
+    tag: tags
+
+menu:
+    main:
+        - name: Dashboard
+          url: dashboard/
+          weight: 1
+        - name: Papers
+          url: papers/
+          weight: 2
+        - name: Courses
+          url: courses/
+          weight: 3
+        - name: Design
+          url: design/
+          weight: 4        
+
+params:
+    description: "This website hosts Pascal Michaillat's research papers, course materials, design templates, curriculum vitae, and a real-time business cycle dashboard."
+    author: Pascal Michaillat
+    googleAnalyticsID: "G-97G4MZ4061"
+    images: ["cover.png"]
+    DateFormat: "January 2006"
+    defaultTheme: light
+    hideFooter: true
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    ShowWordCount: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    disableScrollToTop: true
+    ShowCodeCopyButtons: true
+    ShowToc: false
+    TocOpen: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    profileMode:
+          enabled: true
+          title: Pascal Michaillat
+          subtitle: "I am an associate professor of economics at the University of California, Santa Cruz. I work primarily on economic slack, especially unemployment: why it exists, why it fluctuates over the business cycle, and how macroeconomic policies should respond to such fluctuations."
+          imageUrl: "/picture.jpeg"
+          imageWidth: 140
+          imageHeight: 140
+          buttons:
+            - name: Dashboard
+              url: dashboard/  
+            - name: Papers
+              url: papers/
+            - name: Courses
+              url: courses/
+            - name: Design
+              url: design/
+
+    socialIcons:
+        - name: CV
+          url: cv.pdf
+        - name: Email
+          url: mailto:pascal.michaillat@gmail.com
+        - name: Location
+          url: location/
+        - name: Office Hours
+          url: officehours/
+        - name: Google Scholar
+          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+        - name: YouTube
+          url: https://www.youtube.com/@pmichaillat
+        - name: GitHub
+          url: https://github.com/pmichaillat
+
+    assets:
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: true
+        hiddenInSingle: true
+    label:
+      text: "Pascal Michaillat"
+      icon: favicon.ico
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: xcode 
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
+
+titleCaseStyle: 'none'
+enableGitInfo: true

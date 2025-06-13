@@ -1,0 +1,38 @@
+:root {
+/*PaperMod variables*/
+    --gap: 24px;
+    --content-gap: 20px;
+    --nav-width: 1024px;
+    --main-width: 680px;
+    --header-height: 52px;
+    --footer-height: 70px;
+    --radius: 8px;
+    --content: rgb(30, 30, 30); /*text*/
+    --primary: rgb(30, 30, 30);
+    --secondary: rgb(108, 108, 108); /*metadata and h4 and h5 titles*/
+    --tertiary: rgb(165, 165, 165); /* items and h6 titles*/
+    --border: rgb(230, 230, 230); /*borders*/
+    --code-bg: rgb(245, 245, 245); /*areas*/
+    --code-block-bg: rgb(245, 245, 245);
+    --entry: rgb(255, 255, 255); /*background*/
+    --theme: rgb(255, 255, 255);
+/*Custom variables*/
+    --purple: #8e7bd0; /*links -- icon color*/
+    --lightpurple: #5e42bc; /*hovered links - slightly darker */
+    --graypurple: #e5e1f4; /*hovered buttons*/
+    --archive: rgb(200, 200, 200); /* lines in tables and pages*/
+    --semibold: 500;
+    --title-bold: 550;
+    --content-size:1.15rem;
+    --header-size: 1rem;
+    --meta-size: 1rem;
+    --entry-size: 0.95rem;
+    --line-height: 1.45;
+    --margin-left: 26px;
+    --radius-code: 2px;
+}
+
+.list {
+    background: var(--code-bg);
+}
+

@@ -1,0 +1,55 @@
+.home-info .entry-content {
+    -webkit-line-clamp: unset;
+}
+
+.post-entry {
+    position: relative;
+    margin-bottom: var(--gap);
+    padding: var(--gap);
+    background: var(--entry);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.post-entry:hover {
+    background: var(--graypurple);
+    border: 1px solid var(--purple);
+}
+
+.entry-header h1, h2 {
+    font-size: 1.25rem;
+    line-height: var(--line-height);
+}
+
+.entry-content {
+    margin: var(--content-gap) 0;
+    color: var(--secondary);
+    font-size: var(--entry-size);
+    line-height: var(--line-height);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+}
+
+.entry-footer {
+    color: var(--content);
+    font-size: var(--entry-size);
+}
+
+.entry-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.entry-hint {
+    color: var(--secondary);
+}
+
+.entry-hint-parent {
+    display: flex;
+    justify-content: space-between;
+}
