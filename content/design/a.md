@@ -274,18 +274,18 @@ The template uses author-year citation style. As such, it is non-standard LaTeX,
 
 The reference list has a font size of 10pt, with the same spacing as the text. Each individual reference is indented for emphasis.
 
-The references are formatted according to the guidelines from the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/home.html), which are followed by most scientific journals in the US.
+The references are formatted according to the guidelines from the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/home.html), which are followed by most scientific journals in the United States.
 
-+ An article published in a journal appears as follows: Zagorsky, Jay L. 1998. "Job Vacancies in the United States: 1923 to 1994." Review of Economics and
-Statistics 80 (2): 338–345. https://doi.org/10.1162/003465398557438.
-+ A working paper appears as follows: Leamer, Edward E. 2008. "What's a Recession, Anyway?" NBER Working Paper 14221. https://doi.org/10.3386/w14221.
-+ A book appears as follows: Murphy, Kevin P. 2022. *Probabilistic Machine Learning: An Introduction*. Cambridge, MA: MIT Press. http://probml.github.io/book1.
++ An article published in a journal appears as follows: Zagorsky, Jay L. 1998. "Job Vacancies in the United States: 1923 to 1994." *Review of Economics and
+Statistics* 80 (2): 338–345. `https://doi.org/10.1162/003465398557438`.
++ A working paper appears as follows: Leamer, Edward E. 2008. "What's a Recession, Anyway?" NBER Working Paper 14221. `https://doi.org/10.3386/w14221`.
++ A book appears as follows: Murphy, Kevin P. 2022. *Probabilistic Machine Learning: An Introduction*. Cambridge, MA: MIT Press.
 + An article published as part of a collection appears as follows: Stock, James H. and Mark W. Watson. 1993. "A Procedure for Predicting Recessions with Leading
 Indicators: Econometric Issues and Recent Experience." In *Business Cycles, Indicators and
 Forecasting*, edited by James H. Stock and Mark W. Watson, chap. 2. Chicago: University of
-Chicago Press. http://www.nber.org/chapters/c7190.
-+ A data entry appears as follows: BLS. 2024. "Job Openings: Total Nonfarm." FRED, Federal Reserve Bank of St. Louis. https://fred.stlouisfed.org/series/JTSJOL.
-+ A website entry appears as follows: BLS. 2020. "Labor Force Statistics from the Current Population Survey: Overview." https://perma.cc/RN3P-S4SL.
+Chicago Press.
++ A data entry appears as follows: BLS. 2024. "Job Openings: Total Nonfarm." FRED, Federal Reserve Bank of St. Louis. `https://fred.stlouisfed.org/series/JTSJOL`.
++ A website entry appears as follows: BLS. 2020. "Labor Force Statistics from the Current Population Survey: Overview." `https://perma.cc/RN3P-S4SL`.
 
 ---
 

@@ -266,7 +266,7 @@
 }
 
 .post-footer {
-    margin-top: 60px;
+    margin-top: var(--content-gap);
 }
 
 .post-footer>* {
