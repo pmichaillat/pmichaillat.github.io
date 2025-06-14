@@ -1,9 +1,8 @@
 ---
 title: "Location"
-date: 2024-07-02
 aliases:
     - /contact.html
-author: "Pascal Michaillat"
+author: ["Pascal Michaillat"]
 description: "Pascal Michaillat's office location and mailing address at the University of California, Santa Cruz."
 hidemeta: true
 
