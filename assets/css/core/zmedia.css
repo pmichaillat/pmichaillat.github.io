@@ -1,11 +1,40 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     /* theme-vars */
     :root {
-        --gap: 14px;
+        --gap: 16px;
+        --content-gap: 14px;
+        --header-height: 44px;
+        --header-size: 0.95rem;
+        --content-size:1rem;
+        --meta-size: 0.95rem;
+        --margin-left: 20px;
     }
 
     /* footer */
     .footer {
         padding: calc((var(--footer-height) - var(--gap) - 10px) / 2) var(--gap);
     }
+
+    /*Profile mode*/
+    .profile .profile_inner h1 {
+        font-size: 2.2rem;
+    }
+
+    /*  Single post  */
+    .post-title {
+        font-size: 2rem;
+    }
+
+    .post-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .post-content h5 {
+        font-size: 0.85rem;  
+    } 
+
+    /*  404  */
+    .not-found h1 {
+        font-size: 1.5rem;
+    }   
 }

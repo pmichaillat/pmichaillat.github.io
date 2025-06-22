@@ -8,6 +8,7 @@
     max-width: 600px;
     min-height: calc(100vh  - (var(--gap) * 2));
     line-height: var(--line-height);
+    font-size: var(--content-size);
 }
 
 .profile .profile_inner {
@@ -18,7 +19,7 @@
 }
 
 .profile .profile_inner h1 {
-    font-size: 2.65rem;
+    font-size: 2.75rem;
     font-weight: var(--title-bold);
 }
 

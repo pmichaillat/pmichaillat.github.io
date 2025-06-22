@@ -5,7 +5,8 @@
 
 .post-title {
     margin-bottom: var(--content-gap);
-    font-size: 2.05rem;
+    font-size: 2.4rem;
+    line-height: var(--title-height);
 }
 
 .post-meta  {
@@ -15,9 +16,19 @@
 
 .post-content {
     color: var(--content);
-    line-height: var(--line-height);
     font-size: var(--content-size);
+    line-height: var(--line-height);
 }
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    line-height: var(--title-height);
+}
+
 
 .post-content h3,
 .post-content h4,
@@ -28,7 +39,7 @@
 
 .post-content h1 {
     margin: 40px auto 32px;
-    font-size: 1.85rem;
+    font-size: 1.8rem;
 }
 
 .post-content h2 {
@@ -145,7 +156,6 @@
 .post-content table:not(.highlight table, .gist .highlight) td {
     min-width: 80px;
     padding: 12px 8px;
-    line-height: var(--line-height);
     border-bottom: 1px solid var(--archive);
 }
 

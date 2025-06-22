@@ -11,4 +11,5 @@
 .not-found h1 {
     font-size: 1.8rem;
     font-weight: var(--title-bold);
+    line-height: var(--line-height);
 }

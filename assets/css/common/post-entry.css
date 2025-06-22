@@ -18,7 +18,7 @@
 
 .entry-header h1, h2 {
     font-size: 1.25rem;
-    line-height: var(--line-height);
+    line-height: var(--title-height);
 }
 
 .entry-content {
