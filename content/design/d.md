@@ -25,7 +25,7 @@ The template produces basic scientific figures using [MATLAB](hhttps://matlab.ma
 
 ## View
 
-+ [MATLAB template for scientific figures](https://github.com/pmichaillat/matlab-figures)
++ [MATLAB figure template](https://github.com/pmichaillat/matlab-figures)
 + [Figures produced by the template](/d.pdf)
 
 ---

@@ -25,8 +25,8 @@ The template produces an academic paper with [LaTeX](https://www.latex-project.o
 
 ## View
 
-+ [LaTeX template for academic papers](https://github.com/pmichaillat/latex-paper)
-+ [Research paper produced by the template](/a.pdf)
++ [LaTeX paper template](https://github.com/pmichaillat/latex-paper)
++ [Paper produced by the template](/a.pdf)
 + [Online appendix produced by the template](/aa.pdf)
 
 ---

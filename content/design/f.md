@@ -21,7 +21,7 @@ The template produces an academic CV with [LaTeX](https://www.latex-project.org)
 
 ## View
 
-+ [LaTeX template for academic CVs](https://github.com/pmichaillat/latex-cv)
++ [LaTeX CV template](https://github.com/pmichaillat/latex-cv)
 + [CV produced by the template](/f.pdf)
 
 ---

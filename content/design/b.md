@@ -26,7 +26,7 @@ The design has been customized for academic websites. The first goal was to obta
 
 ## View
 
-+ [Hugo template for academic websites](https://github.com/pmichaillat/hugo-website)
++ [Hugo website template](https://github.com/pmichaillat/hugo-website)
 + [Website produced by the template](https://pascalmichaillat.org/hugo-website/)
 
 ---

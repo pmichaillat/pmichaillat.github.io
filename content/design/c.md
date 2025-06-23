@@ -25,8 +25,8 @@ The template produces an academic presentation using [LaTeX](https://www.latex-p
 
 ## View
 
-+ [LaTeX template for academic presentations](https://github.com/pmichaillat/latex-presentation)
-+ [Research presentation produced by the template](/c.pdf)
++ [LaTeX presentation template](https://github.com/pmichaillat/latex-presentation)
++ [Presentation produced by the template](/c.pdf)
 
 ---
 
