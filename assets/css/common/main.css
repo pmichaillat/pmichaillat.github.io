@@ -13,6 +13,7 @@
 .social-icons a {
     display: inline-flex;
     padding: 10px 15px 10px 0px;
+    transition: all 0.15s ease-in-out;
 }
 
 .social-icons a svg {
@@ -53,7 +54,7 @@ pre {
   cursor: pointer;
   opacity: 0;
   color: var(--tertiary);
-  transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease-in-out;
 }
 
 /* When users activate the code block, show the icon */

@@ -72,8 +72,7 @@
 }
 
 .post-content a,
-.post-meta a,
-.toc a:hover {
+.post-meta a {
     text-decoration: underline;
     text-decoration-color: var(--purple);
     text-decoration-skip-ink: auto;
@@ -83,11 +82,7 @@
 
 .post-content a:hover,
 .post-meta a:hover {
-    text-decoration: underline;
     text-decoration-color: var(--lightpurple);
-    text-decoration-skip-ink: auto;
-    text-underline-offset: 2px;
-    color: currentColor;
 }
 
 .post-content a code {
@@ -275,6 +270,14 @@
     outline: 0;
 }
 
+.toc a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--purple);
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 2px;
+    color: currentColor;
+}
+
 .post-footer {
     margin-top: var(--content-gap);
 }
@@ -297,15 +300,12 @@
     border-radius: var(--radius);
     background: var(--code-bg);
     border: 1px solid var(--border);
-}
-
-.post-tags a {
     display: block;
     padding: 0 10px;
     color: var(--secondary);
     font-size: var(--meta-size);
     line-height: 32px;
-    background: var(--code-bg);
+    transition: all 0.15s ease-in-out;
 }
 
 .post-tags a:hover {
@@ -323,7 +323,7 @@
 .anchor {
     display: inline-flex;
     opacity: 0;
-    transition: opacity 0.15s ease;
+    transition: opacity 0.15s ease-in-out;
     margin-inline-start: 10px;
     font-weight: 700;
     user-select: none;
@@ -338,7 +338,7 @@ h4:hover .anchor,
 h5:hover .anchor,
 h6:hover .anchor {
     opacity: 1;
-    pointer-events: auto; /* Allow interaction when visible */
+    pointer-events: auto;
 }
 
 h1:hover .anchor:hover,

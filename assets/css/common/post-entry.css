@@ -9,6 +9,7 @@
     background: var(--entry);
     border-radius: var(--radius);
     border: 1px solid var(--border);
+    transition: all 0.15s ease-in-out;
 }
 
 .post-entry:hover {

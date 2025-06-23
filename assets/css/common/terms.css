@@ -10,7 +10,8 @@
     background: var(--entry);
     border-radius: 6px;
     border: 1px solid var(--border);
-    font-size: var(--home-size);
+    font-size: var(--meta-size);
+    transition: all 0.15s ease-in-out;
 }
 
 .terms-tags a:hover {
