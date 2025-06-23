@@ -7,7 +7,8 @@
 }
 
 .page-header h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    line-height: var(--title-height);
 }
 
 .social-icons a {
@@ -17,7 +18,7 @@
 }
 
 .social-icons a svg {
-    width: 1.7em;
+    width: 2rem;
     height: auto; 
 }
 

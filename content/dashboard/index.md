@@ -234,8 +234,8 @@ The Michez rule is based on the same idea as the Sahm rule: looking for a rapid 
 
 By combining data on unemployment and vacancies, the Michez rule obtains a less noisy signal of recessions, so it can detect recessions faster than the Sahm rule: 
 
-+ Average detection delay, 1960–2021: 1.2 months instead of 2.7 months
-+ Maximum detection delay, 1960–2021: 3 months instead of 7 months
++ Average detection delay, 1960–2021: 1.2 months < 2.7 months
++ Maximum detection delay, 1960–2021: 3 months < 7 months
 
 The Michez rule is also more robust: it identifies all 15 recessions since 1929 without false positives, whereas the Sahm rule breaks down before 1960.
 

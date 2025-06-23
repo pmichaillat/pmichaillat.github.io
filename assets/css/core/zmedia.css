@@ -20,6 +20,15 @@
         font-size: 2rem;
     }
 
+    .social-icons a svg {
+    width: 1.8rem;
+    height: auto; 
+}
+
+    .page-header h1 {
+    font-size: 1.25rem;
+    }
+
     /*  Single post  */
     .post-title {
         font-size: 2rem;
