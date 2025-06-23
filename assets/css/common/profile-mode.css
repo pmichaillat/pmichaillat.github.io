@@ -6,7 +6,7 @@
 .main .profile {
     align-items: center;
     max-width: 600px;
-    min-height: calc(100vh  - (var(--gap) * 2));
+    min-height: calc(100dvh  - (var(--gap) * 2));
     line-height: var(--line-height);
     font-size: var(--content-size);
 }

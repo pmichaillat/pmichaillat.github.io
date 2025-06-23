@@ -1,23 +1,23 @@
 @media screen and (max-width: 600px) {
-    /* theme-vars */
+    /* Theme */
     :root {
         --gap: 16px;
         --content-gap: 14px;
         --header-height: 44px;
         --header-size: 0.95rem;
-        --content-size:1rem;
+        --content-size: 1rem;
         --meta-size: 0.95rem;
         --margin-left: 20px;
     }
 
-    /* footer */
+    /* Footer */
     .footer {
         padding: calc((var(--footer-height) - var(--gap) - 10px) / 2) var(--gap);
     }
 
-    /*Profile mode*/
+    /* Profile mode */
     .profile .profile_inner h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     /*  Single post  */
