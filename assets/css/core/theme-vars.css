@@ -7,15 +7,15 @@
     --header-height: 52px;
     --footer-height: 70px;
     --radius: 8px;
-    --content: rgb(30, 30, 30); /*text*/
     --primary: rgb(30, 30, 30);
+    --content: var(--primary); /*text*/
     --secondary: rgb(108, 108, 108); /*metadata and h4 and h5 titles*/
     --tertiary: rgb(165, 165, 165); /* items and h6 titles*/
     --border: rgb(230, 230, 230); /*borders*/
     --code-bg: rgb(245, 245, 245); /*areas*/
-    --code-block-bg: rgb(245, 245, 245);
-    --entry: rgb(255, 255, 255); /*background*/
+    --code-block-bg: var(--code-bg);
     --theme: rgb(255, 255, 255);
+    --entry: var(--theme); /*background*/
 /*Custom variables*/
     --purple: #8e7bd0; /*links -- icon color*/
     --lightpurple: #5e42bc; /*hovered links - darker */
@@ -25,12 +25,13 @@
     --title-bold: 550;
     --title-height: 1.3;
     --content-size:1.125rem;
-    --header-size: 1.0625rem;
     --meta-size: 1.0625rem;
+    --header-size: var(--meta-size);
     --entry-size: 1rem;
     --line-height: 1.5;
     --margin-left: 26px;
     --radius-code: 2px;
+    --hr-gap: calc(1.5 * var(--content-gap));
 }
 
 .list {

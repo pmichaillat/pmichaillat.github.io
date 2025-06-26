@@ -1,3 +1,5 @@
+/* Format profile page */
+
 .buttons,
 .main .profile {
     display: flex;
@@ -18,15 +20,21 @@
     gap: 10px;
 }
 
+/* Profile name */
+
 .profile .profile_inner h1 {
     font-size: 2.75rem;
     font-weight: var(--title-bold);
 }
 
+/* Profile picture */
+
 .profile img {
     border-radius: 50%;
     border: 1px solid var(--border);    
 }
+
+/* Buttons */
 
 .buttons {
     flex-wrap: wrap;

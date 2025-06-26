@@ -38,6 +38,8 @@ All charts automatically update as new data become [available on FRED](https://f
 + [Download unemployment rate](/dashboard/unemployment_rate.csv)
 + [Full-screen view](/dashboard/unemployment_rate.html)
 
+---
+
 ## US vacancy rate
 
 <iframe
@@ -52,6 +54,8 @@ All charts automatically update as new data become [available on FRED](https://f
 + [Download vacancy rate](/dashboard/vacancy_rate.csv)
 + [Full-screen view](/dashboard/vacancy_rate.html)
 
+---
+
 ## US labor market tightness
 
 <iframe
@@ -65,6 +69,8 @@ All charts automatically update as new data become [available on FRED](https://f
 + [Download labor market tightness](/dashboard/labor_market_tightness.csv)
 + [Full-screen view](/dashboard/labor_market_tightness.html)
 
+---
+
 ## US Beveridge curve
 
 <iframe
@@ -76,6 +82,8 @@ All charts automatically update as new data become [available on FRED](https://f
 + *Construction:* The Beveridge curve links the unemployment rate to the vacancy rate. 
 + *Interpretation:* During typical business cycles, the economy moves along a stable Beveridge curve. In recessions the unemployment rate increases while the vacancy rate decreases; in expansions the unemployment rate decreases while the vacancy rate increases. The labor market is at full employment whenever the unemployment and vacancy rates are equal. Hence, the labor market is inefficiently tight whenever the Beveridge curve is above the 45° ray and inefficiently slack whenever the curve is below the 45° ray.
 + [Full-screen view](/dashboard/beveridge_curve.html)
+
+---
 
 ## US full-employment rate of unemployment (FERU)
 
@@ -91,6 +99,8 @@ All charts automatically update as new data become [available on FRED](https://f
 + [Download FERU](/dashboard/feru.csv)
 + [Full-screen view](/dashboard/feru.html)
 
+---
+
 ## US unemployment gap
 
 <iframe 
@@ -104,6 +114,8 @@ All charts automatically update as new data become [available on FRED](https://f
 + [Download unemployment gap](/dashboard/unemployment_gap.csv)
 + [Full-screen view](/dashboard/unemployment_gap.html)
 
+---
+
 ## US recession indicator
 
 <iframe 
@@ -116,6 +128,8 @@ All charts automatically update as new data become [available on FRED](https://f
 + *Interpretation:* The Michez rule signals a recession when the recession indicator crosses the threshold of 0.29pp.
 + [Download recession indicator](/dashboard/recession_indicator.csv)
 + [Full-screen view](/dashboard/recession_indicator.html)
+
+---
 
 ## US recession probability
 

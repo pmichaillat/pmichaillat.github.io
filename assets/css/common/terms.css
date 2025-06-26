@@ -1,8 +1,14 @@
+/* List of tags */
+
 .terms-tags li {
     display: inline-block;
-    margin: 5px;
-    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 12px;
+    margin-top: 0px;
+    margin-bottom: 12px;
 }
+
+/* Tag body */
 
 .terms-tags a {
     display: block;
@@ -13,6 +19,8 @@
     font-size: var(--meta-size);
     transition: all 0.15s ease-in-out;
 }
+
+/* Highlighted tags */
 
 .terms-tags a:hover {
     background: var(--graypurple);
