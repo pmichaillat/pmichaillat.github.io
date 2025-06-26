@@ -1,10 +1,13 @@
-/* Format profile page */
+/* Style profile page */
+
+/* Page layout */
 
 .buttons,
 .main .profile {
     display: flex;
     justify-content: flex-start;
 }
+
 .main .profile {
     align-items: center;
     max-width: 600px;

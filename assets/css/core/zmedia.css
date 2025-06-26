@@ -1,5 +1,9 @@
+/* Adjust style for phone screens (portrait and landscape) */
+
 @media screen and (max-width: 768px) {
+
     /* Theme */
+    
     :root {
         --gap: 16px;
         --content-gap: 18px;
@@ -11,11 +15,13 @@
     }
 
     /* Footer */
+    
     .footer {
         padding: calc((var(--footer-height) - var(--gap) - 10px) / 2) var(--gap);
     }
 
     /* Profile mode */
+    
     .profile .profile_inner h1 {
         font-size: 2rem;
     }
@@ -36,6 +42,7 @@
     }
 
     /*  Single post  */
+    
     .post-title {
         font-size: 1.8rem;
     }
@@ -53,6 +60,7 @@
     }
 
     /*  404  */
+    
     .not-found h1 {
         font-size: 1.5rem;
     }   

@@ -1,4 +1,6 @@
-/* List of tags */
+/* Style list of tags */
+
+/* List layout */
 
 .terms-tags li {
     display: inline-block;
@@ -8,7 +10,7 @@
     margin-bottom: 12px;
 }
 
-/* Tag body */
+/* Tag layout */
 
 .terms-tags a {
     display: block;

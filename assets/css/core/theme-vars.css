@@ -1,5 +1,9 @@
+/* Website variables */
+
 :root {
-/*PaperMod variables*/
+
+    /* PaperMod variables */
+    
     --gap: 24px;
     --content-gap: 20px;
     --nav-width: 1024px;
@@ -16,7 +20,9 @@
     --code-block-bg: var(--code-bg);
     --theme: rgb(255, 255, 255);
     --entry: var(--theme); /*background*/
-/*Custom variables*/
+    
+    /* Custom variables */
+    
     --purple: #8e7bd0; /*links -- icon color*/
     --lightpurple: #5e42bc; /*hovered links - darker */
     --graypurple: #e5e1f4; /*hovered buttons*/
@@ -32,9 +38,5 @@
     --margin-left: 26px;
     --radius-code: 2px;
     --hr-gap: calc(1.5 * var(--content-gap));
-}
-
-.list {
-    background: var(--code-bg);
 }
 

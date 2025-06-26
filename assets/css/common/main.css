@@ -1,3 +1,5 @@
+/* Style generic page */
+
 .main {
     position: relative;
     min-height: calc(100dvh - var(--header-height));
@@ -6,10 +8,16 @@
     padding: var(--gap);
 }
 
+.list {
+    background: var(--code-bg);
+}
+
 .page-header h1 {
     font-size: 1.5rem;
     line-height: var(--title-height);
 }
+
+/* Social icons */
 
 .social-icons a {
     display: inline-flex;
@@ -26,6 +34,8 @@
     color: var(--purple);
 }
 
+/* Code block */
+
 code {
     direction: ltr;
 }
@@ -41,6 +51,8 @@ div.highlight,
 pre {
     position: relative;
 }
+
+/* Button to copy code */
 
 .copy-code {
   position: absolute;
