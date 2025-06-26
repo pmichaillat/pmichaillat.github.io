@@ -28,6 +28,16 @@
     font-size: 1.25rem;
     }
 
+    /*  List of posts  */
+
+    .entry-header h1, h2 {
+        font-size: 1.125rem;
+    }
+
+    .entry-content {
+        font-size: var(--meta-size);
+    }
+
     /*  Single post  */
     .post-title {
         font-size: 1.8rem;
