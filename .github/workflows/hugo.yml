@@ -1,4 +1,4 @@
-# Workflow for building and deploying the Hugo website to GitHub Pages
+# Workflow for building and deploying Hugo website to GitHub Pages
 name: Deploy Hugo website to Pages
 
 on:
@@ -9,12 +9,9 @@ on:
   # Permission to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-  # Run after the FRED data workflow completes
-  workflow_run:
-    workflows: ["Fetch data and update dashboard"]
-    types:
-      - completed
-    branches: ["main"] # Only run if the workflow was on the main branch
+  # Triggered by the 'Fetch data and update dashboard' workflow via repository_dispatch
+  repository_dispatch:
+    types: [data-committed-for-deploy]
 
 # Set permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -35,11 +32,11 @@ defaults:
 
 jobs:
   build:
-    # Build job only runs for 'push', 'workflow_dispatch', or a successful 'workflow_run' that made a commit
+    # Build job only runs for 'push', 'workflow_dispatch', or a repository_dispatch with committed: true
     if: |
       github.event_name == 'push' ||
       github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.jobs[0].outputs.committed == 'true')
+      (github.event_name == 'repository_dispatch' && github.event.client_payload.committed == 'true')
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.147.2
@@ -73,11 +70,11 @@ jobs:
           path: ./public
 
   deploy:
-    # Deploy job only runs for 'push', 'workflow_dispatch', or a successful 'workflow_run' that made a commit
+    # Deploy job only runs for 'push', 'workflow_dispatch', or a repository_dispatch with committed: true
     if: |
       github.event_name == 'push' ||
       github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.jobs[0].outputs.committed == 'true')
+      (github.event_name == 'repository_dispatch' && github.event.client_payload.committed == 'true')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

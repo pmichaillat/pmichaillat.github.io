@@ -3,15 +3,13 @@ name: Fetch data and update dashboard
 
 on:
   schedule:
-    - cron: '30 14 * * *'  # Daily at 14:30 UTC (9:30 EST or 10:30 EDT)
+    - cron: '30 14 * * *' # Daily at 14:30 UTC (9:30 EST or 10:30 EDT)
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    outputs:
-      committed: ${{ steps.commit_and_push.outputs.committed }}
-
+    
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -41,8 +39,20 @@ jobs:
             echo "Changes detected in generated files. Committing..."
             git commit -m "Update dashboard with newly released data"
             git push
-            echo "committed=true" >> "$GITHUB_OUTPUT"
+            echo "committed=true" >> "$GITHUB_ENV" # Set an environment variable for the next step
           else
             echo "No changes detected in generated files. Nothing to commit."
-            echo "committed=false" >> "$GITHUB_OUTPUT"
+            echo "committed=false" >> "$GITHUB_ENV" # Set an environment variable for the next step
           fi
+
+      - name: Trigger hugo.yml if committed
+        # This step will only run if the 'committed' environment variable is 'true'
+        if: ${{ env.committed == 'true' }}
+        run: |
+          curl -X POST \
+          -H "Accept: application/vnd.github.everest-preview+json" \
+          -H "Authorization: token ${{ secrets.DASBOARD_TOKEN }}" \
+          https://api.github.com/repos/${{ github.repository }}/dispatches \
+          -d '{"event_type":"data-committed-for-deploy", "client_payload": {"committed": "true"}}'
+        env:
+          DASBOARD_TOKEN: ${{ secrets.DASBOARD_TOKEN }}
