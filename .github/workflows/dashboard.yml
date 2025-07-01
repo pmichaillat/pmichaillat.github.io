@@ -54,5 +54,4 @@ jobs:
           -H "Authorization: token ${{ secrets.DASBOARD_TOKEN }}" \
           https://api.github.com/repos/${{ github.repository }}/dispatches \
           -d '{"event_type":"data-committed-for-deploy", "client_payload": {"committed": "true"}}'
-        env:
-          DASBOARD_TOKEN: ${{ secrets.DASBOARD_TOKEN }}
+
