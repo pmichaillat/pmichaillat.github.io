@@ -3,7 +3,7 @@ name: Fetch data and update dashboard
 
 on:
   schedule:
-    - cron: '30 14 * * *' # Daily at 14:30 UTC (9:30 EST or 10:30 EDT)
+    - cron: '00 13 * * *'
   workflow_dispatch:
 
 jobs:
@@ -53,4 +53,3 @@ jobs:
           -H "Authorization: token ${{ secrets.DASBOARD_TOKEN }}" \
           https://api.github.com/repos/${{ github.repository }}/dispatches \
           -d '{"event_type":"data-committed-for-deploy", "client_payload": {"committed": "true"}}'
-
