@@ -39,7 +39,7 @@ jobs:
       (github.event_name == 'repository_dispatch' && github.event.client_payload.committed == 'true')
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.147.2
+      HUGO_VERSION: 0.147.9
     steps:
       - name: Install Hugo CLI
         run: |

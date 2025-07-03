@@ -1,8 +1,8 @@
 # to run from the console:
-# python3 -m venv .venv
+# python3.12 -m venv .venv
 # source .venv/bin/activate
-# pip install -r requirements.txt
-# export FRED_API_KEY= 'key'
+# pip install pandas==2.3.0 plotly==6.2.0 fredapi==0.5.2 python-dotenv==1.1.1
+# export FRED_API_KEY='key'
 # python3 dashboard.py
 
 import os

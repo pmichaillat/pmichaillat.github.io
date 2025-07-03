@@ -20,7 +20,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install pandas plotly fredapi python-dotenv
+        run: pip install pandas==2.3.0 plotly==6.2.0 fredapi==0.5.2 python-dotenv==1.1.1
 
       - name: Run graph generation script
         env:
