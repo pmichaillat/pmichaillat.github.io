@@ -87,8 +87,6 @@ params:
         hiddenInSingle: true
     label:
       text: "Pascal Michaillat"
-      icon: favicon.ico
-      iconHeight: 18
 
 markup:
     goldmark:
