@@ -50,6 +50,6 @@ jobs:
         if: ${{ env.committed == 'true' }}
         run: |
           curl -X POST \
-          -H "Authorization: token ${{ secrets.DASBOARD_TOKEN }}" \
+          -H "Authorization: token ${{ secrets.DASHBOARD_TOKEN }}" \
           https://api.github.com/repos/${{ github.repository }}/dispatches \
           -d '{"event_type":"data-committed-for-deploy", "client_payload": {"committed": "true"}}'
