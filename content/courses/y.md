@@ -7,8 +7,9 @@ aliases:
     - /c4/
     - /tags/is-lm-model/
     - /tags/malthusian-model/
+    - /tags/economic-growth/
     - /tags/solowian-model/
-    - /tags/gdp
+    - /tags/gdp/
     - /uploads/7/0/2/0/70200055/t2a.pdf
     - /uploads/7/0/2/0/70200055/t2o.pdf
     - /uploads/7/0/2/0/70200055/t2z.pdf
