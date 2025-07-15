@@ -1,0 +1,67 @@
+/* Adjust style for phone screens (portrait and landscape) */
+
+@media screen and (max-width: 768px) {
+
+    /* Theme */
+    
+    :root {
+        --gap: 16px;
+        --content-gap: 18px;
+        --header-height: 44px;
+        --content-size: 1rem;
+        --meta-size: 0.95rem;
+        --entry-size: var(--meta-size);
+        --margin-left: 20px;
+    }
+
+    /* Footer */
+    
+    .footer {
+        padding: calc((var(--footer-height) - var(--gap) - 10px) / 2) var(--gap);
+    }
+
+    /* Profile mode */
+    
+    .profile .profile_inner h1 {
+        font-size: 2rem;
+    }
+
+    .social-icons a svg {
+    width: 1.8rem;
+    height: auto; 
+}
+
+    .page-header h1 {
+    font-size: 1.25rem;
+    }
+
+    /*  List of posts  */
+
+    .entry-header h1, h2 {
+        font-size: 1.125rem;
+    }
+
+    /*  Single post  */
+    
+    .post-title {
+        font-size: 1.8rem;
+    }
+
+    .post-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .post-content h5 {
+        font-size: 0.85rem;  
+    } 
+
+    .toc {
+        margin: var(--hr-gap) 0px;
+    }
+
+    /*  404  */
+    
+    .not-found h1 {
+        font-size: 1.5rem;
+    }   
+}

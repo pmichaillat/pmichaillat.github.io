@@ -1,0 +1,21 @@
+/* Style 404 page */
+
+/* Page layout */
+
+.not-found {
+    min-height: calc(100dvh - var(--header-height) - (var(--gap) * 2));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--gap);
+}
+
+/* Message */
+
+.not-found h1 {
+    font-size: 1.8rem;
+    font-weight: var(--title-bold);
+    line-height: var(--line-height);
+}

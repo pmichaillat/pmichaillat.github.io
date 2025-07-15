@@ -1,0 +1,92 @@
+/* Style generic page */
+
+.main {
+    position: relative;
+    min-height: calc(100dvh - var(--header-height));
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin: auto;
+    padding: var(--gap);
+}
+
+.list {
+    background: var(--code-bg);
+}
+
+.page-header h1 {
+    font-size: 1.5rem;
+    line-height: var(--title-height);
+}
+
+/* Social icons */
+
+.social-icons a {
+    display: inline-flex;
+    padding: 10px 15px 10px 0px;
+    transition: all 0.15s ease-in-out;
+}
+
+.social-icons a svg {
+    width: 2rem;
+    height: auto; 
+}
+
+.social-icons a:hover {
+    color: var(--purple);
+}
+
+/* Code block */
+
+code {
+    direction: ltr;
+}
+
+code, .archive-entry-title, .entry-header {
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+div.highlight,
+pre {
+    position: relative;
+}
+
+/* Button to copy code */
+
+.copy-code {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background: none;
+  border: none;
+  padding: 0.25em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  color: var(--tertiary);
+  transition: opacity 0.15s ease-in-out;
+}
+
+/* When users activate the code block, show the icon */
+.highlight:hover  .copy-code,
+pre:hover         .copy-code {
+  opacity: 1;
+}
+
+/* When users hover the icon itself, switch to purple */
+.copy-code:hover {
+  color: var(--purple);
+}
+
+.copy-code.copied {
+  color: var(--tertiary);
+}
+
+.copy-code svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+}

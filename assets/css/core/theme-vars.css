@@ -1,0 +1,42 @@
+/* Website variables */
+
+:root {
+
+    /* PaperMod variables */
+    
+    --gap: 24px;
+    --content-gap: 20px;
+    --nav-width: 1024px;
+    --main-width: 680px;
+    --header-height: 52px;
+    --footer-height: 70px;
+    --radius: 8px;
+    --primary: rgb(30, 30, 30);
+    --content: var(--primary); /*text*/
+    --secondary: rgb(108, 108, 108); /*metadata and h4 and h5 titles*/
+    --tertiary: rgb(165, 165, 165); /* items and h6 titles*/
+    --border: rgb(230, 230, 230); /*borders*/
+    --code-bg: rgb(245, 245, 245); /*areas*/
+    --code-block-bg: var(--code-bg);
+    --theme: rgb(255, 255, 255);
+    --entry: var(--theme); /*background*/
+    
+    /* Custom variables */
+    
+    --purple: #8e7bd0; /*links -- icon color*/
+    --lightpurple: #5e42bc; /*hovered links - darker */
+    --graypurple: #e5e1f4; /*hovered buttons*/
+    --archive: rgb(200, 200, 200); /* lines in tables and pages*/
+    --semibold: 500;
+    --title-bold: 550;
+    --title-height: 1.3;
+    --content-size:1.125rem;
+    --meta-size: 1.0625rem;
+    --header-size: var(--meta-size);
+    --entry-size: 1rem;
+    --line-height: 1.5;
+    --margin-left: 26px;
+    --radius-code: 2px;
+    --hr-gap: calc(1.5 * var(--content-gap));
+}
+

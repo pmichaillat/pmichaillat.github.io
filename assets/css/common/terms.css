@@ -1,0 +1,31 @@
+/* Style list of tags */
+
+/* List layout */
+
+.terms-tags li {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 12px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+/* Tag layout */
+
+.terms-tags a {
+    display: block;
+    padding: 3px 10px;
+    background: var(--entry);
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    font-size: var(--meta-size);
+    transition: all 0.15s ease-in-out;
+}
+
+/* Highlighted tags */
+
+.terms-tags a:hover {
+    background: var(--graypurple);
+    border: 1px solid var(--purple);
+}
+
