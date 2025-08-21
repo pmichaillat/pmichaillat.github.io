@@ -4,6 +4,7 @@ date: 2024-01-15
 url: /w/
 aliases: 
     - /b1/
+    - /tags/matching-function/
     - /c2/
     - /t5.html
     - /t4.html
