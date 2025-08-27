@@ -18,6 +18,7 @@ aliases:
     - /tags/dynamical-systems/
     - /tags/optimal-control/
     - /tags/hamiltonian/
+    - /tags/bellman-equation/
     - /tags/dynamic-programming/
 author: "Pascal Michaillat"
 description: "This graduate course covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations." 
