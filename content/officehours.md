@@ -10,10 +10,11 @@ hidemeta: true
 
 ---
 
-##### Schedule for Summer 2025
+##### Schedule for Fall 2025
 
-+ There are currently no regular office hours. Office hours will resume in Fall 2025.
-+ However, if you are a graduate student on the job market or at the research stage, and you would like to talk, please [email me](mailto:pamichai@ucsc.edu) to set up a meeting.
++ Day: Wednesday
++ Time for ECON 221 and other graduate students: 2:30pm–3:30pm
++ Time for ECON 182 and other undergraduate students: 3:30pm–4:30pm
 
 ---
 
