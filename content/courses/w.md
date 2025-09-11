@@ -186,7 +186,7 @@ This section develops a basic slackish model of the economy. The model is static
 ###### Additional readings
 
 + [Barro (1977)](https://doi.org/10.1016/0304-3932(77)90024-1) – This paper argues that prices should be bilaterally efficient when buyers and sellers are engaged in long-term relationships. In the slackish model developed in this course, prices are always bilaterally efficient.
-+ [Huo and Rios-Rull (2020)](https://doi.org/10.1257/mac.20180290) – This paper shows that in New Keynesian models with sticky wages, workers are required to work against their will 15–30 percent of the time. 
++ [Huo and Rios-Rull (2020)](https://doi.org/10.1257/mac.20180290) – This paper shows that in New Keynesian models with sticky wages, workers are required to work against their will 15%–30% of the time. 
 + [Gourio and Rudanko (2014)](https://doi.org/10.1093/restud/rdu007) – This paper develops a dynamic matching model of the product market. Prices are set through competitive search.
 
 ---
