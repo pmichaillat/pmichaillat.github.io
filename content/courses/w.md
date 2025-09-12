@@ -72,9 +72,9 @@ The course is centered around formal modeling, but it also presents evidence sup
 
 ###### Main readings
 
-+ [Krugman (2000)](https://doi.org/10.1093/oxrep/16.4.33) – This paper argues that uncomplicated models can be helpful. In this course we will develop models that are as uncomplicated as possible—and that are much simpler than models typically studied in graduate macroeconomic courses.
 + [Darity and Goldsmith (1996)](https://doi.org/10.1257/jep.10.1.121) –  This survey reviews the social-psychological consequences of unemployment. It finds that exposure to unemployment severely damages psychological health.
 + [Frey and Stutzer (2002)](https://doi.org/10.1257/002205102320161320) – This survey provides evidence that personal unemployment and aggregate unemployment significantly reduce happiness. The evidence refers to the pure effect of unemployment, which controls for the income loss from unemployment.
++ [Hussam, Kelley, Lane, and Zahra (2022)](https://doi.org/10.1257/aer.20211616) – This paper reports the results from a field experiment in Bangladesh designed to measure the psychosocial cost of unemployment. The experiment shows that paid employment raises psychosocial well-being substantially more than the same amount of cash alone. In fact, two-thirds of employed workers would be willing to forgo cash payments and continue working for free. The experiment illustrates just how large the psychosocial cost of unemployment is.
 
 ###### Additional readings
 
@@ -103,12 +103,13 @@ Modern business-cycle models—both Real Business-Cycle model New Keynesian mode
 ###### Main readings
 
 + [Kuhn (1957, chapters 1 and 5)](https://www.hup.harvard.edu/catalog.php?isbn=9780674171039) – This book studies the Copernican Revolution in astronomy and in the process isolates the three properties of a good model: economy, accuracy, and fruitfulness.
-+ [Summers (1986)](https://www.minneapolisfed.org/research/quarterly-review/some-skeptical-observations-on-real-business-cycle-theory) – This paper discusses the origins and limitations of the Real Business-Cycle model.
 + [Benassy (1993)](https://www.jstor.org/stable/2728514) – This survey reviews the General Disequilibrium literature.
++ [Summers (1986)](https://www.minneapolisfed.org/research/quarterly-review/some-skeptical-observations-on-real-business-cycle-theory) – This paper discusses the origins and limitations of the Real Business-Cycle model.
 
 ###### Additional readings
 
 + [Kuhn (1962, chapters 2–9)](https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html) – This book describes how science progresses by cycling through paradigms. Each cycle starts with a period of normal science, during which the dominant paradigm is used and refined. This is followed by a period of revolutionary science, during which the anomalies of the dominant paradigm are too numerous to ignore, and new paradigms are invented and compete to replace to old paradigm.
++ [Krugman (2000)](https://doi.org/10.1093/oxrep/16.4.33) – This paper argues that uncomplicated models can be helpful. In this course we will develop models that are as uncomplicated as possible—and that are much simpler than models typically studied in graduate macroeconomic courses.
 + [Cooley and Prescott (1995)](https://doi.org/10.2307/j.ctv14163jx.7) – This paper reviews facts about business cycles and explains how Real Business-Cycle models were developed from the neoclassical growth model.
 + [Gali (2018)](https://doi.org/10.1257/jep.32.3.87) – This survey reviews the New Keynesian literature.
 
@@ -137,15 +138,16 @@ The business-cycle model developed in this course differs from canonical busines
 
 ###### Main readings
 
-+ [Petrongolo and Pissarides (2001)](https://doi.org/10.1257/jel.39.2.390) – This survey reviews the microfoundations of the matching function, its empirical properties, and its applications.
-+ [Elsby, Michaels, and Ratner (2015)](https://doi.org/10.1257/jel.53.3.571) – This survey reviews the empirical properties of the Beveridge curve and possible microfoundations for it.
 + [Petrosky-Nadeau and Zhang (2021)](https://doi.org/10.1016/j.jmoneco.2020.01.009) – This paper constructs series for US unemployment and vacancy rates going back to the Great Depression (1929).
++ [Elsby, Michaels, and Ratner (2015)](https://doi.org/10.1257/jel.53.3.571) – This survey reviews the empirical properties of the Beveridge curve and possible microfoundations for it.
++ [Petrongolo and Pissarides (2001)](https://doi.org/10.1257/jel.39.2.390) – This survey reviews the microfoundations of the matching function, its empirical properties, and its applications.
+
 
 ###### Additional readings
 
-+ [Shimer (2007)](https://doi.org/10.1257/aer.97.4.1074) – This paper generates an aggregate matching function from mismatch in local labor markets.
-+ [Stevens (2007)](https://doi.org/10.1111/j.1468-2354.2007.00447.x) – This paper generates a Cobb-Douglas matching function from a Poisson queuing process.
++ [Walker et al (2024)](https://doi.org/10.3386/w33055) – This paper argues that slack is ubiquitous in developing countries. It also makes the case that accounting for slack is necessary to understand the development process and to predict the effects of development policies.
 + [Montgomery (1991)](https://doi.org/10.2307/2937911) – This paper generates an aggregate matching function from wage competition between firms. 
++ [Shimer (2007)](https://doi.org/10.1257/aer.97.4.1074) – This paper generates an aggregate matching function from mismatch in local labor markets.
 
 ---
 
@@ -315,12 +317,12 @@ Moreover, the comovements between output, employment, product-market tightness, 
 
 + [Michaillat and Saez (2015, sections 3–6)](/3.pdf) – These sections develop the slackish model with labor and product markets, and assess the sources of unemployment fluctuations in the United States.
 + [Michaillat (2012)](/1.pdf) – This paper establishes that usual matching models of the labor market do not have job rationing. It then develops a matching model with job rationing, which is a precursor for the models developed in this course.
-+ [Barro and Grossman (1971)](https://www.jstor.org/stable/1910543) – This paper develops a disequilibrium model with labor and product markets. This model is a precursor to the slackish model with labor and product markets used in the course.
-+ [Barro (2025)](https://doi.org/10.3386/w33850) – This paper revisits the disequilibrium model with labor and product markets, summarizes its qualities and limitations, and argues that the limitations can be remedied by using the type of slackish models developed in this course. The paper also reviews some of the limitations of the New Keynesian model.
++ [Barro and Grossman (1971)](https://www.jstor.org/stable/1910543) – This paper develops a disequilibrium model with labor and product markets. This model is a precursor to the two-market slackish model used in the course.
+
 
 ###### Additional readings
 
-+ [Blanchard and Kiyotaki (1987)](https://www.jstor.org/stable/1814537) – This paper develops a monopolistic model of business cycles. The model has the same architecture as the Barro-Grossman model, but a different market structure. The model is a precursor to the New Keynesian model.
++ [Barro (2025)](https://doi.org/10.3386/w33850) – This paper revisits the disequilibrium model with labor and product markets, summarizes its qualities and limitations, and argues that the limitations can be remedied by using the type of slackish models developed in this course. The paper also reviews some of the limitations of the New Keynesian model.
 + [Diamond (2011)](https://doi.org/10.1257/aer.101.4.1045) – In this Nobel lecture, Peter Diamond discusses the applications of the matching framework to the product market and other markets.
 + [Wasmer and Weil (2004)](https://doi.org/10.1257/0002828042002525) – This paper develops a model with labor and financial markets organized around a matching function. 
 
@@ -393,6 +395,7 @@ Finally, the section applies the formula to the US economy. In general the US ec
 + [Chetty (2009)](https://doi.org/10.1146/annurev.economics.050708.142910) – This survey describes the sufficient-statistic method for welfare and policy analysis.
 + [Hosios (1990)](https://doi.org/10.2307/2297382) – This paper shows that in a matching model, unemployment is efficient when workers' bargaining power equals the elasticity of the matching function with respect to unemployment.
 + [Moen (1997)](https://doi.org/10.1086/262077) – This paper shows that in a matching model, unemployment is efficient when search is directed instead of random. With directed search, firms post wages and workers decide where to apply based on the wage and probability to get the job at each firm. 
++ [Gokten, Heimberger, and Lichtenberger (2024)](https://doi.org/10.1016/j.euroecorev.2024.104725) – This paper uses the formula $u^\ast = \sqrt{uv}$ to compute the FERUs in selected European countries (Germany, Sweden, Austria, Finland, UK) between 1970 and 2022. It compares the FERUs and unemployment gaps in Europe to those in the United States.
 
 ---
 

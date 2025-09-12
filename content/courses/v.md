@@ -1,6 +1,6 @@
 ---
 title: "Unemployment" 
-date: 2025-01-30
+date: 2025-09-11
 url: /v/
 aliases:
     - /t1.html
@@ -50,8 +50,8 @@ aliases:
     - /uploads/7/0/2/0/70200055/t1d.pdf
     - /uploads/7/0/2/0/70200055/t1f.pdf
 author: "Pascal Michaillat"
-description: "This course presents a matching model of unemployment and uses it to study unemployment fluctuations, efficient unemployment, and labor market policies." 
-summary: "This course presents a matching model of unemployment. It uses the model to study unemployment fluctuations; job rationing; efficient unemployment and unemployment gap; and labor market policies such as minimum wage, public employment, and unemployment insurance." 
+description: "This course develops a model of unemployment. The model is used to study unemployment fluctuations, efficient unemployment, and labor market policies." 
+summary: "This course develops a model of unemployment. The model is used to study unemployment fluctuations; job rationing; efficient unemployment and unemployment gap; and labor market policies such as minimum wage, public employment, and unemployment insurance." 
 cover:
     image: "/v.png"
     alt: "Rationing and frictional unemployment in the United States, 1964–2009"
@@ -65,12 +65,11 @@ disableAnchoredHeadings: false
 
 ## Introduction
 
-This course covers topics related to unemployment. Unemployment represents a waste of productive resources and therefore is something that should be limited. In addition to its wastefulness, unemployment generates other, large costs to society. People who are unemployed suffer from lower mental and physical health than employed workers. Even employed people in areas with high unemployment report lower well-being. Accordingly, good economic policy should stabilize unemployment at a desirable level and avoid periods of elevated unemployment.
+This course covers topics related to unemployment. Unemployment represents a waste of productive resources and therefore is something that should be limited. In addition to being wasteful, unemployment imposes other, large costs on society. People who are unemployed suffer from lower mental and physical health than employed workers. Even employed people in areas with high unemployment report lower well-being. Accordingly, good economic policy should stabilize unemployment at a desirable level and avoid periods of elevated unemployment.
 
-This course presents several models of unemployment. These models explain why unemployment exist, and why unemployment fluctuate over the business cycle. 
-The course also strives to justify all the assumptions introduced in the models. 
+This course develops a model of unemployment. The model explains why unemployment exists, and why unemployment fluctuates over the business cycle. The course also strives to justify all the assumptions introduced in the model using empirical evidence from the US labor market. 
 
-These models are extremely helpful to design effective policies to tackle unemployment. First, the models are useful to determine what is the socially efficient level of unemployment. This socially efficient level of unemployment is a key ingredient to good labor market policies. Second, the models explain how various labor market policies should respond to fluctuations in unemployment.
+The model is helpful to design policies to tackle unemployment effectively. First, the model is useful to determine what is the socially efficient level of unemployment. This socially efficient level of unemployment is a key ingredient to good labor market policies. Second, the model explains how various labor market policies should respond to fluctuations in unemployment.
 
 ###### Lecture videos
 
@@ -276,7 +275,7 @@ unfairly, which dampens their intrinsic motivation and reduces their output. As 
 
 This section turns to the sources of unemployment over the business cycle. In the DMP model, unemployment becomes vanishingly small when unemployed workers search sufficiently hard for jobs. Unemployment also becomes vanishingly small when recruiting costs are sufficiently low. In other words, the DMP model does not feature job rationing. This lack of job rationing is difficult to reconcile with the long queues of unemployed workers at job bureaus and factory gates observed during the Great Depression. 
 
-The section then develops a matching model with job rationing. In the model, in recession, jobs are lacking, so some unemployment remains even if workers are desperate to find a job. The model features both frictional unemployment—caused by difficulties in matching workers and firms—and rationing unemployment—caused by a lack of job. The model describes well good and bad times. In bad times, labor demand is low so rationing unemployment is high. Hence total unemployment is high. But, maybe surprisingly, frictional unemployment is low. In that case, workers queue for jobs and it is easy for firms to fill vacancies. Conversely, in good times, labor demand is high so rationing unemployment is low and total unemployment is low. Frictional unemployment is higher than in bad times. In that case, it is easy for workers to find jobs but firms struggle to fill job vacancies.
+The section then develops a matching model with job rationing. In the model, in a recession, jobs are lacking, so some unemployment remains even if workers are desperate to find a job. The model features both frictional unemployment—caused by difficulties in matching workers and firms—and rationing unemployment—caused by a lack of job. The model describes well good and bad times. In bad times, labor demand is low so rationing unemployment is high. Hence total unemployment is high. But, maybe surprisingly, frictional unemployment is low. In that case, workers queue for jobs and it is easy for firms to fill vacancies. Conversely, in good times, labor demand is high so rationing unemployment is low and total unemployment is low. Frictional unemployment is higher than in bad times. In that case, it is easy for workers to find jobs but firms struggle to fill job vacancies.
 
 Technically, the DMP model does not feature job rationing because its labor demand is perfectly elastic with respect to wages and labor market tightness. Once we introduce a labor demand that is downward sloping with respect to wages and tightness, job rationing appears and not all unemployment is frictional. The easiest way to generate a downward-sloping labor demand is by assuming that the production function has diminishing returns to labor.
 
@@ -312,11 +311,9 @@ Technically, the DMP model does not feature job rationing because its labor dema
 
 ###### Additional readings
 
-+ [Akerlof, Rose, and Yellen (1988)](https://www.jstor.org/stable/2534536) – This paper develops an early matching model of the labor market with job
-rationing. The model reproduces a number of stylized facts of the US labor market regarding quits and vacancy chains. While the model in not in the DMP tradition, it does feature a Beveridge curve.
++ [Akerlof, Rose, and Yellen (1988)](https://www.jstor.org/stable/2534536) – This paper develops an early matching model of the labor market with job rationing. The model reproduces a number of stylized facts of the US labor market regarding quits and vacancy chains. While the model in not in the DMP tradition, it does feature a Beveridge curve.
 + [Michaillat and Saez (2015)](/3.pdf) – This paper adds aggregate demand to the model in Michaillat (2012). This is done by adding a product market to the labor market with a similar matching structure. Aggregate demand shocks generate fluctuations in unemployment and vacancies along the Beveridge curve. In that model, unemployment can be decomposed into three components: Keynesian unemployment (due to insufficient aggregate demand), classical unemployment (due to high real wages), and frictional unemployment (due to matching frictions).
-+ [Michaillat and Saez (2022)](/7.pdf) –  This paper builds a dynamic version of the model in Michaillat and Saez (2015), which is static. In this model the central bank can influence aggregate demand and unemployment through interest rates.
-+ [Michaillat and Saez (2024)](/15.pdf) – This paper uses the dynamic model in Michaillat and Saez (2022) and generates a Phillips curve by introducing price competition through directed search. To ensure that unemployment fluctuates, the model assumes price rigidity through quadratic price-adjustment costs. The Phillips curve produced by the model guarantees divine coincidence: inflation is on target when unemployment is efficient.
+
 
 ###### Practice material
 
@@ -363,10 +360,9 @@ The section finally shows that in the United States, the unemployment gap is gen
 
 ###### Additional readings
 
-+ [Hosios (1990)](https://doi.org/10.2307/2297382) – This paper shows that in a DMP model, unemployment is efficient when workers' bargaining power equals the elasticity of the matching function with respect to unemployment.
-+ [Chetty (2009)](https://doi.org/10.1146/annurev.economics.050708.142910) – This survey describes the sufficient-statistic method for welfare and policy analysis.
 + [Robinson (1946)](https://tidsskrift.dk/nationaloekonomisktidsskrift/article/view/60263) – This essay discusses various definitions of full employment and explains why full employment does not mean zero unemployment.
 + [Gokten, Heimberger, and Lichtenberger (2024)](https://doi.org/10.1016/j.euroecorev.2024.104725) – This paper uses the formula $u^\ast = \sqrt{uv}$ to compute the FERUs in selected European countries (Germany, Sweden, Austria, Finland, UK) between 1970 and 2022. It compares the FERUs and unemployment gaps in Europe to those in the United States.
++ [Hosios (1990)](https://doi.org/10.2307/2297382) – This paper shows that in a DMP model, unemployment is efficient when workers' bargaining power equals the elasticity of the matching function with respect to unemployment.
 
 ###### Practice material
 
@@ -415,8 +411,8 @@ Over the business cycle, fluctuations in labor demand generate fluctuations in u
 
 ###### Additional readings
 
-+ [Crepon and van den Berg (2016)](https://doi.org/10.1146/annurev-economics-080614-115738) – This survey assesses the effectiveness of various active labor market policies: policies designed to improve labor market outcomes of job seekers. Policies covered include job-search assistance (to stimulate labor supply) and job subsidies (to stimulate labor demand). The survey highlights spillovers from such policies. Job-search assistance is not found to be very effective, which is unsurprising in a world with job rationing. Job subsidies are found to be moderately effective.
-+ [Neumark and Shirley (2022)](https://doi.org/10.1111/irel.12306) – This survey reviews evidence on the effects of the minimum wage on employment in the United States. Overall, the evidence points toward negative effects of minimum wages on employment of less-skilled workers.
++ [Crepon and van den Berg (2016)](https://doi.org/10.1146/annurev-economics-080614-115738) – This survey assesses the effectiveness of various active labor market policies: policies designed to improve labor market outcomes of job seekers. Policies covered include job-search assistance (to stimulate labor supply) and job subsidies (to stimulate labor demand). The survey highlights spillovers from such policies. Job-search assistance is ineffective, which is unsurprising in a world with job rationing. Job subsidies are moderately effective.
++ [Clemens, Edwards, and Meer (2025)](https://doi.org/10.3386/w34033) –  This paper studies the effect of California's $20 fast-food minimum wage on employment in the fast-food sector. It finds that fast-food employment in California declined substantially compared to fast-food employment in other US states. 
 + [Neumann, Fishback, and Kantor (2010)](https://www.jstor.org/stable/25654074) – This paper describes public employment in the United States during the First New Deal and Second New Deal. It then documents the effect of public employment on the private labor market, unearthing evidence of crowding out of private employment by public employment. 
 + [Auerbach and Gorodnichenko (2013)](https://www.nber.org/chapters/c12634) – This paper finds that in a large number of Organization for Economic Cooperation and Development (OECD) countries, government multipliers are larger in recessions than in expansions.
 
@@ -428,9 +424,9 @@ Over the business cycle, fluctuations in labor demand generate fluctuations in u
 
 ## Unemployment insurance
 
-Fluctuations in unemployment raise another policy question: how should the generosity of unemployment insurance respond to unemployment fluctuations? This question was hotly debated during the Great Recession. Some argued that unemployment insurance should be reduced because it discouraged job search and would raise unemployment further. Other countered that unemployment insurance could be increased without raising unemployment much—as there were no jobs available for job seekers.
+Fluctuations in unemployment raise another policy question: how should the generosity of unemployment insurance respond to unemployment fluctuations? This question was hotly debated during the Great Recession. Some argued that unemployment insurance should be reduced because it discouraged job search and would raise unemployment further. Others countered that unemployment insurance could be increased without raising unemployment much—as there were no jobs available for job seekers.
 
-This section weights the two sides of the argument. It discusses the different channels through which unemployment insurance affects the labor market. It then derives a formula for optimal unemployment insurance. The formula contrasts how generous unemployment insurance should be in good times and in bad times. The formula shows that the generosity of unemployment insurance should be adjusted over the business cycle; the adjustment depends on how unemployment insurance affects labor market tightness. The effect of unemployment insurance on tightness depends on the model: increasing unemployment insurance may raise tightness by alleviating the rat race for jobs or lower tightness by increasing wages through bargaining.
+This section weighs the two sides of the argument. It discusses the different channels through which unemployment insurance affects the labor market. It then derives a formula for optimal unemployment insurance. The formula contrasts how generous unemployment insurance should be in good times and in bad times. The formula shows that the generosity of unemployment insurance should be adjusted over the business cycle; the adjustment depends on how unemployment insurance affects labor market tightness. The effect of unemployment insurance on tightness depends on the model: increasing unemployment insurance may raise tightness by alleviating the rat race for jobs or lower tightness by increasing wages through bargaining.
 
 In the United  States, unemployment insurance is more generous in bad times than in good times. The formula, combined with evidence from the US labor market, suggests that such countercyclical generosity is desirable. The reasons are that labor market tightness is inefficiently low in slumps and inefficiently high in booms (as we saw previously), and that increasing unemployment insurance raises labor market tightness.
 
