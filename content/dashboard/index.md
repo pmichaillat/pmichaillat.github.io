@@ -281,9 +281,7 @@ But the Employment Act and Full Employment and Balanced Growth Act clearly state
 
 ### Does the FERU formula hinge on the presumption that vacancies are unmet labor demand?
 
-No. A common misunderstanding is that our analysis treats JOLTS job openings as a measure of unmet labor demand.[^1] This is not the case. Nowhere in the paper do we interpret vacancies that way.
-
-Beveridge did interpret job vacancies as unmet labor demand and accordingly defined full employment as the point where job vacancies exceed job seekers. But our approach is different: we interpret vacancies as an indirect measure of the labor devoted to recruiting. In the United States, it takes roughly one recruiter to handle one vacancy, so the number of vacancies tracks the amount of labor devoted to recruiting. This empirical regularity is what we use in deriving the FERU.
+No. A common misunderstanding is that our analysis treats JOLTS job openings as a measure of unmet labor demand.[^1] This is not the case. Nowhere in the analysis do we interpret vacancies that way. Beveridge did interpret job vacancies as unmet labor demand and accordingly defined full employment as the point where job vacancies exceed job seekers. But our approach is different: we interpret vacancies as an indirect measure of the labor devoted to recruiting. In the United States, it takes roughly one recruiter to handle one vacancy, so the number of vacancies tracks the amount of labor devoted to recruiting. This empirical regularity is what we use in deriving the FERU.
 
 [^1]: One of the [discussants of our FERU paper](https://pascalmichaillat.org/13c.pdf) for instance makes that assertion. He argues that our analysis is erroneous because it assumes that JOLTS job openings measure the level of unmet labor demand, while in fact they do not capture all forms of unmet labor demand in the economy.
 

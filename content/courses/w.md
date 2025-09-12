@@ -72,14 +72,14 @@ The course is centered around formal modeling, but it also presents evidence sup
 
 ###### Main readings
 
-+ [Darity and Goldsmith (1996)](https://doi.org/10.1257/jep.10.1.121) –  This survey reviews the social-psychological consequences of unemployment. It finds that exposure to unemployment severely damages psychological health.
 + [Frey and Stutzer (2002)](https://doi.org/10.1257/002205102320161320) – This survey provides evidence that personal unemployment and aggregate unemployment significantly reduce happiness. The evidence refers to the pure effect of unemployment, which controls for the income loss from unemployment.
 + [Hussam, Kelley, Lane, and Zahra (2022)](https://doi.org/10.1257/aer.20211616) – This paper reports the results from a field experiment in Bangladesh designed to measure the psychosocial cost of unemployment. The experiment shows that paid employment raises psychosocial well-being substantially more than the same amount of cash alone. In fact, two-thirds of employed workers would be willing to forgo cash payments and continue working for free. The experiment illustrates just how large the psychosocial cost of unemployment is.
 
 ###### Additional readings
 
++ [Darity and Goldsmith (1996)](https://doi.org/10.1257/jep.10.1.121) –  This survey reviews the social-psychological consequences of unemployment. It finds that exposure to unemployment severely damages psychological health.
++ [Winkelmann and Winkelmann (1998)](https://doi.org/10.1111/1468-0335.00111) – This paper uses panel data to show that unemployment causes unhappiness (and not the other way around). It finds that unemployment significantly reduces life satisfaction, and that the non-pecuniary cost of unemployment is much larger than the pecuniary cost.
 + [Di Tella, MacCulloch, and Oswald (2003)](https://doi.org/10.1162/003465303772815745) – This paper finds in well-being surveys that unemployment make people unhappy. Being unemployed makes you unhappy, and having unemployment in your country makes you unhappy. In fact, after controlling for income and other personal characteristics, becoming unemployed appears as painful as divorcing.
-+ [Winkelmann and Winkelmann (1998)](https://doi.org/10.1111/1468-0335.00111) – This paper uses panel data to show that unemployment causes unhappiness (and not the other way around).  It finds that unemployment significantly reduces life satisfaction, and that the non-pecuniary cost of unemployment is much larger than the pecuniary cost.
 + [Borgschulte and Martorell (2018)](https://doi.org/10.1257/app.20160257) – This paper provides revealed-preference estimates of the cost of unemployment. It finds that unemployment is indeed very costly.
 
 ---
@@ -103,13 +103,13 @@ Modern business-cycle models—both Real Business-Cycle model New Keynesian mode
 ###### Main readings
 
 + [Kuhn (1957, chapters 1 and 5)](https://www.hup.harvard.edu/catalog.php?isbn=9780674171039) – This book studies the Copernican Revolution in astronomy and in the process isolates the three properties of a good model: economy, accuracy, and fruitfulness.
-+ [Benassy (1993)](https://www.jstor.org/stable/2728514) – This survey reviews the General Disequilibrium literature.
 + [Summers (1986)](https://www.minneapolisfed.org/research/quarterly-review/some-skeptical-observations-on-real-business-cycle-theory) – This paper discusses the origins and limitations of the Real Business-Cycle model.
 
 ###### Additional readings
 
 + [Kuhn (1962, chapters 2–9)](https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html) – This book describes how science progresses by cycling through paradigms. Each cycle starts with a period of normal science, during which the dominant paradigm is used and refined. This is followed by a period of revolutionary science, during which the anomalies of the dominant paradigm are too numerous to ignore, and new paradigms are invented and compete to replace to old paradigm.
-+ [Krugman (2000)](https://doi.org/10.1093/oxrep/16.4.33) – This paper argues that uncomplicated models can be helpful. In this course we will develop models that are as uncomplicated as possible—and that are much simpler than models typically studied in graduate macroeconomic courses.
++ [Krugman (2000)](https://doi.org/10.1093/oxrep/16.4.33) – This paper argues that uncomplicated models can be helpful. In this course we will develop a model that is as uncomplicated as possible—and that is much simpler than models typically studied in graduate macroeconomic courses.
++ [Benassy (1993)](https://www.jstor.org/stable/2728514) – This survey reviews the General Disequilibrium literature.
 + [Cooley and Prescott (1995)](https://doi.org/10.2307/j.ctv14163jx.7) – This paper reviews facts about business cycles and explains how Real Business-Cycle models were developed from the neoclassical growth model.
 + [Gali (2018)](https://doi.org/10.1257/jep.32.3.87) – This survey reviews the New Keynesian literature.
 
@@ -138,13 +138,12 @@ The business-cycle model developed in this course differs from canonical busines
 
 ###### Main readings
 
-+ [Petrosky-Nadeau and Zhang (2021)](https://doi.org/10.1016/j.jmoneco.2020.01.009) – This paper constructs series for US unemployment and vacancy rates going back to the Great Depression (1929).
 + [Elsby, Michaels, and Ratner (2015)](https://doi.org/10.1257/jel.53.3.571) – This survey reviews the empirical properties of the Beveridge curve and possible microfoundations for it.
 + [Petrongolo and Pissarides (2001)](https://doi.org/10.1257/jel.39.2.390) – This survey reviews the microfoundations of the matching function, its empirical properties, and its applications.
 
-
 ###### Additional readings
 
++ [Petrosky-Nadeau and Zhang (2021)](https://doi.org/10.1016/j.jmoneco.2020.01.009) – This paper constructs series for US unemployment and vacancy rates going back to the Great Depression (1929).
 + [Walker et al (2024)](https://doi.org/10.3386/w33055) – This paper argues that slack is ubiquitous in developing countries. It also makes the case that accounting for slack is necessary to understand the development process and to predict the effects of development policies.
 + [Montgomery (1991)](https://doi.org/10.2307/2937911) – This paper generates an aggregate matching function from wage competition between firms. 
 + [Shimer (2007)](https://doi.org/10.1257/aer.97.4.1074) – This paper generates an aggregate matching function from mismatch in local labor markets.
@@ -182,14 +181,14 @@ This section develops a basic slackish model of the economy. The model is static
 ###### Main readings
 
 + [Michaillat and Saez (2015, sections 1–2)](/3.pdf) – These sections develop the basic slackish model.
-+ [Diamond (1982)](https://www.jstor.org/stable/1837124) – This paper develops the first matching model of the product market and uses it to study stabilization policy.
 + [Camerer, Loewenstein, and Prelec (2005)](https://doi.org/10.1257/0022051053737843) – This survey reviews advances in neuroeconomics—a field that uses results from biology and neuroscience to develop better economic models. One key insight from the survey is that people value money in and of itself—not solely as future consumption.
 
 ###### Additional readings
 
++ [Diamond (1982)](https://www.jstor.org/stable/1837124) – This paper develops the first matching model of the product market and uses it to study stabilization policy.
++ [Gourio and Rudanko (2014)](https://doi.org/10.1093/restud/rdu007) – This paper develops a dynamic matching model of the product market. Prices are set through competitive search.
 + [Barro (1977)](https://doi.org/10.1016/0304-3932(77)90024-1) – This paper argues that prices should be bilaterally efficient when buyers and sellers are engaged in long-term relationships. In the slackish model developed in this course, prices are always bilaterally efficient.
 + [Huo and Rios-Rull (2020)](https://doi.org/10.1257/mac.20180290) – This paper shows that in New Keynesian models with sticky wages, workers are required to work against their will 15%–30% of the time. 
-+ [Gourio and Rudanko (2014)](https://doi.org/10.1093/restud/rdu007) – This paper develops a dynamic matching model of the product market. Prices are set through competitive search.
 
 ---
 
@@ -270,18 +269,16 @@ This section reviews evidence from microdata and ethnographic surveys. The evide
 
 ###### Main readings
 
-+ [Hall (2005)](https://doi.org/10.1257/0002828053828482) – This paper explains how a fixed wage norm can be inserted into a matching model, and shows that such a model generates large fluctuations in unemployment and vacancies.
-+ [Dickens et al (2007)](https://doi.org/10.1257/jep.21.2.195) – This paper reviews microevidence of wage rigidity in the United States and abroad.
 + [Nakamura and Steinsson (2013)](https://doi.org/10.1146/annurev-economics-061109-080430) – This paper reviews microevidence of price rigidity in the United States and discusses how this evidence is used to build macroeconomic models.
-
++ [Dickens et al (2007)](https://doi.org/10.1257/jep.21.2.195) – This paper reviews microevidence of wage rigidity in the United States and abroad.
 
 ###### Additional readings
 
 + [Shimer (2005)](https://doi.org/10.1257/0002828053828572) – This paper shows that in a matching model with Nash bargaining, wages are too flexible to generate realistic fluctuations in unemployment and vacancies.
++ [Hall (2005)](https://doi.org/10.1257/0002828053828482) – This paper explains how a fixed wage norm can be inserted into a matching model, and shows that such a model generates large fluctuations in unemployment and vacancies.
 + [Bewley (2005)](https://doi.org/10.7551/mitpress/4771.003.0017) – This paper reviews survey and experimental evidence of wage rigidity. It then argues that firms avoids pay cuts because they damage morale, which eventually reduces productivity, increases turnover, and complicates recruiting.
-+ [Haefke, Sonntag, and van Rens (2013)](https://doi.org/10.1016/j.jmoneco.2013.09.003) – This paper constructs a series for wages of newly hired US workers and find that the elasticity of these wages with respect to productivity is 0.7–0.8.
 + [Hazell and Taska (2024)](https://jadhazell.github.io/website/Downward_Rigidity.pdf) – This paper shows that the wage for newly hired US workers is rigid downward and flexible upward. The wage attached to each job does not respond to rises in unemployment, but it rises strongly when unemployment falls.
-+ [Hall and Milgrom (2008)](https://doi.org/10.1257/aer.98.4.1653) – This paper proposes a form of wage bargaining that produces somewhat-rigid wages. With such bargaining, the matching model generates realistic fluctuations in unemployment and vacancies.
++ [Haefke, Sonntag, and van Rens (2013)](https://doi.org/10.1016/j.jmoneco.2013.09.003) – This paper constructs a series for wages of newly hired US workers and find that the elasticity of these wages with respect to productivity is 0.7–0.8.
 + [Fabiani, Druant, Hernando, Kwapil, Landau, Loupias, Martins, Matha, Sabbatini, Stahl, and Stokman (2006)](https://www.ijcb.org/journal/ijcb06q3a1.htm) – This paper reviews  survey evidence of price rigidity in the United States and in Europe. It also documents that firms do not change prices more often by fear of antagonizing customers.
 + [Eyster, Madarasz, and Michaillat (2021)](/8.pdf) – Empirically, it seems that pricing norms are shaped by fairness considerations. This paper examines the possible origins of such norms. It develops a model of pricing in which buyers care about the fairness of markups, and firms take these concerns into account when setting prices. The model yields price rigidity and realistic Phillips curves.
 
@@ -316,15 +313,14 @@ Moreover, the comovements between output, employment, product-market tightness, 
 ###### Main readings
 
 + [Michaillat and Saez (2015, sections 3–6)](/3.pdf) – These sections develop the slackish model with labor and product markets, and assess the sources of unemployment fluctuations in the United States.
-+ [Michaillat (2012)](/1.pdf) – This paper establishes that usual matching models of the labor market do not have job rationing. It then develops a matching model with job rationing, which is a precursor for the models developed in this course.
 + [Barro and Grossman (1971)](https://www.jstor.org/stable/1910543) – This paper develops a disequilibrium model with labor and product markets. This model is a precursor to the two-market slackish model used in the course.
-
 
 ###### Additional readings
 
 + [Barro (2025)](https://doi.org/10.3386/w33850) – This paper revisits the disequilibrium model with labor and product markets, summarizes its qualities and limitations, and argues that the limitations can be remedied by using the type of slackish models developed in this course. The paper also reviews some of the limitations of the New Keynesian model.
++ [Michaillat (2012)](/1.pdf) – This paper establishes that usual matching models of the labor market do not have job rationing. It then develops a matching model with job rationing, which is a precursor for the two-market model developed here.
 + [Diamond (2011)](https://doi.org/10.1257/aer.101.4.1045) – In this Nobel lecture, Peter Diamond discusses the applications of the matching framework to the product market and other markets.
-+ [Wasmer and Weil (2004)](https://doi.org/10.1257/0002828042002525) – This paper develops a model with labor and financial markets organized around a matching function. 
++ [Wasmer and Weil (2004)](https://doi.org/10.1257/0002828042002525) – This paper develops a model with labor and financial markets organized around matching functions. 
 
 ---
 
@@ -356,13 +352,13 @@ An advantage of moving to a dynamic environment is that interest rates appear in
 
 + [Michaillat and Saez (2022, sections 1–4)](/7.pdf) – These sections develop the dynamic slackish model and perform various comparative statics.
 + [Michaillat and Saez (2024)](/15.pdf) – This paper develops a business-cycle model with divine coincidence: inflation is on target when unemployment is efficient. The model uses the structure of the dynamic slackish model and generates price dynamics by introducing price competition through directed search. To ensure that unemployment fluctuates, the model introduces price rigidity through quadratic price-adjustment costs.
-+ [Ball, Leigh, and Loungani (2017)](https://doi.org/10.1111/jmcb.12420) – This paper documents the prevalence of Okun's law—the negative correlation between output and unemployment rate—in the United States since 1948. Okun's law implies that output and market tightness are negatively correlated over the business cycle, which in turn implies that aggregate demand shocks are the main source of cyclical fluctuations.
 
 ###### Additional readings
 
-+ [Michaillat and Saez (2021)](/11.pdf) – The dynamic slackish model assumes that wealth enters people's utility function. This paper exports this assumption to the New Keynesian model and shows that it is also helpful there. Indeed, the assumption resolves all the anomalies of the New Keynesian model at the zero lower bound: there is no collapse of output and inflation, and the effects of government spending and forward guidance are bounded and reasonable.
++ [Ball, Leigh, and Loungani (2017)](https://doi.org/10.1111/jmcb.12420) – This paper documents the prevalence of Okun's law—the negative correlation between output and unemployment rate—in the United States since 1948. Okun's law implies that output and market tightness are negatively correlated over the business cycle, which in turn implies that aggregate demand shocks are the main source of cyclical fluctuations.
 + [Basu, Fernald, and Kimball (2006)](https://doi.org/10.1257/aer.96.5.1418) – This paper shows that in the United States, employment falls when technology improves. The same occurs in the dynamic slackish model.
-+ [Blanchard and Gali (2007)](https://doi.org/10.1111/j.1538-4616.2007.00015.x) – This paper introduces the concept of divine coincidence and examines when it might and might not hold.
++ [Benigno and Eggertsson (2023)](https://doi.org/10.3386/w31197) – This paper provides evidence that the divine coincidence holds in the United States in recent decades: inflation is above target whenever the labor market is inefficiently tight. It also documents a kink in the Phillips curve at the point of divine coincidence: the Phillips curve is much steeper when the economy is hot than when it is cold.
++ [Michaillat and Saez (2021)](/11.pdf) – The dynamic slackish model assumes that wealth enters people's utility function. This paper exports this assumption to the New Keynesian model and shows that it is also helpful there. Indeed, the assumption resolves all the anomalies of the New Keynesian model at the zero lower bound.
 
 ---
 
@@ -422,12 +418,12 @@ In fact, given such optimality criterion, we can develop a simple formula for op
 
 + [Michaillat and Saez (2022, sections 5–6)](/7.pdf) – These sections obtain the sufficient-statistic formula for optimal monetary policy and apply it to the US economy.
 + [Bernanke and Blinder (1993)](https://www.jstor.org/stable/2117350) – This paper estimates the response of the federal funds rate to unemployment, and the effect of the federal funds rate on unemployment.
-+ [Coibion (2012)](https://doi.org/10.1257/mac.4.2.1) – This paper blends the narrative and VAR approaches to estimate the monetary multiplier—the effect of an increase in the federal funds rate on the unemployment rate. It finds that increasing the federal funds rate by 1 percentage point raises the unemployment rate by about 0.5 percentage point.
 
 ###### Additional readings
 
 + [Christiano, Eichenbaum, and Evans (1999)](https://doi.org/10.1016/S1574-0048(99)01005-8) – This paper summarizes the effects of monetary policy shocks on key macroeconomic variables (including unemployment) in the United States.
 + [Stock and Watson (2001)](https://doi.org/10.1257/jep.15.4.101) – This paper assesses the effect of monetary policy on US unemployment using VARs.
++ [Coibion (2012)](https://doi.org/10.1257/mac.4.2.1) – This paper blends the narrative and VAR approaches to estimate the monetary multiplier—the effect of an increase in the federal funds rate on the unemployment rate. It finds that increasing the federal funds rate by 1 percentage point raises the unemployment rate by about 0.5 percentage point.
 + [Ramey (2016)](https://doi.org/10.1016/bs.hesmac.2016.03.003) – This paper summarizes the effects of macroeconomic shocks (including monetary-policy and fiscal-policy shocks) on key macroeconomic variables in the United States.
 
 ---
@@ -458,11 +454,11 @@ This section studies how government spending should be adjusted when unemploymen
 ###### Main readings
 
 + [Michaillat and Saez (2019)](/6.pdf) – This paper studies optimal government spending in the presence of inefficient unemployment. It derives the sufficient-statistic formula for optimal stimulus spending.
-+ [Samuelson (1954)](https://doi.org/10.2307/1925895) – This paper studies optimal government spending in a neoclassical model and derives the famous Samuelson rule.
 + [Michaillat (2014)](/2.pdf) – This paper establishes that in a slackish model, the public-employment multiplier is positive but less than one, and the multiplier is larger when the unemployment rate is higher.
 
 ###### Additional readings
 
-+ [Ramey (2013)](https://www.nber.org/system/files/chapters/c12632/c12632.pdf) – This paper uses structural VARs on US data to estimate the unemployment multiplier—the effect of an increase in government spending on the unemployment rate.
++ [Samuelson (1954)](https://doi.org/10.2307/1925895) – This paper studies optimal government spending in a neoclassical model and derives the famous Samuelson rule.
++ [Ramey (2013)]( http://www.nber.org/chapters/c12632) – This paper uses structural VARs on US data to estimate the unemployment multiplier—the effect of an increase in government spending on the unemployment rate.
 + [Auerbach and Gorodnichenko (2012)](https://doi.org/10.1257/pol.4.2.1) – This paper finds that in the United States, government multipliers are larger when the unemployment rate is higher.
 + [Ghassibe and Zanetti (2022)](https://doi.org/10.1016/j.jmoneco.2022.09.003) – This paper describes the state-dependence of multipliers in a slackish model under both demand and supply shocks, for both demand-side and supply-side policies.
