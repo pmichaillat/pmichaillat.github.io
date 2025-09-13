@@ -13,6 +13,7 @@ aliases:
     - /tags/benveniste-scheinkman-equation/
     - /tags/optimization/
     - /tags/differential-equations/
+    - /tags/hjb-equation/
     - /tags/phase-diagrams/
     - /tags/euler-equation/
     - /tags/dynamical-systems/
