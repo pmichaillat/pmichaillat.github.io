@@ -95,7 +95,7 @@ All charts automatically update as new data become [available on FRED](https://f
 
 + *Construction:* The full-employment rate of unemployment (FERU) is the geometric average of the unemployment and vacancy rates: $u^\ast = \sqrt{u \times v}$, where $u$ is the unemployment rate, $v$ is the vacancy rate, and $u^\ast$ is the FERU. 
 + *Interpretation:* The FERU marks full employment and, by construction, labor market efficiency. So the FERU is also the socially efficient unemployment rate.
-+ *Visualization:* On the Beveridge diagram, the FERU is at the intersection of the Beveridge curve and 45° ray. The implication is that the FERU is determined by the location of the Beveridge curve: it is higher whenever the Beveridge curve is futher outward.
++ *Visualization:* On the Beveridge diagram, the FERU is at the intersection of the Beveridge curve and 45° ray. The implication is that the FERU is determined by the location of the Beveridge curve: it is higher whenever the Beveridge curve is further outward.
 + [Download FERU](/dashboard/feru.csv)
 + [Full-screen view](/dashboard/feru.html)
 
@@ -143,6 +143,7 @@ All charts automatically update as new data become [available on FRED](https://f
 + *Interpretation:* The dual-threshold Michez rule works as follows: values of the indicator between 0.29pp and 0.81pp signal a probable recession; values above 0.81pp signal a certain recession. This dual-threshold extension accounts for uncertainty in the true recession threshold and provides a simple way to nowcast recession risk. 
 + [Download recession probability](/dashboard/recession_probability.csv)
 + [Full-screen view](/dashboard/recession_probability.html)
++ *Note:* This is not the recession probability computed [in more recent work](/17/) and covered [by the Financial Times](https://archive.ph/6nSxa). The new recession probability will only be added to the dashboard once the method has been finalized and published. The newer method estimates a much higher probability in 2025 (71% in May 2025) because it discounts temporary dips in recession indicators.
 
 ---
 
@@ -277,6 +278,12 @@ The issue is that these texts do not explain what full employment is. The Humphr
 > I do not think we should set a target.
 
 But the Employment Act and Full Employment and Balanced Growth Act clearly state that achieving full employment is a way to maximize social welfare. So we translate full employment as social efficiency. Accordingly, we compute the FERU as the unemployment rate that achieves a socially efficient allocation of labor. This allocation maximizes social output by minimizing the uses of labor that are socially unproductive: both jobseeking and recruiting. The computation yields the formula $u^\ast = \sqrt{uv}$.
+
+### Does the FERU formula hinge on the presumption that vacancies are unmet labor demand?
+
+No. A common misunderstanding is that our analysis treats JOLTS job openings as a measure of unmet labor demand.[^1] This is not the case. Nowhere in the analysis do we interpret vacancies that way. Beveridge did interpret job vacancies as unmet labor demand and accordingly defined full employment as the point where job vacancies exceed job seekers. But our approach is different: we interpret vacancies as an indirect measure of the labor devoted to recruiting. In the United States, it takes roughly one recruiter to handle one vacancy, so the number of vacancies tracks the amount of labor devoted to recruiting. This empirical regularity is what we use in deriving the FERU.
+
+[^1]: One of the [discussants of our FERU paper](https://pascalmichaillat.org/13c.pdf) for instance makes that assertion. He argues that our analysis is erroneous because it assumes that JOLTS job openings measure the level of unmet labor demand, while in fact they do not capture all forms of unmet labor demand in the economy.
 
 ### Is the FERU the same as the NAIRU?
 
