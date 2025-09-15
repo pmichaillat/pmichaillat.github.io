@@ -25,7 +25,7 @@ menu:
           weight: 4        
 
 params:
-    description: "This website hosts Pascal Michaillat's research papers, course materials, design templates, curriculum vitae, and a real-time business cycle dashboard."
+    description: "This website hosts Pascal Michaillat's book chapters, research papers, real-time business cycle dashboard, course materials, and design templates."
     author: Pascal Michaillat
     googleAnalyticsID: "G-97G4MZ4061"
     images: ["cover.png"]
