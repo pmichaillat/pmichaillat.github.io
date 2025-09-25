@@ -57,7 +57,7 @@ Source Serif Pro is a serif font—a typical choice for long-form writing. Sourc
 
 Moreover, the Source Pro family includes a nice monospaced font: [Source Code Pro](https://mirrors.rit.edu/CTAN/fonts/sourcecodepro/doc/sourcecodepro.pdf). The template uses Source Code Pro as monospaced font—giving the monospaced text and regular text a similar look. The monospaced font is used in particular to typeset URLs.
 
-Another advantage of Source Serif Pro is that there is a sans-serif font in the Source Pro family: [Source Sans Pro](https://ctan.math.illinois.edu/fonts/sourcesanspro/doc/sourcesanspro.pdf). This [presentation template](/c/) uses Source Sans Pro, which gives presentations and papers produced by the two templates a similar look.
+Finally, there is a sans-serif font in the Source Pro family: [Source Sans Pro](https://ctan.math.illinois.edu/fonts/sourcesanspro/doc/sourcesanspro.pdf). The [latex-presentation template](https://github.com/pmichaillat/latex-presentation) uses Source Sans Pro, giving the resulting presentations an appearance similar to the papers produced by this template.
 
 ---
 

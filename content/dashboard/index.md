@@ -1,8 +1,7 @@
 ---
 title: "Automated Business Cycle Dashboard"
 author: ["Pascal Michaillat","Emmanuel Saez"]
-description: "A dashboard with real-time charts on US unemployment rate, vacancy rate, labor market tightness, FERU, unemployment gap, and recession probability."
-summary: "This dashboard provides real-time charts on US unemployment rate, vacancy rate, labor market tightness, Beveridge curve, FERU, unemployment gap, recession indicator, and recession probability. Data are pulled daily from the St Louis Fed's FRED database."
+description: "This dashboard provides real-time charts on US unemployment rate, vacancy rate, labor market tightness, FERU, unemployment gap, and recession probability."
 cover:
     image: "/dashboard.png"
     alt: "US recession probability from dual-threshold Michez rule"

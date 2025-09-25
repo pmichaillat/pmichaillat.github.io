@@ -77,7 +77,7 @@ Moreover, the Source Pro family includes a nice monospaced font: [Source Code Pr
 
 Another advantage of Source Sans Pro is that it comes with a broad range of weight. For instance, the template uses the semibold font weight in places. To activate the semibold font instead of the usual bold font, use `\sbseries` and `\textsb{}` instead of `\bfseries` and `\textbf{}`.
 
-A last advantage of Source Sans Pro is that there is a with-serif font in the Source Pro family: [Source Serif Pro](https://mirror.las.iastate.edu/tex-archive/fonts/sourceserifpro/doc/sourceserifpro.pdf). This [paper template](/a/) uses Source Serif Pro, which gives the presentations and papers produced by the two templates a similar look.
+Finally, there is a serif font in the Source Pro family: [Source Serif Pro](https://mirror.las.iastate.edu/tex-archive/fonts/sourceserifpro/doc/sourceserifpro.pdf). The [latex-paper template](https://github.com/pmichaillat/latex-paper) uses Source Serif Pro, giving the resulting papers an appearance similar to the presentations produced by this template.
 
 ---
 

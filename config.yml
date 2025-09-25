@@ -11,21 +11,21 @@ taxonomies:
 
 menu:
     main:
-        - name: Dashboard
-          url: dashboard/
-          weight: 1
         - name: Papers
           url: papers/
           weight: 2
+        - name: Dashboard
+          url: dashboard/
+          weight: 3
         - name: Courses
           url: courses/
-          weight: 3
+          weight: 4
         - name: Design
           url: design/
-          weight: 4        
+          weight: 5        
 
 params:
-    description: "This website hosts Pascal Michaillat's book chapters, research papers, real-time business cycle dashboard, course materials, and design templates."
+    description: "This website hosts Pascal Michaillat's research papers, real-time business cycle dashboard, course materials, and design templates."
     author: Pascal Michaillat
     googleAnalyticsID: "G-97G4MZ4061"
     images: ["cover.png"]
@@ -55,10 +55,10 @@ params:
           imageWidth: 130
           imageHeight: 130
           buttons:
-            - name: Dashboard
-              url: dashboard/  
             - name: Papers
               url: papers/
+            - name: Dashboard
+              url: dashboard/  
             - name: Courses
               url: courses/
             - name: Design
