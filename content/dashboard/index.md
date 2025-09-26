@@ -23,6 +23,14 @@ All charts automatically update as new data become [available on FRED](https://f
 
 ---
 
+## Key events
+
++ September 2025 - The Federal Reserve [cuts the federal funds rate by 25 basis points](https://www.federalreserve.gov/monetarypolicy/files/monetary20250917a1.pdf) in response to the cooling of the labor market.
++ August 2025 - The US labor market [dips below full employment](#us-unemployment-gap) for the first time since April 2021.
++ May 2025 - The dashboard is live.
+
+---
+
 ## US unemployment rate
 
 <iframe
