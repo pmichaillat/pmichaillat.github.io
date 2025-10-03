@@ -25,7 +25,7 @@ All charts automatically update as new data become [available on FRED](https://f
 
 ## Key events
 
-+ October 2025 - Due to the shutdown of the federal government, the BLS has not released the unemployment numbers for September 2025 at the scheduled date (10/03/2025). Presumably, the numbers will be released when the government reopens; the dashboard will automatically update as soon as that happens. Until then, the latest data point in the charts will be August 2025.
++ October 2025 - Due to the [shutdown of the federal government](https://www.bls.gov/bls/2025_october_shutdown.htm), the BLS has not released the unemployment numbers for September 2025 at the scheduled date (10/03/2025). Presumably, the numbers will be released when the government reopens; the dashboard will automatically update as soon as that happens. Until then, the latest data point in the charts will be August 2025.
 + September 2025 - The Federal Reserve [cuts the federal funds rate by 25 basis points](https://www.federalreserve.gov/monetarypolicy/files/monetary20250917a1.pdf) in response to the cooling of the labor market.
 + August 2025 - The US labor market [dips below full employment](#us-unemployment-gap) for the first time since April 2021.
 + May 2025 - The dashboard is live.
