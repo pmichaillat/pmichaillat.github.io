@@ -13,7 +13,7 @@ disableAnchoredHeadings: false
 
 ---
 
-This dashboard provides real-time indicators of US labor market and business cycle conditions. It starts with three core labor market indicators: the unemployment rate, vacancy rate, and labor market tightness. These metrics jointly characterize the functioning of the labor market. It also plots the Beveridge curve, which relates the unemployment and vacancy rates.
+This dashboard provides real-time indicators of US labor market and business cycle conditions. It starts with three core labor market indicators: the unemployment rate, vacancy rate, and labor market tightness. These metrics jointly characterize the functioning of the labor market. The dashboard also plots the Beveridge curve, which relates the unemployment and vacancy rates.
 
 From these, the dashboard calculates two metrics that quantify how far the labor market is from social efficiency: the full-employment rate of unemployment (FERU) and the unemployment gap. These two metrics are key determinants of optimal monetary policy and fiscal policy.
 
@@ -291,7 +291,7 @@ But the Employment Act and Full Employment and Balanced Growth Act clearly state
 
 No. A common misunderstanding is that our analysis treats JOLTS job openings as a measure of unmet labor demand.[^1] This is not the case. Nowhere in the analysis do we interpret vacancies that way. Beveridge did interpret job vacancies as unmet labor demand and accordingly defined full employment as the point where job vacancies exceed job seekers. But our approach is different: we interpret vacancies as an indirect measure of the labor devoted to recruiting. In the United States, it takes roughly one recruiter to handle one vacancy, so the number of vacancies tracks the amount of labor devoted to recruiting. This empirical regularity is what we use in deriving the FERU.
 
-[^1]: One of the [discussants of our FERU paper](https://pascalmichaillat.org/13c.pdf) for instance makes that assertion. He argues that our analysis is erroneous because it assumes that JOLTS job openings measure the level of unmet labor demand, while in fact they do not capture all forms of unmet labor demand in the economy.
+[^1]: One of the [discussants of our FERU paper](https://pascalmichaillat.org/13c.pdf) for instance makes that assertion. He argues that our analysis is erroneous because it assumes that JOLTS job openings measure the level of unmet labor demand. We have never made that assumption, however, and it's unclear why the dicussant thought that we did. 
 
 ### Is the FERU the same as the NAIRU?
 
