@@ -1,10 +1,10 @@
 ---
 title: "Minimalist LaTeX Template for Academic CVs" 
-date: 2025-05-11
+date: 2025-10-20
 url: /f/
 author: "Pascal Michaillat"
 description: "This template produces an academic CV with LaTeX. The CV follows typographical best practices and has a minimalist design."
-summary: "This template produces an academic CV with LaTeX. The CV follows typographical best practices and has a minimalist design." 
+summary: "This template produces an academic CV with LaTeX. The CV follows typographical best practices and has a minimalist design. Also available is a more compact version of the template to produce a one-page CV." 
 cover:
     image: "/f.png"
     alt: "CV produced with template"
@@ -15,14 +15,15 @@ showToc: true
 disableAnchoredHeadings: false
 ---
 
-The template produces an academic CV with [LaTeX](https://www.latex-project.org). The CV adheres to typographical best practices and has a minimalist design. It is well suited for researchers at all levels, including students, postdocs, faculty members, and professional scientists. The design emphasizes structural clarity and visual simplicity.
+The template produces an academic CV with [LaTeX](https://www.latex-project.org). The CV adheres to typographical best practices and has a minimalist design. It is well suited for researchers at all levels, including students, postdocs, faculty members, and professional scientists. The design emphasizes structural clarity and visual simplicity. A more compact version of the template is also available to produce a one-page CV.
 
 ---
 
 ## View
 
 + [LaTeX CV template](https://github.com/pmichaillat/latex-cv)
-+ [CV produced by the template](/f.pdf)
++ [Multi-page CV produced by the template](/f.pdf)
++ [One-page CV produced by the template](/f1.pdf)
 
 ---
 
@@ -32,6 +33,7 @@ The template produces an academic CV with [LaTeX](https://www.latex-project.org)
 + The CV uses only gray and black to reduce distraction and print flawlessly.
 + Margins, spacing, and font size are set for comfortable reading.
 + Headings and lists are designed so the CV is well organized and easy to skim.
++ A more compact version of the template produces a one-page CV.
 
 ---
 
@@ -79,7 +81,7 @@ The top margin is 0.9 inch, which is about standard. The bottom margin is 1.1 in
 
 ## Color scheme
 
-Colors are distracting, and many colors are hard to read when they are printed in black and white. To reduce distraction and have a CV that prints well, the template only uses black for the main text, and gray for surrounding elements (headings, bullet points, footer).
+Colors are distracting, and many colors are hard to read when they are printed in black and white. To reduce distraction and have a CV that prints well, the template only uses black for the main text, and gray for surrounding elements (headings, bullet points, footer, lines).
 
 ---
 
@@ -140,3 +142,9 @@ Scholars often give the full bibliographical information for their publications.
 ## Overall length
 
 How long should your CV be? After the PhD job market—where CVs are typically confined to a single page—academic CVs often become excessively long, which may dilute their effectiveness by burying relevant information. [Butterick advises](https://practicaltypography.com/resumes.html) students to stick to one page and older people to limit themselves to just a couple of pages. [I would agree](/cv.pdf) with this advice.
+
+---
+
+## One-page variant
+
+The template also includes a more compact version to produce a one-page CV. The one-page CV might be particularly helpful for job-market candidates and others who require their CV to fit on one page. Compared to the main template, the one-page variant has narrower margins and narrower spacing between lines.
