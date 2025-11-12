@@ -25,7 +25,7 @@ All charts automatically update as new data become [available on FRED](https://f
 
 ## Key events
 
-+ October 2025 - Due to the [shutdown of the federal government](https://www.bls.gov/bls/2025_october_shutdown.htm), the BLS has not released the unemployment numbers for September 2025 at the scheduled date (10/03/2025). Presumably, the numbers will be released when the government reopens; the dashboard will automatically update as soon as that happens. Until then, the latest data point in the charts will be August 2025.
++ November 2025 - Due to the [shutdown of the federal government](https://www.bls.gov/bls/2025_october_shutdown.htm), the BLS has not released the unemployment numbers for September and October 2025 at the scheduled dates (10/03/2025, 11/07/2025). Presumably, the numbers will be released when the government reopens; the dashboard will automatically update as soon as that happens. Until then, the latest data point in the charts will be August 2025.
 + September 2025 - The Federal Reserve [cuts the federal funds rate by 25 basis points](https://www.federalreserve.gov/monetarypolicy/files/monetary20250917a1.pdf) in response to the cooling of the labor market.
 + August 2025 - The US labor market [dips below full employment](#us-unemployment-gap) for the first time since April 2021.
 + May 2025 - The dashboard is live.
@@ -372,7 +372,7 @@ The unemployment gap is not directly useful to compute optimal unemployment insu
     + The paper then obtains the formula for the US FERU: $u^\ast = \sqrt{uv}$. 
     + The formula implies that the economy is at full employment when there are as many job seekers as job vacancies; inefficiently tight when there are fewer job seekers than job vacancies; and inefficiently slack when there are more job seekers than job vacancies.
     + [View the paper](/13/)
-2. Pascal Michaillat and Emmanuel Saez. 2025. "Has the Recession Started?" [*Oxford Bulletin of Economics and Statistics*](https://doi.org/10.1111/obes.12685).
+2. Pascal Michaillat and Emmanuel Saez. 2025. "Has the Recession Started?" [*Oxford Bulletin of Economics and Statistics*](https://doi.org/10.1111/obes.12685) 87 (6): 1047–1058.
     + This paper develops the Michez rule, which uses the recession indicator and a threshold of 0.29pp to detect US recessions in real time.
     + The paper also proposes a dual-threshold extension of the Michez rule, from which the recession probability is computed.
     + [View the paper](/16/)
