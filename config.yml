@@ -1,8 +1,6 @@
 baseURL: "https://pascalmichaillat.org/" 
 title: Pascal Michaillat
 theme: PaperMod
-enableInlineShortcodes: true
-enableRobotsTXT: true
 pagination:
   pagerSize: 40
 
@@ -100,5 +98,8 @@ markup:
         ordered: false
         startLevel: 2
 
+enableInlineShortcodes: true
+enableRobotsTXT: true
 titleCaseStyle: 'none'
 enableGitInfo: true
+buildFuture: true
