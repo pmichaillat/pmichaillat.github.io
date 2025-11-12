@@ -272,7 +272,6 @@ The Michez-rule recession indicator can be computed for any country, but the rec
 
 Similarly, the upper threshold of 0.81pp used in the dual-threshold Michez rule to infer a recession probability will have to be recalibrated in other countries. The value of 0.81pp is the highest threshold that generates no false negatives in the United States between 1960 and 2021. In other countries, the recession indicator will take different values, and recessions will occur at different times, so the threshold will have to be recomputed. Once the thresholds are recalibrated, the recession probability can be computed using a similar formula.
 
-
 ---
 
 ## Frequently asked policy questions
