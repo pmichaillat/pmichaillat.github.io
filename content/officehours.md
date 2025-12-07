@@ -10,7 +10,13 @@ hidemeta: true
 
 ---
 
-##### Schedule for Fall 2025
+##### Schedule for Winter 2026
+
++ Office hours for Fall 2025 have ended. 
++ Office hours for Winter 2026 start on Wednesday 7 January.
++ In Winter 2026, office hours are by appointment. Please [email me](mailto:pamichai@ucsc.edu) to set up a meeting.
+
+<!-- ##### Schedule for Fall 2025
 
 + Day: Wednesday
 + Time for ECON 221 and other graduate students: 2:30pm–3:30pm
@@ -21,7 +27,7 @@ hidemeta: true
 ##### Location
 
 + By default office hours take place [in my office](/location/). 
-+ I am also available for [Zoom meetings](https://ucsc.zoom.us/my/pmichaillat) upon request.
++ I am also available for [Zoom meetings](https://ucsc.zoom.us/my/pmichaillat) upon request. -->
 
 ---
 
