@@ -141,7 +141,7 @@ Scholars often give the full bibliographical information for their publications.
 
 ## Overall length
 
-How long should your CV be? After the PhD job market—where CVs are typically confined to a single page—academic CVs often become excessively long, which may dilute their effectiveness by burying relevant information. [Butterick advises](https://practicaltypography.com/resumes.html) students to stick to one page and older people to limit themselves to just a couple of pages. [I would agree](/cv.pdf) with this advice.
+How long should your CV be? After the PhD job market—where CVs are typically confined to a single page—academic CVs often become excessively long, which may dilute their effectiveness by burying relevant information. [Butterick advises](https://practicaltypography.com/resumes.html) students to stick to one page and older people to limit themselves to just a couple of pages, which seems like good advice.
 
 ---
 
