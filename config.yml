@@ -9,21 +9,24 @@ taxonomies:
 
 menu:
     main:
+        - name: Book
+          url: /18/
+          weight: 1
         - name: Papers
-          url: papers/
+          url: /papers/
           weight: 2
         - name: Dashboard
-          url: dashboard/
+          url: /dashboard/
           weight: 3
         - name: Courses
-          url: courses/
+          url: /courses/
           weight: 4
         - name: Design
-          url: design/
+          url: /design/
           weight: 5        
 
 params:
-    description: "This website hosts Pascal Michaillat's research papers, real-time business cycle dashboard, course materials, and design templates."
+    description: "This website hosts Pascal Michaillat's book chapters, research papers, real-time business cycle dashboard, course materials, and design templates."
     author: Pascal Michaillat
     googleAnalyticsID: "G-97G4MZ4061"
     images: ["cover.png"]
@@ -53,24 +56,26 @@ params:
           imageWidth: 130
           imageHeight: 130
           buttons:
+            - name: Book
+              url: /18/
             - name: Papers
-              url: papers/
+              url: /papers/
             - name: Dashboard
-              url: dashboard/  
+              url: /dashboard/  
             - name: Courses
-              url: courses/
+              url: /courses/
             - name: Design
-              url: design/
+              url: /design/
 
     socialIcons:
         - name: CV
-          url: cv.pdf
+          url: /cv.pdf
         - name: Email
           url: mailto:pascal.michaillat@gmail.com
         - name: Location
-          url: location/
+          url: /location/
         - name: Office Hours
-          url: officehours/
+          url: /officehours/
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
         - name: YouTube
