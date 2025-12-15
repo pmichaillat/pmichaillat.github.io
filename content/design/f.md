@@ -23,7 +23,7 @@ The template produces an academic CV with [LaTeX](https://www.latex-project.org)
 
 + [LaTeX CV template](https://github.com/pmichaillat/latex-cv)
 + [Multi-page CV produced by the template](/f.pdf)
-+ [One-page CV produced by the template](/f1.pdf)
++ [One-page CV produced by the template](/fo.pdf)
 
 ---
 
