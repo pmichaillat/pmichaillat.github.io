@@ -25,7 +25,7 @@ All charts automatically update as new data become [available on FRED](https://f
 
 ## Key events
 
-+ November 2025 - Due to the [government shutdown](https://www.bls.gov/bls/2025_october_shutdown.htm), the BLS did not release the unemployment numbers for September and October 2025 at the scheduled dates (10/03/2025, 11/07/2025). The government has now reopenened, and the BLS [has released the unemployment numbers for September 2025, and cancelled the numbers for October 2025](https://www.bls.gov/bls/2025-lapse-revised-release-dates.htm). Accordingly, the dashboard will not provide data for October 2025.
++ November 2025 - The US government was shut down between 10/01/2025 and 11/12/2025, which [seriously affected the collection of labor market data](https://www.bls.gov/cps/methods/2025-federal-government-shutdown-impact-cps.htm). The September 2025 wave of the Current Population Survey (CPS)—which is the source of unemployment and labor force numbers—was collected normally but published late, on 11/20/2025. The October 2025 wave of the CPS was not collected at all and will not be collected retroactively. So there will be no unemployment and labor force estimates for October 2025. Accordingly, the dashboard will not provide data for October 2025.
 + September 2025 - The Federal Reserve [cuts the federal funds rate by 25 basis points](https://www.federalreserve.gov/monetarypolicy/files/monetary20250917a1.pdf) in response to the cooling of the labor market.
 + August 2025 - The US labor market [dips below full employment](#us-unemployment-gap) for the first time since April 2021.
 + May 2025 - The dashboard is live.
@@ -41,7 +41,7 @@ All charts automatically update as new data become [available on FRED](https://f
 </iframe>
 
 + *Construction:* The unemployment rate is the number of job seekers divided by the number of labor force participants.
-+ *Interpretation:* The unemployment rate measures the share of people who have not succeeded to find a job, among all those who are able and willing to work. This is the standard, official unemployment rate (U3).
++ *Interpretation:* The unemployment rate measures the share of people who have not succeeded in finding a job, among all those who are able and willing to work. This is the standard, official unemployment rate (U3).
 + *Source:* The numbers of [job seekers](https://fred.stlouisfed.org/series/UNEMPLOY) and [labor force participants](https://fred.stlouisfed.org/series/CLF16OV) are measured by the US Bureau of Labor Statistics (BLS) from the [Current Population Survey](https://www.bls.gov/cps/home.htm) (CPS), which is a large-scale household survey. 
 + [Download unemployment rate](/dashboard/unemployment_rate.csv)
 + [View unemployment rate in full screen](/dashboard/unemployment_rate.html)
@@ -168,7 +168,7 @@ The data required to populate the dashboard for a given month are released by th
 + Latest [JOLTS data release](https://www.bls.gov/news.release/jolts.nr0.htm)
 + Latest [CPS data release](https://www.bls.gov/news.release/empsit.nr0.htm)
 
-Accordingly, the dashboard usually provides a complete picture for the current month on the first Friday of the following month. The schedule of [future data releases](https://www.bls.gov/schedule/2025/home.htm) is announced well in advance by the BLS.
+Accordingly, the dashboard usually provides a complete picture for the current month on the first Friday of the following month. The schedule of [future data releases](https://www.bls.gov/schedule/) is announced well in advance by the BLS.
 
 The JOLTS data for a given month appear to be released one month after the CPS data for the same month, but to best align labor force and vacancy data, we shift forward by one month the number of job openings from JOLTS. For instance, we assign to April 2025 the number of job openings that the BLS assigns to March 2025. The motivation for this shift is that the number of job openings from the JOLTS refers [to the last business day](https://perma.cc/Y6EQ-WBXF) of the month (Monday 31 March 2025 in our example), while the labor force from the CPS refers to the Sunday–Saturday week [including the 12th of the month](https://perma.cc/RN3P-S4SL) (Sunday 6 April 2025–Saturday 12 April 2025 in our example). So the number of job openings refers to a day that is closer to the next month's CPS reference week than to the current month's CPS reference week. In our example, the CPS survey for April started in the same week as the JOLTS survey for March.
 
@@ -193,7 +193,7 @@ By contrast, the dashboard computes the vacancy rate as the number of job vacanc
 
 ### Isn't the vacancy rate inflated by ghost job postings?
 
-Vacancy data have recently been criticized for being polluted by ghost or fake vacancies. These vacancies do not actually represent an open position, and will not lead to a new hire. A [recent article](https://perma.cc/JUR9-W4AA) by CBS News explains that fake job listings are a growing problem in the labor market. [Employ America](https://perma.cc/XZ2B-LTNH) has gone one step further and argued that vacancy numbers are vacuous in general and should never used by policymakers. Let's go over the various criticisms raised by such pieces and address them.
+Vacancy data have recently been criticized for being polluted by ghost or fake vacancies. These vacancies do not actually represent an open position, and will not lead to a new hire. A [recent article](https://perma.cc/JUR9-W4AA) by CBS News explains that fake job listings are a growing problem in the labor market. [Employ America](https://perma.cc/XZ2B-LTNH) has gone one step further and argued that vacancy numbers are vacuous in general and should never be used by policymakers. Let's go over the various criticisms raised by such pieces and address them.
 
 #### Aren't vacancies poorly measured?
 
@@ -207,7 +207,7 @@ Specifically, the JOLTS asks firms to report the number of vacancies that they c
 
 These questions are similar to the questions asked by the BLS to workers in the CPS in order to assess their labor force status. To be classified as a job seeker, a respondent must confirm that:
 
-+ They do not currently  work but are willing to work.
++ They do not currently work but are willing to work.
 + They are available to start work immediately.
 + They have been actively searching for a job in the last four weeks. 
 
@@ -253,7 +253,7 @@ The hyperbolic shape implies that unemployment and vacancy rates are not only ne
 
 There is a view that the Beveridge curve [might have](https://www.marketplace.org/story/2022/06/14/what-beveridge-curve-says-about-feds-soft-landing) an [unusual shape](https://perma.cc/W2DZ-LTQV) in the aftermath of the pandemic. Part of the issue is that the Beveridge curve shifted very far out in 2020, when the labor market was shattered by the coronavirus, and then between 2022 and 2023, the curve became almost vertical. But the appearance of verticality can be explained by the fact that the Beveridge curve was returning to its old location while the labor market was cooling. 
 
-In the last 2 years, the Beveridge curve is almost back to a rectangular hyperbola. In April 2023, the reading was $u =$ 3.45% and $v =$ 5.74%. In April 2025, the reading is $u =$ 4.19% and $v =$ 4.20%. So $v$ decreased by [5.74 $-$ 4.20] $/$ 5.74 $=$ 26.8% while $u$ increased by [4.19 $-$ 3.45] $/$ 4.19 $=$ 21.4%. An hyperbola says that $u$ should have increased by 26.8% instead of 21.4%. So the curve is slightly steeper than an hyperbola, but is not far off. The elasticity of the curve is 26.8% $/$ 21.4% $=$ 1.25 instead of 1.
+In the last 2 years, the Beveridge curve is almost back to a rectangular hyperbola. In April 2023, the reading was $u =$ 3.45% and $v =$ 5.74%. In April 2025, the reading is $u =$ 4.19% and $v =$ 4.20%. So $v$ decreased by [5.74 $-$ 4.20] $/$ 5.74 $=$ 26.8% while $u$ increased by [4.19 $-$ 3.45] $/$ 3.45 $=$ 21.4%. A hyperbola says that $u$ should have increased by 26.8% instead of 21.4%. So the curve is slightly steeper than a hyperbola, but is not far off. The elasticity of the curve is 26.8% $/$ 21.4% $=$ 1.25 instead of 1.
 
 ### How does the Michez rule relate to the Sahm rule?
 
@@ -282,7 +282,7 @@ Similarly, the upper threshold of 0.81pp used in the dual-threshold Michez rule 
 
 ### What is full employment?
 
-The federal government and Federal Reserve are mandated to maintain the economy at full employment, or maximum employment. (The two terms have been used interchangeably.). This legislative mandate comes from the [Employment Act](https://fraser.stlouisfed.org/title/1099) of 1946, the [Federal Reserve Reform Act](https://fraser.stlouisfed.org/title/1040) of 1977, and the [Full Employment and Balanced Growth Act](https://fraser.stlouisfed.org/title/1034) of 1978 (known informally as the Humphrey–Hawkins Act).
+The federal government and Federal Reserve are mandated to maintain the economy at full employment, or maximum employment. (The two terms have been used interchangeably.) This legislative mandate comes from the [Employment Act](https://fraser.stlouisfed.org/title/1099) of 1946, the [Federal Reserve Reform Act](https://fraser.stlouisfed.org/title/1040) of 1977, and the [Full Employment and Balanced Growth Act](https://fraser.stlouisfed.org/title/1034) of 1978 (known informally as the Humphrey–Hawkins Act).
 
 The issue is that these texts do not explain what full employment is. The Humphrey-Hawkins Act did set an unemployment target of 3% within 5 years of the law (and 4% for young workers). But these numbers were [never taken seriously](https://www.jstor.org/stable/2138518), in part because policymakers rightly understood that the full-employment unemployment rate could not be a fixed number. When testifying in front of Congress in 1975 in his capacity of chair of the CEA, Alan Greenspan was asked what the target for full employment should be. [He responded:](https://doi.org/10.1177/003232927700700101)
 
@@ -294,7 +294,7 @@ But the Employment Act and Full Employment and Balanced Growth Act clearly state
 
 No. A common misunderstanding is that our analysis treats JOLTS job openings as a measure of unmet labor demand.[^1] This is not the case. Nowhere in the analysis do we interpret vacancies that way. Beveridge did interpret job vacancies as unmet labor demand and accordingly defined full employment as the point where job vacancies exceed job seekers. But our approach is different: we interpret vacancies as an indirect measure of the labor devoted to recruiting. In the United States, it takes roughly one recruiter to handle one vacancy, so the number of vacancies tracks the amount of labor devoted to recruiting. This empirical regularity is what we use in deriving the FERU.
 
-[^1]: One of the [discussants of our FERU paper](https://pascalmichaillat.org/13c.pdf) for instance makes that assertion. He argues that our analysis is erroneous because it assumes that JOLTS job openings measure the level of unmet labor demand. We never made that assumption, however, and it's unclear why the dicussant thought we did. 
+[^1]: One of the [discussants of our FERU paper](https://pascalmichaillat.org/13c.pdf) for instance makes that assertion. He argues that our analysis is erroneous because it assumes that JOLTS job openings measure the level of unmet labor demand. We never made that assumption, however, and it's unclear why the discussant thought we did. 
 
 ### Is the FERU the same as the NAIRU?
 
@@ -320,7 +320,7 @@ But, without a theory of full employment, it is impossible to know whether the U
 
 The FERU is computed as the unemployment rate that maximizes social welfare, or equivalently that minimizes the nonproductive use of labor: both unemployment and recruiting. As it takes one worker to service one job vacancy, the nonproductive use of labor is measured by the number of job seekers and job vacancies. Through the Beveridge curve, the numbers of job seekers and vacancies are inversely related, so it is not possible to reduce the numbers of job seekers and job vacancies at the same time. Instead the social planner faces a tradeoff which is resolved by the FERU.
 
-Because the FERU the describes the socially efficient position of the labor market on the Beveridge curve, it is not constant but determined by the location of the Beveridge curve. When the Beveridge curve shifts outward, the FERU increases; when the Beveridge cur shifts inward, the FERU decreases. Typical Beveridge curve shifts do not affect the FERU much. For instance, between 1951 and 2019, the FERU remained between 3.1% and 5.5%, with an average value of 4.3%. The Beveridge curve did shift in and out during the postwar period, but the shifts were not large enough to produce noteworthy changes in the FERU. 
+Because the FERU describes the socially efficient position of the labor market on the Beveridge curve, it is not constant but determined by the location of the Beveridge curve. When the Beveridge curve shifts outward, the FERU increases; when the Beveridge curve shifts inward, the FERU decreases. Typical Beveridge curve shifts do not affect the FERU much. For instance, between 1951 and 2019, the FERU remained between 3.1% and 5.5%, with an average value of 4.3%. The Beveridge curve did shift in and out during the postwar period, but the shifts were not large enough to produce noteworthy changes in the FERU. 
 
 During the coronavirus pandemic, the Beveridge curve shifted out dramatically. The Beveridge curve then slowly shifted back inward. In 2025, the curve is almost back to its pre-pandemic position, although it remains somewhat further out. The dramatic shift raised the FERU significantly: from 3.8% in January 2020 to 7.5% in April 2020. As the Beveridge curve normalized in the years after the pandemic, the FERU returned to normal levels. The FERU increase that followed the pandemic is extraordinary: such a large increase had never been recorded before. The pandemic was also the first time in the past century that the FERU crossed 6%.
 
