@@ -217,22 +217,22 @@ u_gap = u_rate - feru
 u_bar = u_rate.rolling(window=3, min_periods=1).mean()
 
 # Compute unemployment indicator
-u_hat_exact = u_bar - u_bar.rolling(window=13, min_periods=1).min()
+u_hat = u_bar - u_bar.rolling(window=13, min_periods=1).min()
 
 # Round to 2 decimal places (basis point precision)
-u_hat = u_hat_exact.round(2)
+u_indicator = u_hat.round(2)
 
 # Compute 3-month trailing average of vacancy rate
 v_bar = v_rate.rolling(window=3, min_periods=1).mean()
 
 # Compute vacancy indicator
-v_hat_exact = v_bar.rolling(window=13, min_periods=1).max() - v_bar
+v_hat = v_bar.rolling(window=13, min_periods=1).max() - v_bar
 
 # Round to 2 decimal places (basis point precision)
-v_hat = v_hat_exact.round(2)
+v_indicator = v_hat.round(2)
 
 # Compute minimum indicator
-m = pd.DataFrame({'u_hat': u_hat, 'v_hat': v_hat}).min(axis=1)
+m = pd.DataFrame({'u_indicator': u_indicator, 'v_indicator': v_indicator}).min(axis=1)
 
 # Compute recession probability
 p_exact = (m - 0.29) / (0.81 - 0.29)
@@ -504,6 +504,56 @@ csv_filename = "unemployment_gap.csv"
 csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
 df_out = df.copy()
 df_out.columns = ["Unemployment gap (pp)"]
+df_out.index.name = "Date"
+df_out.to_csv(csv_path_absolute)
+print(f"Successfully wrote CSV: {csv_path_absolute}")
+
+# Plot unemployment indicator
+
+df = pd.DataFrame({"data": u_indicator}).dropna()
+
+last_date = df.index.max().strftime("%B %Y")
+last_value = df["data"].iloc[-1]
+title = f"{last_date}: {last_value:.2f}pp"
+
+x_min = pd.to_datetime("2005-01-01")
+x_max = df.index.max()
+y_min = 0
+y_max = df["data"].max() * 1.05
+
+make_plot(df, "data", title, "unemployment_indicator", "Unemployment indicator (pp)", x_min, x_max, y_min, y_max)
+
+# Save data
+
+csv_filename = "unemployment_indicator.csv"
+csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
+df_out = df.copy()
+df_out.columns = ["Unemployment indicator (pp)"]
+df_out.index.name = "Date"
+df_out.to_csv(csv_path_absolute)
+print(f"Successfully wrote CSV: {csv_path_absolute}")
+
+# Plot vacancy indicator
+
+df = pd.DataFrame({"data": v_indicator}).dropna()
+
+last_date = df.index.max().strftime("%B %Y")
+last_value = df["data"].iloc[-1]
+title = f"{last_date}: {last_value:.2f}pp"
+
+x_min = pd.to_datetime("2005-01-01")
+x_max = df.index.max()
+y_min = 0
+y_max = df["data"].max() * 1.05
+
+make_plot(df, "data", title, "vacancy_indicator", "Vacancy indicator (pp)", x_min, x_max, y_min, y_max)
+
+# Save data
+
+csv_filename = "vacancy_indicator.csv"
+csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
+df_out = df.copy()
+df_out.columns = ["Vacancy indicator (pp)"]
 df_out.index.name = "Date"
 df_out.to_csv(csv_path_absolute)
 print(f"Successfully wrote CSV: {csv_path_absolute}")
