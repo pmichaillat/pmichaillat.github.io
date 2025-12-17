@@ -35,7 +35,7 @@ The template produces an academic presentation using [LaTeX](https://www.latex-p
 + The aspect ratio is 4:3.
 + There are no frills at the periphery of the slides.
 + The font for text, roman math, and numbers is Source Sans Pro.
-+ The font for monospaced text (including URLs) is Source Code Pro.
++ The font for monospaced text is Source Code Pro.
 + The font for Greek and calligraphic math is Euler.
 + The font for blackboard bold is Fourier.
 + The font for mathematical symbols is MnSymbol.
@@ -73,7 +73,7 @@ Fonts matter in presentations—just as in papers. The font determines the appea
 
 Source Sans Pro is a sans-serif font. This is an important feature, as sans-serif fonts are more readable than fonts with serif in presentations. Another advantage of Source Sans Pro is that it is not part of typical slide templates (unlike Fira Sans for instance), so it feels new and fresh. And since Source Sans Pro was designed in the last decade, it also feels modern.
 
-Moreover, the Source Pro family includes a nice monospaced font: [Source Code Pro](https://mirrors.rit.edu/CTAN/fonts/sourcecodepro/doc/sourcecodepro.pdf). The template uses Source Code Pro as monospaced font—giving the monospaced text and regular text a similar look. The monospaced font is used in particular to typeset URLs.
+Moreover, the Source Pro family includes a nice monospaced font: [Source Code Pro](https://mirrors.rit.edu/CTAN/fonts/sourcecodepro/doc/sourcecodepro.pdf). The template uses Source Code Pro as monospaced font—giving the monospaced text and regular text a similar look.
 
 Another advantage of Source Sans Pro is that it comes with a broad range of weight. For instance, the template uses the semibold font weight in places. To activate the semibold font instead of the usual bold font, use `\sbseries` and `\textsb{}` instead of `\bfseries` and `\textbf{}`.
 
