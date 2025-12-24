@@ -18,6 +18,7 @@ aliases:
     - /uploads/7/0/2/0/70200055/t2f.pdf
     - /uploads/7/0/2/0/70200055/t2h.pdf
     - /uploads/7/0/2/0/70200055/t2c.pdf
+    - /uploads/7/0/2/0/70200055/t2p.pdf
     - /uploads/7/0/2/0/70200055/t2d.pdf
     - /uploads/7/0/2/0/70200055/t2k.pdf
     - /uploads/7/0/2/0/70200055/t2v.pdf
