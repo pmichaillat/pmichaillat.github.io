@@ -49,13 +49,15 @@ def get_recession_periods(rec_series):
     return zip(starts, ends)
 
 # Create function to make plots
-def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_min=None, y_max=None, hline=None):
+def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_min=None, y_max=None, hline=None, precision=2):
+    precision = int(precision)
+    hovertemplate = f"%{{x|%b %Y}}<br>%{{y:.{precision}f}}<extra></extra>"
     fig = go.Figure()
     fig.add_trace(go.Scatter(
         x=df.index, y=df[y_column],
         mode='lines',
         line=dict(color='#59539d', width=3),
-        hovertemplate='%{x|%b %Y}<br>%{y:.2f}<extra></extra>'
+        hovertemplate=hovertemplate
     ))
 
     # Shade recession months
@@ -596,7 +598,7 @@ x_max = df.index.max()
 y_min = 0
 y_max = 100.5
 
-make_plot(df, "data", title, "recession_probability", "Recession probability", x_min, x_max, y_min, y_max)
+make_plot(df, "data", title, "recession_probability", "Recession probability (%)", x_min, x_max, y_min, y_max, precision=1)
 
 # Save data
 
