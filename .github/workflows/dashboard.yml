@@ -3,7 +3,7 @@ name: Fetch data and update dashboard
 
 on:
   schedule:
-    - cron: '00 13 * * *'
+    - cron: '30 14 * * *'
   workflow_dispatch:
 
 jobs:
