@@ -25,7 +25,7 @@ All charts automatically update as new data become [available on FRED](https://f
 
 ## Key events
 
-+ December 2025 - The US government was shut down between 10/01/2025 and 11/12/2025, which [seriously affected the collection of labor market data](https://www.bls.gov/cps/methods/2025-federal-government-shutdown-impact-cps.htm). The September 2025 wave of the Current Population Survey (CPS)—which is the source of the unemployment and labor force numbers—was collected normally but published late, on 11/20/2025. The October 2025 wave of the CPS was not collected and will not be collected retroactively. So there will be no unemployment and labor force estimates for October 2025. Accordingly, the dashboard will not provide data for October 2025.
++ November 2025 - The US government was shut down between 10/01/2025 and 11/12/2025, which [seriously affected the collection of labor market data](https://www.bls.gov/cps/methods/2025-federal-government-shutdown-impact-cps.htm). The September 2025 wave of the Current Population Survey (CPS)—which is the source of the unemployment and labor force numbers—was collected normally but published late, on 11/20/2025. The October 2025 wave of the CPS was not collected and will not be collected retroactively. So there will be no unemployment and labor force estimates for October 2025. Accordingly, the dashboard will not provide data for October 2025.
 + September 2025 - The Federal Reserve [cuts the federal funds rate by 25 basis points](https://www.federalreserve.gov/monetarypolicy/files/monetary20250917a1.pdf) in response to the cooling of the labor market.
 + August 2025 - The US labor market [dips below full employment](#us-unemployment-gap) for the first time since April 2021.
 + May 2025 - The dashboard is live.
@@ -103,7 +103,7 @@ All charts automatically update as new data become [available on FRED](https://f
 
 + *Construction:* The full-employment rate of unemployment (FERU) is the geometric average of the unemployment and vacancy rates: $u^\ast = \sqrt{u \times v}$, where $u$ is the unemployment rate, $v$ is the vacancy rate, and $u^\ast$ is the FERU. 
 + *Interpretation:* The FERU marks full employment and, by construction, labor market efficiency. So the FERU is also the socially efficient unemployment rate.
-+ *Visualization:* On the Beveridge diagram, the FERU is at the intersection of the Beveridge curve and 45° ray. The implication is that the FERU is determined by the location of the Beveridge curve: it is higher whenever the Beveridge curve is further outward.
++ *Visualization:* On the Beveridge diagram, the FERU is at the intersection of the Beveridge curve and the 45° ray. The implication is that the FERU is determined by the location of the Beveridge curve: it is higher whenever the Beveridge curve is further outward.
 + [Download FERU](/dashboard/feru.csv)
 + [View FERU in full screen](/dashboard/feru.html)
 
@@ -132,7 +132,7 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
-+ *Construction:* The recession indicator is the minimum of an unemployment indicator (the increase of the 3-month average of the unemployment rate above its 12-month low; used in Sahm rule) and a vacancy indicator constructed analogously (the decrease of the 3-month average of the vacancy rate below its 12-month high).
++ *Construction:* The recession indicator is the minimum of an unemployment indicator (the increase in the 3-month average of the unemployment rate above its 12-month low; used in Sahm rule) and a vacancy indicator constructed analogously (the decrease in the 3-month average of the vacancy rate below its 12-month high).
 + *Interpretation:* The Michez rule signals a recession when the recession indicator crosses the threshold of 0.29pp.
 + [Download recession indicator](/dashboard/recession_indicator.csv)
     + [Download underlying unemployment (Sahm) indicator](/dashboard/unemployment_indicator.csv)
@@ -187,7 +187,7 @@ Yes, almost. The two unemployment rates are computed similarly, but the BLS repo
 
 ### Is the vacancy rate the same as the BLS vacancy rate?
 
-No. The BLS computes the [vacancy rate](https://fred.stlouisfed.org/series/JTSJOR) as the number of job vacancies divided by the number of employed workers plus job openings. This computation is problematic. First, it means that the BLS unemployment and vacancy rates are not consistent with each other, since one uses the number of employed workers plus unemployed workers in the denominator, while the other uses the number of employed workers plus job openings in the denominator. Second, the BLS vacancy rate is not a useful variable in labor market matching models.
+No. The BLS computes the [vacancy rate](https://fred.stlouisfed.org/series/JTSJOR) as the number of job vacancies divided by the number of employed workers plus job openings. This computation is problematic for two reasons. First, it means that the BLS unemployment and vacancy rates are not consistent with each other, since one uses the number of employed workers plus unemployed workers in the denominator, while the other uses the number of employed workers plus job openings in the denominator. Second, the BLS vacancy rate is not a useful variable in labor market matching models.
 
 By contrast, the dashboard computes the vacancy rate as the number of job vacancies divided by the number of employed workers plus unemployed workers. Our unemployment and vacancy rates are consistent with each other. Furthermore, our vacancy rate is the variable that appears directly in labor market matching models.
 
@@ -211,7 +211,7 @@ These questions are similar to the questions asked by the BLS to workers in the 
 + They are available to start work immediately.
 + They have been actively searching for a job in the last four weeks. 
 
-The threshold for reporting a vacancy is that same as the threshold for reporting being unemployed. The firm and the worker have to answer that they have been actively searching on the labor market—for instance through online job portals.
+The threshold for reporting a vacancy is the same as the threshold for reporting being unemployed. The firm and the worker have to answer that they have been actively searching on the labor market—for instance through online job portals.
 
 #### Isn't it exceedingly easy to post vacancies on online job boards?
 
@@ -239,7 +239,7 @@ Given that unemployment and vacancies come from two entirely different sources�
 
 Firms have been posting vacancies for a century at least, so why do vacancies only appear fake now? The reason is that in 2022–2024, the labor market was exceptionally tight: the tightest it had been since the end of World War 2. Such exceptional tightness means that vacancies are filled at the slowest rate in the postwar period. Indeed, in a tight market, job seekers find jobs at a high rate, but firms fill vacancies [at a slow rate](https://youtu.be/t58mkFJ2Zlo)—as predicted by [matching models](https://youtu.be/TQ_fAN7rd6Q).
 
-Because vacancies are filled at such slow rate, the number of vacancies posted for one actual position has exploded—reinforcing the impression of fake vacancies. But this was expected: this is exactly what matching models predict. Firms post several vacancies per position because they realize that the yield of each vacancy is low.
+Because vacancies are filled at such a slow rate, the number of vacancies posted for one actual position has exploded—reinforcing the impression of fake vacancies. But this was expected: this is exactly what matching models predict. Firms post several vacancies per position because they realize that the yield of each vacancy is low.
 
 #### Conclusion
 
@@ -332,7 +332,7 @@ Furthermore, maintaining the unemployment gap at zero is the optimal monetary po
 
 Of course fixed inflation is a strong assumption. But maintaining unemployment at the FERU is also optimal in models with endogenous inflation, as long as the [divine coincidence holds](/15/). In such models, lower unemployment leads to higher inflation. But when the unemployment rate is efficient, inflation is on target, so there is no trade-off between inflation and unemployment. Maintaining unemployment at the FERU also maintains inflation on target, so it is the optimal policy.
 
-How big should adjustments in interest rates be to keep the economy at full employment? The US monetary multiplier—the unemployment-rate decrease achieved by lowering the nominal interest rate by 1pp—is around 0.5. Hence, the Fed should cut its interest rate by 1/0.5 = 2pp for each positive percentage point of unemployment gap; it should raise its interest rate by 2pp for each negative percentage point of unemployment gap.
+How big should adjustments in interest rates be to keep the economy at full employment? The US monetary multiplier—the unemployment-rate decrease achieved by lowering the nominal interest rate by 1pp—is estimated to be around 0.5. Hence, the Fed should cut its interest rate by 1/0.5 = 2pp for each positive percentage point of unemployment gap; it should raise its interest rate by 2pp for each negative percentage point of unemployment gap.
 
 Even when the divine coincidence does not hold, the Fed should use the unemployment gap to adjust the federal funds rate. When the divine coincidence fails, monetary policy faces a tradeoff between closing the unemployment gap and bringing inflation to its target, so targeting the FERU is no longer optimal. Nevertheless, the optimal interest rate depends on the FERU: it is determined by weighing [the unemployment gap against the inflation gap](/13/). Indeed, the optimal unemployment and inflation gaps are related by:
 
