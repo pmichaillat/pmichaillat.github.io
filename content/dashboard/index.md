@@ -155,7 +155,7 @@ All charts automatically update as new data become [available on FRED](https://f
 + *Interpretation:* The dual-threshold Michez rule works as follows: values of the indicator between 0.29pp and 0.81pp signal a probable recession; values above 0.81pp signal a certain recession. This dual-threshold extension accounts for uncertainty in the true recession threshold and provides a simple way to nowcast recession risk. 
 + [Download recession probability](/dashboard/recession_probability.csv)
 + [View recession probability in full screen](/dashboard/recession_probability.html)
-+ *Note:* This is not the recession probability computed [in more recent work](/17/) and covered [by the Financial Times](https://archive.ph/6nSxa). The new recession probability will only be added to the dashboard once the method has been finalized and published. The newer method estimates a much higher probability in 2025 (64% in September 2025) because it discounts temporary dips in recession indicators.
++ *Note:* This is not the recession probability computed [in more recent work](/17/) and covered [by the Financial Times](https://archive.ph/6nSxa). The new recession probability will only be added to the dashboard once the method is finalized. The newer method estimates a higher recession probability in 2025 (64% in September 2025) because it discounts temporary dips in recession indicators.
 
 ---
 

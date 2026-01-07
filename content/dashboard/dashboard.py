@@ -34,7 +34,6 @@ os.makedirs(OUTPUT_DIR_ABSOLUTE, exist_ok=True)
 # Create helper function to fetch recessions
 def get_recession_periods(rec_series):
     in_recession = rec_series == 1
-    rec_series = rec_series.loc[rec_series.first_valid_index():rec_series.last_valid_index()]
     shifts = in_recession.astype(int).diff()
 
     starts = rec_series.index[shifts == 1]
