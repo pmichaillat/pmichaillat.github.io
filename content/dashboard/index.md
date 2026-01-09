@@ -31,7 +31,7 @@ All charts automatically update as new data become [available on FRED](https://f
 + August 2025 - The US labor market [dips below full employment](#us-unemployment-gap) for the first time since April 2021.
 + May 2025 - The dashboard is live.
 
-[^1]: The recession indicator crossed the threshold in November 2025, but this became clear only on 01/07/2026, after the November vacancy data from JOLTS were revised: the preliminary release on 12/09/2025 overstated vacancies, and the revision lowered them.
+[^1]: The recession indicator crossed the threshold in November 2025, but this became clear only on 01/07/2026, when the November vacancy data from JOLTS were revised. The preliminary number of vacancies for November, released on 12/09/2025, was too high, and the revision lowered it.
 
 ---
 
