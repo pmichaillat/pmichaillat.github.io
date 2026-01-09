@@ -25,10 +25,13 @@ All charts automatically update as new data become [available on FRED](https://f
 
 ## Key events
 
++ December 2025 - The [recession indicator](#us-recession-indicator) is back above the recession threshold of 0.29pp. As a result, the [recession probability](#us-recession-probability) is positive again, currently at about 8%.[^1]
 + November 2025 - The US government was shut down between 10/01/2025 and 11/12/2025, which [seriously affected the collection of labor market data](https://www.bls.gov/cps/methods/2025-federal-government-shutdown-impact-cps.htm). The September 2025 wave of the Current Population Survey (CPS)—which is the source of the unemployment and labor force numbers—was collected normally but published late, on 11/20/2025. The October 2025 wave of the CPS was not collected and will not be collected retroactively. So there will be no unemployment and labor force estimates for October 2025. Accordingly, the dashboard will not provide data for October 2025.
 + September 2025 - The Federal Reserve [cuts the federal funds rate by 25 basis points](https://www.federalreserve.gov/monetarypolicy/files/monetary20250917a1.pdf) in response to the cooling of the labor market.
 + August 2025 - The US labor market [dips below full employment](#us-unemployment-gap) for the first time since April 2021.
 + May 2025 - The dashboard is live.
+
+[^1]: The recession indicator crossed the threshold in November 2025, but this became clear only on 01/07/2026, after the November vacancy data from JOLTS were revised: the preliminary release on 12/09/2025 overstated vacancies, and the revision lowered them.
 
 ---
 
