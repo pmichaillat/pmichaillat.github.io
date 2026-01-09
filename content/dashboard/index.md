@@ -373,12 +373,12 @@ The unemployment gap is not directly useful to compute optimal unemployment insu
 
 ## References
 
-1. Pascal Michaillat and Emmanuel Saez. 2024. "u* = √uv: The Full-Employment Rate of Unemployment in the United States." [*Brookings Papers on Economic Activity*](https://www.brookings.edu/articles/u-√uv-the-full-employment-rate-of-unemployment-in-the-united-states/) 55 (2): 323–390.
++ Pascal Michaillat and Emmanuel Saez. 2024. "u* = √uv: The Full-Employment Rate of Unemployment in the United States." [*Brookings Papers on Economic Activity*](https://www.brookings.edu/articles/u-√uv-the-full-employment-rate-of-unemployment-in-the-united-states/) 55 (2): 323–390.
     + This paper argues that the legal term "full employment" should be translated to "social efficiency" in the economics language.
     + The paper then obtains the formula for the US FERU: $u^\ast = \sqrt{uv}$. 
     + The formula implies that the economy is at full employment when there are as many job seekers as job vacancies; inefficiently tight when there are fewer job seekers than job vacancies; and inefficiently slack when there are more job seekers than job vacancies.
     + [View the paper](/13/)
-2. Pascal Michaillat and Emmanuel Saez. 2025. "Has the Recession Started?" [*Oxford Bulletin of Economics and Statistics*](https://doi.org/10.1111/obes.12685) 87 (6): 1047–1058.
++ Pascal Michaillat and Emmanuel Saez. 2025. "Has the Recession Started?" [*Oxford Bulletin of Economics and Statistics*](https://doi.org/10.1111/obes.12685) 87 (6): 1047–1058.
     + This paper develops the Michez rule, which uses the recession indicator and a threshold of 0.29pp to detect US recessions in real time.
     + The paper also proposes a dual-threshold extension of the Michez rule, from which the recession probability is computed.
     + [View the paper](/16/)
