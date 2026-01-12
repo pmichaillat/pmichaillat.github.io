@@ -30,7 +30,6 @@
 
 .logo a {
     font-size: var(--header-size);
-    font-weight: var(--title-bold);
 }
 
 .logo a img, .logo a svg {
