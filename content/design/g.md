@@ -114,7 +114,7 @@ The typical, bright boxes surrounding hyperlinks should be avoided as they are d
 
 ## Title page
 
-The template's title page contains the required information for a research monograph: title, subtitle, authors, and date. It is otherwise minimalist.
+The template's title page contains the required information for a research monograph: title, subtitle, authors, and date. It is otherwise minimalist.   
 
 The title is bold, centered, and with a large font size. The subtitle (if any) appears below the title. Authors and date are centered and slightly smaller. Everything is laid out with ample vertical white space so the title page feels clean.
 
