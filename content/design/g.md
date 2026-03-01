@@ -114,7 +114,7 @@ The typical, bright boxes surrounding hyperlinks should be avoided as they are d
 
 ## Title page
 
-The template's title page contains the required information for a research monograph: title, subtitle, authors, and date. It is otherwise minimalist. There are no “thanks” symbols, no “abstract” title, no indentation, no page numbers. These elements are common in books, but they do not convey any useful information, so the template gets rid of them.
+The template's title page contains the required information for a research monograph: title, subtitle, authors, and date. It is otherwise minimalist.
 
 The title is bold, centered, and with a large font size. The subtitle (if any) appears below the title. Authors and date are centered and slightly smaller. Everything is laid out with ample vertical white space so the title page feels clean.
 
@@ -131,7 +131,7 @@ All these elements are controlled from the preamble of `book.tex`:
 
 ## Book structure
 
-The template is based on LaTeX’s standard `book` class and organizes content into front matter, main matter, appendices, and back matter:
+The template is based on LaTeX's standard `book` class and organizes content into front matter, main matter, appendices, and back matter:
 
 - Front matter: title page and preface (`\chapter*{Preface}`).
 - Main matter: several parts and chapters.
@@ -189,15 +189,15 @@ The depth of the table of contents is set so that chapters and sections appear; 
 
 ## Headings
 
-The template's headings follow [Butterick's advice](https://practicaltypography.com/headings.html) and extend the paper template’s conventions to parts and chapters.
+The template's headings follow [Butterick's advice](https://practicaltypography.com/headings.html) and extend the paper template's conventions to parts and chapters.
 
 - Part headings use large bold type and are centered on an otherwise mostly empty page (a classic book design).
-- Chapter headings are bold, large, and preceded by “CHAPTER X.” in small caps.
+- Chapter headings are bold, large, and preceded by "CHAPTER X." in small caps.
 - Section headings are a bit larger than the text (12pt) and bold.
 - Subsection headings are bold.
 - Paragraph headings are run‑in, in italic, so they are noticeable but not too prominent.
 
-These headings are produced with the usual commands: `\part{}`, `\chapter{}`, `\section{}`, `\subsection{}`, and `\paragraph{}`. The template does not tailor formatting for subsubsections and smaller headings. Such small headings are a sign that the book’s organization is too messy, and should be avoided.
+These headings are produced with the usual commands: `\part{}`, `\chapter{}`, `\section{}`, `\subsection{}`, and `\paragraph{}`. The template does not tailor formatting for subsubsections and smaller headings. Such small headings are a sign that the book's organization is too messy, and should be avoided.
 
 ---
 
@@ -251,12 +251,12 @@ Finally, the code for a figure with six panels is the following:
 
 ```LaTeX
 \begin{figure}[p]
-\subcaptionbox{Panel caption\label{f:panel3}}{\includegraphics[scale=0.2,page=5]{\pdf}}\hfill
-\subcaptionbox{Panel caption\label{f:panel4}}{\includegraphics[scale=0.2,page=6]{\pdf}}\\
-\subcaptionbox{Panel caption\label{f:panel5}}{\includegraphics[scale=0.2,page=7]{\pdf}}\hfill
-\subcaptionbox{Panel caption\label{f:panel6}}{\includegraphics[scale=0.2,page=8]{\pdf}}\\
-\subcaptionbox{Panel caption\label{f:panel7}}{\includegraphics[scale=0.2,page=9]{\pdf}}\hfill
-\subcaptionbox{Panel caption\label{f:panel8}}{\includegraphics[scale=0.2,page=10]{\pdf}}
+\subcaptionbox{Panel caption\label{f:panel3}}{\includegraphics[scale=0.2,page=1]{\pdf}}\hfill
+\subcaptionbox{Panel caption\label{f:panel4}}{\includegraphics[scale=0.2,page=2]{\pdf}}\\
+\subcaptionbox{Panel caption\label{f:panel5}}{\includegraphics[scale=0.2,page=3]{\pdf}}\hfill
+\subcaptionbox{Panel caption\label{f:panel6}}{\includegraphics[scale=0.2,page=4]{\pdf}}\\
+\subcaptionbox{Panel caption\label{f:panel7}}{\includegraphics[scale=0.2,page=5]{\pdf}}\hfill
+\subcaptionbox{Panel caption\label{f:panel8}}{\includegraphics[scale=0.2,page=6]{\pdf}}
 \caption{Figure caption}
 \note[Note]{Note for figure.}
 \label{f:figure3}\end{figure}
@@ -320,20 +320,20 @@ The reference list has a font size of 10pt, with the same spacing as the text. E
 
 The references are formatted according to the guidelines from the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/home.html), which are followed by many scientific publishers.
 
-- An article published in a journal appears as follows: Zagorsky, Jay L. 1998. “Job Vacancies in the United States: 1923 to 1994.” *Review of Economics and Statistics* 80 (2): 338–345. `https://doi.org/10.1162/003465398557438`.
-- A working paper appears as follows: Leamer, Edward E. 2008. “What’s a Recession, Anyway?” NBER Working Paper 14221. `https://doi.org/10.3386/w14221`.
+- An article published in a journal appears as follows: Zagorsky, Jay L. 1998. "Job Vacancies in the United States: 1923 to 1994." *Review of Economics and Statistics* 80 (2): 338–345. `https://doi.org/10.1162/003465398557438`.
+- A working paper appears as follows: Leamer, Edward E. 2008. "What's a Recession, Anyway?" NBER Working Paper 14221. `https://doi.org/10.3386/w14221`.
 - A book appears as follows: Murphy, Kevin P. 2022. *Probabilistic Machine Learning: An Introduction*. Cambridge, MA: MIT Press.
-- An article published as part of a collection appears as follows: Stock, James H. and Mark W. Watson. 1993. “A Procedure for Predicting Recessions with Leading Indicators: Econometric Issues and Recent Experience.” In *Business Cycles, Indicators and Forecasting*, edited by James H. Stock and Mark W. Watson, chap. 2. Chicago: University of Chicago Press.
-- A data entry appears as follows: BLS. 2024. “Job Openings: Total Nonfarm.” FRED, Federal Reserve Bank of St. Louis. `https://fred.stlouisfed.org/series/JTSJOL`.
-- A website entry appears as follows: BLS. 2020. “Labor Force Statistics from the Current Population Survey: Overview.” `https://perma.cc/RN3P-S4SL`.
+- An article published as part of a collection appears as follows: Stock, James H. and Mark W. Watson. 1993. "A Procedure for Predicting Recessions with Leading Indicators: Econometric Issues and Recent Experience." In *Business Cycles, Indicators and Forecasting*, edited by James H. Stock and Mark W. Watson, chap. 2. Chicago: University of Chicago Press.
+- A data entry appears as follows: BLS. 2024. "Job Openings: Total Nonfarm." FRED, Federal Reserve Bank of St. Louis. `https://fred.stlouisfed.org/series/JTSJOL`.
+- A website entry appears as follows: BLS. 2020. "Labor Force Statistics from the Current Population Survey: Overview." `https://perma.cc/RN3P-S4SL`.
 
 ---
 
 ## Appendices
 
-The template makes it easy to add appendices at the end of the book. The appendices start with the command `\appendix`. The formatting of the appendices strictly follows that of the main text, but chapter headings are relabeled as “APPENDIX A.”, “APPENDIX B.”, and so on.
+The template makes it easy to add appendices at the end of the book. The appendices start with the command `\appendix`. The formatting of the appendices strictly follows that of the main text, but chapter headings are relabeled as "APPENDIX A.", "APPENDIX B.", and so on.
 
-All appendix chapters are clearly marked `Appendix` in the headings and in the table of contents. Labeling follows LaTeX’s standard `book` conventions, so all counters (equations, figures, tables, theorems) automatically pick up appendix letters: for instance, equation (A.1), figure A.2, table A.3, or theorem A.1.
+All appendix chapters are clearly marked `Appendix` in the headings and in the table of contents. Labeling follows LaTeX's standard `book` conventions, so all counters (equations, figures, tables, theorems) automatically pick up appendix letters: for instance, equation (A.1), figure A.2, table A.3, or theorem A.1.
 
 ---
 
