@@ -18,9 +18,9 @@ disableAnchoredHeadings: false
 
 ---
 
-The template produces a personal website with [Hugo](https://gohugo.io), which is a very fast, open-source static website generator. The website design is based on [PaperMod](https://github.com/adityatelange/hugo-PaperMod), which is a minimalist, fast, and flexible Hugo theme. Finally, the website is hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages); but it could easily be hosted on other services.
+The template produces a personal website with [Hugo](https://gohugo.io), which is a very fast, open-source static website generator. The website design is based on [PaperMod](https://github.com/adityatelange/hugo-PaperMod), which is a minimalist, fast, and flexible Hugo theme. The website is hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages); but it could easily be hosted on other services.
 
-The design has been customized for academic websites. The first goal was to obtain a minimalist website that is easy to navigate. The second goal was to obtain a website that highlights the research and teaching material. The third goal was to have a website that performs well (fast to load, good SEO, good accessibility). The website [performs very well](https://github.com/pmichaillat/hugo-website#performance) on mobile and desktop devices—just like the original PaperMod theme. The final goal was to design a website that is easy to maintain and expand.
+The design has been customized for academic websites. The first goal was to obtain a minimalist website that is easy to navigate. The second goal was to obtain a website that highlights research and teaching materials. The third goal was to have a website that performs well (fast to load, good SEO, good accessibility). The website [performs very well](https://github.com/pmichaillat/hugo-website#performance) on mobile and desktop devices—just like the original PaperMod theme. The final goal was to design a website that is easy to maintain and expand.
 
 ---
 

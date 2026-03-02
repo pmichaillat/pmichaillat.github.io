@@ -6,8 +6,8 @@ aliases:
     - /d4/
     - /d4.pdf
 author: "Pascal Michaillat"
-description: "This template produces a set of scientific figures with MATLAB. The figures adhere to best practices for the visual display of quantitative information."
-summary: "This template produces a set of scientific figures with MATLAB. The figures adhere to best practices for the visual display of quantitative information."
+description: "This template produces scientific figures with MATLAB. The figures follow best practices for the visual display of quantitative information."
+summary: "This template produces scientific figures with MATLAB. The figures follow best practices for the visual display of quantitative information."
 cover:
     image: "/d.png"
     alt: "Figure produced with template"
@@ -19,7 +19,7 @@ disableAnchoredHeadings: false
 
 ---
 
-The template produces basic scientific figures using [MATLAB](hhttps://matlab.mathworks.com). The figures adhere to best practices for the visual display of quantitative information—with the aim to convey quantitative information effectively on screen and in print.
+The template produces a collection of scientific figures using [MATLAB](hhttps://matlab.mathworks.com). The figures follow best practices for the visual display of quantitative information—with the aim to convey quantitative information effectively on screen and in print.
 
 ---
 

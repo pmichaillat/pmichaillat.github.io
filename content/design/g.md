@@ -15,7 +15,7 @@ showToc: true
 disableAnchoredHeadings: false
 ---
 
-The template produces an academic book with [LaTeX](https://www.latex-project.org). The book adheres to typographical best practices and has a minimalist design. The template is particularly well suited for research monographs, lecture notes, and textbooks. It is designed so books are comfortable to read and easy to scan, both in print and on screen. 
+The template produces an academic book with [LaTeX](https://www.latex-project.org). The book adheres to typographical best practices and has a minimalist design. The template is particularly well suited for research monographs and textbooks. It is designed so books are comfortable to read and easy to scan, both in print and on screen. 
 
 ---
 
