@@ -37,7 +37,7 @@ disableAnchoredHeadings: false
 
 ## Introduction
 
-This course covers basic mathematical methods to study dynamical systems in discrete time and in continuous time. Dynamical systems are systems that involve more than one time-period; they are prevalent in macroeconomics. We first discuss dynamic programming, which is a method to solve dynamic optimization problems in discrete time. We then turn to optimal control, which is a method to solve dynamic optimization problems in continuous time. Finally, we show how to solve differential equations, which are used to describe continuous-time dynamical systems.
+This short course covers basic mathematical methods to study dynamical systems in discrete time and in continuous time. Dynamical systems are systems that involve more than one time-period; they are prevalent in macroeconomics. We first discuss dynamic programming, which is a method to solve dynamic optimization problems in discrete time. We then turn to optimal control, which is a method to solve dynamic optimization problems in continuous time. Finally, we show how to solve differential equations, which are used to describe continuous-time dynamical systems.
 
 ---
 
@@ -75,11 +75,13 @@ This third section introduces differential equations, which are used to describe
 
 ## Conclusion
 
-To conclude, a little more practice and an application. The problem set below brings together all the material from the course. And the paper below applies the course's techniques to analyze the New Keynesian model in normal times and at the zero lower bound. 
+To conclude, a little more practice and an application to the New Keynesian model.
 
-Outside of growth theory, optimal control and differential equations are not used very much. Yet they are powerful tools to obtain theoretical results not only in long-run macroeconomics but also in short-run macroeconomics. For instance, as the paper shows, you can use them to analyze the New Keynesian model. It is easy to set up the model in continuous time, solve the household's problem with optimal control, and study the model's properties in normal times and at the zero lower bound using phase diagrams. The analysis is short and simple, and it offers many insights that are difficult to obtain in discrete time. For instance, with the phase diagrams, it is easy to understand the origins of the anomalies of the New Keynesian model at the zero lower—both the collapse of output and inflation and the implausibly large effects of government spending and forward guidance.
+The problem set below brings together all the concepts from the course:
 
 + [Cumulative problem set](/x7.pdf)
-+ Application to the New Keynesian model: 
-    + [Analysis of the model by phase diagrams](/11.pdf)
-    + [Derivation of the differential equations by optimal control](/11a.pdf)
+
+Outside of growth theory, optimal control and differential equations are not used very much. Yet they are powerful tools to obtain theoretical results not only in long-run macroeconomics but also in short-run macroeconomics. As the paper below shows, you can use them to analyze the New Keynesian model. It is easy to set up the model in continuous time, solve the household's problem with optimal control, and study the model's properties in normal times and at the zero lower bound using phase diagrams. The analysis is short and simple, and it offers many insights that are difficult to obtain in discrete time. For instance, with the phase diagrams, it is easy to understand the origins of the anomalies of the New Keynesian model at the zero lower—both the collapse of output and inflation and the implausibly large effects of government spending and forward guidance.
+
++ [Analysis of the New Keynesian model by phase diagrams](/11.pdf)
++ [Derivation of the New Keynesian Euler equation and Phillips curve by optimal control](/11a.pdf)
