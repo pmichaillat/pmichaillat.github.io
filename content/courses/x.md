@@ -75,9 +75,7 @@ This third section introduces differential equations, which are used to describe
 
 ## Conclusion
 
-To conclude, a little more practice and an application to the New Keynesian model.
-
-The problem set below brings together all the concepts from the course:
+To conclude, a little more practice. The problem set below brings together all the concepts from the course:
 
 + [Cumulative problem set](/x7.pdf)
 
