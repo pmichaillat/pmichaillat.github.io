@@ -2,6 +2,8 @@
 title: "Minimalist LaTeX Template for Academic CVs" 
 date: 2025-10-20
 url: /f/
+aliases:
+    - /f1.pdf
 author: "Pascal Michaillat"
 description: "This template produces an academic CV with LaTeX. The CV follows typographical best practices and has a minimalist design."
 summary: "This template produces an academic CV with LaTeX. The CV follows typographical best practices and has a minimalist design. Also available is a more compact version of the template that produces a one-page CV." 
