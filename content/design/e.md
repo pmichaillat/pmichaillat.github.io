@@ -28,7 +28,7 @@ This collection of commands simplifies writing mathematical expressions with [La
 
 ---
 
-## Features
+## Main features
 
 The commands introduce the following functionalities:
 

@@ -31,7 +31,7 @@ The template produces an academic paper with [LaTeX](https://www.latex-project.o
 
 ---
 
-## Features
+## Main features
 
 + The font for text, roman math, and numbers is Source Serif Pro.
 + The font for Greek and calligraphic math is Euler.
@@ -40,8 +40,8 @@ The template produces an academic paper with [LaTeX](https://www.latex-project.o
 + The font for monospaced text (including URLs) is Source Code Pro.
 + No colors are used in the text (only black) to reduce distraction and so the paper prints well; colors are reserved for figures.
 + Margins, spacing, and font size are set for comfortable reading.
-+ Headings and captions are designed so the paper is easy to scan.
-+ Formatting is specified for theorems, propositions, lemmas, definitions, assumptions, corollaries, and remarks.
++ Headings are designed so the paper is easy to scan.
++ Formatting is specified for theorems, propositions, lemmas, definitions, assumptions, corollaries, remarks, and proofs.
 + Formatting is specified for figures and tables.
 + Formatting is specified for appendix and a separate online appendix.
 + Formatting is specified for references.
@@ -135,17 +135,23 @@ The template does not tailor formatting for subsubsections and smaller headings.
 
 ## Theorems and other results
 
-As is standard, the text of theorems is in italic—providing subtle emphasis. The theorem label is in small caps—again providing subtle emphasis. 
+As is standard, the text of theorems is in italic—providing subtle emphasis. The theorem label is in small caps—again providing subtle emphasis. For consistency, all other types of results—propositions, lemmas, assumptions, definitions, and so on—are formatted just like theorems. Each type of results gets its own counter.
 
-For consistency, propositions, lemmas, assumptions, definitions, and so on, are formatted just like theorems. The template comes with the following predefined environments:
+The proof label is also in small—providing subtle emphasis. The proof text uses the normal text font.
 
-+ Theorems: `\begin{theorem} ... \end{theorem}`
-+ Propositions: `\begin{proposition} ... \end{proposition}`
-+ Lemmas: `\begin{lemma} ... \end{lemma}`
-+ Corollaries: `\begin{corollary} ... \end{corollary}`
-+ Definitions: `\begin{definition} ... \end{definition}`
-+ Assumptions: `\begin{assumption} ... \end{assumption}`
-+ Remarks: `\begin{remark} ... \end{remark}`
+Proofs and results are separated from surrounding text with a slight vertical space.
+
+The template comes with the following predefined environments:
+
+- Theorems: `\begin{theorem} ... \end{theorem}`
+- Propositions: `\begin{proposition} ... \end{proposition}`
+- Lemmas: `\begin{lemma} ... \end{lemma}`
+- Corollaries: `\begin{corollary} ... \end{corollary}`
+- Definitions: `\begin{definition} ... \end{definition}`
+- Assumptions: `\begin{assumption} ... \end{assumption}`
+- Remarks: `\begin{remark} ... \end{remark}`
+- Results: `\begin{result} ... \end{result}`
+- Proofs: `\begin{proof} ... \end{proof}`
 
 ---
 
@@ -157,7 +163,7 @@ The figure environment is set up so it is easy to reference a figure (figure 1) 
 
 With the command `\note{Text}`, it is easy to enter a note below the figure caption with details about the figure and sources. The note's font size is 9pt, just like footnotes.
 
-The code for a basic figure with one panel is the following:
+The code for a basic figure with one large panel is the following:
 
 ```LaTeX
 \begin{figure}[t]
@@ -251,7 +257,7 @@ Line 5: & G & S & Q  & P & Q \\
 
 ## Lists
 
-Itemized and numbered list are customized to fit well with the surrounding text. The text after the items is aligned with indented text (the start of a paragraph). All items (bullet points and numbers) are grey so as not to be too prominent. All extra vertical spacing is removed so spacing between list lines is exactly the same as spacing between lines of text.
+Itemized and numbered list are customized to fit well with the surrounding text. The text after the items is aligned with indented text (the start of a paragraph). All items (bullet points and numbers) are grey so as not to be too prominent. Vertical spacing is slightly more than line spacing so the different items are clearly visible.
 
 ---
 
@@ -314,5 +320,7 @@ The template is perfectly compatible with [arXiv](https://arxiv.org/). In partic
 A paper based on the template can be submitted to arXiv in just three steps once it has been compiled with pdfTeX:
 
 1. Collect the required files into a folder. There should be four files: the source file `paper.tex`, the bibliography file `paper.bbl`, the style file `paper.sty`, and the figure file `figures.pdf`. 
-2. Adjust the preamble of the source file `paper.tex`: on line 3, replace `\bibliographystyle{paper}` by `\pdfoutput=1`. The `\bibliographystyle{paper}` command is not needed because arXiv produces the bibliography directly from the `paper.bbl` file. The `\pdfoutput=1` is required because the paper [is compiled with pdfTeX](https://info.arxiv.org/help/submit_tex.html#pdflatex).
+2. Adjust the preamble of the source file `paper.tex`. On line 3, replace `\bibliographystyle{paper}` by `\pdfoutput=1`.[^2]
 3. Zip the folder and upload the zipped file to arXiv.
+
+[^2]: The `\bibliographystyle{paper}` command is not needed because arXiv produces the bibliography directly from the `paper.bbl` file. The `\pdfoutput=1` is required because the paper [is compiled with pdfTeX](https://info.arxiv.org/help/submit_tex.html#pdflatex).

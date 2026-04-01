@@ -31,7 +31,7 @@ The design has been customized for academic websites. The first goal was to obta
 
 ---
 
-## Key features
+## Main features
 
 + Webpages are organized in several sections, which are available from any page through the menu and from the homepage through buttons: papers, courses, data, and so on.
 + The template accepts LaTeX expressions to typeset math on all webpages.
@@ -174,10 +174,6 @@ The `static` folder could also include the PDF files and images to which the web
 + Figures from the papers in PNG format
 
 This is for instance how I organized the static files [on my website](https://github.com/pmichaillat/pmichaillat.github.io). But in the template, to be more flexible and portable, these files are located directly in the folders for the individual pages where they are used: `content/papers/paper1/`, `content/papers/paper2/`, `content/courses/course1/`, and so on.[^2] 
-
-[^1]: The CV `cv.pdf` is produced with the [latex-cv template](https://github.com/pmichaillat/latex-cv).
-
-[^2]: The papers `paper1.pdf`, `paper2.pdf`, and `paper3.pdf` are produced with the [latex-paper template](https://github.com/pmichaillat/latex-paper). The presentations `presentation1.pdf` and `presentation2.pdf` are produced with the [latex-presentation template](https://github.com/pmichaillat/latex-presentation).
 
 ---
 
@@ -366,7 +362,6 @@ During development, it is possible to test your website on mobile devices—to c
 + Once you have the IP address, run `hugo server --bind 0.0.0.0 --baseURL http://192.168.1.50:1313`.
 + On your phone's browser, go to `http://192.168.1.50:1313`.
 + This gives a true mobile rendering and is useful for final testing. As you modify the website source code on your computer, the modified website appears on your phone.
-
 
 ---
 

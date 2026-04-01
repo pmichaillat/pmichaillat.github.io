@@ -26,7 +26,7 @@ The template produces an academic book with [LaTeX](https://www.latex-project.or
 
 ---
 
-## Features
+## Main features
 
 - The font for text, roman math, and numbers is Source Serif Pro.
 - The font for Greek and calligraphic math is Euler.
@@ -37,7 +37,7 @@ The template produces an academic book with [LaTeX](https://www.latex-project.or
 - Margins, spacing, and font size are set for comfortable reading.
 - Headings and captions are designed so the book is easy to scan.
 - Formatting is specified for parts, chapters, sections, subsections, and run‑in paragraphs.
-- Formatting is specified for theorems, propositions, lemmas, definitions, assumptions, corollaries, and remarks.
+- Formatting is specified for theorems, propositions, lemmas, definitions, assumptions, corollaries, remarks, and proofs.
 - Formatting is specified for figures and tables.
 - Formatting is specified for appendices, bibliography, and index.
 - All labels are set to make cross-referencing easy.
@@ -56,7 +56,7 @@ Moreover, the Source Pro family includes a nice monospaced font: [Source Code Pr
 
 ## Math fonts
 
-LaTeX uses one font for text and other fonts for math. For consistency, the template continues to use [Source Serif Pro for roman math](https://ctan.mirrors.hoobly.com/macros/latex/contrib/mathastext/mathastext.pdf). It also uses Source Serif Pro for all the digits in math and basic punctuation (such as `.`, `?`, `%`, `;`, and `,`), so very basic mathematical expressions look the same in math and text. For example, the commands `2,903.5\%` and `$2,903.5\%$` produce the same results.
+LaTeX uses one font for text and other fonts for math. For consistency, the template continues to use [Source Serif Pro for roman math](https://ctan.mirrors.hoobly.com/macros/latex/contrib/mathastext/mathastext.pdf). It also uses Source Serif Pro for all the digits in math and basic punctuation (such as `.`, `?`, `%`, `;`, and `,`), so very basic mathematical expressions look the same in math and text. For example, the commands `3.5\%` and `$3.5\%$` produce the same results.
 
 ### Greek letters
 
@@ -239,6 +239,10 @@ The template uses author-year citation style through the `natbib` package. All `
 
 As is standard, the text of theorems is in italic—providing subtle emphasis. The theorem label is in small caps—again providing subtle emphasis. For consistency, all other types of results—propositions, lemmas, assumptions, definitions, and so on—are formatted just like theorems. Each type of results gets its own counter that resets every chapter and every appendix. So in Chapter 3 you can have Theorem 3.1, Proposition 3.1, Lemma 3.1, Lemma 3.2, Lemma 3.3 and so on in parallel.
 
+The proof label is also in small—providing subtle emphasis. The proof text uses the normal text font.
+
+Proofs and results are separated from surrounding text with a slight vertical space.
+
 The template comes with the following predefined environments:
 
 - Theorems: `\begin{theorem} ... \end{theorem}`
@@ -249,6 +253,7 @@ The template comes with the following predefined environments:
 - Assumptions: `\begin{assumption} ... \end{assumption}`
 - Remarks: `\begin{remark} ... \end{remark}`
 - Results: `\begin{result} ... \end{result}`
+- Proofs: `\begin{proof} ... \end{proof}`
 
 ---
 
@@ -260,11 +265,11 @@ The figure environment is set up so it is easy to reference a figure (figure 1.1
 
 With the command `\note{Text}`, it is easy to enter a note below the figure caption with details about the figure and sources. The note's font size is 9pt, just like footnotes.
 
-The code for a basic figure with one panel is the following:
+The code for a figure with one large panel is the following:
 
 ```LaTeX
 \begin{figure}[t]
-\includegraphics[scale=0.3,page=1]{\pdf}
+\includegraphics[scale=0.3,page=1]{figures.pdf}
 \caption{Figure caption}
 \note{Note for figure.}
 \label{f:figure1}\end{figure}
@@ -274,8 +279,8 @@ The code for a figure with two panels is the following:
 
 ```LaTeX
 \begin{figure}[t]
-\subcaptionbox{Panel caption\label{f:panel1}}{\includegraphics[scale=0.2,page=1]{\pdf}}\hfill
-\subcaptionbox{Panel caption\label{f:panel2}}{\includegraphics[scale=0.2,page=2]{\pdf}}
+\subcaptionbox{Panel caption\label{f:panel1}}{\includegraphics[scale=0.2,page=1]{figures.pdf}}\hfill
+\subcaptionbox{Panel caption\label{f:panel2}}{\includegraphics[scale=0.2,page=2]{figures.pdf}}
 \caption{Figure caption}
 \note[Source]{Source for the figure.}
 \label{f:figure2}\end{figure}
@@ -314,7 +319,7 @@ Line 4: & J & M & N  & K  \\
 
 ## Lists
 
-Itemized and numbered lists are customized to fit well with the surrounding text. The text after the items is aligned with indented text (the start of a paragraph). All items (bullet points and numbers) are grey so as not to be too prominent. Spacing is generous so the different items are clearly visible.
+Itemized and numbered lists are customized to fit well with the surrounding text. The text after the items is aligned with indented text (the start of a paragraph). All items (bullet points and numbers) are grey so as not to be too prominent. Spacing is slightly more than line spacing so the different items are clearly visible.
 
 ---
 

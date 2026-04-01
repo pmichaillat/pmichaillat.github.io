@@ -30,7 +30,7 @@ The template produces an academic presentation using [LaTeX](https://www.latex-p
 
 ---
 
-## Features
+## Main features
 
 + The aspect ratio is 4:3.
 + There are no frills at the periphery of the slides.
@@ -73,11 +73,9 @@ Fonts matter in presentations—just as in papers. The font determines the appea
 
 Source Sans Pro is a sans-serif font. This is an important feature, as sans-serif fonts are more readable than fonts with serif in presentations. Another advantage of Source Sans Pro is that it is not part of typical slide templates (unlike Fira Sans for instance), so it feels new and fresh. And since Source Sans Pro was designed in the last decade, it also feels modern.
 
-Moreover, the Source Pro family includes a nice monospaced font: [Source Code Pro](https://mirrors.rit.edu/CTAN/fonts/sourcecodepro/doc/sourcecodepro.pdf). The template uses Source Code Pro as monospaced font—giving the monospaced text and regular text a similar look.
+Moreover, the Source Pro family includes a nice monospaced font: [Source Code Pro](https://mirrors.rit.edu/CTAN/fonts/sourcecodepro/doc/sourcecodepro.pdf). The template uses Source Code Pro as monospaced font—giving the monospaced text and regular text a similar look. The monospaced font is used for instance to typeset URLs and code fragments.
 
 Another advantage of Source Sans Pro is that it comes with a broad range of weight. For instance, the template uses the semibold font weight in places. To activate the semibold font instead of the usual bold font, use `\sbseries` and `\textsb{}` instead of `\bfseries` and `\textbf{}`.
-
-Finally, there is a serif font in the Source Pro family: [Source Serif Pro](https://mirror.las.iastate.edu/tex-archive/fonts/sourceserifpro/doc/sourceserifpro.pdf). The [latex-paper template](https://github.com/pmichaillat/latex-paper) uses Source Serif Pro, giving the resulting papers an appearance similar to the presentations produced by this template.
 
 ---
 
@@ -137,7 +135,7 @@ The information on the title slide, section titles, frame titles, and regular te
 
 The typical, bright Beamer bullet points, headers, and footers, should be avoided as they are distracting.
 
-[^2]: The template customizes formatting for three levels of itemized and numbered lists. More deeply nested lists should be avoided as they are a sign that the presentation's organization is too messy.
+[^2]: The template customizes formatting for three levels of itemized and numbered lists. More deeply nested lists should be avoided as they signal that the presentation's organization is too messy.
 
 ---
 

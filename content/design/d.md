@@ -30,17 +30,14 @@ The template produces a collection of scientific figures using [MATLAB](hhttps:/
 
 ---
 
-## Features
+## Main features
 
 + The font on the axes and annotations is Helvetica.
-+ Font sizes and line thicknesses are set for comfortable reading once the figures are inserted [in pairs in a paper](/d2/).
++ Font sizes and line thicknesses are set for comfortable reading once the figures are inserted in a paper or book.
 + A collections of color palettes is provided, both for qualitative displays and sequential displays. 
-+ The template produces a collection of basic figures with different plot types and different features:
-    * Time series plots: single or multiple series, with or without period areas, with or without above-below areas
-    * Scatter plots: transparent or not, connected or not, with or without above-below areas
++ The template produces a collection of basic figures using different plot types, including time series plots and scatter plots.
 + Figure dimensions are set to minimize the white space around the content.
-+ The figure aspect ratio is 4:3 so the figure can easily be annotated with a presentation software.
-+ On a Mac, the figures can easily be annotated with Keynote. This procedure is more user friendly, and more flexible, than annotating the figures directly in MATLAB. The Keynote file `figures.key` illustrates how to annotate the figures produced by the template.
++ The figure aspect ratio is 4:3 so the figure can easily be annotated with a presentation software. On a Mac, the figures can be annotated with Keynote. This procedure is more user friendly, and more flexible, than annotating the figures directly in MATLAB.
 
 --- 
 
@@ -54,7 +51,7 @@ The goal of this template is to produce figures that can be easily inserted into
 
 ## Font type
 
-Fonts matter in figures, just as in papers and presentations. The font determines the appearance and readability of the figure. To improve readability, sans-serif font are recommended for the text in figures.  The simplified letter forms of sans-serif fonts are not encumbered by serifs, which improves the readability of characters at very small sizes. The clean and simple lines of sans-serif fonts also enhance the figure's visual presentation.
+Fonts matter in figures, just as in papers and presentations. The font determines the appearance and readability of the figure. To improve readability, sans-serif font are recommended for the text in figures. The simplified letter forms of sans-serif fonts are not encumbered by serifs, which improves the readability of characters at very small sizes. The clean and simple lines of sans-serif fonts also enhance the figure's visual presentation.
 
 The template uses Helvetica, which is a [classic, quality](https://practicaltypography.com/helvetica-and-arial-alternatives.html) font and is supported by MATLAB both for displaying on screen and for printing (most fonts are not). An advantage of Helvetica is that it is legible at all sizes, even small. This is useful for figures, in which some annotations must be small to fit in the space available.[^1] 
 
@@ -70,7 +67,7 @@ Beside the typeface, another key choice is the font size used in the figures. Th
 
 ## Colors
 
-A collection of color palettes are provided, both for qualitative displays and sequential displays. The palettes were created by [Cynthia Brewer](https://sites.psu.edu/cbrewer/) and are available on [ColorBrewer](https://colorbrewer2.org). The colors have been optimized to convey qualitative and quantitative information as effectively as possible.
+A collection of color palettes are provided, both for qualitative displays and sequential displays. The palettes are borrowed from [ColorBrewer](https://colorbrewer2.org). The colors have been optimized to convey qualitative and quantitative information as effectively as possible.
 
 ---
 
@@ -82,7 +79,7 @@ Figure dimensions are set to minimize the white space around the content. The fi
 
 ## Lines
 
-Line thicknesses are set for comfortable reading once the figures are inserted [in pairs in a paper](/d2/). Line weights and strokes should be set between 0.25pt and 1pt at the final size.
+Line thicknesses are set for comfortable reading once the figures are inserted in a paper or book. Line weights and strokes should be set between 0.25pt and 1.5pt at the final size. 0.25pt is roughly the minimum visible at standard print resolution and 1.5pt avoids visual dominance over text.
 
 --- 
 
@@ -92,21 +89,22 @@ The template produces a collection of figures with different plot types and diff
 
 It produces a range of time series plots: single or multiple series, with or without period areas, with or without above-below areas.
 
-
 It also produces a range of scatter plots: transparent or not, connected or not, with or without above-below areas.
 
 ---
 
 ## Annotations
 
-On a Mac, the figures can easily be annotated with Keynote. This procedure is more user friendly, and more flexible, than annotating the figures directly in MATLAB. The Keynote file `figures.key` illustrates how to annotate the figures produced by the template.
+On a Mac, the figures can easily be annotated with Keynote. This procedure is more user friendly, and more flexible, than annotating the figures directly in MATLAB. 
 
 First, create a Keynote presentation. Insert each figure as a slide background. Annotate the slide as desired. Finally, save the resulting presentation as PDF (such as `figures.pdf`). With this method, all the figures have the exact same size, and each figure can be inserted individually into a LaTeX document, using `\includegraphics[scale=0.2,page=X]{figures.pdf}` to insert page X of the collection of figures called `figures.pdf`.
+
+The Keynote file in the [template repository](https://github.com/pmichaillat/matlab-figures) illustrates how to annotate the figures produced by the template.
 
 ---
 
 ## Scaling for different figure sizes
 
-The template is tailored for the common case in which the figures are inserted [in pairs in an academic paper](/d2/). The scaling factor in LaTeX to insert two figures side by side is 0.2. The template is designed so that the PDF pages created by MATLAB, and annotated through Keynote, have readable font and line sizes once they are scaled by a factor of 0.2. For instance to obtain 8pt text and 1pt lines, we need 8/0.2 = 40pt text and 1/0.2 = 5pt lines in Keynote. This is what the current template produces.
+The template is tailored for the common case in which the figures are inserted in pairs [in an academic paper](/a/#figures) or [in an academic book](/g/#figures). The scaling factor in LaTeX to insert two figures side by side is 0.2. The template is designed so that the PDF pages created by MATLAB, and annotated through Keynote, have readable font and line sizes once they are scaled by a factor of 0.2. For instance to obtain 8pt text and 1pt lines, we need 8/0.2 = 40pt text and 1/0.2 = 5pt lines in Keynote. This is what the current template produces.
 
 To insert bigger figures into LaTeX, the template should be adjusted so that the final figures maintain the same text and line sizes as the current figures. For instance to insert twice-larger figures, the scaling factor in LaTeX can be increased to 0.4. Then all the font, line, and marker sizes should be divided by two in the template so all text, markers, and lines maintain a consistent size across figures, irrespective of the figure size.

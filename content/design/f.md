@@ -29,7 +29,7 @@ The template produces an academic CV with [LaTeX](https://www.latex-project.org)
 
 ---
 
-## Features
+## Main features
 
 + The font for text and numbers is Source Serif Pro.
 + The CV uses only gray and black to reduce distraction and print flawlessly.
@@ -51,7 +51,7 @@ The Source Pro family also includes a nice monospaced font: [Source Code Pro](ht
 
 ## Math fonts and symbols
 
-If required anywhere in the CV—in article or course titles—mathematical expressions are typeset just as in the [later-paper](https://github.com/pmichaillat/latex-paper) template. Here is a summary of [the math fonts used in the CV](https://pascalmichaillat.org/a/#math-fonts):
+If required anywhere in the CV—in article or course titles—mathematical expressions are typeset using the [following math fonts](/a/#math-fonts):
 
 + Roman letters - [Source Serif Pro font](https://ctan.mirrors.hoobly.com/macros/latex/contrib/mathastext/mathastext.pdf)
 + Greek letters - [Euler font](https://ctan.math.utah.edu/ctan/tex-archive/fonts/eulervm/doc/latex/eulervm/eulervm.pdf)
@@ -143,7 +143,7 @@ Scholars often give the full bibliographical information for their publications.
 
 ## Overall length
 
-How long should your CV be? After the PhD job market—where CVs are typically confined to a single page—academic CVs often become excessively long, which may dilute their effectiveness by burying relevant information. [Butterick advises](https://practicaltypography.com/resumes.html) students to stick to one page and older people to limit themselves to just a couple of pages, which seems like good advice.
+How long should your CV be? After the PhD job market—where CVs are typically confined to a single page—academic CVs often become excessively long, which may dilute their effectiveness by burying relevant information. [Butterick advises](https://practicaltypography.com/resumes.html) students to stick to one page and older people to limit themselves to just a couple of pages, which seems like very good advice.
 
 ---
 
