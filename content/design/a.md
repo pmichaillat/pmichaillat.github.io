@@ -34,10 +34,10 @@ The template produces an academic paper with [LaTeX](https://www.latex-project.o
 ## Features
 
 + The font for text, roman math, and numbers is Source Serif Pro.
-+ The font for monospaced text (including URLs) is Source Code Pro.
 + The font for Greek and calligraphic math is Euler.
 + The font for blackboard bold is Fourier.
 + The font for mathematical symbols is MnSymbol.
++ The font for monospaced text (including URLs) is Source Code Pro.
 + No colors are used in the text (only black) to reduce distraction and so the paper prints well; colors are reserved for figures.
 + Margins, spacing, and font size are set for comfortable reading.
 + Headings and captions are designed so the paper is easy to scan.
@@ -55,9 +55,7 @@ The font determines the appearance and readability of the entire paper, so choos
 
 Source Serif Pro is a serif font—a typical choice for long-form writing. Source Serif Pro is not part of typical paper templates (unlike Times New Roman or Palatino), so it has a new, fresh feel. And since Source Serif Pro was designed in the last decade, it also has a modern feel.
 
-Moreover, the Source Pro family includes a nice monospaced font: [Source Code Pro](https://mirrors.rit.edu/CTAN/fonts/sourcecodepro/doc/sourcecodepro.pdf). The template uses Source Code Pro as monospaced font—giving the monospaced text and regular text a similar look. The monospaced font is used in particular to typeset URLs.
-
-Finally, there is a sans-serif font in the Source Pro family: [Source Sans Pro](https://ctan.math.illinois.edu/fonts/sourcesanspro/doc/sourcesanspro.pdf). The [latex-presentation template](https://github.com/pmichaillat/latex-presentation) uses Source Sans Pro, giving the resulting presentations an appearance similar to the papers produced by this template.
+Moreover, the Source Pro family includes a nice monospaced font: [Source Code Pro](https://mirrors.rit.edu/CTAN/fonts/sourcecodepro/doc/sourcecodepro.pdf). The template uses Source Code Pro as monospaced font—giving the monospaced text and regular text a similar look. The monospaced font is used in particular to typeset URLs and code fragments.
 
 ---
 
