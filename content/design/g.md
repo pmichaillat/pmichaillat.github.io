@@ -200,7 +200,8 @@ The table of contents is produced with the standard `\tableofcontents` command. 
 - Parts are in bold.
 - Chapter titles use small caps.
 - Section titles use regular font.
-- Dot leaders and spacing are set for clarity.
+- Dots and spacing are set for clarity.
+- Bibliography and index are automatically listed.
 
 The depth of the table of contents is set so that chapters and sections appear; subsections are omitted to keep the table of contents compact and easy to scan.
 
@@ -261,9 +262,9 @@ The template comes with the following predefined environments:
 
 The template is configured so that figures typically appear at the top of the page where they are first mentioned. The template uses black-and-white figures for consistency with the text and for print. Figure panels are centered by default. The figure label is in small caps—just like the chapter and result labels. The figure caption is placed below the figure.
 
-The figure environment is set up so it is easy to reference a figure (figure 1.1) or directly a panel in a figure (figure 1.1A). 
+The figure environment is set up so it is easy to reference a figure (figure 1.1) or directly a panel in a figure (figure 1.1A). With the code below, a specific panel in a figure can be referenced with `figure \ref{panel1}`, which produces figure 1.1A, and the entire figure can be referenced with `figure \ref{figure2}`, which produces figure 1.1.
 
-With the command `\note{Text}`, it is easy to enter a note below the figure caption with details about the figure and sources. The note's font size is 9pt, just like footnotes.
+With the command `\note{Text}`, it is easy to enter a note below the figure caption with details about the figure and sources. The note's font size is 9pt, just like footnotes. An optional label can also be added before the note text, using `\note[Note]{Text}` or `\note{[Source]Text}`.
 
 The code for a figure with one large panel is the following:
 
@@ -325,7 +326,7 @@ Itemized and numbered lists are customized to fit well with the surrounding text
 
 ## Appendices
 
-The template makes it easy to add appendices at the end of the book. The appendices start with the command `\appendix`. The formatting of the appendices strictly follows that of the main text, but chapter headings are relabeled as `APPENDIX A.`, `APPENDIX B.`, and so on.
+The template makes it easy to add appendices at the end of the book. The appendices start with the command `\appendix`. The formatting of the appendices strictly follows that of the main text, but chapter headings are relabeled as `Appendix A.`, `Appendix B.`, and so on.
 
 As usual, all counters—for equations, figures, tables, theorems, and so on—automatically pick up appendix letters: for instance, `equation (A.1)`, `figure A.2`, `table A.3`, or `theorem A.1`. All counters restart in each appendix.
 
