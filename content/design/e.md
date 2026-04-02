@@ -32,8 +32,8 @@ This collection of commands simplifies writing mathematical expressions with [La
 
 The commands introduce the following functionalities:
 
-+ Easily insert brackets (parentheses, absolute values, etc.) that scale automatically
-+ Easily write functions and operators (exponential, log, expectation, probability, min, max, etc.) with brackets that scale automatically
++ Easily insert brackets (parentheses, square brackets, absolute values, and so on) that scale automatically
++ Easily write functions and operators (exponential, log, expectation, probability, min, max, and so on) with brackets that scale automatically
 + Easily write partial and total derivatives and elasticities
 + Easily type statistical relations (iid variables, various limits)
 + Easily insert accents that scale automatically

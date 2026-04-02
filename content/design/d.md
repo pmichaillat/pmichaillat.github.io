@@ -99,7 +99,7 @@ On a Mac, the figures can easily be annotated with Keynote. This procedure is mo
 
 First, create a Keynote presentation. Insert each figure as a slide background. Annotate the slide as desired. Finally, save the resulting presentation as PDF (such as `figures.pdf`). With this method, all the figures have the exact same size, and each figure can be inserted individually into a LaTeX document, using `\includegraphics[scale=0.2,page=X]{figures.pdf}` to insert page X of the collection of figures called `figures.pdf`.
 
-The Keynote file in the [template repository](https://github.com/pmichaillat/matlab-figures) illustrates how to annotate the figures produced by the template.
+The [Keynote file](https://github.com/pmichaillat/matlab-figures/blob/main/figures.key) in the template repository illustrates how to annotate the figures produced by the template.
 
 ---
 

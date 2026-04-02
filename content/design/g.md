@@ -32,7 +32,7 @@ The template produces an academic book with [LaTeX](https://www.latex-project.or
 - The font for Greek and calligraphic math is Euler.
 - The font for blackboard bold is Fourier.
 - The font for mathematical symbols is MnSymbol.
-- The font for monospaced text (including URLs) is Source Code Pro.
+- The font for monospaced text is Source Code Pro.
 - No colors are used in the text (only black) to reduce distraction and so the book prints well.
 - Margins, spacing, and font size are set for comfortable reading.
 - Headings and captions are designed so the book is easy to scan.
