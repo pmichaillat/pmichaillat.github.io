@@ -10,7 +10,7 @@ hidemeta: true
 
 ---
 
-##### Schedule for Winter 2026
+##### Schedule for Spring 2026
 
 + Office hours are by appointment. Please [email me](mailto:pamichai@ucsc.edu) to set up a meeting.
 
