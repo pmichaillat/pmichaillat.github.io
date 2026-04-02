@@ -1,6 +1,6 @@
 ---
 title: "Minimalist LaTeX Template for Academic Papers" 
-date: 2025-06-12
+date: 2026-04-02
 url: /a/
 aliases: 
     - /d2/
@@ -199,7 +199,7 @@ Finally, the code for a figure with six panels is the following:
 \label{7}\end{figure}
 ```
 
-With the above code, a specific panel in a figure can be referenced with `figure \ref{1}`, which produces figure 1A, and the entire figure can be referenced with `figure \ref{7}`, which produces figure 1. A panel can also be referenced without mentioning the figure: `panel \subref{1}` produces panel A.
+With the above code, a specific panel in a figure can be referenced with `figure \ref{1}`, which produces figure 1A, and the entire figure can be referenced with `figure \ref{7}`, which produces figure 1.
 
 ---
 
@@ -207,7 +207,7 @@ With the above code, a specific panel in a figure can be referenced with `figure
 
 A table should be placed at the top of the page where it is first mentioned—not in the middle of the page, and especially not at the end of the paper. Tables are centered by default. The table label is in small caps—just like the figure label. The table caption is placed above the table, as usual. Top and bottom table lines are thicker to clearly demarcate the table. The text in the table has a font size of 9pt. The text is spaced vertically to be easily readable (spacing is insufficient in standard tables).
 
-The command `\note{Text}` can also be used to enter a note below the table, to provide details about the table and sources.
+The command `\note{Text}` can also be used to enter a note below the table, to provide details about the table and sources. An optional label can also be added before the note text: `\note[Note]{Text}` or `\note{[Source]Text}`.
 
 The code for a basic table is the following:
 
@@ -319,8 +319,8 @@ The template is perfectly compatible with [arXiv](https://arxiv.org/). In partic
 
 A paper based on the template can be submitted to arXiv in just three steps once it has been compiled with pdfTeX:
 
-1. Collect the required files into a folder. There should be four files: the source file `paper.tex`, the bibliography file `paper.bbl`, the style file `paper.sty`, and the figure file `figures.pdf`. 
-2. Adjust the preamble of the source file `paper.tex`. On line 3, replace `\bibliographystyle{paper}` by `\pdfoutput=1`.[^2]
+1. Collect the four required files into a folder: the source file `paper.tex`, the bibliography file `paper.bbl`, the style file `paper.sty`, and the figure file `figures.pdf`. 
+2. In the preamble of the source file `paper.tex`, replace `\bibliographystyle{paper}` by `\pdfoutput=1` on line 3.[^2]
 3. Zip the folder and upload the zipped file to arXiv.
 
 [^2]: The `\bibliographystyle{paper}` command is not needed because arXiv produces the bibliography directly from the `paper.bbl` file. The `\pdfoutput=1` is required because the paper [is compiled with pdfTeX](https://info.arxiv.org/help/submit_tex.html#pdflatex).
