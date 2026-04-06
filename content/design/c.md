@@ -35,10 +35,10 @@ The template produces an academic presentation using [LaTeX](https://www.latex-p
 + The aspect ratio is 4:3.
 + There are no frills at the periphery of the slides.
 + The font for text, roman math, and numbers is Source Sans Pro.
-+ The font for monospaced text is Source Code Pro.
 + The font for Greek and calligraphic math is Euler.
 + The font for blackboard bold is Fourier.
 + The font for mathematical symbols is MnSymbol.
++ The font for monospaced text is Source Code Pro.
 + No colors are used in the text (only grayscale) to reduce distraction; colors are reserved for figures and text alerts.
 + Margins, spacing, and font size are set for comfortable reading.
 + Formatting is specified for theorems, propositions, lemmas, definitions, assumptions, corollaries, and remarks.
@@ -229,13 +229,7 @@ An advantage of avoiding colors in the text is that colors in figures stand out.
 
 The template uses a white background for slides because figures have white backgrounds. Figures therefore seamlessly blend into the slide. With a colorful slide background, the figures background would stick out.
 
-Figures are centered by default. 
-
-The template is designed so the slide headline is used to caption the figure. It is not designed to accommodate a separate caption below the figure.
-
-An easy way to insert figures into the template is to create a PDF file with all the figures that are featured in the presentation. To do that, create a Keynote or Powerpoint presentation; insert each figure as a slide background; and save the resulting presentation as PDF. With this method, all the figures have the exact same size. It is also possible to use Keynote or Powerpoint to annotate the figures created with an external software (Matlab, R, Python). The file `figures.pdf` in the repository was created from MATLAB graphs by this method.
-
-The code for a slide with a basic figure is the following:
+Figures are centered by default. The template is designed so the slide headline is used to caption the figure. The code for a slide with a basic figure is the following:
 
 ```tex
 \begin{frame}
@@ -256,17 +250,25 @@ The code for a slide with multiple figures displayed sequentially is the followi
 \end{frame}
 ```
 
+It is also possible to add a short note below the figure using the `\caption` command in a `figure` environment. The note appears in small font (9pt) and gray below the figure. The code for a figure with an explanatory note is the following:
+
+```tex
+\begin{frame}
+\frametitle{Figure caption}
+\begin{figure}
+\includegraphics[scale=0.25]{figure.pdf}
+\caption{A short note below the figure.}
+\end{figure}
+\end{frame}
+```
+
 ---
 
 ## Tables
 
 People sometimes copy-paste tables from their papers into their slides. That's not a good idea since it is not possible to read large tables with tiny numbers on slides. It seems more effective to keep the same font size in tables as in the text, and just present in the slide tables the key numbers from the paper tables. If listeners want more details, they will go to the paper.
 
-Tables are centered by default, and fill the slide.
-
-Here too, the template is designed so the slide headline is used to caption the table. It is not designed to accommodate a separate caption below the table.
-
-The code for a slide with a basic table is the following:
+Tables are centered by default, and fill the slide. The template is also designed so the slide headline is used to caption the table. The code for a slide with a basic table is the following:
 
 ```tex
 \begin{frame}
@@ -278,11 +280,26 @@ The code for a slide with a basic table is the following:
 Line 1 & A  & B & C \\
 Line 2 & D & E & F \\ 
 Line 3 & G & H & I \\ 
-\midrule
-Line 4 & J & K & L \\ 
-Line 5 & M & N & O \\ 
 \bottomrule
 \end{tabular*}
+\end{frame}
+```
+
+Just like with figures, it is possible to add a short note below the table using the `\caption` command in a `table` environment. The note appears in small font (9pt) and gray below the table. The code for a table with an explanatory note is the following:
+
+```tex
+\begin{frame}
+\frametitle{Table caption}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccc}
+\toprule
+ & Column 1 & Column 2 & Column 3\\
+\midrule
+Line 1 & J & K & L \\ 
+Line 2 & M & N & O \\ 
+\bottomrule
+\end{tabular*}
+\caption{A short note below the table.}
+\end{table}
 \end{frame}
 ```
 
