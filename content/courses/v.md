@@ -5,24 +5,25 @@ url: /v/
 aliases:
     - /t1.html
     - /c1/
-    - /v11.html
-    - /v9.html
-    - /v94.html
-    - /v8.html
-    - /v10.html
+    - /v1.html
+    - /v3.html
+    - /v4.html
     - /v5.html
     - /v6.html
+    - /v7.html
+    - /v8.html
+    - /v9.html
+    - /v10.html
+    - /v11.html
+    - /v94.html
     - /v66.html
     - /v65.html
     - /v67.html
-    - /v3.html
-    - /v4.html
     - /v45.html
     - /v37.html
     - /v114.html
     - /v115.html
     - /v102.html
-    - /v7.html
     - /v54.html
     - /v55.html
     - /v58.html
