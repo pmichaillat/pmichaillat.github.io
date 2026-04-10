@@ -6,7 +6,7 @@ aliases:
     - /d3/
 author: "Pascal Michaillat"
 description: "These commands simplify mathematical writing with LaTeX while automatically respecting the rules of mathematical typography." 
-summary: "This commands simplifies mathematical writing with LaTeX while automatically respecting the rules of mathematical typography." 
+summary: "These commands simplify mathematical writing with LaTeX while automatically respecting the rules of mathematical typography." 
 cover:
     image: "/e.png"
     alt: "Mathematical expressions produced with commands"
@@ -52,11 +52,11 @@ The commands below produce brackets that scale automatically.
 | Parentheses           |   `\bp{x}`  |       $\left( x\right)$        |
 | Square brackets       |   `\bs{x}`  |        $\left[x\right]$        |
 | Curly brackets        |   `\bc{x}`  | $\left\lbrace x\right\rbrace$  |
-| Angle brackets        |   `\ba{x}`  |       $\left< x\right>$        |
+| Angle brackets        |   `\ba{x}`  | $\left\langle x\right\rangle$  |
 | Absolute value        |  `\abs{x}`  |  $\left\lvert x \right\rvert$  |
 | Norm                  |  `\norm{x}` |  $\left\lVert x \right\rVert$  |
-| Floor                 | `\floor{x}` | $\left\lfloor  x\right\rfloor$ |
-| Ceiling               |  `\ceil{x}` |  $\left\lceil  x\right\rceil$  |
+| Floor                 | `\floor{x}` | $\left\lfloor x\right\rfloor$ |
+| Ceiling               |  `\ceil{x}` |  $\left\lceil x\right\rceil$  |
 | Function argument[^1] |  `f\of{x}`  |             $f(x)$             |
 
 
@@ -116,7 +116,7 @@ The commands below produce functions and operators with parentheses that scale a
 
 ## Derivatives
 
-The commands below produce various derivatives. Some of commands produce derivatives for displays while others produce derivatives for text. Some of the commands have an option to indicate the order of the derivative.
+The commands below produce various derivatives. Some commands produce derivatives for displays while others produce derivatives for text. Some commands have an option to indicate the order of the derivative.
 
 |      Derivative     |     Command     |                            Output                            |
 | :------------------ | :-------------: | :----------------------------------------------------------: |
@@ -148,8 +148,6 @@ The commands below are shortcuts to produce statistical relations.
 | Almost sure convergence                           | `\asto` |  $\overset{as}{\to}$  |
 | Convergence in probability                        | `\pto`  |   $\overset{p}{\to}$  |
 | Convergence in distribution                       | `\dto`  |   $\overset{d}{\to}$  |
-| Essential infimum and supremum                    | `\ees`  |  $\operatorname{ees}$ |
-
 
 ## Accents
 
@@ -266,15 +264,25 @@ The commands below designate parts of complex numbers.
 | Imaginary part | `\Im(z)` | $\operatorname{Im}(z)$ |
 
 
-## Existing LaTeX commands
+---
 
-Existing LaTeX commands continue to work as usual, with the exception of a few text commands that do not produce their usual output. These modified text commands are `\oe`, `\o`, and `\P`. These commands used to insert text symbols that are rarely used in scientific writing ($\text{\oe}$, $\text{\o}$, and $\text{\P}$). The commands now insert common mathematical symbols, so hopefully the modification is not problematic.
+## Command overrides
+
+This package overrides a small set of text commands that are rarely used in scientific writing to prioritize fast math typing. 
+
+Some accent commands no longer produce their usual text output: `\b` (underbar accent), `\c` (cedilla accent), `\d` (dot-under accent), `\i` (dotless i), `\k` (ogonek accent), `\r` (ring accent), `\t` (tie-after accent), and `\u` (breve accent). In addition, some text symbols are overridden: `\P` (paragraph sign `¶`) and `\S` (section sign `§`). Last, this package also overrides a few non-English letters: `\l` (Polish letter `ł`), `\L` (Polish letter `Ł`), `\o` (Scandinavian letter `ø`), `\O` (Scandinavian letter `Ø`), and `\oe` (ligature `œ`).
+
+If your document needs these text symbols and accents in their original meaning, please rename these macros on the style file.
+
+## Command extensions
+
+Several standard math operators are also extended with optional argument syntax while preserving normal LaTeX usage. In particular, commands such as `\ln`, `\exp`, `\max`, `\min`, `\sup`, and `\inf` still work in their usual forms (for example `\ln x`, `\max_n x_n`, `\exp x`). Additionally, they accept compact argument forms (for example `\ln{x}`, `\max[n]{x_n}`, `\exp{x}`) to produce clean notation with minimal source code.
 
 ---
 
 ## Code snippets
 
-The LaTeX commands are collected in a [LaTeX style file](https://github.com/pmichaillat/latex-math/blob/main/math.sty). This section shows how some of the most commonly used commands are defined. Some of the definitions require the `xparse` package.
+The LaTeX commands are collected in a [LaTeX style file](https://github.com/pmichaillat/latex-math/blob/main/math.sty). This section shows how some of the most commonly used commands are defined. Some of the definitions require specific packages (`xparse`, `amsmath`, `amssymb`, and so on), which are loaded in the style file.
 
 For instance, the commands for parentheses are defined as follows:
 
@@ -289,8 +297,6 @@ For instance, the commands for parentheses are defined as follows:
 The command for maximum and minimum are defined as follows:
 
 ```LaTeX
-\usepackage{xparse}
-
 % Maximum
 \let\oldmax\max
 \RenewDocumentCommand{\max}{o g}{%
@@ -307,8 +313,6 @@ The command for maximum and minimum are defined as follows:
 Another set of commonly used commands are expected value and probability, which are coded as follows:
 
 ```LaTeX
-\usepackage{xparse}
-
 % Expectation
 \NewDocumentCommand{\E}{o g}{%
 \IfNoValueTF{#2}{\operatorname{\mathbb{E}}\IfValueT{#1}{_{#1}}}%
@@ -323,8 +327,6 @@ Another set of commonly used commands are expected value and probability, which 
 The commands for variance, covariance, correlation, and standard deviation are all coded in a similar way:
 
 ```LaTeX
-\usepackage{xparse}
-
 % Variance
 \NewDocumentCommand{\var}{o g}{%
 \IfNoValueTF{#2}{\operatorname{var}\IfValueT{#1}{_{#1}}}%
@@ -369,8 +371,6 @@ The commands for almost sure convergence, convergence in probability, and conver
 Finally, the exponential and logarithm functions are defined as follows:
 
 ```LaTeX
-\usepackage{xparse}
-
 % Logarithm
 \let\oldln\ln
 \RenewDocumentCommand{\ln}{g}{%
