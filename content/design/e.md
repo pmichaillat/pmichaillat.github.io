@@ -270,7 +270,7 @@ The commands below designate parts of complex numbers.
 
 This package overrides a small set of text commands that are rarely used in scientific writing to prioritize fast math typing. 
 
-Some accent commands no longer produce their usual text output: `\b` (underbar accent), `\c` (cedilla accent), `\d` (dot-under accent), `\i` (dotless i), `\k` (ogonek accent), `\r` (ring accent), `\t` (tie-after accent), and `\u` (breve accent). In addition, some text symbols are overridden: `\P` (paragraph sign `¶`) and `\S` (section sign `§`). Last, this package also overrides a few non-English letters: `\l` (Polish letter `ł`), `\L` (Polish letter `Ł`), `\o` (Scandinavian letter `ø`), `\O` (Scandinavian letter `Ø`), and `\oe` (ligature `œ`).
+Some accent commands no longer produce their usual text output: `\b` (underbar accent), `\c` (cedilla accent), `\d` (dot-under accent), `\i` (dotless i), `\k` (ogonek accent), `\r` (ring accent), `\t` (tie-after accent), and `\u` (breve accent). In addition, some text symbols are overridden: `\P` (paragraph sign ¶) and `\S` (section sign §). Last, this package also overrides a few non-English letters: `\l` (Polish letter ł), `\L` (Polish letter Ł), `\o` (Scandinavian letter ø), `\O` (Scandinavian letter Ø), and `\oe` (ligature œ).
 
 If your document needs these text symbols and accents in their original meaning, please rename these macros on the style file.
 
