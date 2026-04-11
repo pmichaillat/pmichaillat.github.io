@@ -301,13 +301,13 @@ The command for maximum and minimum are defined as follows:
 \let\oldmax\max
 \RenewDocumentCommand{\max}{o g}{%
 \IfNoValueTF{#2}{\oldmax\IfValueT{#1}{_{#1}}}%
-{\,{\oldmax\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\oldmax\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Minimum
 \let\oldmin\min
 \RenewDocumentCommand{\min}{o g}{%
 \IfNoValueTF{#2}{\oldmin\IfValueT{#1}{_{#1}}}%
-{\,{\oldmin\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\oldmin\IfValueT{#1}{_{#1}}\!\of{#2}}}
 ```
 
 Another set of commonly used commands are expected value and probability, which are coded as follows:
@@ -316,12 +316,12 @@ Another set of commonly used commands are expected value and probability, which 
 % Expectation
 \NewDocumentCommand{\E}{o g}{%
 \IfNoValueTF{#2}{\operatorname{\mathbb{E}}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{\mathbb{E}}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{\mathbb{E}}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Probability
 \RenewDocumentCommand{\P}{o g}{%
 \IfNoValueTF{#2}{\operatorname{\mathbb{P}}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{\mathbb{P}}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{\mathbb{P}}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 ```
 
 The commands for variance, covariance, correlation, and standard deviation are all coded in a similar way:
@@ -330,22 +330,22 @@ The commands for variance, covariance, correlation, and standard deviation are a
 % Variance
 \NewDocumentCommand{\var}{o g}{%
 \IfNoValueTF{#2}{\operatorname{var}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{var}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{var}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Covariance
 \NewDocumentCommand{\cov}{o g}{%
 \IfNoValueTF{#2}{\operatorname{cov}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{cov}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{cov}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Correlation
 \NewDocumentCommand{\corr}{o g}{%
 \IfNoValueTF{#2}{\operatorname{corr}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{corr}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{corr}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 
 % Standard deviation
 \NewDocumentCommand{\sd}{o g}{%
 \IfNoValueTF{#2}{\operatorname{sd}\IfValueT{#1}{_{#1}}}%
-{\,{\operatorname{sd}\IfValueT{#1}{_{#1}}}\of{#2}}}
+{\operatorname{sd}\IfValueT{#1}{_{#1}}\!\of{#2}}}
 ```
 
 The argmin and argmax functions are easy to define:
@@ -375,11 +375,11 @@ Finally, the exponential and logarithm functions are defined as follows:
 \let\oldln\ln
 \RenewDocumentCommand{\ln}{g}{%
 \IfNoValueTF{#1}{\oldln}%
-{\,{\oldln}\of{#1}}}
+{\oldln\!\of{#1}}}
 
 % Exponential
 \let\oldexp\exp
 \RenewDocumentCommand{\exp}{g}{%
 \IfNoValueTF{#1}{\oldexp}%
-{\,{\oldexp}\of{#1}}}
+{\oldexp\!\of{#1}}}
 ```
