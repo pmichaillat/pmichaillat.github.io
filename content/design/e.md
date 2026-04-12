@@ -302,8 +302,6 @@ Finally, remaining one-letter macros are allocated to bold Roman letters---to be
 
 [^2]: Coincidentally, none of these blackboard-bold letters are used for uppercase Greek letters, so there is no conflict here.
 
----
-
 ## Command overrides
 
 The short one-letter macros are intended for math-heavy documents and prioritize fast math typing. But they override a small set of LaTeX text commands, which may create conflicts in text-heavy documents, especially with multilingual text workflows. In modern Unicode-first workflows, many users type accented characters and non-English letters directly from the keyboard (for example é, è, ê) instead of using LaTeX text macros. This reduces the practical risk of conflicts from overridden commands—but of course conflicts can still appear in legacy sources, bibliographic data, or documents that rely on accent commands.
