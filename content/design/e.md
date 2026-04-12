@@ -298,7 +298,7 @@ For Greek letters, one-letter shortcuts are used whenever possible by matching t
 
 For blackboard-bold letters, only the most commonly used letters are assigned: `\R`, `\N`, `\Z`, `\Q`, `\C`.[^2] 
 
-Finally, remaining one-letter macros are allocated to bold Roman letters---to be used for vectors and matrices. These macros provide convenient shortcuts for the Hessian matrix (`\H` for $\mathbf{H}$) and for the Jacobian matrix (`\J` for $\mathbf{J}$) and for a typical matrix (`\M` for $\mathbf{M}$). They also provide convenient shortcuts for typical vector names (`\y` for $\mathbf{y}$ and `\q` for $\mathbf{q}$).
+Finally, remaining one-letter macros are allocated to bold Roman letters---to be used for vectors and matrices. These macros provide convenient shortcuts for the Hessian matrix (`\H` for $\mathbf{H}$) and for the Jacobian matrix (`\J` for $\mathbf{J}$) and for a typical matrix (`\M` for $\mathbf{M}$). They also provide convenient shortcuts for a typical vector (`\v` for $\mathbf{v}$) and other typical vector names (`\y` for $\mathbf{y}$ and `\q` for $\mathbf{q}$).
 
 [^2]: Coincidentally, none of these blackboard-bold letters are used for uppercase Greek letters, so there is no conflict here.
 
