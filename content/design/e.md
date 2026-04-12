@@ -296,11 +296,11 @@ The shortcut assignment for letters follows a fixed priority: Greek letters firs
 
 For Greek letters, one-letter shortcuts are used whenever possible by matching the closest Roman letter. When conflicts arise, one symbol keeps the one-letter form and the other is left in standard form: `\p` is used for $\psi$ so $\pi$ is not given a one-letter shortcut; and `\t` is used for $\theta$ so $\tau$ is not given a one-letter shortcut. The $\upsilon$ shortcut is intentionally omitted because the letter is visually close to `u` and `v`. Uppercase Greek $\Pi$ and $\Psi$ are not assigned one-letter shortcuts because `\P` is reserved for probability.
 
-For blackboard-bold letters, only the most commonly used letters are assigned: `\R`, `\N`, `\Z`, `\Q`, `\C`.[^2] 
+For blackboard-bold letters, only the most commonly used letters are assigned: `\R` for $\mathbb{R}$, `\N` for $\mathbb{N}$, and so on.[^2] 
 
 Finally, remaining one-letter macros are allocated to bold Roman letters---to be used for vectors and matrices. These macros provide convenient shortcuts for the Hessian matrix (`\H` for $\mathbf{H}$) and for the Jacobian matrix (`\J` for $\mathbf{J}$) and for a typical matrix (`\M` for $\mathbf{M}$). They also provide convenient shortcuts for a typical vector (`\v` for $\mathbf{v}$) and other typical vector names (`\y` for $\mathbf{y}$ and `\q` for $\mathbf{q}$).
 
-[^2]: Coincidentally, none of these blackboard-bold letters are used for uppercase Greek letters, so there is no conflict here.
+[^2]: Coincidentally, none of the blackboard-bold letters are used for uppercase Greek letters, so there is no conflict here.
 
 ## Command overrides
 
