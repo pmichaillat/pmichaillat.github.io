@@ -37,9 +37,10 @@ The commands introduce the following functionalities:
 + Easily write partial and total derivatives and elasticities
 + Easily type statistical relations (iid variables, various limits)
 + Easily insert accents that scale automatically
-+ Easily type blackboard-bold letters
 + Easily type Greek letters
-+ Easily type uppercase calligraphic letters
++ Easily type blackboard-bold letters
++ Easily type bold letters
++ Easily type calligraphic letters
 
 ---
 
@@ -161,18 +162,14 @@ The commands below are shortcuts to produce accents that scale automatically.
 | Hat       | `\wh{x}` |    $\widehat{x}$     |
 | Tilde     | `\wt{x}` |   $\widetilde{x}$    |
 
+## Complex numbers
 
-## Blackboard-bold letters
+The commands below designate parts of complex numbers.
 
-The commands below are shortcuts to produce blackboard-bold letters.
-
-| Letter | Command |    Output    |
-| :----- | :-----: | :----------: |
-| R      |   `\R`  | $\mathbb{R}$ |
-| N      |   `\N`  | $\mathbb{N}$ |
-| Z      |   `\Z`  | $\mathbb{Z}$ |
-| Q      |   `\Q`  | $\mathbb{Q}$ |
-| C      |   `\C`  | $\mathbb{C}$ |
+|      Part      | Command  |         Output         |
+| :------------- | :------: | :--------------------: |
+| Real part      | `\Re(z)` | $\operatorname{Re}(z)$ |
+| Imaginary part | `\Im(z)` | $\operatorname{Im}(z)$ |
 
 ## Greek letters
 
@@ -202,7 +199,6 @@ The commands below are shortcuts to produce lowercase Greek letters.
 | sigma            |   `\s`  |    $\sigma$   |
 | theta            |   `\t`  |    $\theta$   |
 | vartheta         |  `\vt`  |  $\vartheta$  |
-| upsilon          |   `\u`  |   $\upsilon$  |
 | xi               |   `\x`  |     $\xi$     |
 | zeta             |   `\z`  |    $\zeta$    |
 
@@ -220,6 +216,44 @@ And the commands below are shortcuts to produce uppercase Greek letters.
 | upsilon          |   `\U`  |   $\Upsilon$  |
 | xi               |   `\X`  |     $\Xi$     |
 
+## Blackboard-bold letters
+
+The commands below are shortcuts to produce blackboard-bold letters.
+
+| Letter | Command |    Output    |
+| :----- | :-----: | :----------: |
+| R      |   `\R`  | $\mathbb{R}$ |
+| N      |   `\N`  | $\mathbb{N}$ |
+| Z      |   `\Z`  | $\mathbb{Z}$ |
+| Q      |   `\Q`  | $\mathbb{Q}$ |
+| C      |   `\C`  | $\mathbb{C}$ |
+
+## Bold letters
+
+The commands below are shortcuts to produce bold lowercase letters.
+
+| Letter | Command |    Output    |
+| :----- | :-----: | :----------: |
+| q      |   `\q`  | $\mathbf{q}$ |
+| u      |   `\u`  | $\mathbf{u}$ |
+| v      |   `\v`  | $\mathbf{v}$ |
+| w      |   `\w`  | $\mathbf{w}$ |
+| y      |   `\y`  | $\mathbf{y}$ |
+
+
+The commands below are shortcuts to produce bold uppercase letters.
+
+| Letter | Command |    Output    |
+| :----- | :-----: | :----------: |
+| A      |   `\A`  | $\mathbf{A}$ |
+| B      |   `\B`  | $\mathbf{B}$ |
+| H      |   `\H`  | $\mathbf{H}$ |
+| J      |   `\J`  | $\mathbf{J}$ |
+| K      |   `\K`  | $\mathbf{K}$ |
+| M      |   `\M`  | $\mathbf{M}$ |
+| V      |   `\V`  | $\mathbf{V}$ |
+| W      |   `\W`  | $\mathbf{W}$ |
+| Y      |   `\Y`  | $\mathbf{Y}$ |
 
 ## Calligraphic letters
 
@@ -254,25 +288,29 @@ The commands below are shortcuts to produce calligraphic letters.
 | Y      |  `\Yc`  | $\mathcal{Y}$ |
 | Z      |  `\Zc`  | $\mathcal{Z}$ |
 
-## Complex numbers
+---
 
-The commands below designate parts of complex numbers.
+## Naming logic
 
-|      Part      | Command  |         Output         |
-| :------------- | :------: | :--------------------: |
-| Real part      | `\Re(z)` | $\operatorname{Re}(z)$ |
-| Imaginary part | `\Im(z)` | $\operatorname{Im}(z)$ |
+The shortcut assignment for letters follows a fixed priority: Greek letters first, blackboard-bold letters second, and bold letters last. This keeps the most common symbolic objects available with the shortest commands.
 
+For Greek letters, one-letter shortcuts are used whenever possible by matching the closest Roman letter. When conflicts arise, one symbol keeps the one-letter form and the other is left in standard form: `\p` is used for $\psi$ so $\pi$ is not given a one-letter shortcut; and `\t` is used for $\theta$ so $\tau$ is not given a one-letter shortcut. The $\upsilon$ shortcut is intentionally omitted because the letter is visually close to `u` and `v`. Uppercase Greek $\Pi$ and $\Psi$ are not assigned one-letter shortcuts because `\P` is reserved for probability.
+
+For blackboard-bold letters, only the most commonly used letters are assigned: `\R`, `\N`, `\Z`, `\Q`, `\C`.[^2] 
+
+Finally, remaining one-letter macros are allocated to bold Roman letters---to be used for vectors and matrices. These macros provide convenient shortcuts for the Hessian matrix (`\H` for $\mathbf{H}$) and for the Jacobian matrix (`\J` for $\mathbf{J}$) and for a typical matrix (`\M` for $\mathbf{M}$). They also provide convenient shortcuts for typical vector names (`\y` for $\mathbf{y}$ and `\q` for $\mathbf{q}$).
+
+[^2]: Coincidentally, none of these blackboard-bold letters are used for uppercase Greek letters, so there is no conflict here.
 
 ---
 
 ## Command overrides
 
-This package overrides a small set of text commands that are rarely used in scientific writing to prioritize fast math typing. 
+The short one-letter macros are intended for math-heavy documents and prioritize fast math typing. But they override a small set of LaTeX text commands, which may create conflicts in text-heavy documents, especially with multilingual text workflows. In modern Unicode-first workflows, many users type accented characters and non-English letters directly from the keyboard (for example é, è, ê) instead of using LaTeX text macros. This reduces the practical risk of conflicts from overridden commands—but of course conflicts can still appear in legacy sources, bibliographic data, or documents that rely on accent commands.
 
-Some accent commands no longer produce their usual text output: `\b` (underbar accent), `\c` (cedilla accent), `\d` (dot-under accent), `\i` (dotless i), `\k` (ogonek accent), `\r` (ring accent), `\t` (tie-after accent), and `\u` (breve accent). In addition, some text symbols are overridden: `\P` (paragraph sign ¶) and `\S` (section sign §). Last, this package also overrides a few non-English letters: `\l` (Polish letter ł), `\L` (Polish letter Ł), `\o` (Scandinavian letter ø), `\O` (Scandinavian letter Ø), and `\oe` (ligature œ).
+Some accent commands no longer produce their usual text output: `\b` (underbar accent), `\c` (cedilla accent), `\d` (dot-under accent), `\H` (double-acute accent), `\i` (dotless i), `\k` (ogonek accent), `\r` (ring accent), `\t` (tie-after accent), `\u` (breve accent), and `\v` (caron accent).  A few non-English letters are also overridden: `\l` (Polish letter ł), `\L` (Polish letter Ł), `\o` (Scandinavian letter ø), `\O` (Scandinavian letter Ø), and `\oe` (ligature œ). Finally, some text symbols are overridden: `\P` (paragraph sign ¶) and `\S` (section sign §).
 
-If your document needs these text symbols and accents in their original meaning, please rename these macros on the style file.
+If your document needs these text symbols and accents in their original meaning, please rename these macros in the style file.
 
 ## Command extensions
 
