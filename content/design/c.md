@@ -55,14 +55,14 @@ First, 4:3 slides are better at effectively presenting supporting information. A
 
 Second, lines of text on 16:9 slides are often excessively long. The lines cannot be read at one glance, so reading them distracts from the presentation. 
 
-Third, 4:3 slides are more robust. They are easily readable will all projectors, both new and old. By contrast, the text of 16:9 slides becomes very small when they are displayed on old 4:3 projectors.
+Third, 4:3 slides are more robust. They are easily readable with all projectors, both new and old. By contrast, the text of 16:9 slides becomes very small when they are displayed on old 4:3 projectors.
 
-Fourth, 4:3 slides work better on tablets because most tablets have a 4:3 aspect ratio (iPads for instance). It has becomes very common to read or display slides on tablets, or watch online presentation on tablets. In that context, 4:3 slides display better.
+Fourth, 4:3 slides work better on tablets because most tablets have a 4:3 aspect ratio (iPads for instance). It has become very common to read or display slides on tablets, or watch online presentations on tablets. In that context, 4:3 slides display better.
 
-Sometimes, however, host institutions or conferences require presenters to use 16:9 aspect ratio. The template can be adjusted to produce such slides. Just add the `aspectratio=169` option to the `\documentclass` command. Specifically, to produce a 16:9 presentation, the first line of `presentation.tex` should be:
+Sometimes, however, host institutions or conferences require presenters to use a 16:9 aspect ratio. The template can be adjusted to produce such slides. Just add the `aspectratio=169` option to the `\documentclass` command. Specifically, to produce a 16:9 presentation, the first line of `presentation.tex` should be:
 
 ```tex
-\documentclass[11pt,aspectratio=169,xcolor={dvipsnames},hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},usepdftitle=false]{beamer}
+\documentclass[11pt, aspectratio=169, xcolor={dvipsnames}, hyperref={pdfpagemode=UseNone, hidelinks, pdfdisplaydoctitle=true}, usepdftitle=false]{beamer}
 ```
 
 ---
@@ -71,17 +71,17 @@ Sometimes, however, host institutions or conferences require presenters to use 1
 
 Fonts matter in presentations—just as in papers. The font determines the appearance and readability of the entire presentation. For the presentation's text, the template uses [Source Sans Pro](https://mirror.las.iastate.edu/tex-archive/fonts/sourcesanspro/doc/sourcesanspro.pdf), which is one of the free fonts [recommended by Matthew Butterick](https://practicaltypography.com/free-fonts.html).
 
-Source Sans Pro is a sans-serif font. This is an important feature, as sans-serif fonts are more readable than fonts with serif in presentations. Another advantage of Source Sans Pro is that it is not part of typical slide templates (unlike Fira Sans for instance), so it feels new and fresh. And since Source Sans Pro was designed in the last decade, it also feels modern.
+Source Sans Pro is a sans-serif font. This is an important feature, as sans-serif fonts are more readable than fonts with serifs in presentations. Another advantage of Source Sans Pro is that it is not part of typical slide templates (unlike Fira Sans for instance), so it feels new and fresh. And since Source Sans Pro was designed in the last decade, it also feels modern.
 
 Moreover, the Source Pro family includes a nice monospaced font: [Source Code Pro](https://mirrors.rit.edu/CTAN/fonts/sourcecodepro/doc/sourcecodepro.pdf). The template uses Source Code Pro as monospaced font—giving the monospaced text and regular text a similar look. The monospaced font is used for instance to typeset URLs and code fragments.
 
-Another advantage of Source Sans Pro is that it comes with a broad range of weight. For instance, the template uses the semibold font weight in places. To activate the semibold font instead of the usual bold font, use `\sbseries` and `\textsb{}` instead of `\bfseries` and `\textbf{}`.
+Another advantage of Source Sans Pro is that it comes with a broad range of weights. For instance, the template uses the semibold font weight in places. To activate the semibold font instead of the usual bold font, use `\sbseries` and `\textsb{}` instead of `\bfseries` and `\textbf{}`.
 
 ---
 
 ## Math fonts
 
-LaTeX uses one font for text and other fonts for math. For consistency, the template sticks with [Source Sans Pro for roman math](https://ctan.mirrors.hoobly.com/macros/latex/contrib/mathastext/mathastext.pdf). It also uses Source Sans Pro for all the digits in math and basic punctuation (such as `.`, `?`, `%`, `;`, and `,`), so very basic mathematical expressions look the same in math and text. For example, the commands `3.5\%` and `$3.5\%$` produce the same results.
+LaTeX uses one font for text and other fonts for math. For consistency, the template sticks with [Source Sans Pro for roman math](https://ctan.mirrors.hoobly.com/macros/latex/contrib/mathastext/mathastext.pdf). It also uses Source Sans Pro for all the digits in math and basic punctuation (such as `.`, `?`, `%`, `;`, and `,`), so very basic mathematical expressions look the same in math and text. For example, the commands `3.5\%` and `$3.5\%$` produce the same result.
 
 ### Greek letters
 
@@ -103,9 +103,7 @@ In the template, it is possible to bold any mathematical character (except black
 
 ### Mathematical symbols
 
-Finally, the template use the [MnSymbol font](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/fonts/mnsymbol/MnSymbol.pdf) for the symbols used in math mode. The default Computer Modern symbols are too light and thin in comparison to the Source Sans Pro and Euler letters, and as a result do not mix well with them. The advantage of the MnSymbol font is that its symbols are thicker, so they mix better with the letters. The symbols are also less curly, which gives them a more modern feel.[^1] 
-
-[^1]: The `MnSymbol` package is incompatible with the `amssymb` package. So it is not possible to load `amssymb` with the template. Neither should it be required since `MnSymbol` provides a vast collection of symbols.
+Finally, the template uses the [MnSymbol font](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/fonts/mnsymbol/MnSymbol.pdf) for the symbols used in math mode. The default Computer Modern symbols are too light and thin in comparison to the Source Sans Pro and Euler letters, and as a result do not mix well with them. The advantage of the MnSymbol font is that its symbols are thicker, so they mix better with the letters. The symbols are also less curly, which gives them a more modern feel.
 
 ---
 
@@ -131,7 +129,7 @@ The information on the title slide, section titles, frame titles, and regular te
 
 ## Color scheme
 
-[As Butterick says](https://practicaltypography.com/presentations.html), color should be used with restraint. A lot of colors, especially bright ones, is distracting. To reduce distraction, the template only uses grayscale. The text is in dark gray (85% black), not complete black, to avoid an uncomfortable degree of contrast. The list items—bullet points and numbers—are in lighter gray, to blend in the background.[^2] Colors are reserved for figures and text alerts. 
+[As Butterick says](https://practicaltypography.com/presentations.html), color should be used with restraint. A lot of colors, especially bright ones, are distracting. To reduce distraction, the template only uses grayscale. The text is in dark gray (85% black), not complete black, to avoid an uncomfortable degree of contrast. The list items—bullet points and numbers—are in lighter gray, to blend into the background.[^2] Colors are reserved for figures and text alerts. 
 
 The typical, bright Beamer bullet points, headers, and footers, should be avoided as they are distracting.
 
@@ -141,15 +139,15 @@ The typical, bright Beamer bullet points, headers, and footers, should be avoide
 
 ## No frills at the periphery
 
-A [typical slide produced with Beamer](https://deic.uab.cat/~iblanes/beamer_gallery/large/Warsaw-default-default-17.png) might includes the following elements:
+A [typical slide produced with Beamer](https://deic.uab.cat/~iblanes/beamer_gallery/large/Warsaw-default-default-17.png) might include the following elements:
 
 + Outline of the talk above the title
-+ Small navigation buttons in the bottom right-hand corner
++ Tiny navigation buttons in the bottom right-hand corner
 + Names of the authors and title of the talk at the bottom of the slide
 
 Such clutter distracts listeners and takes their attention away from the main message of the slide—while conveying no useful information. The audience does not need that information in the middle of the talk. The slides produced by the template are devoid of such frills. 
 
-In particular, the pesky navigation buttons are eliminated by placing 
+In particular, the pesky tiny navigation buttons are eliminated by placing 
 `\setbeamertemplate{navigation symbols}{} ` in `presentation.sty`.
 
 ---
@@ -158,7 +156,7 @@ In particular, the pesky navigation buttons are eliminated by placing
 
 By default the slides are not numbered. This seems better for most presentations. Displaying slide numbers does nothing but makes the audience jittery at the thought of the sheer number of slides that remain to be covered in the talk.
 
-But for anyone who wants to share the slide deck for comments, or who gives a presentation specifically to collect feedback, it might be helpful to have slides numbers—so the comments can be precisely linked to a slide. To introduce page numbers on slide, just uncomment the line `\setbeamertemplate{footline}[frame number]` in `presentation.sty`.
+But for anyone who wants to share the slide deck for comments, or who gives a presentation specifically to collect feedback, it might be helpful to have slide numbers—so the comments can be precisely linked to a slide. To introduce page numbers on slides, just uncomment the line `\setbeamertemplate{footline}[frame number]` in `presentation.sty`.
 
 Once slide numbers are inserted at the bottom of all slides, it is possible to remove the slide number from the title slide. To do that, use `\frame[plain]{\titlepage}` instead of `\frame{\titlepage}` in `presentation.tex`. The page numbers will start appearing on the second slide.
 
@@ -166,11 +164,12 @@ Once slide numbers are inserted at the bottom of all slides, it is possible to r
 
 ## Title slide
 
-The title slide avoids centered text and is otherwise pretty minimalist. The title is in large font (21pt), in small caps, and accentuated by a black line. Authors and dates are in slightly larger font than the text (12pt). The title slide also includes the permanent URL of the paper being presented. When the presentation is posted online, the URL allows readers to go from the presentation directly to the paper. The URL is displayed in small font (9pt) and gray so is not too obtrusive.
+The title slide avoids centered text and is otherwise pretty minimalist. The title is in large font (21pt), in small caps, and accentuated by a black line. Authors and dates are in slightly larger font than the text (12pt). The title slide also includes the URL of the paper being presented. When the presentation is posted online, the URL allows readers to go from the presentation directly to the paper. The URL is displayed in small font (9pt) and gray so it is not too obtrusive.
 
-+ To specify the presentation authors, use the command `\information{First Author, Second Author}`. 
-+ To add the location of the presentation or a date to the title page, add a second argument to the command:  `\information{First Author, Second Author}{Location -- Date}`.
-+ The command takes an optional argument to specify the paper URL: `\information[URL]{First Author, Second Author}{Location -- Date}`. 
++ To specify the presentation title, use: `\title{Presentation title}`
++ To specify the presentation authors, use: `\author{Authors}`
++ To specify the location or date of the presentation, use:  `\date{Location/Date}`
++ To specify the paper URL, use: `\paperurl{URL}`. This command is optional—the title slide can be produced without it. 
 
 ---
 
@@ -275,7 +274,7 @@ Tables are centered by default, and fill the slide. The template is also designe
 \frametitle{Table caption}
 \begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccc}
 \toprule
- & Column 1 & Column 2 & Column 3\\
+ & Column A & Column B & Column C\\
 \midrule
 Line 1 & A  & B & C \\
 Line 2 & D & E & F \\ 
@@ -290,9 +289,10 @@ Just like with figures, it is possible to add a short note below the table using
 ```tex
 \begin{frame}
 \frametitle{Table caption}
+\begin{table}
 \begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccc}
 \toprule
- & Column 1 & Column 2 & Column 3\\
+ & Column A & Column B & Column C\\
 \midrule
 Line 1 & J & K & L \\ 
 Line 2 & M & N & O \\ 
@@ -307,7 +307,7 @@ Line 2 & M & N & O \\
 
 ## Section slide
 
-The template has a command to divide the presentation into sections, which adds structure to longer talks. To produces the section slide, just use the following code:
+The template has a command to divide the presentation into sections, which adds structure to longer talks. To produce the section slide, just use the following code:
 
 ```tex
 \begin{frame}
@@ -329,13 +329,12 @@ The template comes with a set of shortcuts to display common pictograms in text 
 + `\so` gives $\Rightarrow$
 + `\up` gives ↑
 + `\down` gives ↓
-+ `\flat` gives →
 
 ---
 
 ## Navigation buttons
 
-The template comes with navigation buttons. The buttons have white background, just like the slides. The button text is in light gray and small font (9pt). The buttons blend in the slides, unlike the typical, bright Beamer buttons that stand out and distract from the rest of the content.
+The template comes with navigation buttons. The buttons have white background, just like the slides. The button text is in light gray and small font (9pt). The buttons blend into the slides, unlike the typical, bright Beamer buttons that stand out and distract from the rest of the content.
 
 Navigation buttons should be used with restraint as hopping from slide to slide with buttons disrupts the flow of the presentation. But buttons are sometimes helpful to go to key backup material.
 
@@ -363,6 +362,6 @@ Each successive slide is automatically numbered with an Arabic number in square 
 
 ## Last slide
 
-The template also come with a last slide, which is a just a gray square, and which is called with the command `\lastslide`. The last slide can be used instead of conclusion slides—to say thank you, to recap what the presentation showed, and to discuss next steps or related projects.
+The template also comes with a last slide, which is just a gray square, and which is called with the command `\lastslide`. The last slide can be used instead of conclusion slides—to say thank you, to recap what the presentation showed, and to discuss next steps or related projects.
 
 Conclusion slides are generally ineffective and even mildly upsetting. The audience has been listening for an hour or an hour and a half. They know what they have just been told. At that point they are happy to go on with their day without having to hear again a summary of the same material.

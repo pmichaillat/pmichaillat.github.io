@@ -1,6 +1,6 @@
 ---
 title: "Minimalist LaTeX Template for Academic Papers" 
-date: 2026-04-02
+date: 2026-04-13
 url: /a/
 aliases: 
     - /d2/
@@ -43,7 +43,7 @@ The template produces an academic paper with [LaTeX](https://www.latex-project.o
 + Headings are designed so the paper is easy to scan.
 + Formatting is specified for theorems, propositions, lemmas, definitions, assumptions, corollaries, remarks, and proofs.
 + Formatting is specified for figures and tables.
-+ Formatting is specified for appendix and a separate online appendix.
++ Formatting is specified for the appendix and a separate online appendix.
 + Formatting is specified for references.
 + All labels are set to make cross-referencing easy.
 
@@ -61,7 +61,7 @@ Moreover, the Source Pro family includes a nice monospaced font: [Source Code Pr
 
 ## Math fonts
 
-LaTeX uses one font for text and other fonts for math. For consistency, the template sticks with [Source Serif Pro for roman math](https://ctan.mirrors.hoobly.com/macros/latex/contrib/mathastext/mathastext.pdf). It also uses Source Serif Pro for all the digits in math and basic punctuation (such as `.`, `?`, `%`, `;`, and `,`), so very basic mathematical expressions look the same in math and text. For example, the commands `3.5\%` and `$3.5\%$` produce the same results.
+LaTeX uses one font for text and other fonts for math. For consistency, the template sticks with [Source Serif Pro for roman math](https://ctan.mirrors.hoobly.com/macros/latex/contrib/mathastext/mathastext.pdf). It also uses Source Serif Pro for all the digits in math and basic punctuation (such as `.`, `?`, `%`, `;`, and `,`), so very basic mathematical expressions look the same in math and text. For example, the commands `3.5\%` and `$3.5\%$` produce the same result.
 
 ### Greek letters
 
@@ -75,7 +75,7 @@ The template also uses the [Euler font](https://ctan.math.utah.edu/ctan/tex-arch
 
 ### Blackboard-bold letters
 
-The template uses the [Fourier font](https://mirror.mwt.me/ctan/macros/latex/contrib/mathalpha/doc/mathalpha-doc.pdf) as blackboard-bold font. It is cleaner than the default blackboard-bold font as it does not have serif. And it is slightly thicker than the default font so it matches well with Source Serif Pro and the Euler letters. The blackboard-bold letters are produced with the `\mathbb{}` command. 
+The template uses the [Fourier font](https://mirror.mwt.me/ctan/macros/latex/contrib/mathalpha/doc/mathalpha-doc.pdf) as blackboard-bold font. It is cleaner than the default blackboard-bold font as it does not have serifs. And it is slightly thicker than the default font so it matches well with Source Serif Pro and the Euler letters. The blackboard-bold letters are produced with the `\mathbb{}` command. 
 
 ### Bold characters
 
@@ -83,7 +83,7 @@ In the template, it is possible to bold any mathematical character (except black
 
 ### Mathematical symbols
 
-Finally, the template use the [MnSymbol font](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/fonts/mnsymbol/MnSymbol.pdf) for the symbols used in math mode. The default Computer Modern symbols are too light and thin in comparison to the Source Serif Pro and Euler letters, and as a result do not mix well with them. The advantage of the MnSymbol font is that its symbols are thicker, so they mix better with the letters. The symbols are also less curly, which gives them a more modern feel.[^1] 
+Finally, the template uses the [MnSymbol font](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/fonts/mnsymbol/MnSymbol.pdf) for the symbols used in math mode. The default Computer Modern symbols are too light and thin in comparison to the Source Serif Pro and Euler letters, and as a result do not mix well with them. The advantage of the MnSymbol font is that its symbols are thicker, so they mix better with the letters. The symbols are also less curly, which gives them a more modern feel.[^1] 
 
 [^1]: The `MnSymbol` package is incompatible with the `amssymb` package. So it is not possible to load `amssymb` with the template. Neither should it be required since `MnSymbol` provides a vast collection of symbols.
 
@@ -97,19 +97,19 @@ The font size is 11pt, as [recommended by Butterick](https://practicaltypography
 
 ## Line spacing
 
-The line spacing is 150% of the point size. This is in line with [Butterick's advice](https://practicaltypography.com/line-spacing.html). Such spacing avoids that the text is too cramped or too spread out, and makes readings more comfortable.
+The line spacing is 150% of the point size. This is in line with [Butterick's advice](https://practicaltypography.com/line-spacing.html). Such spacing avoids that the text is too cramped or too spread out, and makes reading more comfortable.
 
 ---
 
 ## Text margins
 
-The left and right margins are 1.3 inch. With such margins, there are always 85–90 characters per line, just as [Butterick recommends](https://practicaltypography.com/line-length.html). Longer lines are harder to read. The top margin is 1 inch, which is standard. The bottom margin is 1.2 inch so the text [appears centered in the page](https://practicaltypography.com/page-margins.html). 
+The left and right margins are 1.3 inches. With such margins, there are always 85–90 characters per line, just as [Butterick recommends](https://practicaltypography.com/line-length.html). Longer lines are harder to read. The top margin is 1 inch, which is standard. The bottom margin is 1.2 inches so the text [appears centered in the page](https://practicaltypography.com/page-margins.html). 
 
 ---
 
 ## Color scheme
 
-[As Butterick says](https://practicaltypography.com/color.html), it is better to use color with restraint. A lot of colors, especially bright ones, is distracting. Furthermore, many colors are hard to read when they are printed in black and white. To reduce distraction, and to have a paper that prints well, the template only uses the color black for text. In particular hyperlinks—to sections, references, equations, figures, tables, results, and footnotes—are not colored. 
+[As Butterick says](https://practicaltypography.com/color.html), it is better to use color with restraint. A lot of colors, especially bright ones, are distracting. Furthermore, many colors are hard to read when they are printed in black and white. To reduce distraction, and to have a paper that prints well, the template only uses the color black for text. In particular hyperlinks—to sections, references, equations, figures, tables, results, and footnotes—are not colored. 
 
 The typical, bright boxes surrounding hyperlinks should be avoided as they are distracting without adding any information. At this point everyone knows that LaTeX documents include such hyperlinks.
 
@@ -121,7 +121,7 @@ The template's title page contains all the required information: title, authors,
 
 The title is bold, centered, and with a 24pt font size. Authors and date are centered and 12pt. The abstract is 11pt. Affiliations and acknowledgements are 9pt, just like the footnotes in the text.
 
-An URL for the paper can be placed at the bottom of the title page by adding the command `\available{URL}` to the preamble of the document. Such URL allows readers to go easily to the latest version of the paper. With an optional argument, the command indicates where the paper has been published: `\available[Journal]{URL}` places both the journal name and URL at the bottom of the title page. The URL and journal name are displayed in small font (9pt) and gray so they are not too obtrusive.
+A URL for the paper can be placed at the bottom of the title page with the command `\paperurl{URL}`. Such URL allows readers to go easily to the latest version of the paper. With an optional argument, the command indicates where the paper has been published: `\paperurl[Journal]{URL}` places both the journal name and URL at the bottom of the title page. The URL and journal name are displayed in small font (9pt) and gray so they are not too obtrusive.
 
 ---
 
@@ -135,9 +135,9 @@ The template does not tailor formatting for subsubsections and smaller headings.
 
 ## Theorems and other results
 
-As is standard, the text of theorems is in italic—providing subtle emphasis. The theorem label is in small caps—again providing subtle emphasis. For consistency, all other types of results—propositions, lemmas, assumptions, definitions, and so on—are formatted just like theorems. Each type of results gets its own counter.
+As is standard, the text of theorems is in italic—providing subtle emphasis. The theorem label is in small caps—again providing subtle emphasis. For consistency, all other types of result—propositions, lemmas, assumptions, definitions, and so on—are formatted just like theorems. Each type of result gets its own counter.
 
-The proof label is also in small—providing subtle emphasis. The proof text uses the normal text font.
+The proof label is also in small caps—providing subtle emphasis. The proof text uses the normal text font.
 
 Proofs and results are separated from surrounding text with a slight vertical space.
 
@@ -157,11 +157,11 @@ The template comes with the following predefined environments:
 
 ## Figures
 
-A figure should be placed at the top of the page where it is first mentioned—not in the middle of the page, and especially not at the end of the paper. Figure panels are centered by default. The figure label is in small caps—just like the theorem label. The figure caption is placed bellow the figure. An advantage of avoiding colors in the text is that the colors in figures stand out.
+A figure should be placed at the top of the page where it is first mentioned—not in the middle of the page, and especially not at the end of the paper. Figure panels are centered by default. The figure label is in small caps—just like the theorem label. The figure caption is placed below the figure. An advantage of avoiding colors in the text is that the colors in figures stand out.
 
-The figure environment is set up so it is easy to reference a figure (figure 1) or directly a panel in a figure (figure 1A). 
+The figure environment is set up so it is easy to reference a figure (figure 2) or directly a panel in a figure (figure 2A). With the code below, a specific panel in a figure can be referenced with `figure \ref{f:a}`, which produces figure 2A, and the entire figure can be referenced with `figure \ref{f:2}`, which produces figure 2.
 
-With the command `\note{Text}`, it is easy to enter a note below the figure caption with details about the figure and sources. The note's font size is 9pt, just like footnotes.
+With the command `\note{Text}`, it is easy to enter a note below the figure caption with details about the figure and sources. The note's font size is 9pt, just like footnotes. An optional label can also be added before the note text: `\note[Note]{Text}` or `\note{[Source]Text}`.
 
 The code for a basic figure with one large panel is the following:
 
@@ -170,36 +170,19 @@ The code for a basic figure with one large panel is the following:
 \includegraphics[scale=0.3]{figure.pdf}
 \caption{Figure caption}
 \note{Note for figure.}
-\label{1}\end{figure}
+\label{f:1}\end{figure}
 ```
 
 The code for a figure with two panels is the following:
 
 ```LaTeX
 \begin{figure}[t]
-\subcaptionbox{Panel caption\label{1}}{\includegraphics[scale=0.2]{1.pdf}}\hfill
-\subcaptionbox{Panel caption\label{2}}{\includegraphics[scale=0.2]{2.pdf}}
+\subcaptionbox{Panel caption\label{f:a}}{\includegraphics[scale=0.2]{1.pdf}}\hfill
+\subcaptionbox{Panel caption\label{f:b}}{\includegraphics[scale=0.2]{2.pdf}}
 \caption{Figure caption}
 \note[Source]{Source for the figure.}
-\label{3}\end{figure}
+\label{f:2}\end{figure}
 ```
-
-Finally, the code for a figure with six panels is the following:
-
-```LaTeX
-\begin{figure}[p]
-\subcaptionbox{Panel caption\label{1}}{\includegraphics[scale=0.2]{1.pdf}}\hfill
-\subcaptionbox{Panel caption\label{2}}{\includegraphics[scale=0.2]{2.pdf}}\\
-\subcaptionbox{Panel caption\label{3}}{\includegraphics[scale=0.2]{3.pdf}}\hfill
-\subcaptionbox{Panel caption\label{4}}{\includegraphics[scale=0.2]{4.pdf}}\\
-\subcaptionbox{Panel caption\label{5}}{\includegraphics[scale=0.2]{5.pdf}}\hfill
-\subcaptionbox{Panel caption\label{6}}{\includegraphics[scale=0.2]{6.pdf}}
-\caption{Figure caption}
-\note[Note]{Note for figure.}
-\label{7}\end{figure}
-```
-
-With the above code, a specific panel in a figure can be referenced with `figure \ref{1}`, which produces figure 1A, and the entire figure can be referenced with `figure \ref{7}`, which produces figure 1.
 
 ---
 
@@ -216,18 +199,16 @@ The code for a basic table is the following:
 \caption{Table caption}
 \begin{tabular*}{\textwidth}[]{p{3.3cm}@{\extracolsep\fill}cccc}
 \toprule
-& \multicolumn{2}{c}{Columns 1–2} & \multicolumn{2}{c}{Columns 3–4}\\
-\cmidrule{2-3}\cmidrule{4-5}
-& Column 1 &  Column 2 &  Column 3  &  Column 4 \\
+& Column A &  Column B &  Column C  &  Column D \\
 \midrule
-Line 1: & A & B & C  & d \\
-Line 2: & E &  F & G  & H   \\
+Line 1: & A & B & C  & S \\
+Line 2: & E &  F & G & H   \\
 Line 3: & K & V & P  & K  \\
 Line 4: & J & M & N  & K  \\
 \bottomrule
 \end{tabular*}
 \note{Note for table.}
-\label{1}\end{table}
+\label{t:1}\end{table}
 ```
 
 The code for a more sophisticated table with panels is the following:
@@ -237,7 +218,9 @@ The code for a more sophisticated table with panels is the following:
 \caption{Table caption}
 \begin{tabular*}{\textwidth}[]{p{3.3cm}@{\extracolsep\fill}ccccc}
 \toprule
-& Column 1 &  Column 2 &  Column 3  &  Column 4 &  Column 5 \\
+& \multicolumn{2}{c}{Columns A–B} & \multicolumn{3}{c}{Columns C–E}\\
+\cmidrule{2-3}\cmidrule{4-6}
+& Column A &  Column B &  Column C  &  Column D &  Column E \\
 \midrule
 \multicolumn{6}{l}{A. First panel}\\
 Line 1: & A & C & V  & 9\% & 7.3\% \\
@@ -249,15 +232,15 @@ Line 4: & N & Y & T  & L & T \\
 Line 5: & G & S & Q  & P & Q \\
 \bottomrule
 \end{tabular*}
-\note{Note for table.}
-\label{1}\end{table}
+\note[Source]{Source for the table.}
+\label{t:2}\end{table}
 ```
 
 ---
 
 ## Lists
 
-Itemized and numbered list are customized to fit well with the surrounding text. The text after the items is aligned with indented text (the start of a paragraph). All items (bullet points and numbers) are grey so as not to be too prominent. Vertical spacing is slightly more than line spacing so the different items are clearly visible.
+Itemized and numbered lists are customized to fit well with the surrounding text. The text after the items is aligned with indented text (the start of a paragraph). All items (bullet points and numbers) are gray so as not to be too prominent. Vertical spacing is slightly more than line spacing so the different items are clearly visible.
 
 ---
 
@@ -320,7 +303,7 @@ The template is perfectly compatible with [arXiv](https://arxiv.org/). In partic
 A paper based on the template can be submitted to arXiv in just three steps once it has been compiled with pdfTeX:
 
 1. Collect the four required files into a folder: the source file `paper.tex`, the bibliography file `paper.bbl`, the style file `paper.sty`, and the figure file `figures.pdf`. 
-2. In the preamble of the source file `paper.tex`, replace `\bibliographystyle{paper}` by `\pdfoutput=1` on line 3.[^2]
+2. In the preamble of the source file `paper.tex`, remove `\bibliographystyle{paper}`.[^2]
 3. Zip the folder and upload the zipped file to arXiv.
 
-[^2]: The `\bibliographystyle{paper}` command is not needed because arXiv produces the bibliography directly from the `paper.bbl` file. The `\pdfoutput=1` is required because the paper [is compiled with pdfTeX](https://info.arxiv.org/help/submit_tex.html#pdflatex).
+[^2]: The `\bibliographystyle{paper}` command is not needed because arXiv produces the bibliography directly from the `paper.bbl` file.

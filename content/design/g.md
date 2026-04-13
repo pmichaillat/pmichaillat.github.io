@@ -36,7 +36,7 @@ The template produces an academic book with [LaTeX](https://www.latex-project.or
 - No colors are used in the text (only black) to reduce distraction and so the book prints well.
 - Margins, spacing, and font size are set for comfortable reading.
 - Headings and captions are designed so the book is easy to scan.
-- Formatting is specified for parts, chapters, sections, subsections, and run‑in paragraphs.
+- Formatting is specified for parts, chapters, sections, subsections, and run-in paragraphs.
 - Formatting is specified for theorems, propositions, lemmas, definitions, assumptions, corollaries, remarks, and proofs.
 - Formatting is specified for figures and tables.
 - Formatting is specified for appendices, bibliography, and index.
@@ -56,7 +56,7 @@ Moreover, the Source Pro family includes a nice monospaced font: [Source Code Pr
 
 ## Math fonts
 
-LaTeX uses one font for text and other fonts for math. For consistency, the template continues to use [Source Serif Pro for roman math](https://ctan.mirrors.hoobly.com/macros/latex/contrib/mathastext/mathastext.pdf). It also uses Source Serif Pro for all the digits in math and basic punctuation (such as `.`, `?`, `%`, `;`, and `,`), so very basic mathematical expressions look the same in math and text. For example, the commands `3.5\%` and `$3.5\%$` produce the same results.
+LaTeX uses one font for text and other fonts for math. For consistency, the template continues to use [Source Serif Pro for roman math](https://ctan.mirrors.hoobly.com/macros/latex/contrib/mathastext/mathastext.pdf). It also uses Source Serif Pro for all the digits in math and basic punctuation (such as `.`, `?`, `%`, `;`, and `,`), so very basic mathematical expressions look the same in math and text. For example, the commands `3.5\%` and `$3.5\%$` produce the same result.
 
 ### Greek letters
 
@@ -90,19 +90,19 @@ The font size used throughout the book is 11pt, as [recommended by Butterick](ht
 
 ## Line spacing
 
-The line spacing is 150% of the point size. This is in line with [Butterick's advice](https://practicaltypography.com/line-spacing.html). Such spacing avoids that the text is too cramped or too spread out, and makes readings comfortable over long stretches of text.
+The line spacing is 150% of the point size. This is in line with [Butterick's advice](https://practicaltypography.com/line-spacing.html). Such spacing avoids that the text is too cramped or too spread out, and makes reading comfortable over long stretches of text.
 
 ---
 
 ## Text margins
 
-The left and right margins are 1.3 inch. With such margins, there are always 85–90 characters per line, just as [Butterick recommends](https://practicaltypography.com/line-length.html). Longer lines are harder to read. The top margin is 1 inch, which is standard. The bottom margin is slightly larger, at 1.2 inch, so the text [appears centered in the page](https://practicaltypography.com/page-margins.html). 
+The left and right margins are 1.3 inches. With such margins, there are always 85–90 characters per line, just as [Butterick recommends](https://practicaltypography.com/line-length.html). Longer lines are harder to read. The top margin is 1 inch, which is standard. The bottom margin is slightly larger, at 1.2 inches, so the text [appears centered in the page](https://practicaltypography.com/page-margins.html). 
 
 ---
 
 ## Color scheme
 
-[As Butterick says](https://practicaltypography.com/color.html), colors, especially bright ones, are distracting. Furthermore, many colors are hard to read once they are printed in black and white. To avoid these issues, the template only uses the color black for text. In particular hyperlinks—to parts, chapters, sections, references, equations, figures, tables, and so on—are not colored. The typical, bright boxes surrounding hyperlinks in LaTeX should be avoided at all cost as they are distracting without adding any information. At this point everyone knows that LaTeX documents include such hyperlinks.
+[As Butterick says](https://practicaltypography.com/color.html), colors, especially bright ones, are distracting. Furthermore, many colors are hard to read once they are printed in black and white. To avoid these issues, the template only uses the color black for text. In particular hyperlinks—to parts, chapters, sections, references, equations, figures, tables, and so on—are not colored. The typical, bright boxes surrounding hyperlinks in LaTeX should be avoided as they are distracting without adding any information. At this point everyone knows that LaTeX documents include such hyperlinks.
 
 ---
 
@@ -215,7 +215,7 @@ The template's headings follow [Butterick's advice](https://practicaltypography.
 - Chapter headings use 20pt bold type. The heading is preceded by the chapter label, `chapter X.`, which is set in small caps.
 - Section headings use 12pt bold type. The heading is simply preceded by the section number, `X.Y.`.
 - Subsection headings use 11pt bold type. The heading is simply preceded by the subsection number, `X.Y.Z.`.
-- Paragraph headings are run‑in, in italic, so they are noticeable but not too prominent.
+- Paragraph headings are run-in, in italic, so they are noticeable but not too prominent.
 
 These headings are produced with the usual commands: `\part{}`, `\chapter{}`, `\section{}`, `\subsection{}`, and `\paragraph{}`. The template does not tailor formatting for subsubsections and smaller headings. Such small headings signal that the book's organization is quite messy: I think that they should be avoided.
 
@@ -238,9 +238,9 @@ The template uses author-year citation style through the `natbib` package. All `
 
 ## Theorems and other results
 
-As is standard, the text of theorems is in italic—providing subtle emphasis. The theorem label is in small caps—again providing subtle emphasis. For consistency, all other types of results—propositions, lemmas, assumptions, definitions, and so on—are formatted just like theorems. Each type of results gets its own counter that resets every chapter and every appendix. So in Chapter 3 you can have Theorem 3.1, Proposition 3.1, Lemma 3.1, Lemma 3.2, Lemma 3.3 and so on in parallel.
+As is standard, the text of theorems is in italic—providing subtle emphasis. The theorem label is in small caps—again providing subtle emphasis. For consistency, all other types of results—propositions, lemmas, assumptions, definitions, and so on—are formatted just like theorems. Each type of result gets its own counter that resets every chapter and every appendix. So in Chapter 3 you can have Theorem 3.1, Proposition 3.1, Lemma 3.1, Lemma 3.2, Lemma 3.3, and so on in parallel.
 
-The proof label is also in small—providing subtle emphasis. The proof text uses the normal text font.
+The proof label is also in small caps—providing subtle emphasis. The proof text uses the normal text font.
 
 Proofs and results are separated from surrounding text with a slight vertical space.
 
@@ -262,7 +262,7 @@ The template comes with the following predefined environments:
 
 The template is configured so that figures typically appear at the top of the page where they are first mentioned. The template uses black-and-white figures for consistency with the text and for print. Figure panels are centered by default. The figure label is in small caps—just like the chapter and result labels. The figure caption is placed below the figure.
 
-The figure environment is set up so it is easy to reference a figure (figure 1.1) or directly a panel in a figure (figure 1.1A). With the code below, a specific panel in a figure can be referenced with `figure \ref{panel1}`, which produces figure 1.1A, and the entire figure can be referenced with `figure \ref{figure2}`, which produces figure 1.1.
+The figure environment is set up so it is easy to reference a figure (figure 1.1) or directly a panel in a figure (figure 1.1A). With the code below, a specific panel in a figure can be referenced with `figure \ref{f:panel1}`, which produces figure 1.1A, and the entire figure can be referenced with `figure \ref{f:figure2}`, which produces figure 1.1.
 
 With the command `\note{Text}`, it is easy to enter a note below the figure caption with details about the figure and sources. The note's font size is 9pt, just like footnotes. An optional label can also be added before the note text, using `\note[Note]{Text}` or `\note{[Source]Text}`.
 
@@ -302,9 +302,9 @@ The code for a basic table is the following:
 \caption{Table caption}
 \begin{tabular*}{\textwidth}[]{p{3.3cm}@{\extracolsep\fill}cccc}
 \toprule
-& \multicolumn{2}{c}{Columns 2–3} & \multicolumn{2}{c}{Columns 4–5}\\
+& \multicolumn{2}{c}{Columns A–B} & \multicolumn{2}{c}{Columns C–D}\\
 \cmidrule{2-3}\cmidrule{4-5}
-& Column 1 &  Column 2 &  Column 3  &  Column 4 \\
+& Column A &  Column B &  Column C  &  Column D \\
 \midrule
 Line 1: & A & B & C  & D \\
 Line 2: & E &  F & G  & H   \\
@@ -320,7 +320,7 @@ Line 4: & J & M & N  & K  \\
 
 ## Lists
 
-Itemized and numbered lists are customized to fit well with the surrounding text. The text after the items is aligned with indented text (the start of a paragraph). All items (bullet points and numbers) are grey so as not to be too prominent. Spacing is slightly more than line spacing so the different items are clearly visible.
+Itemized and numbered lists are customized to fit well with the surrounding text. The text after the items is aligned with indented text (the start of a paragraph). All items (bullet points and numbers) are gray so as not to be too prominent. Spacing is slightly more than line spacing so the different items are clearly visible.
 
 ---
 
@@ -334,7 +334,7 @@ As usual, all counters—for equations, figures, tables, theorems, and so on—a
 
 ## Bibliography
 
-The bibliography has a font size of 10pt, with the same spacing as the text. Each individual reference uses a hanging indent for emphasis. The bibliography entry automatically appears in the table of content.
+The bibliography has a font size of 10pt, with the same spacing as the text. Each individual reference uses a hanging indent for emphasis. The bibliography entry automatically appears in the table of contents.
 
 The references are formatted according to the guidelines from the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/home.html), which are followed by many scientific publishers.
 

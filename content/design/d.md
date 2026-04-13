@@ -19,7 +19,7 @@ disableAnchoredHeadings: false
 
 ---
 
-The template produces a collection of scientific figures using [MATLAB](hhttps://matlab.mathworks.com). The figures follow best practices for the visual display of quantitative information—with the aim to convey quantitative information effectively on screen and in print.
+The template produces a collection of scientific figures using [MATLAB](https://matlab.mathworks.com). The figures follow best practices for the visual display of quantitative information—with the aim to convey quantitative information effectively on screen and in print.
 
 ---
 
@@ -34,10 +34,10 @@ The template produces a collection of scientific figures using [MATLAB](hhttps:/
 
 + The font on the axes and annotations is Helvetica.
 + Font sizes and line thicknesses are set for comfortable reading once the figures are inserted in a paper or book.
-+ A collections of color palettes is provided, both for qualitative displays and sequential displays. 
++ A collection of color palettes is provided, both for qualitative displays and sequential displays. 
 + The template produces a collection of basic figures using different plot types, including time series plots and scatter plots.
 + Figure dimensions are set to minimize the white space around the content.
-+ The figure aspect ratio is 4:3 so the figure can easily be annotated with a presentation software. On a Mac, the figures can be annotated with Keynote. This procedure is more user friendly, and more flexible, than annotating the figures directly in MATLAB.
++ The figure aspect ratio is 4:3 so the figure can easily be annotated with a presentation software. On a Mac, the figures can be annotated with Keynote. This procedure is more user-friendly, and more flexible, than annotating the figures directly in MATLAB.
 
 --- 
 
@@ -45,13 +45,13 @@ The template produces a collection of scientific figures using [MATLAB](hhttps:/
 
 The default figures produced by MATLAB do not look particularly good, especially once they are inserted in papers or presentations.  The lines are too thin, the font size is too small, the color palette has been overused, and so on. As a result, they do not convey information as effectively as they could.
 
-The goal of this template is to produce figures that can be easily inserted into papers and presentations and that convey information effectively. The template attempts to follow the data visualization best practices developed by [Edward Tufte](https://www.edwardtufte.com/tufte/) in [*The Visual Display of Quantitative Information*](https://www.edwardtufte.com/tufte/books_vdqi). This book is the classic reference on statistical graphics, charts, and tables. Using many examples, it explains how to display data for precise, effective, and quick analysis. One of the main message of the book is to maximize the data-ink ratio—that is, to minimize as much as possible ink that does not convey information.
+The goal of this template is to produce figures that can be easily inserted into papers and presentations and that convey information effectively. The template attempts to follow the data visualization best practices developed by [Edward Tufte](https://www.edwardtufte.com/tufte/) in [*The Visual Display of Quantitative Information*](https://www.edwardtufte.com/tufte/books_vdqi). This book is the classic reference on statistical graphics, charts, and tables. Using many examples, it explains how to display data for precise, effective, and quick analysis. One of the main messages of the book is to maximize the data-ink ratio—that is, to minimize as much as possible ink that does not convey information.
 
 --- 
 
 ## Font type
 
-Fonts matter in figures, just as in papers and presentations. The font determines the appearance and readability of the figure. To improve readability, sans-serif font are recommended for the text in figures. The simplified letter forms of sans-serif fonts are not encumbered by serifs, which improves the readability of characters at very small sizes. The clean and simple lines of sans-serif fonts also enhance the figure's visual presentation.
+Fonts matter in figures, just as in papers and presentations. The font determines the appearance and readability of the figure. To improve readability, sans-serif fonts are recommended for the text in figures. The simplified letter forms of sans-serif fonts are not encumbered by serifs, which improves the readability of characters at very small sizes. The clean and simple lines of sans-serif fonts also enhance the figure's visual presentation.
 
 The template uses Helvetica, which is a [classic, quality](https://practicaltypography.com/helvetica-and-arial-alternatives.html) font and is supported by MATLAB both for displaying on screen and for printing (most fonts are not). An advantage of Helvetica is that it is legible at all sizes, even small. This is useful for figures, in which some annotations must be small to fit in the space available.[^1] 
 
@@ -61,19 +61,19 @@ The template uses Helvetica, which is a [classic, quality](https://practicaltypo
 
 ## Font size
 
-Beside the typeface, another key choice is the font size used in the figures. The template picks a size so the text in the figure is about the same size as footnote text once the figure is inserted in the paper (about 9pt). This way the figure will be easily readable (smaller text would be difficult to read). Of course, lettering should be consistently sized throughout the figure. Variance of font size within an illustration should be minimal. As a rule of thumb, text should appear no smaller than 7pt at intended size; 6pt is the minimum for superscript and subscript characters.
+Besides the typeface, another key choice is the font size used in the figures. The template picks a size so the text in the figure is about the same size as footnote text once the figure is inserted in the paper (about 9pt). This way the figure will be easily readable (smaller text would be difficult to read). Of course, lettering should be consistently sized throughout the figure. Variance in the font size within an illustration should be minimal. As a rule of thumb, text should appear no smaller than 7pt at intended size; 6pt is the minimum for superscript and subscript characters.
 
 ---
 
 ## Colors
 
-A collection of color palettes are provided, both for qualitative displays and sequential displays. The palettes are borrowed from [ColorBrewer](https://colorbrewer2.org). The colors have been optimized to convey qualitative and quantitative information as effectively as possible.
+A collection of color palettes is provided, both for qualitative displays and sequential displays. The palettes are borrowed from [ColorBrewer](https://colorbrewer2.org). The colors have been optimized to convey qualitative and quantitative information as effectively as possible.
 
 ---
 
 ## Dimensions
 
-Figure dimensions are set to minimize the white space around the content. The figure aspect ratio is 4:3 so the figure can easily be inserted into a presentation software and annotated there.
+Figure dimensions are set to minimize the white space around the content. The figure aspect ratio is 4:3 so the figure can easily be inserted into presentation software and annotated there.
 
 ---
 
@@ -95,7 +95,7 @@ It also produces a range of scatter plots: transparent or not, connected or not,
 
 ## Annotations
 
-On a Mac, the figures can easily be annotated with Keynote. This procedure is more user friendly, and more flexible, than annotating the figures directly in MATLAB. 
+On a Mac, the figures can easily be annotated with Keynote. This procedure is more user-friendly, and more flexible, than annotating the figures directly in MATLAB. 
 
 First, create a Keynote presentation. Insert each figure as a slide background. Annotate the slide as desired. Finally, save the resulting presentation as PDF (such as `figures.pdf`). With this method, all the figures have the exact same size, and each figure can be inserted individually into a LaTeX document, using `\includegraphics[scale=0.2,page=X]{figures.pdf}` to insert page X of the collection of figures called `figures.pdf`.
 

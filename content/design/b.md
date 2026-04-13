@@ -61,7 +61,7 @@ The design has been customized for academic websites. The first goal was to obta
 + The first time that you push your repository to GitHub, you need to allow GitHub Actions and GitHub Pages so the website can be built and deployed to GitHub Pages.
 + The first step is to ask GitHub to [publish the website](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow) with a GitHub Actions workflow.  GitHub offers a ready-made workflow to publish a Hugo website, called `Deploy Hugo site to Pages`. This workflow must be enabled in the [Pages Settings](https://github.com/pmichaillat/hugo-website/settings/pages) of your GitHub repository. You can view the workflow in the `.github/workflows/hugo.yml` file.
 + Once GitHub Actions are enabled, GitHub will build and publish the website as soon as the repository is updated. 
-+ If you would like to update the GitHub Actions workflow (for instance because it became outdated and fails to deploy the site), you can find the [most recent workflow on GitHub]( https://github.com/actions/starter-workflows/blob/main/pages/hugo.yml). You can place this file directly in the `.github/workflows` folder to replace the old `hugo.yml` file.
++ If you would like to update the GitHub Actions workflow (for instance because it became outdated and fails to deploy the site), you can find the [most recent workflow on GitHub](https://github.com/actions/starter-workflows/blob/main/pages/hugo.yml). You can place this file directly in the `.github/workflows` folder to replace the old `hugo.yml` file.
 
 ---
 
@@ -86,7 +86,7 @@ Once your website is ready to be made public, commit the changes to the content 
 
 Then, the GitHub Actions workflow will build the website with Hugo and deploy it to GitHub Pages. The workflow used by GitHub Actions is in the `hugo.yml` file stored in the `.github/workflows` folder. 
 
-It usually takes a few minutes for the website to be deployed and go live. Using Hugo, the workflow will convert content files into HTML pages, handles static assets, generates URLs and organizes pages, and finally create a static website. 
+It usually takes a few minutes for the website to be deployed and go live. Using Hugo, the workflow converts content files into HTML pages, handles static assets, generates URLs and organizes pages, and finally creates a static website. 
 
 The current version of the website is built with Hugo v0.147.2 via GitHub Actions.
 
@@ -114,7 +114,7 @@ The `config.yml` file contains all the parameters to configure the website. Upon
 
 The `content` folder contains all the content files for the website. These files are written in [Markdown](https://www.markdownguide.org), a simple markup language designed to make writing on the web fast and easy. Each file corresponds to one page of the website. 
 
-Most of the files organized in four sections, which are available from any page through the navigation menu and from the homepage through buttons:
+Most of the files are organized in four sections, which are available from any page through the navigation menu and from the homepage through buttons:
 
 + [Papers](https://pascalmichaillat.org/hugo-website/papers/) - Published and unpublished research papers, stored in the `papers` subfolder
 + [Courses](https://pascalmichaillat.org/hugo-website/courses/) - Undergraduate and graduate courses, stored in the `courses` subfolder
@@ -125,21 +125,21 @@ The section pages include a list of the items in the section (books, papers, cou
 
 ### New items
 
-To add a new paper to the website, for instance, add a file `new_paper.md` into the `papers` subfolder. That new paper will automatically be listed on the [page with the other papers](https://pascalmichaillat.org/hugo-website/papers/). It is convenient to [use archetypes](#archetypes) to generate new files easily. 
+To add a new paper to the website, for instance, add a file `new_paper.md` in the `papers` subfolder. That new paper is automatically listed on the [page with the other papers](https://pascalmichaillat.org/hugo-website/papers/). It is convenient to [use archetypes](#archetypes) to generate new files easily. 
 
 By default, the URL of the new paper would be `baseURL/papers/new_paper/`. But the URL can be customized in the `new_paper.md` file with the `url` parameter. For instance, with `url: /paperx/`, the URL of the new paper is simplified to `baseURL/paperx/`.
 
 ### New sections
 
-It is also easy to add new sections to the website, for instance to list software, blog entries, and so on. To add a list of software, create a new `software` subfolder into the `content` folder. Then add a content file such as `new_software.md` into the `software` subfolder. That new section will be available at `baseURL/software/`. 
+It is also easy to add new sections to the website, for instance to list software, blog entries, and so on. To add a list of software, create a new `software` subfolder in the `content` folder. Then add a content file such as `new_software.md` in the `software` subfolder. That new section is available at `baseURL/software/`, and the new file is available at `baseURL/software/new_software/`.
 
-You can for instance link to it with a button from the homepage. To do that, simply add the following snippet into the `config.yml` file, below `profileMode:buttons`:
+You can for instance link to it with a button from the homepage. To do that, simply add the following snippet in the `config.yml` file, below `profileMode:buttons`:
 
 ```yml
 - name: Software
   url: software/
 ```
-You can also add a link to the new section in the menu bar. To do that, simply add the following snippet into the `config.yml` file, below `menu:main`:
+You can also add a link to the new section in the menu bar. To do that, simply add the following snippet in the `config.yml` file, below `menu:main`:
 
 ```yml
 - name: Software
@@ -164,7 +164,7 @@ The `static` folder contains the static files (files not processed or rendered b
 
 + `picture.jpeg` - Picture appearing on the homepage.
 + `cv.pdf` - Curriculum vitae linked to the [CV icon](#social-icons) on the homepage.[^1] 
-+ `favicon.io`, `favicon-32x32.png`, `favicon-16x16.png`, `apple-touch-icon.png` - Favicon appearing in the menu bar next to the website title, and in the browser next to the URL. It is easy to produce [new favicons](https://favicon.io).
++ `favicon.ico`, `favicon-32x32.png`, `favicon-16x16.png`, `apple-touch-icon.png` - Favicon appearing in the menu bar next to the website title, and in the browser next to the URL. It is easy to produce [new favicons](https://favicon.io).
 
 The `static` folder could also include the PDF files and images to which the website links. It could contain:
 
@@ -179,7 +179,7 @@ This is for instance how I organized the static files [on my website](https://gi
 
 ## Keywords
 
-A list of all the [keywords (tags)](https://pascalmichaillat.org/hugo-website/tags/) used in papers and courses is automatically generated and added to the website. The keyword list is accessible from the homepage. The list can also be added to the menu bar. To do that, simply add the following snippet into the `config.yml` file, below `menu:main`:
+A list of all the [keywords (tags)](https://pascalmichaillat.org/hugo-website/tags/) used in papers and courses is automatically generated and added to the website. The keyword list is accessible from the homepage. The list can also be added to the menu bar. To do that, simply add the following snippet in the `config.yml` file, below `menu:main`:
 
 ```yml
 - name: Keywords
@@ -219,7 +219,7 @@ The archive is available at `baseURL/archive/`.
 
 ## Social icons
 
-The template includes various social icons that are commonly used in academia. All the icons are defined in the file `layouts/partials/svg.html`; additional icons can be added there. To place any icon on the homepage, the icon type and icon url should be specified below `params:socialIcons:` in `config.yml`.
+The template includes various social icons that are commonly used in academia. All the icons are defined in the file `layouts/partials/svg.html`; additional icons can be added there. To place any icon on the homepage, the icon type and icon URL should be specified below `params:socialIcons:` in `config.yml`.
 
 For instance, if your CV is called `cv.pdf` and placed in the `static` folder, an icon linking to your CV can be added as follows:
 
@@ -227,7 +227,16 @@ For instance, if your CV is called `cv.pdf` and placed in the `static` folder, a
 - name: CV
   url: cv.pdf
 ```
+
+If your email is `user@gmail.com`, you can link to it by adding the following snippet:
+
+```yml
+- name: Email
+  url: mailto:user@gmail.com
+```
+
 If your office hours are listed on the page `officehours.md` in the `content` folder, an icon linking to your office hours can be added as follows:
+
 
 ```yml
 - name: Office Hours
@@ -241,18 +250,18 @@ If your office address is listed on the page `location.md` in the `content` fold
   url: location/
 ```
 
-If your Zoom room is located at `https://www.zoom.us/my/user`, it is possible to link to it by adding the following snippet:
-
-```yml
-- name: Zoom
-  url: https://www.zoom.us/my/user
-```
-
 If your Google Scholar profile is located at `https://scholar.google.com/citations?user=user`, link to it by adding the following snippet:
 
 ```yml
 - name: Google Scholar
   url: https://scholar.google.com/citations?user=user
+```
+
+If your Zoom room is located at `https://www.zoom.us/my/user`, it is possible to link to it by adding the following snippet:
+
+```yml
+- name: Zoom
+  url: https://www.zoom.us/my/user
 ```
 
 Similarly, if your GitHub profile is located at `https://github.com/user`, link to it by adding the following snippet:
@@ -262,11 +271,25 @@ Similarly, if your GitHub profile is located at `https://github.com/user`, link 
   url: https://github.com/user
 ```
 
-If your email is `user@gmail.com`, you can link to it by adding the following snippet:
+Similarly, if you have a YouTube account at `https://www.youtube.com/@user`, you can link to it by adding the following snippet:
 
 ```yml
-- name: Email
-  url: mailto:user@gmail.com
+- name: YouTube
+  url: https://www.youtube.com/@user
+```
+
+If you have a Substack account at `https://user.substack.com`, you can link to it by adding the following snippet:
+
+```yml
+- name: Substack
+  url: https://user.substack.com
+```
+
+I you have a Twitter/X account `@user`, you can link to it by adding the following snippet:
+
+```yml
+- name: Twitter
+  url: https://x.com/user
 ```
 
 Finally, if you have a Bluesky account `@user.bsky.social`, you can link to it by adding the following snippet:
@@ -280,7 +303,7 @@ Finally, if you have a Bluesky account `@user.bsky.social`, you can link to it b
 
 ## Typesetting math
 
-It is easy to typeset math on any website page. Simply enter LaTeX commands into the Markdown file, and the commands will be rendered synchronously with [KaTeX](https://katex.org). For instance:
+It is easy to typeset math on any website page. Simply enter LaTeX commands in the Markdown file, and the commands are rendered with [KaTeX](https://katex.org). For instance:
 
 + `$x\in \mathbb{N}$` gives $x\in \mathbb{N}$
 + `$\xi^\ast = 4 + \max f(x)$` gives $\xi^\ast = 4 + \max f(x)$
@@ -309,7 +332,7 @@ The two shades of blue are specified by their hex code. Enter [other hex codes](
 
 ## Cover images
 
-Cover images can be specified for all pages. The cover image will appear in lists on the website. It will also appear if a link to the page is used on social media. 
+Cover images can be specified for all pages. The cover images appear in lists on the website. They also appear if a link to the page is used on social media. 
 
 Let's look at the page for the first paper on the website, "Unusual Uses For Olive Oil".
 A cover image for the page is specified at the top of the `index.md` file in the `content/papers/paper1/` folder: 
@@ -335,7 +358,7 @@ magick image.png -resize 1200x675 -gravity center -background white -extent 1280
 
 ## Redirects
 
-It is easy to handle redirects on a Hugo website by using the `aliases` parameter within the page front matter. This feature allows you to define old URLs that should redirect to a new page. This is particularly useful when you change the URL structure or move content around in your website, and you want to ensure that visitors are redirected from the old URLs to the new one. This ensures that visitors using the old URLs still find the right content.
+It is easy to handle redirects on a Hugo website by using the `aliases` parameter within the page front matter. This feature allows you to define old URLs that should redirect to a new page. This is particularly useful when you change the URL structure or move content around in your website, and you want to ensure that visitors are redirected from the old URLs to the new ones. This ensures that visitors using the old URLs still find the right content.
 
 The template includes an example showing how to set up redirects using the `aliases` parameter. The redirects are set up in the `/courses/course1/index.md` file. In the preamble, the following snippet of code sets up redirects from old PDF files to the current course page:
 
@@ -348,17 +371,17 @@ aliases:
     - /courses/course2/notes3.pdf
 ```
 
-Hugo will then automatically generate the necessary redirect HTML pages during the build process. These HTML pages will be stored in the `public` folder. When a visitor navigates to any of the URLs listed in the aliases (such as `baseURL/courses/course2/slides4.pdf`), they will be redirected to the page where the alias is defined (`baseURL/courses/course1/`). 
+Hugo automatically generates the necessary redirect HTML pages during the build process. These HTML pages are stored in the `public` folder. When a visitor navigates to any of the URLs listed in the aliases (such as `baseURL/courses/course2/slides4.pdf`), they are redirected to the page where the alias is defined (`baseURL/courses/course1/`). 
 
-This method is useful to manage redirects and ensure a seamless user experience when restructuring any part of your website. It is also useful to handle 404 issues since outdated links will automatically point to the correct content, preventing users from landing on the [404 error page](https://pascalmichaillat.org/hugo-website/404/).
+This method is useful to manage redirects and ensure a seamless user experience when restructuring any part of your website. It is also useful to handle 404 issues since outdated links automatically point to the correct content, preventing users from landing on the [404 error page](https://pascalmichaillat.org/hugo-website/404/).
 
 --- 
 
 ## Testing the website on mobile devices
 
-During development, it is possible to test your website on mobile devices—to check that everything is accessible and readable. Testing only requires to adjust the `hugo` command slightly.
+During development, it is possible to test your website on mobile devices—to check that everything is accessible and readable. Testing only requires adjusting the `hugo` command slightly.
 
-+ Make sure that your laptop and phone are on the same wifi network, and get your laptop's IP address (say 192.168.1.50). This can be done by running `ipconfig getifaddr en0` in the terminal.
++ Make sure that your laptop and phone are on the same Wi-Fi network, and get your laptop's IP address (say 192.168.1.50). This can be done by running `ipconfig getifaddr en0` in the terminal.
 + Once you have the IP address, run `hugo server --bind 0.0.0.0 --baseURL http://192.168.1.50:1313`.
 + On your phone's browser, go to `http://192.168.1.50:1313`.
 + This gives a true mobile rendering and is useful for final testing. As you modify the website source code on your computer, the modified website appears on your phone.
@@ -375,7 +398,7 @@ The website has a footer, which contains a copyright notice and a "Powered by" n
 
 In the background, Hugo automatically generates RSS feeds in XML format for your site. These feeds enable interested readers to subscribe to your content and be updated whenever you publish new content. The RSS feeds can be found in the `public` folder, and are typically available at `/index.xml` under the appropriate section.
 
-For instance, on this website, the RSS feed for my research papers can be found at `https://pascalmichaillat.org/papers/index.xml`. The RSS feed for my design projects can be found at `https://pascalmichaillat.org/design/index.xml`. Hugo also produces RSS feeds for all keywords. On this website, the RSS feed for the keyword `business cycles` can be found at `https://pascalmichaillat.org/tags/business-cycles/index.xml`. 
+For instance, on this website, the RSS feed for my research papers can be found at `https://pascalmichaillat.org/papers/index.xml`. The RSS feed for my design projects can be found at `https://pascalmichaillat.org/design/index.xml`. Hugo also produces RSS feeds for all keywords. On this website, the RSS feed for the keyword `metascience` can be found at `https://pascalmichaillat.org/tags/metascience/index.xml`. 
 
 The XML files can then be submitted to RSS readers, such as the [RSS app](https://rss.app), to [produce RSS feeds](https://rss.app/overview-feed-xml?feedId=44ZDQRZnqIktQJrt&feedXmlId=UaViYplhbFwE97Bd).
 
@@ -401,7 +424,7 @@ Finally, add the following snippet below `menu:main:` in the `config.yml` file t
   weight: 6
 ```
 
-The search page will be available at `baseURL/search/`.
+The search page is available at `baseURL/search/`.
 
 ---
 
@@ -415,7 +438,7 @@ To create a new webpage from an archetype, simply use the `hugo new` command in 
 hugo new content/courses/my-new-teaching-material.md --kind course
 ```
 
-Hugo will generate a new content file called `my-new-teaching-material.md` and place it the directory `content/courses/`, where all the courses are stored. Furthermore, Hugo will use the archetype `course.md`. Then, you can edit the content of the page by modifying the newly created file `my-new-teaching-material.md`. 
+Hugo will generate a new content file called `my-new-teaching-material.md` and place it in the folder `content/courses/`, where all the courses are stored. Furthermore, Hugo will use the archetype `course.md`. Then, you can edit the content of the page by modifying the newly created file `my-new-teaching-material.md`. 
 
 Similarly, to create a page for a new paper, you can run:
 
@@ -423,13 +446,13 @@ Similarly, to create a page for a new paper, you can run:
 hugo new content/papers/my-new-research-material.md --kind paper
 ```
 
-Hugo will generate a new content file called `my-new-research-material.md` and place it the directory `content/papers/`, where all the papers are stored. Furthermore, Hugo will use the archetype `paper.md`.
+Hugo will generate a new content file called `my-new-research-material.md` and place it in the folder `content/papers/`, where all the papers are stored. Furthermore, Hugo will use the archetype `paper.md`.
 
 ---
 
 ## Public folder
 
-In your local website repository, you will find a `public` folder. The folder is created when you run `hugo server` or `hugo`. The `hugo` commands process your content, templates, and other project files, and create a fully generated static website files that is ready to be deployed locally or online. The resulting output is placed in the `public` folder by default.
+In your local website repository, you will find a `public` folder. The folder is created when you run `hugo server` or `hugo`. The `hugo` commands process your content, templates, and other project files, and create fully generated static website files that are ready to be deployed locally or online. The resulting output is placed in the `public` folder by default.
 
 The `public` folder is not sent to the GitHub repository because it is not needed there (it is in the `.gitignore` file). During the GitHub Actions workflow, a fresh `public` folder is generated at build time by Hugo. That folder is then used ephemerally in the GitHub Actions runner. As a result, there is no `public` folder at all in the GitHub repository.
 
@@ -437,7 +460,7 @@ The `public` folder is not sent to the GitHub repository because it is not neede
 
 ## Domain name
 
-It is easy to use a custom domain name for the website. For instance, the domain name `https://pascalmichaillat.org/` is registered with [Squarespace](https://domains.squarespace.com). Once you have registered a domain, you need to [link it](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages) to your website. Make sure that the `baseURL` parameter in `config.yml` reflects the custom domain name. Make sure that the [page setting](https://github.com/pmichaillat/hugo-website/settings/pages) on GitHub also includes the domain name.
+It is easy to use a custom domain name for the website. For instance, the domain name `https://pascalmichaillat.org/` is registered with [Squarespace](https://domains.squarespace.com). Once you have registered a domain, you need to [link it](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages) to your website. Make sure that the `baseURL` parameter in `config.yml` reflects the custom domain name. Make sure that the [Pages setting](https://github.com/pmichaillat/hugo-website/settings/pages) on GitHub also includes the domain name.
 
 ---
 
@@ -468,4 +491,4 @@ I would also advise to place prominent links to your CV and job-market paper on 
   url: cv.pdf
 ```
 
-This code snippet will add buttons for your job-market paper (`jmp.pdf`) and CV (`cv.pdf`) below the social icons on the homepage. The files `cv.pdf` and `jmp.pdf` must be placed in the `static` folder.
+This code snippet adds buttons for your job-market paper (`jmp.pdf`) and CV (`cv.pdf`) below the social icons on the homepage. The files `cv.pdf` and `jmp.pdf` must be placed in the `static` folder.
