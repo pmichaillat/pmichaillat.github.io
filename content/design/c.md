@@ -62,7 +62,7 @@ Fourth, 4:3 slides work better on tablets because most tablets have a 4:3 aspect
 Sometimes, however, host institutions or conferences require presenters to use a 16:9 aspect ratio. The template can be adjusted to produce such slides. Just add the `aspectratio=169` option to the `\documentclass` command. Specifically, to produce a 16:9 presentation, the first line of `presentation.tex` should be:
 
 ```tex
-\documentclass[11pt, aspectratio=169, xcolor={dvipsnames}, hyperref={pdfpagemode=UseNone, hidelinks, pdfdisplaydoctitle=true}, usepdftitle=false]{beamer}
+\documentclass[11pt, aspectratio=169, xcolor={dvipsnames}, usepdftitle=false]{beamer}
 ```
 
 ---
