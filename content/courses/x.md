@@ -9,6 +9,7 @@ aliases:
     - /uploads/7/0/2/0/70200055/t3b.pdf
     - /uploads/7/0/2/0/70200055/t3c.pdf
     - /uploads/7/0/2/0/70200055/t3d.pdf
+    - /uploads/7/0/2/0/70200055/t3e.pdf
     - /uploads/7/0/2/0/70200055/t3f.pdf 
     - /tags/benveniste-scheinkman-equation/
     - /tags/optimization/
