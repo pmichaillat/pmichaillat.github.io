@@ -2,8 +2,7 @@
 title: "Economic Slack" 
 date: 2025-09-11
 url: /w/
-aliases: 
-    - /b1/
+aliases:
     - /tags/matching-function/
     - /c2/
     - /t5.html
