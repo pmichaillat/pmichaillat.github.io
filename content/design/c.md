@@ -26,7 +26,8 @@ The template produces an academic presentation using [LaTeX](https://www.latex-p
 ## View
 
 + [LaTeX presentation template](https://github.com/pmichaillat/latex-presentation)
-+ [Presentation produced by the template](/c.pdf)
++ [Regular presentation produced by the template](/c.pdf)
++ [Wide (16:9) presentation produced by the template](/cw.pdf)
 
 ---
 
@@ -59,7 +60,7 @@ Third, 4:3 slides are more robust. They are easily readable with all projectors,
 
 Fourth, 4:3 slides work better on tablets because most tablets have a 4:3 aspect ratio (iPads for instance). It has become very common to read or display slides on tablets, or watch online presentations on tablets. In that context, 4:3 slides display better.
 
-Sometimes, however, host institutions or conferences require presenters to use a 16:9 aspect ratio. The template can be adjusted to produce such slides. Just add the `aspectratio=169` option to the `\documentclass` command. Specifically, to produce a 16:9 presentation, the first line of `presentation.tex` should be:
+Sometimes, however, host institutions or conferences require presenters to use a 16:9 aspect ratio. The template can be adjusted to produce such wide slides. Just add the `aspectratio=169` option to the `\documentclass` command. Specifically, to produce a 16:9 presentation, the first line of the presentation should be:
 
 ```tex
 \documentclass[11pt, aspectratio=169, xcolor={dvipsnames}, usepdftitle=false]{beamer}
@@ -148,7 +149,7 @@ A [typical slide produced with Beamer](https://deic.uab.cat/~iblanes/beamer_gall
 Such clutter distracts listeners and takes their attention away from the main message of the slide—while conveying no useful information. The audience does not need that information in the middle of the talk. The slides produced by the template are devoid of such frills. 
 
 In particular, the pesky tiny navigation buttons are eliminated by placing 
-`\setbeamertemplate{navigation symbols}{} ` in `presentation.sty`.
+`\setbeamertemplate{navigation symbols}{} ` in the style file.
 
 ---
 
@@ -156,9 +157,9 @@ In particular, the pesky tiny navigation buttons are eliminated by placing
 
 By default the slides are not numbered. This seems better for most presentations. Displaying slide numbers does nothing but makes the audience jittery at the thought of the sheer number of slides that remain to be covered in the talk.
 
-But for anyone who wants to share the slide deck for comments, or who gives a presentation specifically to collect feedback, it might be helpful to have slide numbers—so the comments can be precisely linked to a slide. To introduce page numbers on slides, just uncomment the line `\setbeamertemplate{footline}[frame number]` in `presentation.sty`.
+But for anyone who wants to share the slide deck for comments, or who gives a presentation specifically to collect feedback, it might be helpful to have slide numbers—so the comments can be precisely linked to a slide. To introduce page numbers on slides, just uncomment the line `\setbeamertemplate{footline}[frame number]` in the style file.
 
-Once slide numbers are inserted at the bottom of all slides, it is possible to remove the slide number from the title slide. To do that, use `\frame[plain]{\titlepage}` instead of `\frame{\titlepage}` in `presentation.tex`. The page numbers will start appearing on the second slide.
+Once slide numbers are inserted at the bottom of all slides, it is possible to remove the slide number from the title slide. To do that, use `\frame[plain]{\titlepage}` instead of `\frame{\titlepage}` in the presentation. The page numbers will start appearing on the second slide.
 
 ---
 

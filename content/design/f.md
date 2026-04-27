@@ -24,7 +24,7 @@ The template produces an academic CV with [LaTeX](https://www.latex-project.org)
 ## View
 
 + [LaTeX CV template](https://github.com/pmichaillat/latex-cv)
-+ [Multi-page CV produced by the template](/f.pdf)
++ [Regular CV produced by the template](/f.pdf)
 + [One-page CV produced by the template](/fo.pdf)
 
 ---
@@ -150,4 +150,4 @@ How long should your CV be? After the PhD job market—where CVs are typically c
 
 ## One-page variant
 
-The template also includes a more compact version to produce a one-page CV. The one-page CV might be particularly helpful for job-market candidates and others who require their CV to fit on one page. Compared to the main template, the one-page variant has narrower margins and narrower spacing between lines.
+The template also includes a more compact version to produce a one-page CV. The one-page CV might be particularly helpful for job-market candidates and others who are required to fit their CV on one page. Compared to the main template, the one-page variant has narrower margins and narrower spacing between lines.
