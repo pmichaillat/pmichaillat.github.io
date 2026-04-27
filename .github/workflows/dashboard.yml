@@ -1,10 +1,17 @@
 # Workflow for updating dashboard with FRED data
 name: Fetch data and update dashboard
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: '30 14 * * *'
   workflow_dispatch:
+
+concurrency:
+  group: dashboard-update
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -33,7 +40,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add static/dashboard/*.html static/dashboard/*.csv
+          git add -A static/dashboard/
 
           if ! git diff --staged --quiet; then
             echo "Changes detected in generated files. Committing..."
@@ -49,7 +56,7 @@ jobs:
         # This step will only run if the 'committed' environment variable is 'true'
         if: ${{ env.committed == 'true' }}
         run: |
-          curl -X POST \
+          curl --fail --silent --show-error -X POST \
           -H "Authorization: token ${{ secrets.DASHBOARD_TOKEN }}" \
           https://api.github.com/repos/${{ github.repository }}/dispatches \
           -d '{"event_type":"data-committed-for-deploy", "client_payload": {"committed": "true"}}'
