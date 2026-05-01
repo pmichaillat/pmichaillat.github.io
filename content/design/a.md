@@ -1,6 +1,6 @@
 ---
 title: "Minimalist LaTeX Template for Academic Papers" 
-date: 2026-04-13
+date: 2026-05-01
 url: /a/
 aliases: 
     - /d2/
@@ -119,9 +119,11 @@ The typical, bright boxes surrounding hyperlinks should be avoided as they are d
 
 The template's title page contains all the required information: title, authors, date, abstract, affiliations, and acknowledgements. It is otherwise pretty minimalist. There are no "thanks" symbols, no "abstract" title, no indentation, no page numbers. These elements are common in papers, but they do not convey any useful information, so the template gets rid of them.
 
-The title is bold, centered, and with a 24pt font size. Authors and date are centered and 12pt. The abstract is 11pt. Affiliations and acknowledgements are 9pt, just like the footnotes in the text.
+The title is bold, centered, and with a large (24pt) font size. Authors and date are centered and with a slightly larger-than-normal font size (12pt). The abstract uses the regular font (11pt, not italicized). Affiliations and acknowledgements use the footnote font size (9pt).
 
-A URL for the paper can be placed at the bottom of the title page with the command `\paperurl{URL}`. Such URL allows readers to go easily to the latest version of the paper. With an optional argument, the command indicates where the paper has been published: `\paperurl[Journal]{URL}` places both the journal name and URL at the bottom of the title page. The URL and journal name are displayed in small font (9pt) and gray so they are not too obtrusive.
+A URL for the paper can be placed at the bottom of the title page with the command `\paperurl{URL}`. Such URL allows readers to go easily to the latest version of the paper. With an optional argument, the command indicates where the paper is published: `\paperurl[Journal]{URL}` places both the journal name and URL at the bottom of the title page. The URL and journal name are displayed in footnote font size (9pt) and gray so they are not too obtrusive.
+
+It is also possible to add a table of contents after the abstract or instead of it. The command to insert the table of contents is `\tableofcontents`. A page break can also be inserted between the abstract and table of contents with `\clearpage`. 
 
 ---
 
