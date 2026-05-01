@@ -330,6 +330,16 @@ For instance, the commands for parentheses are defined as follows:
 \newcommand{\of}[1]{{\left( #1 \right)}}
 ```
 
+The commands for absolute value and norm are defined as follows:
+
+```LaTeX
+% Absolute value
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+
+% Norm
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+```
+
 The command for maximum and minimum are defined as follows:
 
 ```LaTeX
