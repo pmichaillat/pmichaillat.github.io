@@ -1,5 +1,4 @@
 import os
-from datetime import datetime
 import pandas as pd
 from fredapi import Fred
 from dotenv import load_dotenv
@@ -12,26 +11,22 @@ load_dotenv()
 apikey = os.getenv("FRED_API_KEY")
 if apikey:
     print("FRED_API_KEY environment variable found.")
-    print(f"FRED_API_KEY preview: ...{apikey[-4:]}")
 else:
-    print("FRED_API_KEY environment variable NOT FOUND.")
+    print("FRED_API_KEY environment variable not found.")
 fred = Fred(api_key=apikey)
 print("FRED object initialized.")
 
-# Get the absolute directory of the current script
+# Set output directory
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# Go up two levels to get to the repository root
 REPO_ROOT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, '..', '..'))
-
-# Define the output directory relative to the repository root
 OUTPUT_DIR_ABSOLUTE = os.path.join(REPO_ROOT_DIR, 'static', 'dashboard')
-
-# Ensure output directory exists
 print(f"Ensuring output directory exists: {OUTPUT_DIR_ABSOLUTE}")
 os.makedirs(OUTPUT_DIR_ABSOLUTE, exist_ok=True)
 
-# Create helper function to fetch recessions
+# Set shared x-axis start date
+DASHBOARD_X_MIN = pd.Timestamp("2005-01-01")
+
+# Convert USREC series into recession start/end intervals
 def get_recession_periods(rec_series):
     in_recession = rec_series == 1
     shifts = in_recession.astype(int).diff()
@@ -47,8 +42,212 @@ def get_recession_periods(rec_series):
 
     return zip(starts, ends)
 
-# Create function to make plots
-def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_min=None, y_max=None, hline=None, precision=2):
+# Return a datetime-indexed series, or None if unavailable/empty
+def fetch_series_or_none(fred_client, series_id, required=True):
+    try:
+        series = fred_client.get_series(series_id)
+        if series is None or series.empty:
+            if required:
+                print(f"{series_id} data missing or empty. Dependent graphs will be skipped.")
+            else:
+                print(f"{series_id} data missing or empty. Continuing without it.")
+            return None
+        series.index = pd.to_datetime(series.index)
+        print(f"{series_id} data fetched successfully: shape = {series.shape}")
+        return series
+    except Exception as error:
+        if required:
+            print(f"{series_id} fetch failed: {error}. Dependent graphs will be skipped.")
+        else:
+            print(f"{series_id} fetch failed: {error}. Continuing without it.")
+        return None
+
+def non_empty(series):
+    return series is not None and not series.empty
+
+# Log latest raw FRED value for troubleshooting
+def log_latest_point(series, series_id):
+    latest_date = series.index.max()
+    latest_value = series.iloc[-1]
+    previous_value = series.iloc[-2]
+    print(
+        f"{series_id} raw latest point: date = {latest_date.strftime('%Y-%m-%d')}, "
+        f"value = {latest_value}, previous value = {previous_value}"
+    )
+
+# Log latest processed value for troubleshooting
+def log_latest_processed_point(df, series_name):
+    latest_processed_date = df.index.max()
+    latest_processed_value = df['data'].iloc[-1]
+    previous_processed_value = df['data'].iloc[-2]
+    print(
+        f"{series_name} latest processed point for CSV: date = {latest_processed_date.strftime('%Y-%m-%d')}, "
+        f"value = {latest_processed_value:.4f}, previous value = {previous_processed_value:.4f}"
+    )
+
+# Save a series to CSV with dashboard naming conventions
+def write_dashboard_csv(df, csv_filename, column_name):
+    csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
+    df_out = df.copy()
+    df_out.columns = [column_name]
+    df_out.index.name = "Date"
+    df_out.to_csv(csv_path_absolute)
+    print(f"Successfully wrote CSV: {csv_path_absolute}")
+
+# Build title/axes, write one HTML chart, then write matching CSV
+def plot_and_save_series(
+    series,
+    graph_name,
+    y_label,
+    csv_column_name,
+    title_suffix,
+    usrec,
+    y_min,
+    y_max,
+    hline=None,
+    precision=2,
+    title_precision=2,
+    log_processed=False
+):
+    df = pd.DataFrame({"data": series})
+
+    if log_processed:
+        log_latest_processed_point(df, graph_name.replace("_", " ").capitalize())
+
+    last_date = df.index.max().strftime("%B %Y")
+    last_value = df["data"].iloc[-1]
+    title = f"{last_date}: {last_value:.{title_precision}f}{title_suffix}"
+
+    x_min = DASHBOARD_X_MIN
+    x_max = df.index.max()
+    y_min_value = y_min(df) if callable(y_min) else y_min
+    y_max_value = y_max(df) if callable(y_max) else y_max
+
+    make_plot(
+        df,
+        "data",
+        title,
+        graph_name,
+        y_label,
+        usrec,
+        x_min,
+        x_max,
+        y_min_value,
+        y_max_value,
+        hline=hline,
+        precision=precision
+    )
+
+    write_dashboard_csv(
+        df,
+        f"{graph_name}.csv",
+        csv_column_name
+    )
+
+# Plot the Beveridge scatter with reference line and highlighted latest point
+def plot_beveridge_curve(u_rate, v_rate):
+    df = pd.DataFrame({"u": u_rate, "v": v_rate}).dropna()
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=df["u"],
+        y=df["v"],
+        customdata=df.index.strftime("%b %Y"),
+        mode='markers',
+        marker=dict(size=7, color='#59539d'),
+        showlegend=False,
+        hovertemplate='%{customdata}<br>(%{x:.2f}, %{y:.2f})<extra></extra>'
+    ))
+
+    # Reference 45-degree line marking full employment
+    max_val = min(df["u"].max(), df["v"].max())
+    fig.add_trace(go.Scatter(
+        x=[0, max_val],
+        y=[0, max_val],
+        mode='lines',
+        line=dict(color='rgba(217, 95, 2, 0.7)', width=1),
+        showlegend=False,
+        hoverinfo='skip'
+    ))
+
+    # Highlight the most recent observation
+    last_point = df.iloc[[-1]]
+    fig.add_trace(go.Scatter(
+        x=last_point["u"],
+        y=last_point["v"],
+        customdata=last_point.index.strftime("%b %Y"),
+        mode='markers',
+        marker=dict(size=9, color='#e7298a'),
+        hovertemplate='%{customdata}<br>(%{x:.2f}, %{y:.2f})<extra></extra>',
+        showlegend=False
+    ))
+
+    fig.update_layout(
+        xaxis_title='Unemployment rate (%)',
+        yaxis_title='Vacancy rate (%)',
+        dragmode=False,
+        title_font=dict(size=16),
+        font=dict(family="Helvetica", size=16),
+        margin=dict(l=20, r=20, t=20, b=20),
+        plot_bgcolor='white',
+        paper_bgcolor='white',
+        xaxis=dict(
+            range=[0, df["u"].max() * 1.05],
+            title_font=dict(size=16),
+            tickfont=dict(size=16),
+            showgrid=True,
+            showline=True,
+            side='bottom',
+            mirror=False,
+            ticklabelposition="outside",
+            ticklabelstandoff=10,
+            linecolor='#e9e9e9',
+            gridcolor='#e9e9e9'
+        ),
+        yaxis=dict(
+            range=[0, df["v"].max() * 1.05],
+            title_font=dict(size=16),
+            tickfont=dict(size=16),
+            showgrid=True,
+            showline=True,
+            side='left',
+            mirror=False,
+            ticklabelposition="outside",
+            ticklabelstandoff=10,
+            linecolor='#e9e9e9',
+            gridcolor='#e9e9e9'
+        )
+    )
+
+    # Save as the embedded HTML fragment used by the site
+    beveridge_curve_html_path = os.path.join(OUTPUT_DIR_ABSOLUTE, "beveridge_curve.html")
+    fig.write_html(
+        beveridge_curve_html_path,
+        include_plotlyjs='cdn',
+        full_html=False,
+        div_id="beveridge_curve",
+        config={
+            "displaylogo": False,
+            "modeBarButtonsToRemove": [
+                "zoomIn2d",
+                "zoomOut2d",
+                "select2d",
+                "lasso2d",
+                "autoscale"
+            ],
+            "toImageButtonOptions": {
+                "format": "png",
+                "filename": "beveridge_curve",
+                "height": 900,
+                "width": 1200,
+                "scale": 3
+            }
+        }
+    )
+    print(f"Successfully wrote HTML to: {beveridge_curve_html_path}")
+
+# Plot time-series dashboard chart
+def make_plot(df, y_column, title, filename, y_label, usrec, x_min, x_max, y_min, y_max, hline=None, precision=2):
     precision = int(precision)
     hovertemplate = f"%{{x|%b %Y}}<br>%{{y:.{precision}f}}<extra></extra>"
     fig = go.Figure()
@@ -60,21 +259,18 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
     ))
 
     # Shade recession months
-    try:
-        rec = fred.get_series("USREC", observation_start=df.index.min(), observation_end=df.index.max())
-        rec.index = pd.to_datetime(rec.index)
+    if usrec is not None:
+        rec = usrec[(usrec.index >= df.index.min()) & (usrec.index <= df.index.max())]
         for start, end in get_recession_periods(rec):
             fig.add_vrect(
-                x0=start,
+                x0=start, 
                 x1=end,
-                fillcolor='lightgray',
+                fillcolor='lightgray', 
                 opacity=0.3,
-                layer='below',
+                layer='below', 
                 line_width=0
             )
-    except Exception as e:
-        print(f"Could not retrieve recession data: {e}")
-
+ 
     if hline is not None:
         fig.add_shape(
             type='line',
@@ -84,7 +280,7 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             y1=hline,
             line=dict(color='rgba(217, 95, 2, 0.7)', width=1),
             layer='above'
-            )
+        )
 
     fig.update_layout(
         title=title,
@@ -105,7 +301,7 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             ticklabelposition="outside",
             ticklabelstandoff=10,
             gridcolor='#e9e9e9',
-            range=[x_min, x_max] if x_min is not None and x_max is not None  else None
+            range=[x_min, x_max]
         ),
         yaxis=dict(
             title_font=dict(size=16),
@@ -118,7 +314,7 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
             ticklabelposition="outside",
             ticklabelstandoff=10,
             gridcolor='#e9e9e9',
-            range=[y_min, y_max] if y_min is not None and y_max is not None else None
+            range=[y_min, y_max]
         ),
        yaxis_title=dict(
             text=y_label,
@@ -127,7 +323,6 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
         showlegend=False
     )
 
-    # Construct the absolute path for the figure HTML
     html_file_path = os.path.join(OUTPUT_DIR_ABSOLUTE, f"{filename}.html")
     
     fig.write_html(
@@ -155,56 +350,34 @@ def make_plot(df, y_column, title, filename, y_label, x_min=None, x_max=None, y_
     print(f"Successfully wrote HTML: {html_file_path}")
 
 # Fetch raw data from FRED
-# Fetch unemployment level
-u = fred.get_series("UNEMPLOY")
-if u is not None and not u.empty:
-    print(f"UNEMPLOY data fetched successfully: shape = {u.shape}")
-    u.index = pd.to_datetime(u.index)
-    latest_u_date = u.index.max()
-    latest_u_value = u.iloc[-1]
-    previous_u_value = u.iloc[-2]
-    print(f"UNEMPLOY raw latest point: date = {latest_u_date.strftime('%Y-%m-%d')}, value = {latest_u_value}, previous value = {previous_u_value}")
-else:
-    print("Failed to fetch UNEMPLOY data or data is empty.")
+usrec = fetch_series_or_none(fred, "USREC", required=False)
+u = fetch_series_or_none(fred, "UNEMPLOY")
+v = fetch_series_or_none(fred, "JTSJOL")
+lf = fetch_series_or_none(fred, "CLF16OV")
 
-# Fetch vacancy level
-v = fred.get_series("JTSJOL")
-if v is not None and not v.empty:
-    print(f"JTSJOL data fetched successfully: shape = {v.shape}")
-    v.index = pd.to_datetime(v.index)
-    latest_v_date = v.index.max()
-    latest_v_value = v.iloc[-1]
-    previous_v_value = v.iloc[-2]
-    print(f"JTSJOL raw latest point: date = {latest_v_date.strftime('%Y-%m-%d')}, value = {latest_v_value}, previous value = {previous_v_value}")
-else:
-    print("Failed to fetch JTSJOL data or data is empty.")
+# Keep existing published outputs when core data is missing
+if not (non_empty(u) and non_empty(v) and non_empty(lf)):
+    print("Core input series unavailable. Exiting without generating new files.")
+    raise SystemExit(0)
 
-# Fetch labor force level
-lf = fred.get_series("CLF16OV")
-if lf is not None and not lf.empty:
-    print(f"CLF16OV data fetched successfully: shape = {lf.shape}")
-    lf.index = pd.to_datetime(lf.index)
-    latest_lf_date = lf.index.max()
-    latest_lf_value = lf.iloc[-1]
-    previous_lf_value = lf.iloc[-2]
-    print(f"CLF16OV raw latest point: date = {latest_lf_date.strftime('%Y-%m-%d')}, value = {latest_lf_value}, previous value = {previous_lf_value}")
+# Print latest points for troubleshooting
+log_latest_point(u, "UNEMPLOY")
+log_latest_point(v, "JTSJOL")
+log_latest_point(lf, "CLF16OV")
 
-else:
-    print("Failed to fetch CLF16OV data or data is empty.")
-
-# Extend vacancy index by 1 month at the end
+# Reshape vacancy data
 last_date = v.index.max()
 next_date = last_date + pd.offsets.MonthBegin(1)
-
-# Append NaN at the new date
 v_extended = v.reindex(v.index.union([next_date]))
-
-# Now shift vacancy values forward by 1 month
 v_shifted = v_extended.shift(1)
 
+# Concatenate data
 data = pd.concat([u, v_shifted, lf], axis=1, join='inner')
 data.columns = ['u', 'v', 'lf']
 data = data.dropna()
+if data.empty:
+    print("Merged input dataframe is empty after alignment. Exiting without generating new files.")
+    raise SystemExit(0)
 
 # Compute simple variables
 u_rate = (data['u'] / data['lf']) * 100
@@ -214,399 +387,137 @@ feru = (u_rate * v_rate).pow(0.5)
 u_gap = u_rate - feru
 
 # Compute Michez-rule variables
-# Compute 3-month trailing average of unemployment rate
-u_bar = u_rate.rolling(window=3, min_periods=1).mean()
-
 # Compute unemployment indicator
+u_bar = u_rate.rolling(window=3, min_periods=1).mean()
 u_hat = u_bar - u_bar.rolling(window=13, min_periods=1).min()
-
-# Round to 2 decimal places (basis point precision)
 u_indicator = u_hat.round(2)
-
-# Compute 3-month trailing average of vacancy rate
-v_bar = v_rate.rolling(window=3, min_periods=1).mean()
-
 # Compute vacancy indicator
+v_bar = v_rate.rolling(window=3, min_periods=1).mean()
 v_hat = v_bar.rolling(window=13, min_periods=1).max() - v_bar
-
-# Round to 2 decimal places (basis point precision)
 v_indicator = v_hat.round(2)
-
-# Compute minimum indicator
+# Compute Michez-rule indicator
 m = pd.DataFrame({'u_indicator': u_indicator, 'v_indicator': v_indicator}).min(axis=1)
-
 # Compute recession probability
 p_exact = (m - 0.29) / (0.81 - 0.29)
-
-# Clamp values between 0 and 1
 p_exact = p_exact.clip(lower=0, upper=1) * 100
-
-# Round to 1 decimal place
 p = p_exact.round(1)
 
 # Plot unemployment rate
-
-df = pd.DataFrame({"data": u_rate}).dropna()
-
-if not df.empty:
-    latest_processed_u_date = df.index.max()
-    latest_processed_u_value = df['data'].iloc[-1]
-    previous_processed_u_value = df['data'].iloc[-2]
-    print(f"Unemployment rate latest processed point for CSV: date = {latest_processed_u_date.strftime('%Y-%m-%d')}, value = {latest_processed_u_value:.4f}, previous value = {previous_processed_u_value:.4f}")
-else:
-    print("'df' is EMPTY before writing CSV.")
-
-last_date = df.index.max().strftime("%B %Y")
-last_value = df["data"].iloc[-1]
-title = f"{last_date}: {last_value:.2f}%"
-
-x_min = pd.to_datetime("2005-01-01")
-x_max = df.index.max()
-y_min = 0
-y_max = df["data"].max() * 1.05
-
-make_plot(df, "data", title, "unemployment_rate", "Unemployment rate (%)",x_min, x_max, y_min, y_max)
-
-# Save data
-
-csv_filename = "unemployment_rate.csv"
-csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
-df_out = df.copy()
-df_out.columns = ["Unemployment rate (%)"]
-df_out.index.name = "Date"
-df_out.to_csv(csv_path_absolute)
-print(f"Successfully wrote CSV: {csv_path_absolute}")
+plot_and_save_series(
+    series=u_rate,
+    graph_name="unemployment_rate",
+    y_label="Unemployment rate (%)",
+    csv_column_name="Unemployment rate (%)",
+    title_suffix="%",
+    usrec=usrec,
+    y_min=0,
+    y_max=lambda frame: frame["data"].max() * 1.05,
+    log_processed=True
+)
 
 # Plot vacancy rate
-
-df = pd.DataFrame({"data": v_rate}).dropna()
-
-if not df.empty:
-    latest_processed_v_date = df.index.max()
-    latest_processed_v_value = df['data'].iloc[-1]
-    previous_processed_v_value = df['data'].iloc[-2]
-    print(f"Vacancy rate latest processed point for CSV: date = {latest_processed_v_date.strftime('%Y-%m-%d')}, value = {latest_processed_v_value:.4f}, previous value = {previous_processed_v_value:.4f}")
-else:
-    print("'df' is EMPTY before writing CSV.")
-
-last_date = df.index.max().strftime("%B %Y")
-last_value = df["data"].iloc[-1]
-title = f"{last_date}: {last_value:.2f}%"
-
-x_min = pd.to_datetime("2005-01-01")
-x_max = df.index.max()
-y_min = 0
-y_max = df["data"].max() * 1.05
-
-make_plot(df, "data", title, "vacancy_rate", "Vacancy rate (%)", x_min, x_max, y_min, y_max)
-
-# Save data
-
-csv_filename = "vacancy_rate.csv"
-csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
-df_out = df.copy()
-df_out.columns = ["Vacancy rate (%)"]
-df_out.index.name = "Date"
-df_out.to_csv(csv_path_absolute)
-print(f"Successfully wrote CSV: {csv_path_absolute}")
-
-# Immediately after writing, read back and print tail in Python
-try:
-    df_read_back = pd.read_csv(csv_path_absolute, index_col="Date", parse_dates=True)
-    print("Last 3 rows of vacancy_rate.csv as read by Python immediately after write:")
-    print(df_read_back.tail(3).to_string())
-
-except Exception as e:
-    print(f"Error reading back {csv_path_absolute} in Python: {e}")
+plot_and_save_series(
+    series=v_rate,
+    graph_name="vacancy_rate",
+    y_label="Vacancy rate (%)",
+    csv_column_name="Vacancy rate (%)",
+    title_suffix="%",
+    usrec=usrec,
+    y_min=0,
+    y_max=lambda frame: frame["data"].max() * 1.05,
+    log_processed=True
+)
 
 # Plot labor market tightness
-
-df = pd.DataFrame({"data": tightness}).dropna()
-
-last_date = df.index.max().strftime("%B %Y")
-last_value = df["data"].iloc[-1]
-title = f"{last_date}: {last_value:.2f}"
-
-x_min = pd.to_datetime("2005-01-01")
-x_max = df.index.max()
-y_min = 0
-y_max = df["data"].max() * 1.05
-
-make_plot(df, "data", title, "labor_market_tightness", "Labor market tightness", x_min, x_max, y_min, y_max, hline=1)
-
-# Save data
-
-csv_filename = "labor_market_tightness.csv"
-csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
-df_out = df.copy()
-df_out.columns = ["Labor market tightness"]
-df_out.index.name = "Date"
-df_out.to_csv(csv_path_absolute)
-print(f"Successfully wrote CSV: {csv_path_absolute}")
+plot_and_save_series(
+    series=tightness,
+    graph_name="labor_market_tightness",
+    y_label="Labor market tightness",
+    csv_column_name="Labor market tightness",
+    title_suffix="",
+    usrec=usrec,
+    y_min=0,
+    y_max=lambda frame: frame["data"].max() * 1.05,
+    hline=1
+)
 
 # Plot Beveridge curve
-
-df = pd.DataFrame({
-    "u": u_rate,
-    "v": v_rate
-}).dropna()
-
-fig = go.Figure()
-
-fig.add_trace(go.Scatter(
-    x=df["u"],
-    y=df["v"],
-    customdata=df.index.strftime("%b %Y"), 
-    mode='markers',
-    marker=dict(size=7, color='#59539d'),
-    showlegend=False,
-    hovertemplate='%{customdata}<br>(%{x:.2f}, %{y:.2f})<extra></extra>'
-))
-
-# Add full employment line
-
-max_val = min(df["u"].max(), df["v"].max())
-
-fig.add_trace(go.Scatter(
-    x=[0, max_val],
-    y=[0, max_val],
-    mode='lines',
-    line=dict(color='rgba(217, 95, 2, 0.7)', width=1),
-    showlegend=False,
-    hoverinfo='skip'
-))
-
-# Add last observation
-
-last_point = df.iloc[[-1]]
-
-fig.add_trace(go.Scatter(
-    x=last_point["u"],
-    y=last_point["v"],
-    customdata=last_point.index.strftime("%b %Y"),
-    mode='markers',
-    marker=dict(size=9, color='#e7298a'),
-    hovertemplate='%{customdata}<br>(%{x:.2f}, %{y:.2f})<extra></extra>',
-    showlegend=False
-))
-
-# Adjust layout of graph
-
-fig.update_layout(
-    xaxis_title='Unemployment rate (%)',
-    yaxis_title='Vacancy rate (%)',
-    dragmode=False,
-    title_font=dict(size=16),
-    font=dict(family="Helvetica", size=16),
-    margin=dict(l=20, r=20, t=20, b=20),
-    plot_bgcolor='white',
-    paper_bgcolor='white',
-    xaxis=dict(
-        range=[0, df["u"].max() * 1.05],
-        title_font=dict(size=16),
-        tickfont=dict(size=16),
-        showgrid=True,
-        showline=True,
-        side='bottom',
-        mirror=False,
-        ticklabelposition="outside",
-        ticklabelstandoff=10,
-        linecolor='#e9e9e9',
-        gridcolor='#e9e9e9'
-    ),
-    yaxis=dict(
-        range=[0, df["v"].max() * 1.05],
-        title_font=dict(size=16),
-        tickfont=dict(size=16),
-        showgrid=True,
-        showline=True,
-        side='left',
-        mirror=False,
-        ticklabelposition="outside",
-        ticklabelstandoff=10,
-        linecolor='#e9e9e9',
-        gridcolor='#e9e9e9'
-    )
-)
-
-# Construct the absolute path for the Beveridge curve HTML
-beveridge_curve_html_path = os.path.join(OUTPUT_DIR_ABSOLUTE, "beveridge_curve.html")
-
-fig.write_html(
-    beveridge_curve_html_path,
-    include_plotlyjs='cdn',
-    full_html=False,
-    div_id="beveridge_curve", 
-    config={
-        "displaylogo": False,
-        "modeBarButtonsToRemove": [
-            "zoomIn2d",
-            "zoomOut2d",
-            "select2d",
-            "lasso2d",
-            "autoscale" 
-        ],
-        "toImageButtonOptions": {
-            "format": "png",
-            "filename": "beveridge_curve",
-            "height": 900,
-            "width": 1200,
-            "scale": 3
-        }
-    }
-)
-
-print(f"Successfully wrote HTML to: {beveridge_curve_html_path}")
-
+plot_beveridge_curve(u_rate, v_rate)
 
 # Plot FERU
-
-df = pd.DataFrame({"data": feru}).dropna()
-
-last_date = df.index.max().strftime("%B %Y")
-last_value = df["data"].iloc[-1]
-title = f"{last_date}: {last_value:.2f}%"
-
-x_min = pd.to_datetime("2005-01-01")
-x_max = df.index.max()
-y_min = 0
-y_max = df["data"].max() * 1.05
-
-make_plot(df, "data", title, "feru", "FERU (%)", x_min, x_max, y_min, y_max)
-
-# Save data
-
-csv_filename = "feru.csv"
-csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
-df_out = df.copy()
-df_out.columns = ["FERU (%)"]
-df_out.index.name = "Date"
-df_out.to_csv(csv_path_absolute)
-print(f"Successfully wrote CSV: {csv_path_absolute}") 
+plot_and_save_series(
+    series=feru,
+    graph_name="feru",
+    y_label="FERU (%)",
+    csv_column_name="FERU (%)",
+    title_suffix="%",
+    usrec=usrec,
+    y_min=0,
+    y_max=lambda frame: frame["data"].max() * 1.05
+)
 
 # Plot unemployment gap
-
-df = pd.DataFrame({"data": u_gap}).dropna()
-
-last_date = df.index.max().strftime("%B %Y")
-last_value = df["data"].iloc[-1]
-title = f"{last_date}: {last_value:.2f}pp"
-
-x_min = pd.to_datetime("2005-01-01")
-x_max = df.index.max()
-y_min = min(0, df["data"].min() * 1.05)
-y_max = df["data"].max() * 1.05
-
-make_plot(df, "data", title, "unemployment_gap", "Unemployment gap (pp)", x_min, x_max, y_min, y_max, hline=0)
-
-# Save data
-
-csv_filename = "unemployment_gap.csv"
-csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
-df_out = df.copy()
-df_out.columns = ["Unemployment gap (pp)"]
-df_out.index.name = "Date"
-df_out.to_csv(csv_path_absolute)
-print(f"Successfully wrote CSV: {csv_path_absolute}")
+plot_and_save_series(
+    series=u_gap,
+    graph_name="unemployment_gap",
+    y_label="Unemployment gap (pp)",
+    csv_column_name="Unemployment gap (pp)",
+    title_suffix="pp",
+    usrec=usrec,
+    y_min=lambda frame: min(0, frame["data"].min() * 1.05),
+    y_max=lambda frame: frame["data"].max() * 1.05,
+    hline=0
+)
 
 # Plot unemployment indicator
-
-df = pd.DataFrame({"data": u_indicator}).dropna()
-
-last_date = df.index.max().strftime("%B %Y")
-last_value = df["data"].iloc[-1]
-title = f"{last_date}: {last_value:.2f}pp"
-
-x_min = pd.to_datetime("2005-01-01")
-x_max = df.index.max()
-y_min = 0
-y_max = df["data"].max() * 1.05
-
-make_plot(df, "data", title, "unemployment_indicator", "Unemployment indicator (pp)", x_min, x_max, y_min, y_max)
-
-# Save data
-
-csv_filename = "unemployment_indicator.csv"
-csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
-df_out = df.copy()
-df_out.columns = ["Unemployment indicator (pp)"]
-df_out.index.name = "Date"
-df_out.to_csv(csv_path_absolute)
-print(f"Successfully wrote CSV: {csv_path_absolute}")
+plot_and_save_series(
+    series=u_indicator,
+    graph_name="unemployment_indicator",
+    y_label="Unemployment indicator (pp)",
+    csv_column_name="Unemployment indicator (pp)",
+    title_suffix="pp",
+    usrec=usrec,
+    y_min=0,
+    y_max=lambda frame: frame["data"].max() * 1.05
+)
 
 # Plot vacancy indicator
-
-df = pd.DataFrame({"data": v_indicator}).dropna()
-
-last_date = df.index.max().strftime("%B %Y")
-last_value = df["data"].iloc[-1]
-title = f"{last_date}: {last_value:.2f}pp"
-
-x_min = pd.to_datetime("2005-01-01")
-x_max = df.index.max()
-y_min = 0
-y_max = df["data"].max() * 1.05
-
-make_plot(df, "data", title, "vacancy_indicator", "Vacancy indicator (pp)", x_min, x_max, y_min, y_max)
-
-# Save data
-
-csv_filename = "vacancy_indicator.csv"
-csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
-df_out = df.copy()
-df_out.columns = ["Vacancy indicator (pp)"]
-df_out.index.name = "Date"
-df_out.to_csv(csv_path_absolute)
-print(f"Successfully wrote CSV: {csv_path_absolute}")
+plot_and_save_series(
+    series=v_indicator,
+    graph_name="vacancy_indicator",
+    y_label="Vacancy indicator (pp)",
+    csv_column_name="Vacancy indicator (pp)",
+    title_suffix="pp",
+    usrec=usrec,
+    y_min=0,
+    y_max=lambda frame: frame["data"].max() * 1.05
+)
 
 # Plot recession indicator
-
-df = pd.DataFrame({"data": m}).dropna()
-
-last_date = df.index.max().strftime("%B %Y")
-last_value = df["data"].iloc[-1]
-title = f"{last_date}: {last_value:.2f}pp"
-
-x_min = pd.to_datetime("2005-01-01")
-x_max = df.index.max()
-y_min = 0
-y_max = df["data"].max() * 1.05
-
-make_plot(df, "data", title, "recession_indicator", "Recession indicator (pp)", x_min, x_max, y_min, y_max, hline=0.29)
-
-# Save data
-
-csv_filename = "recession_indicator.csv"
-csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
-df_out = df.copy()
-df_out.columns = ["Recession indicator (pp)"]
-df_out.index.name = "Date"
-df_out.to_csv(csv_path_absolute)
-print(f"Successfully wrote CSV: {csv_path_absolute}")
+plot_and_save_series(
+    series=m,
+    graph_name="recession_indicator",
+    y_label="Recession indicator (pp)",
+    csv_column_name="Recession indicator (pp)",
+    title_suffix="pp",
+    usrec=usrec,
+    y_min=0,
+    y_max=lambda frame: frame["data"].max() * 1.05,
+    hline=0.29
+)
 
 # Plot recession probability
-
-df = pd.DataFrame({"data": p}).dropna()
-
-last_date = df.index.max().strftime("%B %Y")
-last_value = df["data"].iloc[-1]
-title = f"{last_date}: {last_value:.1f}%"
-
-x_min = pd.to_datetime("2005-01-01")
-x_max = df.index.max()
-y_min = 0
-y_max = 100.5
-
-make_plot(df, "data", title, "recession_probability", "Recession probability (%)", x_min, x_max, y_min, y_max, precision=1)
-
-# Save data
-
-csv_filename = "recession_probability.csv"
-csv_path_absolute = os.path.join(OUTPUT_DIR_ABSOLUTE, csv_filename)
-df_out = df.copy()
-df_out.columns = ["Recession probability (%)"]
-df_out.index.name = "Date"
-df_out.to_csv(csv_path_absolute)
-print(f"Successfully wrote CSV: {csv_path_absolute}")
+plot_and_save_series(
+    series=p,
+    graph_name="recession_probability",
+    y_label="Recession probability (%)",
+    csv_column_name="Recession probability (%)",
+    title_suffix="%",
+    usrec=usrec,
+    y_min=0,
+    y_max=100.5,
+    precision=1,
+    title_precision=1
+)
 
 print("Script finished.")
