@@ -48,7 +48,7 @@ def fetch_series_or_none(fred_client, series_id, required=True):
         series = fred_client.get_series(series_id)
         if series is None or series.empty:
             if required:
-                print(f"{series_id} data missing or empty. Dependent graphs will be skipped.")
+                print(f"{series_id} data missing or empty. Core dataset incomplete; script will exit without generating new files.")
             else:
                 print(f"{series_id} data missing or empty. Continuing without it.")
             return None
@@ -57,7 +57,7 @@ def fetch_series_or_none(fred_client, series_id, required=True):
         return series
     except Exception as error:
         if required:
-            print(f"{series_id} fetch failed: {error}. Dependent graphs will be skipped.")
+            print(f"{series_id} fetch failed: {error}. Core dataset incomplete; script will exit without generating new files.")
         else:
             print(f"{series_id} fetch failed: {error}. Continuing without it.")
         return None
