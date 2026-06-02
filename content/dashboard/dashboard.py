@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import time
 from fredapi import Fred
 from dotenv import load_dotenv
 import plotly.graph_objects as go
@@ -44,6 +45,7 @@ def get_recession_periods(rec_series):
 
 # Return a datetime-indexed series, or None if unavailable/empty
 def fetch_series_or_none(fred_client, series_id, required=True):
+    time.sleep(1)
     try:
         series = fred_client.get_series(series_id)
         if series is None or series.empty:
