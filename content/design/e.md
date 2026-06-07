@@ -9,7 +9,7 @@ description: "These commands simplify mathematical writing with LaTeX while auto
 summary: "These commands simplify mathematical writing with LaTeX while automatically respecting the rules of mathematical typography." 
 cover:
     image: "/e.png"
-    alt: "Mathematical expressions produced with commands"
+    alt: "Mathematical expressions produced with the commands"
 editPost:
     URL: "https://github.com/pmichaillat/latex-math"
     Text: "GitHub repository"

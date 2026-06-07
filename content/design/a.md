@@ -7,11 +7,11 @@ aliases:
     - /d2.pdf
     - /d2a.pdf
 author: "Pascal Michaillat"
-description: "This template produces an academic paper with LaTeX. The paper follows typographical best practices and has a minimalist design."
-summary: "This template produces an academic paper with LaTeX. The paper follows typographical best practices and has a minimalist design." 
+description: "This template produces an academic paper with LaTeX. The template follows typographical best practices and has a minimalist design."
+summary: "This template produces an academic paper with LaTeX. The template follows typographical best practices and has a minimalist design." 
 cover:
     image: "/a.png"
-    alt: "Paper page produced with template"
+    alt: "Paper page produced with the template"
 editPost:
     URL: "https://github.com/pmichaillat/latex-paper"
     Text: "GitHub repository"
@@ -19,7 +19,7 @@ showToc: true
 disableAnchoredHeadings: false
 ---
 
-The template produces an academic paper with [LaTeX](https://www.latex-project.org). The paper adheres to typographical best practices and has a minimalist design. The template is particularly well suited for research papers. It is designed so papers are comfortable to read and easy to scan, both in print and on screen. 
+The template produces an academic paper with [LaTeX](https://www.latex-project.org). The template adheres to typographical best practices and has a minimalist design. The template is particularly well suited for research papers. It is designed so papers are comfortable to read and easy to scan, both in print and on screen. 
 
 ---
 

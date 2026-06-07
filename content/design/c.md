@@ -6,11 +6,11 @@ aliases:
     - /d1/
     - /d1.pdf
 author: "Pascal Michaillat"
-description: "This template produces an academic presentation with LaTeX and Beamer. The presentation follows typographical best practices and has a minimalist design."
-summary: "This template produces an academic presentation with LaTeX and the Beamer class. The presentation follows typographical best practices and has a minimalist design."
+description: "This template produces an academic presentation with LaTeX and Beamer. The template follows typographical best practices and has a minimalist design."
+summary: "This template produces an academic presentation with LaTeX and the Beamer class. The template follows typographical best practices and has a minimalist design."
 cover:
     image: "/c.png"
-    alt: "Presentation slide produced with template"
+    alt: "Presentation slide produced with the template"
 editPost:
     URL: "https://github.com/pmichaillat/latex-presentation"
     Text: "GitHub repository"
@@ -19,7 +19,7 @@ disableAnchoredHeadings: false
 
 ---
 
-The template produces an academic presentation using [LaTeX](https://www.latex-project.org) with the [Beamer class](https://ctan.org/pkg/beamer). The presentation adheres to typographical best practices and has a minimalist design. The template is particularly well suited for research presentations. It is designed to convey scientific arguments and results effectively.
+The template produces an academic presentation using [LaTeX](https://www.latex-project.org) with the [Beamer class](https://ctan.org/pkg/beamer). The template adheres to typographical best practices and has a minimalist design. The template is particularly well suited for research presentations: it is designed to convey scientific arguments and results effectively.
 
 ---
 

@@ -5,11 +5,11 @@ url: /b/
 aliases: 
     - /d5/
 author: "Pascal Michaillat"
-description: "This template produces a personal academic website with Hugo. The website has a minimalist design and is hosted on GitHub Pages."
-summary: "This template produces a personal academic website with Hugo. The website has a minimalist design based on the PaperMod theme and is hosted on GitHub Pages." 
+description: "This template produces a personal academic website with Hugo. The template has a minimalist design and is hosted on GitHub Pages."
+summary: "This template produces a personal academic website with Hugo. The template has a minimalist design based on the PaperMod theme and is hosted on GitHub Pages." 
 cover:
     image: "/b.png"
-    alt: "Webpage produced with template"
+    alt: "Webpage produced with the template"
 editPost:
     URL: "https://github.com/pmichaillat/hugo-website"
     Text: "GitHub repository"
@@ -18,9 +18,7 @@ disableAnchoredHeadings: false
 
 ---
 
-The template produces a personal website with [Hugo](https://gohugo.io), which is a very fast, open-source static website generator. The website design is based on [PaperMod](https://github.com/adityatelange/hugo-PaperMod), which is a minimalist, fast, and flexible Hugo theme. The website is hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages); but it could easily be hosted on other services.
-
-The design has been customized for academic websites. The first goal was to obtain a minimalist website that is easy to navigate. The second goal was to obtain a website that highlights research and teaching materials. The third goal was to have a website that performs well (fast to load, good SEO, good accessibility). The website [performs very well](https://github.com/pmichaillat/hugo-website#performance) on mobile and desktop devices—just like the original PaperMod theme. The final goal was to design a website that is easy to maintain and expand.
+The template produces a personal website with [Hugo](https://gohugo.io), which is a fast, open-source static website generator. The template is based on [PaperMod](https://github.com/adityatelange/hugo-PaperMod), which is a minimalist, fast, and flexible Hugo theme. The template is hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages); but it could easily be hosted on other services. The template is tailored to academic websites: it is easy to navigate, it is easy to maintain and expand, it highlights research and teaching materials, and it performs well—it is fast to load, with good SEO and good accessibility, on both [mobile and desktop devices](https://github.com/pmichaillat/hugo-website#performance).
 
 ---
 

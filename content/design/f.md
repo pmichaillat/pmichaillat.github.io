@@ -5,11 +5,11 @@ url: /f/
 aliases:
     - /f1.pdf
 author: "Pascal Michaillat"
-description: "This template produces an academic CV with LaTeX. The CV follows typographical best practices and has a minimalist design."
-summary: "This template produces an academic CV with LaTeX. The CV follows typographical best practices and has a minimalist design. Also available is a more compact version of the template that produces a one-page CV." 
+description: "This template produces an academic CV with LaTeX. The template follows typographical best practices and has a minimalist design."
+summary: "This template produces an academic CV with LaTeX. The template follows typographical best practices and has a minimalist design. Also available is a more compact version of the template that produces a one-page CV." 
 cover:
     image: "/f.png"
-    alt: "CV produced with template"
+    alt: "CV produced with the template"
 editPost:
     URL: "https://github.com/pmichaillat/latex-cv"
     Text: "GitHub repository"
@@ -17,7 +17,7 @@ showToc: true
 disableAnchoredHeadings: false
 ---
 
-The template produces an academic CV with [LaTeX](https://www.latex-project.org). The CV adheres to typographical best practices and has a minimalist design. It is well suited for researchers at all levels, including students, postdocs, faculty members, and professional scientists. The design emphasizes structural clarity and visual simplicity. A more compact version of the template is also available to produce a one-page CV.
+The template produces an academic CV with [LaTeX](https://www.latex-project.org). The template adheres to typographical best practices and has a minimalist design. It is well suited for researchers at all levels, including students, postdocs, faculty members, and professional scientists. The design emphasizes structural clarity and visual simplicity. A more compact version of the template is also available to produce a one-page CV.
 
 ---
 
