@@ -10,9 +10,9 @@ summary: "This minicourse presents basic facts about business cycles. It then de
 cover:
     image: "/z.png"
     alt: "Slack and GDP over the business cycle"
-editPost:
-    URL: "https://github.com/pmichaillat/business-cycles/"
-    Text: "Source files"
+# editPost:
+#     URL: "https://github.com/pmichaillat/business-cycles/"
+#     Text: "Source files"
 showToc: true
 disableAnchoredHeadings: false
 

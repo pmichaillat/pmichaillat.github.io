@@ -37,7 +37,7 @@ cover:
     image: "/w.png"
     alt: "Optimal monetary and fiscal policy in slackish model"
 editPost:
-    URL: "https://github.com/pmichaillat/economic-slack"
+    URL: "https://github.com/pmichaillat/econ-221"
     Text: "Course portal"
 showToc: true
 disableAnchoredHeadings: false

@@ -57,7 +57,7 @@ cover:
     image: "/v.png"
     alt: "Rationing and frictional unemployment in the United States, 1964–2009"
 editPost:
-    URL: "https://github.com/pmichaillat/unemployment"
+    URL: "https://github.com/pmichaillat/econ-182"
     Text: "Course portal"
 showToc: true
 disableAnchoredHeadings: false
