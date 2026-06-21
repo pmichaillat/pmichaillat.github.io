@@ -9,7 +9,7 @@ This repository contains the source code and content for Pascal Michaillat's web
 
 ## Content
 
-+ [Book](https://pascalmichaillat.org/18/) - Draft chapters and appendices for "A Theory of Slack" are stored as PDF files in the `static` folder. Book metadata are stored in the Markdown file `content/18.md`.
++ [Book](https://pascalmichaillat.org/18/) - Draft chapters for the book "A Theory of Economic Slack" are stored as PDF files in the `static` folder. Book metadata are stored in the Markdown file `content/18.md`.
 + [Research papers](https://pascalmichaillat.org/papers/) - Papers, online appendices, and presentation slides are stored as PDF files in the `static` folder. Paper metadata are stored as Markdown files in the `content/papers` folder.
 + [Automated business cycle dashboard](https://pascalmichaillat.org/dashboard/) - Dashboard data are stored as CSV files in the `static/dashboard` folder. Dashboard graphs are stored as HTML files in the `static/dashboard` folder.  Python code to create the dashboard graphs is stored in the `content/dashboard` folder. Dashboard architecture is stored as a Markdown file in the `content/dashboard` folder. 
 + [Course materials](https://pascalmichaillat.org/courses/) - Lecture notes, lecture slides, and homework are stored as PDF files in the `static` folder. Course plans are stored as Markdown files in the `content/courses` folder.
