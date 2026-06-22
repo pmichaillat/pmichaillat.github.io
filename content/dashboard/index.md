@@ -194,9 +194,9 @@ Yes, almost. The two unemployment rates are computed similarly, but the BLS repo
 
 ### Is the vacancy rate the same as the BLS vacancy rate?
 
-No. The BLS computes the [vacancy rate](https://fred.stlouisfed.org/series/JTSJOR) as the number of job vacancies divided by the number of employed workers plus job openings. This computation is problematic for two reasons. First, it means that the BLS unemployment and vacancy rates are not consistent with each other, since one uses the number of employed workers plus unemployed workers in the denominator, while the other uses the number of employed workers plus job openings in the denominator. Second, the BLS vacancy rate is not a useful variable in labor market matching models.
+No. The BLS computes the [vacancy rate](https://fred.stlouisfed.org/series/JTSJOR) as the number of job vacancies divided by the number of employed workers plus job openings. This computation is problematic for two reasons. First, it means that the BLS unemployment and vacancy rates are not consistent with each other, since one uses the number of employed workers plus unemployed workers in the denominator, while the other uses the number of employed workers plus job openings in the denominator. Second, the BLS vacancy rate is not a useful variable in labor market models.
 
-By contrast, the dashboard computes the vacancy rate as the number of job vacancies divided by the number of employed workers plus unemployed workers. Our unemployment and vacancy rates are consistent with each other. Furthermore, our vacancy rate is the variable that appears directly in labor market matching models.
+By contrast, the dashboard computes the vacancy rate as the number of job vacancies divided by the number of employed workers plus unemployed workers. Our unemployment and vacancy rates are consistent with each other, and our vacancy rate is the variable that appears directly in models.
 
 ### Isn't the vacancy rate inflated by ghost job postings?
 
