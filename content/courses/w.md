@@ -78,7 +78,7 @@ The course is centered around formal modeling, but it also presents evidence sup
 
 + [Darity and Goldsmith (1996)](https://doi.org/10.1257/jep.10.1.121) –  This survey reviews the social-psychological consequences of unemployment. It finds that exposure to unemployment severely damages psychological health.
 + [Winkelmann and Winkelmann (1998)](https://doi.org/10.1111/1468-0335.00111) – This paper uses panel data to show that unemployment causes unhappiness (and not the other way around). It finds that unemployment significantly reduces life satisfaction, and that the non-pecuniary cost of unemployment is much larger than the pecuniary cost.
-+ [Di Tella, MacCulloch, and Oswald (2003)](https://doi.org/10.1162/003465303772815745) – This paper finds in well-being surveys that unemployment make people unhappy. Being unemployed makes you unhappy, and having unemployment in your country makes you unhappy. In fact, after controlling for income and other personal characteristics, becoming unemployed appears as painful as divorcing.
++ [Di Tella, MacCulloch, and Oswald (2003)](https://doi.org/10.1162/003465303772815745) – This paper finds in well-being surveys that unemployment makes people unhappy. Being unemployed makes you unhappy, and having unemployment in your country makes you unhappy. In fact, after controlling for income and other personal characteristics, becoming unemployed appears as painful as divorcing.
 + [Borgschulte and Martorell (2018)](https://doi.org/10.1257/app.20160257) – This paper provides revealed-preference estimates of the cost of unemployment. It finds that unemployment is indeed very costly.
 
 ---
@@ -87,7 +87,7 @@ The course is centered around formal modeling, but it also presents evidence sup
 
 This section first reviews the Kuhnian model of science. It then uses the Kuhnian perspective to understand how, over the past century, business-cycle macroeconomics evolved from the IS-LM model (inspired by Keynes's *General Theory*) to the General Disequilibrium model (with nonclearing markets) to the Real Business-Cycle model (with perfectly competitive markets) and finally to the New Keynesian model (with monopolistically competitive markets).
 
-Modern business-cycle models—both Real Business-Cycle model New Keynesian model—focus on fluctuations in prices and quantities. By contrast, the business-cycle model developed in this course accounts for fluctuations in prices, quantities, and slack. Introducing slack is especially important to study business cycles because slack varies far more than prices over the business cycle. Introducing slack is necessary to study business-cycle stabilization policies because fluctuations in slack have large consequences for welfare.
+Modern business-cycle models—both the Real Business-Cycle model and the New Keynesian model—focus on fluctuations in prices and quantities. By contrast, the business-cycle model developed in this course accounts for fluctuations in prices, quantities, and slack. Introducing slack is especially important to study business cycles because slack varies far more than prices over the business cycle. Introducing slack is necessary to study business-cycle stabilization policies because fluctuations in slack have large consequences for welfare.
 
 ###### Lecture videos
 

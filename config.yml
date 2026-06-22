@@ -14,10 +14,10 @@ menu:
           weight: 1
         - name: Papers
           url: /papers/
-          weight: 2
+          weight: 3
         - name: Dashboard
           url: /dashboard/
-          weight: 3
+          weight: 2
         - name: Courses
           url: /courses/
           weight: 4
@@ -51,17 +51,17 @@ params:
     profileMode:
           enabled: true
           title: Pascal Michaillat
-          subtitle: "I am a professor of economics at the University of California, Santa Cruz. I work primarily on economic slack, especially unemployment: why it exists, why it fluctuates over the business cycle, and how macroeconomic policies should respond to such fluctuations. The takeaway from my research is that almost all markets have slack, so they operate differently from Walrasian markets: they adjust through slack instead of prices and are generally inefficient. Slack helps us understand business cycles: it lets us measure full employment, identify the shocks that disturb the economy, explain inflation movements, detect recessions early, and design effective monetary and fiscal policy."
+          subtitle: "I am a professor of economics at the University of California, Santa Cruz. I work mostly on economic slack, especially unemployment: why it exists, why it fluctuates over the business cycle, and how policies should respond to such fluctuations. The takeaway is that almost all markets have slack, so they operate differently from Walrasian markets: they primarily adjust through slack instead of prices and are generally inefficient. Slack helps us understand business cycles: it lets us measure full employment, identify the shocks that disturb the economy, explain inflation movements, detect recessions early, and design effective monetary and fiscal policy."
           imageUrl: "/picture.jpeg"
           imageWidth: 130
           imageHeight: 130
           buttons:
             - name: Book
               url: /18/
-            - name: Papers
-              url: /papers/
             - name: Dashboard
               url: /dashboard/  
+            - name: Papers
+              url: /papers/
             - name: Courses
               url: /courses/
             - name: Design
