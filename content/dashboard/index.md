@@ -106,7 +106,7 @@ All charts automatically update as new data become [available on FRED](https://f
 </iframe>
 
 + *Construction* - The full-employment rate of unemployment (FERU) is the geometric average of the unemployment and vacancy rates: $u^\ast = \sqrt{u \times v}$, where $u$ is the unemployment rate, $v$ is the vacancy rate, and $u^\ast$ is the FERU. 
-+ *Interpretation* - The FERU marks full employment. The [1946 Employment Act](https://fraser.stlouisfed.org/title/1099) of 1946 and [1978 Full Employment and Balanced Growth Act](https://fraser.stlouisfed.org/title/1034) state that achieving full employment is a way to maximize social welfare. So we compute the FERU as the unemployment rate that is socially efficient: it maximizes social welfare by minimizing socially unproductive uses of labor—both jobseeking and recruiting. The computation yields the formula $u^\ast = \sqrt{uv}$, and tells us that the FERU is also the socially efficient unemployment rate.
++ *Interpretation* - The FERU marks full employment. The [1946 Employment Act](https://fraser.stlouisfed.org/title/1099) and [1978 Full Employment and Balanced Growth Act](https://fraser.stlouisfed.org/title/1034) state that achieving full employment is a way to maximize social welfare. So we compute the FERU as the unemployment rate that maximizes social welfare by minimizing socially unproductive uses of labor—both job seeking and recruiting. The computation yields $u^\ast = \sqrt{u \times v}$, and tells us that the FERU is also the socially efficient unemployment rate.
 + *Visualization* - On the Beveridge diagram, the FERU is at the intersection of the Beveridge curve and the 45° ray. The implication is that the FERU is determined by the location of the Beveridge curve: it is higher whenever the Beveridge curve is further outward.
 + [Download FERU](/dashboard/feru.csv)
 + [View FERU in full screen](/dashboard/feru.html)
@@ -166,7 +166,7 @@ All charts automatically update as new data become [available on FRED](https://f
 
 ---
 
-## Frequently asked data questions
+## Frequently asked questions
 
 ### When do the numbers for the current month become available?
 
@@ -198,6 +198,24 @@ No. The BLS computes the [vacancy rate](https://fred.stlouisfed.org/series/JTSJO
 
 By contrast, the dashboard computes the vacancy rate as the number of job vacancies divided by the number of employed workers plus unemployed workers. Our unemployment and vacancy rates are consistent with each other. Furthermore, our vacancy rate is the variable that appears directly in labor market matching models.
 
+### Isn't the vacancy rate inflated by ghost job postings?
+
+Vacancy data have recently been criticized for being polluted by ghost vacancies. These vacancies do not actually represent an open position, and will not lead to a new hire. A [recent article](https://perma.cc/JUR9-W4AA) by CBS News explains that ghost job listings are a growing problem in the labor market.
+
+But vacancies are measured by the BLS, just like all other labor market statistics; they are not measured from online job postings. Specifically, the JOLTS asks firms to report the number of vacancies that they currently have, where a vacancy is defined as follows:
+
++ A specific position exists and work is available.
++ The job could start within 30 days.
++ The firm is actively recruiting workers from the outside to fill the position.
+
+These questions are similar to the questions asked by the BLS to workers in the CPS in order to assess their labor force status, so the bar for reporting a job vacancy is as high as the bar for being counted as a job seeker. As our vacancy numbers do not come from online job boards, what happens on online job boards is irrelevant. 
+
+### Why is the FERU not constant?
+
+The FERU describes the socially efficient position of the labor market on the Beveridge curve, so it is not constant but determined by the location of the Beveridge curve. When the Beveridge curve shifts outward, the FERU increases; when the Beveridge curve shifts inward, the FERU decreases. Typical Beveridge curve shifts do not affect the FERU much. For instance, between 1951 and 2019, the FERU remained broadly between 3% and 5.5%. The Beveridge curve did shift in and out during the postwar period, but the shifts were not large enough to produce noteworthy changes in the FERU. 
+
+During the coronavirus pandemic, the Beveridge curve shifted out dramatically, which raised the FERU significantly. As the Beveridge curve normalized in the years after the pandemic, the FERU returned to normal levels. The FERU increase that followed the pandemic is extraordinary: the pandemic is the first time in the past century that the FERU crossed 6%.
+
 ### How does the Michez rule relate to the Sahm rule?
 
 The Michez rule is based on the same idea as the Sahm rule: looking for a rapid deterioration of labor market variables to detect recessions. But while the Sahm rule only uses the unemployment rate for detection, the Michez rule uses both the unemployment and vacancy rates. 
@@ -208,31 +226,3 @@ By combining data on unemployment and vacancies, the Michez rule obtains a less 
 + Maximum detection delay, 1960–2021: 3 months < 7 months
 
 The Michez rule is also more robust: it identifies all 15 recessions since 1929 without false positives, whereas the Sahm rule breaks down before 1960.
-
-### Is the FERU the same as the NAIRU?
-
-No. In recent times, the US government has used the non-accelerating-inflation rate of unemployment (NAIRU) as full-employment target. For instance, the Joint Economic Committee [recently wrote](https://perma.cc/E9V8-XTFH):
-
-> Today, full employment is considered by many to be synonymous with the non-accelerating inflationary rate of unemployment (NAIRU)—the rate of unemployment that neither stokes nor slows inflation.
-
-Similarly, in 2024, the Council of Economic Advisers described the concept of full employment [as follows](https://perma.cc/2JGM-QG4Z): 
-
-> Modern economics has generally defined full employment by citing the theoretical concept of the lowest unemployment rate consistent with stable inflation, which is referred to as $u^\ast$, the non-accelerating inflationary rate of unemployment (termed NAIRU).
-
-These quotes are particularly meaningful because the Joint Economic Committee and Council of Economic Advisers were both created by the Employment Act of 1946 to ensure that the government achieved its full-employment mandate.
-
-But this is a misconception: the NAIRU is an entirely different concept than the FERU. The FERU is the socially efficient unemployment rate. The NAIRU is the unemployment rate at which inflation remains stable. Since there is no guarantee that the unemployment rate prevailing under stable inflation is efficient, there is no guarantee that the NAIRU and FERU are the same.
-
-### Is the FERU the same as the CBO's NRU?
-
-Another full-employment target used by the US government is the natural rate of unemployment (NRU)—recently rebranded noncyclical rate of unemployment—constructed by the Congressional Budget Office (CBO). The CBO's NRU is a [slow-moving trend](https://perma.cc/NU5V-8ZY4) of the unemployment rate computed by assuming that the labor market was at full employment in 2005 and then incorporating changes in the demographic composition of the labor force over time. 
-
-But, without a theory of full employment, it is impossible to know whether the US labor market really was at full employment in 2005, and by induction, whether the NRU in any year measures full employment. The NRU can therefore not be a satisfactory measure of full employment.
-
-### Why is the FERU not constant?
-
-The FERU is computed as the unemployment rate that maximizes social welfare, or equivalently that minimizes the nonproductive use of labor: both unemployment and recruiting. As it takes one worker to service one job vacancy, the nonproductive use of labor is measured by the number of job seekers and job vacancies. Through the Beveridge curve, the numbers of job seekers and vacancies are inversely related, so it is not possible to reduce the numbers of job seekers and job vacancies at the same time. Instead the social planner faces a tradeoff which is resolved by the FERU.
-
-Because the FERU describes the socially efficient position of the labor market on the Beveridge curve, it is not constant but determined by the location of the Beveridge curve. When the Beveridge curve shifts outward, the FERU increases; when the Beveridge curve shifts inward, the FERU decreases. Typical Beveridge curve shifts do not affect the FERU much. For instance, between 1951 and 2019, the FERU remained between 3.1% and 5.5%, with an average value of 4.3%. The Beveridge curve did shift in and out during the postwar period, but the shifts were not large enough to produce noteworthy changes in the FERU. 
-
-During the coronavirus pandemic, the Beveridge curve shifted out dramatically. The Beveridge curve then slowly shifted back inward. In 2025, the curve is almost back to its pre-pandemic position, although it remains somewhat further out. The dramatic shift raised the FERU significantly: from 3.8% in January 2020 to 7.5% in April 2020. As the Beveridge curve normalized in the years after the pandemic, the FERU returned to normal levels. The FERU increase that followed the pandemic is extraordinary: such a large increase had never been recorded before. The pandemic was also the first time in the past century that the FERU crossed 6%.
