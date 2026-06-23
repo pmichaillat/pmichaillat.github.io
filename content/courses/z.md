@@ -31,8 +31,8 @@ The main take-away from the course is that business cycles are essentially fluct
 This first section reviews basic facts about business cycles. It decomposes business-cycle fluctuations into two components: fluctuations in productive capacity, and fluctuations in capacity utilization. It finds that the vast majority of business-cycle fluctuations are caused by fluctuations in capacity utilization—or equivalently fluctuations in slack. It also shows that such fluctuations in slack impose large welfare costs, due to the large non-monetary costs of unemployment.
 
 + [Lecture slides](/z1.pdf)
-+ Reference on business-cycle facts: [Stock, Watson (1999)](https://doi.org/10.1016/S1574-0048(99)01004-6)
-+ Reference on the psychological cost of unemployment: [Darity, Goldsmith (1996)](https://doi.org/10.1257/jep.10.1.121)
++ Reference on business-cycle facts: [Stock and Watson (1999)](https://doi.org/10.1016/S1574-0048(99)01004-6)
++ Reference on the psychological cost of unemployment: [Darity and Goldsmith (1996)](https://doi.org/10.1257/jep.10.1.121)
 
 ---
 
@@ -45,8 +45,8 @@ Wealth enters the utility function. People derive direct utility from wealth, ma
 The matching model requires to specify price norms. Theoretically, there are many possibilities. Evidence from microdata and ethnographic surveys suggests that prices and wages are not fully flexible but instead somewhat rigid. The section shows how such rigid pricing norms can be inserted into the model. Then the section derives comparative statics in response to aggregate demand and aggregate supply shocks under fixed prices and rigid prices. 
 
 + [Lecture slides](/z2.pdf)
-+ Reference on the matching function: [Petrongolo, Pissarides (2001)](https://doi.org/10.1257/jel.39.2.390)
-+ Reference on the business-cycle model: [Michaillat, Saez (2015)](/3.pdf)
++ Reference on the matching function: [Petrongolo and Pissarides (2001)](https://doi.org/10.1257/jel.39.2.390)
++ Reference on the business-cycle model: [Michaillat and Saez (2015)](/3/)
 
 ---
 
@@ -57,7 +57,7 @@ This section presents a dynamic version of the slackish business-cycle model. In
 An advantage of moving to a dynamic environment is that interest rates appear into the model. Indeed, the real interest rate is a key determinant of aggregate demand. By setting a nominal interest rate, the central bank can stabilize the economy. The model is therefore useful to study the effect of monetary policy on unemployment—for instance to assess the possibility of a soft landing in the aftermath of the pandemic inflation spike.
 
 + [Lecture slides](/z3.pdf)
-+ Reference: [Michaillat, Saez (2022)](/7.pdf)
++ Reference: [Michaillat and Saez (2022)](/7/)
 
 ---
 
@@ -72,6 +72,6 @@ Since the US unemployment rate is always inefficiently high in slumps, and somet
 Once monetary policy reaches the zero lower bound, however, it becomes impotent, and it has to be supplemented by fiscal policy. The section finally studies how government spending should be adjusted when unemployment is inefficient. It shows that that optimal government spending deviates from the Samuelson rule to reduce, but not eliminate, the unemployment gap.
 
 + [Lecture slides](/z4.pdf)
-+ Reference on efficient unemployment rate: [Michaillat, Saez (2021)](/9.pdf)
-+ Reference on optimal monetary policy: [Michaillat, Saez (2022)](/7.pdf)
-+ Reference on optimal government spending: [Michaillat, Saez (2019)](/6.pdf)
++ Reference on efficient unemployment rate: [Michaillat and Saez (2021)](/9/)
++ Reference on optimal monetary policy: [Michaillat and Saez (2022)](/7/)
++ Reference on optimal government spending: [Michaillat and Saez (2019)](/6/)

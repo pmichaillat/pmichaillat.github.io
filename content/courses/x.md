@@ -70,7 +70,7 @@ This third section introduces differential equations, which are used to describe
 
 + [Lecture notes](/x3.pdf)
 + [Problem set](/x6.pdf)
-+ Reference: [Hirsch, Smale, Devaney (2013, chapters 1–6)](https://www.sciencedirect.com/book/9780123820105/differential-equations-dynamical-systems-and-an-introduction-to-chaos)
++ Reference: [Hirsch, Smale, and Devaney (2013, chapters 1–6)](https://www.sciencedirect.com/book/9780123820105/differential-equations-dynamical-systems-and-an-introduction-to-chaos)
 
 ---
 
@@ -82,5 +82,4 @@ To conclude, a little more practice. The problem set below brings together all t
 
 Outside of growth theory, optimal control and differential equations are not used very much. Yet they are powerful tools to obtain theoretical results not only in long-run macroeconomics but also in short-run macroeconomics. As the paper below shows, you can use them to analyze the New Keynesian model. It is easy to set up the model in continuous time, solve the household's problem with optimal control, and study the model's properties in normal times and at the zero lower bound using phase diagrams. The analysis is short and simple, and it offers many insights that are difficult to obtain in discrete time. For instance, with the phase diagrams, it is easy to understand the origins of the anomalies of the New Keynesian model at the zero lower bound—both the collapse of output and inflation and the implausibly large effects of government spending and forward guidance.
 
-+ [Analysis of the New Keynesian model by phase diagrams](/11.pdf)
-+ [Derivation of the New Keynesian Euler equation and Phillips curve by optimal control](/11a.pdf)
++ [Analysis of the New Keynesian model by phase diagrams](/11/)

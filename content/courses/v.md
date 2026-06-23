@@ -122,7 +122,7 @@ This section reviews basic facts about the labor market and unemployment in the 
 for the shift from print job advertising to online job advertising in the 1990s.
 + [Petrosky-Nadeau and Zhang (2021)](https://doi.org/10.1016/j.jmoneco.2020.01.009) – This paper combines various historical datasets to extend the BLS measure of US unemployment rate (which starts in 1948) and the Barnichon measure of US vacancy rate (which starts in 1951). The resulting measures of the US unemployment and vacancy rates go back to World War 1 (1919).
 + [Shimer (2012)](https://doi.org/10.1016/j.red.2012.02.001) – This paper shows that in the United States, unemployment fluctuations are caused by fluctuations in the job-finding rate and not fluctuations in the job-separation rate.
-+ [Michaillat and Saez (2025)](/16.pdf) – This paper combines data on unemployment and job vacancies to build a new recession rule. The rule detects all US recessions since 1929, without errors, and it detects them faster than well-known existing rules. The rule detected a US recession as early as March 2024.
++ [Michaillat and Saez (2025)](/16/) – This paper combines data on unemployment and job vacancies to build a new recession rule. The rule detects all US recessions since 1929, without errors, and it detects them faster than well-known existing rules. The rule detected a US recession as early as March 2024.
 
 ###### Practice material
 
@@ -172,7 +172,7 @@ This section introduces the matching model of the labor market. This is the mode
 + [Rogerson, Shimer, and Wright (2005)](https://doi.org/10.1257/002205105775362014) – This survey reviews a range of search-and-matching models.
 + [Pissarides (2011)](https://doi.org/10.1257/aer.101.4.1092) – In this Nobel lecture, Christopher Pissarides presents the history of the DMP model. He also discusses several applications of the model.
 + [Mortensen (2011)](https://doi.org/10.1257/aer.101.4.1073) – In this Nobel lecture, Dale Mortensen presents a brief history of the DMP model and a basic version of the model. He then discusses how the model can help understand the Great Recession of 2008–2009.
-+ [Michaillat (2024)](/14.pdf) – This paper develops a basic matching model of the labor market and uses it to study the impact of migration on local workers. The model and its presentation are similar to those in the course. The paper shows that despite its simplicity, the model developed in the course is helpful to understand contemporary economic and political issues.
++ [Michaillat (2024)](/14/) – This paper develops a basic matching model of the labor market and uses it to study the impact of migration on local workers. The model and its presentation are similar to those in the course. The paper shows that despite its simplicity, the model developed in the course is helpful to understand contemporary economic and political issues.
 
 ###### Practice material
 
@@ -307,13 +307,13 @@ Technically, the DMP model does not feature job rationing because its labor dema
 
 ###### Main readings
 
-+ [Michaillat (2012)](/1.pdf) – This paper first establishes that the DMP model does not have job rationing and then develops a matching model with job rationing. The job-rationing model departs from the DMP model by assuming that the production has diminishing returns to labor instead of constant returns to labor, and that the real wage is given by a rigid wage norm instead of Nash bargaining. In that model unemployment can be decomposed into rationing and frictional components. In recessions, the rationing component is large while the frictional component is small.
++ [Michaillat (2012)](/1/) – This paper first establishes that the DMP model does not have job rationing and then develops a matching model with job rationing. The job-rationing model departs from the DMP model by assuming that the production has diminishing returns to labor instead of constant returns to labor, and that the real wage is given by a rigid wage norm instead of Nash bargaining. In that model unemployment can be decomposed into rationing and frictional components. In recessions, the rationing component is large while the frictional component is small.
 + [Crepon, Duflo, Gurgand, Rathelot, and Zamora (2013)](https://doi.org/10.1093/qje/qjt001) – This paper reports the results from a randomized experiment designed to evaluate the direct and indirect effects of job-placement assistance in France. It finds that job seekers who are given job-placement assistance find jobs more rapidly, while job seekers in the same labor market who are not assisted take longer to find a job. This finding suggests that jobs are somewhat rationed, and that assisted job seekers move ahead of non-assisted job seekers in job queues. The spillovers of job-placement assistance are particularly strong in bad times, when jobs are scarcer.
 
 ###### Additional readings
 
 + [Akerlof, Rose, and Yellen (1988)](https://doi.org/10.2307/2534536) – This paper develops an early matching model of the labor market with job rationing. The model reproduces a number of stylized facts of the US labor market regarding quits and vacancy chains. While the model in not in the DMP tradition, it does feature a Beveridge curve.
-+ [Michaillat and Saez (2015)](/3.pdf) – This paper adds aggregate demand to the model in Michaillat (2012). This is done by adding a product market to the labor market with a similar matching structure. Aggregate demand shocks generate fluctuations in unemployment and vacancies along the Beveridge curve. In that model, unemployment can be decomposed into three components: Keynesian unemployment (due to insufficient aggregate demand), classical unemployment (due to high real wages), and frictional unemployment (due to matching frictions).
++ [Michaillat and Saez (2015)](/3/) – This paper adds aggregate demand to the model in Michaillat (2012). This is done by adding a product market to the labor market with a similar matching structure. Aggregate demand shocks generate fluctuations in unemployment and vacancies along the Beveridge curve. In that model, unemployment can be decomposed into three components: Keynesian unemployment (due to insufficient aggregate demand), classical unemployment (due to high real wages), and frictional unemployment (due to matching frictions).
 + [Breza, Kaur, and Shamdasani (2021)](https://doi.org/10.1257/aer.20201385) – This paper measures job rationing in Indian labor markets by inducing large shocks to the local labor supply. They find that jobs are rationed in lean months, with rationing unemployment amounting to a quarter of the labor force. They also find that self-employment is mostly involuntary: it is not a desirable choice but a consequence of the lack of job opportunities.
 
 ###### Practice material
@@ -356,8 +356,8 @@ The section finally shows that in the United States, the unemployment gap is gen
 
 ###### Main readings
 
-+ [Michaillat and Saez (2021)](/9.pdf) – This paper derives sufficient-statistic formulas for efficient labor market tightness and efficient unemployment rate. It applies the formulas to the United States and finds that the US labor market is generally inefficiently slack, and especially inefficiently slack in slumps.
-+ [Michaillat and Saez (2024)](/13.pdf) – This paper shows that under simple but realistic assumptions, the sufficient-statistic formula for the efficient unemployment rate from Michaillat and Saez (2021) reduces to $u^\ast = \sqrt{uv}$. This unemployment rate marks not only social efficiency but also full employment. In the United States, 1930–2024, the full-employment rate of unemployment (FERU) $u^\ast$ averages 4.1%.
++ [Michaillat and Saez (2021)](/9/) – This paper derives sufficient-statistic formulas for efficient labor market tightness and efficient unemployment rate. It applies the formulas to the United States and finds that the US labor market is generally inefficiently slack, and especially inefficiently slack in slumps.
++ [Michaillat and Saez (2024)](/13/) – This paper shows that under simple but realistic assumptions, the sufficient-statistic formula for the efficient unemployment rate from Michaillat and Saez (2021) reduces to $u^\ast = \sqrt{uv}$. This unemployment rate marks not only social efficiency but also full employment. In the United States, 1930–2024, the full-employment rate of unemployment (FERU) $u^\ast$ averages 4.1%.
 
 ###### Additional readings
 
@@ -408,7 +408,7 @@ Over the business cycle, fluctuations in labor demand generate fluctuations in u
 
 ###### Main readings
 
-+ [Michaillat (2014)](/2.pdf) – This paper establishes that in a matching model with job rationing, the public-employment multiplier is positive but less than one, and the multiplier is larger when the unemployment rate is higher. These predictions are consistent with a growing body of evidence from the United States and abroad.
++ [Michaillat (2014)](/2/) – This paper establishes that in a matching model with job rationing, the public-employment multiplier is positive but less than one, and the multiplier is larger when the unemployment rate is higher. These predictions are consistent with a growing body of evidence from the United States and abroad.
 + [Auerbach and Gorodnichenko (2012)](https://doi.org/10.1257/pol.4.2.1) – This paper finds that in the United States, government multipliers are larger when the unemployment rate is higher than when the unemployment rate is lower.
 
 ###### Additional readings
@@ -461,8 +461,8 @@ In the United  States, unemployment insurance is more generous in bad times than
 
 ###### Main readings
 
-+ [Landais, Michaillat, and Saez (2018a)](/4.pdf) – This paper studies optimal unemployment insurance in a matching model and obtains a sufficient-statistic formula for optimal unemployment insurance.
-+ [Landais, Michaillat, and Saez (2018b)](/5.pdf) – This paper applies the sufficient-statistic formula from Landais, Michaillat, and Saez (2018a) to the United States and finds that optimal unemployment insurance is countercyclical—more generous in bad times than in good times.
++ [Landais, Michaillat, and Saez (2018a)](/4/) – This paper studies optimal unemployment insurance in a matching model and obtains a sufficient-statistic formula for optimal unemployment insurance.
++ [Landais, Michaillat, and Saez (2018b)](/5/) – This paper applies the sufficient-statistic formula from Landais, Michaillat, and Saez (2018a) to the United States and finds that optimal unemployment insurance is countercyclical—more generous in bad times than in good times.
 
 ###### Additional readings
 

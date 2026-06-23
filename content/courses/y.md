@@ -121,8 +121,8 @@ The IS-LM model does not feature unemployment, which is problematic because high
 
 ###### References
 
-+ [Michaillat (2012)](/1.pdf) – This paper shows how to introduce job rationing into a matching model of unemployment. It also shows that a mild amount of wage rigidity is sufficient to generate realistic fluctuations in unemployment over the business cycle.
-+ [Landais, Michaillat, Saez (2018)](/4.pdf) – This paper develops a static matching model of unemployment. It represents its equilibrium with labor demand and supply curves in an employment-tightness plane.
++ [Michaillat (2012)](/1/) – This paper shows how to introduce job rationing into a matching model of unemployment. It also shows that a mild amount of wage rigidity is sufficient to generate realistic fluctuations in unemployment over the business cycle.
++ [Landais, Michaillat, and Saez (2018)](/4/) – This paper develops a static matching model of unemployment. It represents its equilibrium with labor demand and supply curves in an employment-tightness plane.
 
 ###### Homework
 
@@ -142,7 +142,7 @@ This section introduces the Phillips curve and discusses fluctuations in inflati
 ###### References
 
 + [Phillips (1958)]( https://doi.org/10.1111/j.1468-0335.1958.tb00003.x) – This paper discovers a negative relation between unemployment and wage inflation in the United Kingdom.
-+ [Samuelson, Solow (1960)](https://www.jstor.org/stable/1815021) – This paper discovers a negative relation between unemployment and price inflation in the United States. (It also finds a negative relation between unemployment and wage inflation in the United States.)
++ [Samuelson and Solow (1960)](https://www.jstor.org/stable/1815021) – This paper discovers a negative relation between unemployment and price inflation in the United States. (It also finds a negative relation between unemployment and wage inflation in the United States.)
 
 ###### Homework
 

@@ -179,7 +179,7 @@ This section develops a basic slackish model of the economy. The model is static
 
 ###### Main readings
 
-+ [Michaillat and Saez (2015, sections 1–2)](/3.pdf) – These sections develop the basic slackish model.
++ [Michaillat and Saez (2015, sections 1–2)](/3/) – These sections develop the basic slackish model.
 + [Camerer, Loewenstein, and Prelec (2005)](https://doi.org/10.1257/0022051053737843) – This survey reviews advances in neuroeconomics—a field that uses results from biology and neuroscience to develop better economic models. One key insight from the survey is that people value money in and of itself—not solely as future consumption.
 
 ###### Additional readings
@@ -236,7 +236,7 @@ This section provides additional discussions of the solution concept used in the
 
 ###### Main reading
 
-+ [Michaillat and Saez (2015, sections 2D and 2H)](/3.pdf) – These sections discuss the equilibrium concept in the slackish model, and solve the model in the special case with no matching cost.
++ [Michaillat and Saez (2015, sections 2D and 2H)](/3/) – These sections discuss the equilibrium concept in the slackish model, and solve the model in the special case with no matching cost.
 
 ###### Additional reading
 
@@ -276,10 +276,10 @@ This section reviews evidence from microdata and ethnographic surveys. The evide
 + [Shimer (2005)](https://doi.org/10.1257/0002828053828572) – This paper shows that in a matching model with Nash bargaining, wages are too flexible to generate realistic fluctuations in unemployment and vacancies.
 + [Hall (2005)](https://doi.org/10.1257/0002828053828482) – This paper explains how a fixed wage norm can be inserted into a matching model, and shows that such a model generates large fluctuations in unemployment and vacancies.
 + [Bewley (2005)](https://doi.org/10.7551/mitpress/4771.003.0017) – This paper reviews survey and experimental evidence of wage rigidity. It then argues that firms avoids pay cuts because they damage morale, which eventually reduces productivity, increases turnover, and complicates recruiting.
-+ [Hazell and Taska (2024)](https://jadhazell.github.io/website/Downward_Rigidity.pdf) – This paper shows that the wage for newly hired US workers is rigid downward and flexible upward. The wage attached to each job does not respond to rises in unemployment, but it rises strongly when unemployment falls.
++ [Hazell and Taska (2024)](https://doi.org/10.1257/aer.20201793) – This paper shows that the wage for newly hired US workers is rigid downward and flexible upward. The wage attached to each job does not respond to rises in unemployment, but it rises strongly when unemployment falls.
 + [Haefke, Sonntag, and van Rens (2013)](https://doi.org/10.1016/j.jmoneco.2013.09.003) – This paper constructs a series for wages of newly hired US workers and find that the elasticity of these wages with respect to productivity is 0.7–0.8.
 + [Fabiani, Druant, Hernando, Kwapil, Landau, Loupias, Martins, Matha, Sabbatini, Stahl, and Stokman (2006)](https://www.ijcb.org/journal/ijcb06q3a1.htm) – This paper reviews  survey evidence of price rigidity in the United States and in Europe. It also documents that firms do not change prices more often by fear of antagonizing customers.
-+ [Eyster, Madarasz, and Michaillat (2021)](/8.pdf) – Empirically, it seems that pricing norms are shaped by fairness considerations. This paper examines the possible origins of such norms. It develops a model of pricing in which buyers care about the fairness of markups, and firms take these concerns into account when setting prices. The model yields price rigidity and realistic Phillips curves.
++ [Eyster, Madarasz, and Michaillat (2021)](/8/) – Empirically, it seems that pricing norms are shaped by fairness considerations. This paper examines the possible origins of such norms. It develops a model of pricing in which buyers care about the fairness of markups, and firms take these concerns into account when setting prices. The model yields price rigidity and realistic Phillips curves.
 
 ---
 
@@ -311,13 +311,13 @@ Moreover, the comovements between output, employment, product-market tightness, 
 
 ###### Main readings
 
-+ [Michaillat and Saez (2015, sections 3–6)](/3.pdf) – These sections develop the slackish model with labor and product markets, and assess the sources of unemployment fluctuations in the United States.
++ [Michaillat and Saez (2015, sections 3–6)](/3/) – These sections develop the slackish model with labor and product markets, and assess the sources of unemployment fluctuations in the United States.
 + [Barro and Grossman (1971)](https://www.jstor.org/stable/1910543) – This paper develops a disequilibrium model with labor and product markets. This model is a precursor to the two-market slackish model used in the course.
 
 ###### Additional readings
 
 + [Barro (2025)](https://doi.org/10.3386/w33850) – This paper revisits the disequilibrium model with labor and product markets, summarizes its qualities and limitations, and argues that the limitations can be remedied by using the type of slackish models developed in this course. The paper also reviews some of the limitations of the New Keynesian model.
-+ [Michaillat (2012)](/1.pdf) – This paper establishes that usual matching models of the labor market do not have job rationing. It then develops a matching model with job rationing, which is a precursor for the two-market model developed here.
++ [Michaillat (2012)](/1/) – This paper establishes that usual matching models of the labor market do not have job rationing. It then develops a matching model with job rationing, which is a precursor for the two-market model developed here.
 + [Diamond (2011)](https://doi.org/10.1257/aer.101.4.1045) – In this Nobel lecture, Peter Diamond discusses the applications of the matching framework to the product market and other markets.
 + [Wasmer and Weil (2004)](https://doi.org/10.1257/0002828042002525) – This paper develops a model with labor and financial markets organized around matching functions. 
 
@@ -349,15 +349,15 @@ An advantage of moving to a dynamic environment is that interest rates appear in
 
 ###### Main readings
 
-+ [Michaillat and Saez (2022, sections 1–4)](/7.pdf) – These sections develop the dynamic slackish model and perform various comparative statics.
-+ [Michaillat and Saez (2024)](/15.pdf) – This paper develops a business-cycle model with divine coincidence: inflation is on target when unemployment is efficient. The model uses the structure of the dynamic slackish model and generates price dynamics by introducing price competition through directed search. To ensure that unemployment fluctuates, the model introduces price rigidity through quadratic price-adjustment costs.
++ [Michaillat and Saez (2022, sections 1–4)](/7/) – These sections develop the dynamic slackish model and perform various comparative statics.
++ [Michaillat and Saez (2024)](/15/) – This paper develops a business-cycle model with divine coincidence: inflation is on target when unemployment is efficient. The model uses the structure of the dynamic slackish model and generates price dynamics by introducing price competition through directed search. To ensure that unemployment fluctuates, the model introduces price rigidity through quadratic price-adjustment costs.
 
 ###### Additional readings
 
 + [Ball, Leigh, and Loungani (2017)](https://doi.org/10.1111/jmcb.12420) – This paper documents the prevalence of Okun's law—the negative correlation between output and unemployment rate—in the United States since 1948. Okun's law implies that output and market tightness are negatively correlated over the business cycle, which in turn implies that aggregate demand shocks are the main source of cyclical fluctuations.
 + [Basu, Fernald, and Kimball (2006)](https://doi.org/10.1257/aer.96.5.1418) – This paper shows that in the United States, employment falls when technology improves. The same occurs in the dynamic slackish model.
 + [Benigno and Eggertsson (2023)](https://doi.org/10.3386/w31197) – This paper provides evidence that the divine coincidence holds in the United States in recent decades: inflation is above target whenever the labor market is inefficiently tight. It also documents a kink in the Phillips curve at the point of divine coincidence: the Phillips curve is much steeper when the economy is hot than when it is cold.
-+ [Michaillat and Saez (2021)](/11.pdf) – The dynamic slackish model assumes that wealth enters people's utility function. This paper exports this assumption to the New Keynesian model and shows that it is also helpful there. Indeed, the assumption resolves all the anomalies of the New Keynesian model at the zero lower bound.
++ [Michaillat and Saez (2021)](/11/) – The dynamic slackish model assumes that wealth enters people's utility function. This paper exports this assumption to the New Keynesian model and shows that it is also helpful there. Indeed, the assumption resolves all the anomalies of the New Keynesian model at the zero lower bound.
 
 ---
 
@@ -382,8 +382,8 @@ Finally, the section applies the formula to the US economy. In general the US ec
 
 ###### Main readings
 
-+ [Michaillat and Saez (2024)](/13.pdf) – This paper derives the formula $u^\ast = \sqrt{uv}$ for the efficient unemployment rate. The paper then applies the formula to the United States, 1930–2024.
-+ [Michaillat and Saez (2021)](/9.pdf) – This paper derives a formula for the efficient unemployment rate that generalizes the formula $u^\ast = \sqrt{uv}$. The general formula involves three sufficient statistics: Beveridge elasticity, cost of unemployment, and cost of recruiting.
++ [Michaillat and Saez (2024)](/13/) – This paper derives the formula $u^\ast = \sqrt{uv}$ for the efficient unemployment rate. The paper then applies the formula to the United States, 1930–2024.
++ [Michaillat and Saez (2021)](/9/) – This paper derives a formula for the efficient unemployment rate that generalizes the formula $u^\ast = \sqrt{uv}$. The general formula involves three sufficient statistics: Beveridge elasticity, cost of unemployment, and cost of recruiting.
 
 ###### Additional readings
 
@@ -415,7 +415,7 @@ In fact, given such optimality criterion, we can develop a simple formula for op
 
 ###### Main readings
 
-+ [Michaillat and Saez (2022, sections 5–6)](/7.pdf) – These sections obtain the sufficient-statistic formula for optimal monetary policy and apply it to the US economy.
++ [Michaillat and Saez (2022, sections 5–6)](/7/) – These sections obtain the sufficient-statistic formula for optimal monetary policy and apply it to the US economy.
 + [Bernanke and Blinder (1993)](https://www.jstor.org/stable/2117350) – This paper estimates the response of the federal funds rate to unemployment, and the effect of the federal funds rate on unemployment.
 
 ###### Additional readings
@@ -452,8 +452,8 @@ This section studies how government spending should be adjusted when unemploymen
 
 ###### Main readings
 
-+ [Michaillat and Saez (2019)](/6.pdf) – This paper studies optimal government spending in the presence of inefficient unemployment. It derives the sufficient-statistic formula for optimal stimulus spending.
-+ [Michaillat (2014)](/2.pdf) – This paper establishes that in a slackish model, the public-employment multiplier is positive but less than one, and the multiplier is larger when the unemployment rate is higher.
++ [Michaillat and Saez (2019)](/6/) – This paper studies optimal government spending in the presence of inefficient unemployment. It derives the sufficient-statistic formula for optimal stimulus spending.
++ [Michaillat (2014)](/2/) – This paper establishes that in a slackish model, the public-employment multiplier is positive but less than one, and the multiplier is larger when the unemployment rate is higher.
 
 ###### Additional readings
 
