@@ -27,7 +27,7 @@ All charts automatically update as new data become [available on FRED](https://f
 
 ## Key events
 
-+ November 2025 - The US government was shut down between 10/01/2025 and 11/12/2025, which [seriously affected the collection of labor market data](https://www.bls.gov/cps/methods/2025-federal-government-shutdown-impact-cps.htm). The September 2025 wave of the Current Population Survey (CPS)—which is the source of the unemployment and labor force numbers—was collected normally but published late, on 11/20/2025. The October 2025 wave of the CPS was not collected and will not be collected retroactively. So there will be no unemployment and labor force estimates for October 2025. Accordingly, the dashboard does not provide data for October 2025.
++ November 2025 - The US government was shut down between 10/01/2025 and 11/12/2025, which [seriously affected the collection of labor market data](https://www.bls.gov/cps/methods/2025-federal-government-shutdown-impact-cps.htm). The October 2025 wave of the CPS was not collected, so there will be no unemployment and labor force estimates for that month. Accordingly, the dashboard does not provide data for October 2025.
 + September 2025 - The Federal Reserve [cuts the federal funds rate by 25 basis points](https://www.federalreserve.gov/monetarypolicy/files/monetary20250917a1.pdf) in response to the cooling of the labor market.
 + August 2025 - The US labor market [dips below full employment](#us-unemployment-gap) for the first time since April 2021.
 + May 2025 - The dashboard is live.
@@ -42,10 +42,10 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
++ [View in full screen](/dashboard/unemployment_rate.html)
++ [Download unemployment rate](/dashboard/unemployment_rate.csv)
 + *Construction* - The unemployment rate is the number of job seekers divided by the number of labor force participants.
 + *Interpretation* - The unemployment rate measures the share of people who have not succeeded in finding a job, among all those who are available and willing to work. This is the standard, official unemployment rate (U3).
-+ [Download unemployment rate](/dashboard/unemployment_rate.csv)
-+ [View unemployment rate in full screen](/dashboard/unemployment_rate.html)
 + *Source* - The numbers of [job seekers](https://fred.stlouisfed.org/series/UNEMPLOY) and [labor force participants](https://fred.stlouisfed.org/series/CLF16OV) are measured by the US Bureau of Labor Statistics (BLS) from the [Current Population Survey](https://www.bls.gov/cps/home.htm) (CPS), which is a large-scale household survey. 
 
 ---
@@ -58,10 +58,10 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
++ [View in full screen](/dashboard/vacancy_rate.html)
++ [Download vacancy rate](/dashboard/vacancy_rate.csv)
 + *Construction* - The vacancy rate is the number of job openings divided by the number of labor force participants. 
 + *Interpretation* - The vacancy rate measures the number of job openings per labor force participant. 
-+ [Download vacancy rate](/dashboard/vacancy_rate.csv)
-+ [View vacancy rate in full screen](/dashboard/vacancy_rate.html)
 + *Source* - The number of [job openings](https://fred.stlouisfed.org/series/JTSJOL) is measured by the BLS from the [Job Openings and Labor Turnover Survey](https://www.bls.gov/jlt/) (JOLTS), which is a large-scale firm survey.
 
 ---
@@ -74,10 +74,10 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
++ [View in full screen](/dashboard/labor_market_tightness.html)
++ [Download labor market tightness](/dashboard/labor_market_tightness.csv)
 + *Construction* - Labor market tightness is the vacancy rate divided by the unemployment rate. 
 + *Interpretation* - Labor market tightness measures the number of job openings per job seeker. A tightness of 1 marks full employment, or equivalently labor market efficiency. When tightness is below 1, the labor market is inefficiently slack. When tightness is above 1, the labor market is inefficiently tight.
-+ [Download labor market tightness](/dashboard/labor_market_tightness.csv)
-+ [View labor market tightness in full screen](/dashboard/labor_market_tightness.html)
 + *Source* - [Michaillat and Saez (2024)](/13/)
 
 ---
@@ -90,9 +90,9 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
++ [View in full screen](/dashboard/beveridge_curve.html)
 + *Construction* - The Beveridge curve links the unemployment rate to the vacancy rate. 
-+ *Interpretation* - The Beveridge curve is one of the most robust relationships in macroeconomics. During business cycles, the economy moves along the Beveridge curve. In recessions the unemployment rate increases while the vacancy rate decreases; in expansions the unemployment rate decreases while the vacancy rate increases. Finally, since the economy is at full employment whenever the unemployment and vacancy rates are equal, the economy is inefficiently tight whenever it is above the 45° ray and inefficiently slack whenever it is below the 45° ray.
-+ [View Beveridge curve in full screen](/dashboard/beveridge_curve.html)
++ *Interpretation* - The Beveridge curve is one of the most robust relationships in macroeconomics. During business cycles, the economy moves along the Beveridge curve. In recessions the unemployment rate increases while the vacancy rate decreases; in expansions the unemployment rate decreases while the vacancy rate increases. Since the economy is at full employment when the unemployment and vacancy rates are equal, the economy is inefficiently tight when it is above the 45° ray and inefficiently slack when it is below the 45° ray.
 + *Source* - [Michaillat and Saez (2024)](/13/)
 
 ---
@@ -105,11 +105,11 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
++ [View in full screen](/dashboard/feru.html)
++ [Download FERU](/dashboard/feru.csv)
 + *Construction* - The full-employment rate of unemployment (FERU) is the geometric average of the unemployment and vacancy rates: $u^\ast = \sqrt{u \times v}$, where $u$ is the unemployment rate, $v$ is the vacancy rate, and $u^\ast$ is the FERU. 
 + *Interpretation* - The FERU marks full employment. The [1946 Employment Act](https://fraser.stlouisfed.org/title/1099) and [1978 Full Employment and Balanced Growth Act](https://fraser.stlouisfed.org/title/1034) state that achieving full employment is a way to maximize social welfare. So we compute the FERU as the unemployment rate that maximizes social welfare by minimizing socially unproductive uses of labor—both job seeking and recruiting. The computation yields $u^\ast = \sqrt{u \times v}$, and tells us that the FERU is also the socially efficient unemployment rate.
 + *Visualization* - On the Beveridge diagram, the FERU is at the intersection of the Beveridge curve and the 45° ray. The implication is that the FERU is determined by the location of the Beveridge curve: it is higher whenever the Beveridge curve is further outward.
-+ [Download FERU](/dashboard/feru.csv)
-+ [View FERU in full screen](/dashboard/feru.html)
 + *Source* - [Michaillat and Saez (2024)](/13/)
 
 ---
@@ -122,10 +122,10 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
++ [View in full screen](/dashboard/unemployment_gap.html)
++ [Download unemployment gap](/dashboard/unemployment_gap.csv)
 + *Construction* - The unemployment gap is given by $u - u^\ast$, where $u$ is the unemployment rate and $u^\ast$ is the FERU. 
 + *Interpretation* - The unemployment gap indicates the distance from full employment. A positive gap marks an inefficiently slack labor market. A negative gap marks an inefficiently tight labor market.
-+ [Download unemployment gap](/dashboard/unemployment_gap.csv)
-+ [View unemployment gap in full screen](/dashboard/unemployment_gap.html)
 + *Source* - [Michaillat and Saez (2024)](/13/)
 
 ---
@@ -138,14 +138,12 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
++ [View in full screen](/dashboard/recession_indicator.html)
++ [Download recession indicator](/dashboard/recession_indicator.csv)
++ [View](/dashboard/unemployment_indicator.html) or [download](/dashboard/unemployment_indicator.csv) the underlying unemployment (Sahm) indicator
++ [View](/dashboard/vacancy_indicator.html) or [download](/dashboard/vacancy_indicator.csv) the underlying vacancy indicator
 + *Construction* - The recession indicator is the minimum of two indicators: an unemployment indicator constructed as the increase in the 3-month average of the unemployment rate above its 12-month low (used in Sahm rule); and a vacancy indicator constructed analogously as the decrease in the 3-month average of the vacancy rate below its 12-month high.
 + *Interpretation* - The Michez rule signals a recession when the recession indicator crosses the threshold of 0.29pp from below.
-+ [Download recession indicator](/dashboard/recession_indicator.csv)
-    + [Download underlying unemployment (Sahm) indicator](/dashboard/unemployment_indicator.csv)
-    + [Download underlying vacancy indicator](/dashboard/vacancy_indicator.csv)
-+ [View recession indicator in full screen](/dashboard/recession_indicator.html)
-    + [View underlying unemployment (Sahm) indicator](/dashboard/unemployment_indicator.html)
-    + [View underlying vacancy indicator](/dashboard/vacancy_indicator.html)
 + *Source* - [Michaillat and Saez (2025)](/16/)
 
 ---
@@ -158,10 +156,10 @@ All charts automatically update as new data become [available on FRED](https://f
     style="width: 100%; aspect-ratio: 4 / 3; border: none;">
 </iframe>
 
++ [View in full screen](/dashboard/recession_probability.html)
++ [Download recession probability](/dashboard/recession_probability.csv)
 + *Construction* - The recession probability is computed from the dual-threshold extension of the Michez rule. The recession probability is the fraction of the 0.29pp–0.81pp range that the recession indicator has covered: $p =$ (indicator $-$ 0.29) $/$ (0.81 $-$ 0.29).
 + *Interpretation* - The dual-threshold Michez rule works as follows: values of the indicator between 0.29pp and 0.81pp signal a probable recession; values above 0.81pp signal a certain recession. The dual-threshold extension accounts for uncertainty in the true recession threshold and provides a simple way to nowcast recession risk. 
-+ [Download recession probability](/dashboard/recession_probability.csv)
-+ [View recession probability in full screen](/dashboard/recession_probability.html)
 + *Source* - [Michaillat and Saez (2025)](/16/)
 
 ---
