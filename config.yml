@@ -51,7 +51,7 @@ params:
     profileMode:
           enabled: true
           title: Pascal Michaillat
-          subtitle: "I am a professor of economics at the University of California, Santa Cruz. I work primarily on economic slack, which appears any time any thing cannot be sold on any market—unemployed workers, unsold goods, idle employees. I research why slack prevails in almost all markets, why it fluctuates over the business cycle, and how macroeconomic policies should respond to such fluctuations."
+          subtitle: "I am a professor of economics at the University of California, Santa Cruz. I work primarily on economic slack, a phenomenon that appears whenever something cannot be sold—unemployed workers, unsold goods, idle employees. I research why slack prevails in almost all markets, why it fluctuates over the business cycle, and how macroeconomic policies should respond to such fluctuations."
           imageUrl: "/picture.jpeg"
           imageWidth: 130
           imageHeight: 130

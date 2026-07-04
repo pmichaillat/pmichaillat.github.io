@@ -107,7 +107,7 @@ This dashboard provides real-time indicators of labor market slack and business 
 
 + [View in full screen](/dashboard/unemployment_gap.html)
 + [Download unemployment gap](/dashboard/unemployment_gap.csv)
-+ *Construction* - The unemployment gap is the distance $u - u^\ast$ between the actual unemployment rate ($u$) and the FERU ($u^\ast$). 
++ *Construction* - The unemployment gap is the distance $u - u^\ast$ between the unemployment rate ($u$) and the FERU ($u^\ast$). 
 + *Interpretation* - The unemployment gap indicates the distance from full employment. A positive gap marks an inefficiently slack labor market. A negative gap marks an inefficiently tight labor market. The unemployment gap is a key determinant of optimal monetary and fiscal policy.
 + *Source* - [Michaillat and Saez (2024)](/13/)
 
