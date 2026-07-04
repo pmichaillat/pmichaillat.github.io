@@ -75,7 +75,7 @@ This dashboard provides real-time indicators of labor market slack and business 
 
 + [View in full screen](/dashboard/beveridge_curve.html)
 + *Construction* - The Beveridge curve is a scatter plot of the vacancy rate against the unemployment rate. 
-+ *Interpretation* - The Beveridge curve is one of the most robust relationships in macroeconomics. During business cycles, the economy moves along the Beveridge curve. In recessions the unemployment rate increases while the vacancy rate decreases; in expansions the unemployment rate decreases while the vacancy rate increases. Since the economy is at full employment when the unemployment and vacancy rates are equal, the economy is inefficiently tight when it is above the 45° ray and inefficiently slack when it is below the 45° ray.
++ *Interpretation* - The Beveridge curve is one of the most robust relationships in macroeconomics. Over the business cycle, the economy moves along the curve. In recessions the unemployment rate increases while the vacancy rate decreases; in expansions the unemployment rate decreases while the vacancy rate increases. Since the economy is at full employment when the unemployment and vacancy rates are equal, the economy is inefficiently slack when it is below the 45° ray and inefficiently tight otherwise.
 + *Source* - [Michaillat and Saez (2024)](/13/)
 
 ---
