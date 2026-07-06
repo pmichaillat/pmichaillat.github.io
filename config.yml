@@ -4,9 +4,6 @@ theme: PaperMod
 pagination:
   pagerSize: 40
 
-taxonomies:
-    tag: tags
-
 menu:
     main:
         - name: Book
@@ -107,3 +104,4 @@ enableRobotsTXT: true
 titleCaseStyle: 'none'
 enableGitInfo: true
 buildFuture: true
+disableKinds: [taxonomy, term]
