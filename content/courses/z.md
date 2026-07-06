@@ -5,7 +5,7 @@ url: /z/
 aliases:
     - /c5/
 author: "Pascal Michaillat"
-description: "This minicourse describes business cycles, develops a matching model to explain them, and discusses how monetary and fiscal policy can tame them."
+description: "This graduate minicourse describes business cycles, develops a matching model to explain them, and discusses how monetary and fiscal policy can tame them."
 summary: "This minicourse presents basic facts about business cycles. It then develops a matching model to explain these business-cycle facts. Finally, it explains how monetary policy and fiscal policy should be designed to tame business cycles." 
 cover:
     image: "/z.png"
@@ -74,4 +74,4 @@ Once monetary policy reaches the zero lower bound, however, it becomes impotent,
 + [Lecture slides](/z4.pdf)
 + Reference on efficient unemployment rate: [Michaillat and Saez (2021)](/9/)
 + Reference on optimal monetary policy: [Michaillat and Saez (2022)](/7/)
-+ Reference on optimal government spending: [Michaillat and Saez (2019)](/6/)
++ Reference on optimal fiscal policy: [Michaillat and Saez (2019)](/6/)

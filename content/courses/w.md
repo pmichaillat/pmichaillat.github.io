@@ -32,7 +32,7 @@ aliases:
     - /w114.html
 author: "Pascal Michaillat"
 description: "This graduate course develops a model of economic slack. The model is used to study business-cycle fluctuations, monetary policy, and fiscal policy." 
-summary: "This graduate course develops a model of economic slack. The model is used to study business-cycle fluctuations; Keynesian, classical, and frictional unemployment; optimal monetary policy and the zero lower bound; and optimal fiscal policy." 
+summary: "This course develops a model of economic slack. The model is used to study business-cycle fluctuations; Keynesian, classical, and frictional unemployment; optimal monetary policy and the zero lower bound; and optimal fiscal policy." 
 cover:
     image: "/w.png"
     alt: "Optimal monetary and fiscal policy in slackish model"

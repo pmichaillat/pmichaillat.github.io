@@ -28,7 +28,7 @@ aliases:
     - /uploads/7/0/2/0/70200055/t2z.pdf
 author: "Pascal Michaillat"
 description: "This undergraduate course covers IS-LM model of business cycles, matching model of unemployment, inflation, and Malthusian and Solowian models of growth."
-summary: "This undergraduate course introduces macroeconomic concepts such as GDP and covers the IS-LM model of business cycles, matching model of unemployment, Phillips curve, Malthusian model of growth, and Solowian model of growth."
+summary: "This course introduces macroeconomic concepts such as GDP and covers the IS-LM model of business cycles, matching model of unemployment, Phillips curve, Malthusian model of growth, and Solowian model of growth."
 cover:
     image: "/y.png"
     alt: "Comparative statics in the matching model of unemployment"

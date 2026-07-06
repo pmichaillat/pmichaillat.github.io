@@ -51,7 +51,7 @@ aliases:
     - /uploads/7/0/2/0/70200055/t1d.pdf
     - /uploads/7/0/2/0/70200055/t1f.pdf
 author: "Pascal Michaillat"
-description: "This course develops a model of unemployment. The model is used to study unemployment fluctuations, efficient unemployment, and labor market policies." 
+description: "This advanced undergraduate course develops a model of unemployment. The model is used to study unemployment fluctuations and labor market policies." 
 summary: "This course develops a model of unemployment. The model is used to study unemployment fluctuations; job rationing; efficient unemployment and unemployment gap; and labor market policies such as minimum wage, public employment, and unemployment insurance." 
 cover:
     image: "/v.png"

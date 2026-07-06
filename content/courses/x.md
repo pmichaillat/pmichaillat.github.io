@@ -23,8 +23,8 @@ aliases:
     - /tags/bellman-equation/
     - /tags/dynamic-programming/
 author: "Pascal Michaillat"
-description: "This graduate course covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations." 
-summary: "This graduate course covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations. The methods are used to study dynamical macroeconomic systems in discrete time and continuous time." 
+description: "This graduate minicourse covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations." 
+summary: "This minicourse covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations. The methods are used to study dynamical macroeconomic systems in discrete time and continuous time." 
 cover:
     image: "/x.png"
     alt: "Phase diagram depicting a saddle path"
@@ -38,15 +38,15 @@ disableAnchoredHeadings: false
 
 ## Introduction
 
-This short course covers basic mathematical methods to study dynamical systems in discrete time and in continuous time. Dynamical systems are systems that involve more than one time-period; they are prevalent in macroeconomics. We first discuss dynamic programming, which is a method to solve dynamic optimization problems in discrete time. We then turn to optimal control, which is a method to solve dynamic optimization problems in continuous time. Finally, we show how to solve differential equations, which are used to describe continuous-time dynamical systems.
+This minicourse covers basic mathematical methods to study dynamical systems in discrete time and in continuous time. Dynamical systems are systems that involve more than one time-period; they are prevalent in macroeconomics. We first discuss dynamic programming, which is a method to solve dynamic optimization problems in discrete time. We then turn to optimal control, which is a method to solve dynamic optimization problems in continuous time. Finally, we show how to solve differential equations, which are used to describe continuous-time dynamical systems.
 
 ---
 
 ## Dynamic programming
 
-This section covers dynamic programming, which is a method to solve dynamic optimization problems in discrete time. It introduces key concepts of dynamic programming in a simple, deterministic consumption-saving problem: value function, policy function, Bellman equation, and Benveniste-Scheinkman equation. Then randomness is introduced into the consumption-saving problem, and the stochastic problem is solved with dynamic programming. As a further application, a Real Business-Cycle model is solved with dynamic programming. Finally, we discuss how to solve general problems with dynamic programming.
+This part covers dynamic programming, which is a method to solve dynamic optimization problems in discrete time. It introduces key concepts of dynamic programming in a simple, deterministic consumption-saving problem: value function, policy function, Bellman equation, and Benveniste-Scheinkman equation. Then randomness is introduced into the consumption-saving problem, and the stochastic problem is solved with dynamic programming. As a further application, a Real Business-Cycle model is solved with dynamic programming. Finally, we discuss how to solve general problems with dynamic programming.
 
-This section also shows that optimizing via dynamic programming yields the same results as optimizing via the Lagrangian approach. There is a certain obsession with dynamic programming in macroeconomics, but sometimes you will find that it is easier and more intuitive to use the Lagrangian method.
+This part also shows that optimizing via dynamic programming yields the same results as optimizing via the Lagrangian approach. There is a certain obsession with dynamic programming in macroeconomics, but sometimes you will find that it is easier and more intuitive to use the Lagrangian method.
 
 + [Lecture notes](/x1.pdf)
 + [Problem set](/x4.pdf)
@@ -56,7 +56,7 @@ This section also shows that optimizing via dynamic programming yields the same 
 
 ## Optimal control
 
-This section studies optimal control, which is a method to solve dynamic optimization problems in continuous time. We start by formulating the consumption-saving problem in continuous time. The continuous-time problem is solved first with a present-value Hamiltonian, then with a current-value Hamiltonian. (Both approaches are equivalent.) Then we discuss the optimality conditions for general optimization problems solved by optimal control. We also establish the connection between these optimality conditions and the optimality conditions obtained via dynamic programming. To conclude, we derive and discuss the Hamilton-Jacobi-Bellman (HJB) equation.
+This part studies optimal control, which is a method to solve dynamic optimization problems in continuous time. We start by formulating the consumption-saving problem in continuous time. The continuous-time problem is solved first with a present-value Hamiltonian, then with a current-value Hamiltonian. (Both approaches are equivalent.) Then we discuss the optimality conditions for general optimization problems solved by optimal control. We also establish the connection between these optimality conditions and the optimality conditions obtained via dynamic programming. To conclude, we derive and discuss the Hamilton-Jacobi-Bellman (HJB) equation.
 
 + [Lecture notes](/x2.pdf)
 + [Problem set](/x5.pdf)
@@ -66,7 +66,7 @@ This section studies optimal control, which is a method to solve dynamic optimiz
 
 ## Differential equations
 
-This third section introduces differential equations, which are used to describe continuous-time dynamical systems. We first solve linear first-order differential equations. We then move to linear systems of first-order differential equations. Next, we show how to derive the properties of a linear system of first-order differential equations by drawing its phase diagram. Finally, we turn to nonlinear systems of first-order differential equations—which are common in macroeconomics. Although such systems cannot be solved explicitly, we characterize their properties by constructing their phase diagrams.
+This third part introduces differential equations, which are used to describe continuous-time dynamical systems. We first solve linear first-order differential equations. We then move to linear systems of first-order differential equations. Next, we show how to derive the properties of a linear system of first-order differential equations by drawing its phase diagram. Finally, we turn to nonlinear systems of first-order differential equations—which are common in macroeconomics. Although such systems cannot be solved explicitly, we characterize their properties by constructing their phase diagrams.
 
 + [Lecture notes](/x3.pdf)
 + [Problem set](/x6.pdf)
