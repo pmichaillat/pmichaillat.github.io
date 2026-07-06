@@ -32,7 +32,7 @@ aliases:
     - /w114.html
 author: "Pascal Michaillat"
 description: "This graduate course develops a model of economic slack. The model is used to study business-cycle fluctuations, monetary policy, and fiscal policy." 
-summary: "This graduate course develops a model of economic slack. The model is used to study business-cycle fluctuations; Keynesian, classical, and frictional unemployment; optimal monetary policy and the zero lower bound; and optimal government spending." 
+summary: "This graduate course develops a model of economic slack. The model is used to study business-cycle fluctuations; Keynesian, classical, and frictional unemployment; optimal monetary policy and the zero lower bound; and optimal fiscal policy." 
 cover:
     image: "/w.png"
     alt: "Optimal monetary and fiscal policy in slackish model"
@@ -427,11 +427,11 @@ In fact, given such optimality criterion, we can develop a simple formula for op
 
 ---
 
-## Optimal government spending over the business cycle
+## Optimal fiscal policy over the business cycle
 
 Monetary policy should eliminate the unemployment gap, but this is not always possible. Once monetary policy reaches the zero lower bound, for instance, it becomes impotent, and it has to be supplemented by fiscal policy.
 
-This section studies how government spending should be adjusted when unemployment is inefficient. It shows that optimal government spending deviates from the Samuelson rule to reduce, but not eliminate, the unemployment gap. The amplitude of the deviation depends on three sufficient statistics: unemployment gap, fiscal multiplier, and elasticity of substitution between public and private goods. Since the unemployment gap is countercyclical, optimal government spending is also countercyclical. That is, the government should spend more in bad times and less in good times.
+This section studies how fiscal policy should be adjusted when unemployment is inefficient. It shows that optimal government spending deviates from the Samuelson rule to reduce, but not eliminate, the unemployment gap. The amplitude of the deviation depends on three sufficient statistics: unemployment gap, fiscal multiplier, and elasticity of substitution between public and private goods. Since the unemployment gap is countercyclical, optimal government spending is also countercyclical. That is, the government should spend more in bad times and less in good times.
 
 ###### Lecture videos
 

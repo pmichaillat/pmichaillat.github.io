@@ -2,12 +2,8 @@
 {{- $has_headers := ge (len $headers) 1 -}}
 {{- if $has_headers -}}
 <div class="toc">
-    <details {{if (.Param "TocOpen") }} open{{ end }}>
-        <summary accesskey="c">
-            <span class="details">{{- i18n "toc" | default "Table of Contents" }}</span>
-        </summary>
-
-        <div class="inner">
+    <div class="details">{{- i18n "toc" | default "Table of Contents" }}</div>
+    <div class="inner">
             {{- if (.Param "UseHugoToc") }}
             {{- .TableOfContents -}}
             {{- else }}
@@ -90,7 +86,6 @@
             {{- end }}
             </ul>
             {{- end }}
-        </div>
-    </details>
+    </div>
 </div>
 {{- end }}

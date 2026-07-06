@@ -6,7 +6,7 @@ aliases:
     - /c5/
 author: "Pascal Michaillat"
 description: "This minicourse describes business cycles, develops a matching model to explain them, and discusses how monetary and fiscal policy can tame them."
-summary: "This minicourse presents basic facts about business cycles. It then develops a matching model to explain these business-cycle facts. Finally, it explains how monetary policy and government spending should be designed to tame business cycles." 
+summary: "This minicourse presents basic facts about business cycles. It then develops a matching model to explain these business-cycle facts. Finally, it explains how monetary policy and fiscal policy should be designed to tame business cycles." 
 cover:
     image: "/z.png"
     alt: "Slack and GDP over the business cycle"

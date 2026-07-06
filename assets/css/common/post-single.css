@@ -37,29 +37,21 @@
 }
 
 .toc .details {
-    display: inline;
+    display: block;
     font-weight: var(--semibold);
     text-transform: uppercase;
     font-size: 0.9rem;
-}
-
-/* Position of "-> Table of Content" */
-.toc details summary {
-    margin-inline-start: calc(var(--margin-left) - 10px);
+    margin: 0 calc(var(--margin-left) - 10px) 0.5em;
 }
 
 .toc .inner {
     margin: 0 calc(var(--margin-left) - 12px);
-    padding: 10px var(--content-gap);
+    padding: 0 var(--content-gap) 10px;
     font-size: var(--meta-size);
 }
 
 .toc li ul {
     margin-inline-start: var(--gap);
-}
-
-.toc summary:focus {
-    outline: 0;
 }
 
 .toc a:hover {
