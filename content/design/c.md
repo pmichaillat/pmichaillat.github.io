@@ -207,7 +207,7 @@ Of course alerts should be used with restraint.
 
 ---
 
-## Theorems and other results
+## Theorems
 
 As is standard, the text of theorems is in italic—providing subtle emphasis. The theorem label is in semibold—again providing subtle emphasis. To further emphasize theorems and clearly separate them from surrounding text, the template places theorems in a light gray rectangle with rounded corners.
 

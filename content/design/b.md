@@ -375,7 +375,7 @@ This method is useful to manage redirects and ensure a seamless user experience 
 
 --- 
 
-## Testing the website on mobile devices
+## Testing on mobile devices
 
 During development, it is possible to test your website on mobile devices—to check that everything is accessible and readable. Testing only requires adjusting the `hugo` command slightly.
 
@@ -396,9 +396,9 @@ The website has a footer, which contains a copyright notice and a "Powered by" n
 
 In the background, Hugo automatically generates RSS feeds in XML format for your site. These feeds enable interested readers to subscribe to your content and be updated whenever you publish new content. The RSS feeds can be found in the `public` folder, and are typically available at `/index.xml` under the appropriate section.
 
-For instance, on this website, the RSS feed for my research papers can be found at `https://pascalmichaillat.org/papers/index.xml`. The RSS feed for my design projects can be found at `https://pascalmichaillat.org/design/index.xml`. Hugo also produces RSS feeds for all keywords. On this website, the RSS feed for the keyword `metascience` can be found at `https://pascalmichaillat.org/tags/metascience/index.xml`. 
+For instance, on this website, the RSS feed for my research papers can be found at `https://pascalmichaillat.org/papers/index.xml`. The RSS feed for my design projects can be found at `https://pascalmichaillat.org/design/index.xml`. Hugo even produces RSS feeds for all website keywords.
 
-The XML files can then be submitted to RSS readers, such as the [RSS app](https://rss.app), to [produce RSS feeds](https://rss.app/overview-feed-xml?feedId=44ZDQRZnqIktQJrt&feedXmlId=UaViYplhbFwE97Bd).
+The XML files can then be submitted to RSS readers, such as the [RSS app](https://rss.app), to [produce RSS feeds](https://rss.app/r/feed/JCyeJYHA6xWvpDAM).
 
 ---
 

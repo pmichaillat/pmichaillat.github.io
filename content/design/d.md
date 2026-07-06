@@ -103,8 +103,8 @@ The [Keynote file](https://github.com/pmichaillat/matlab-figures/blob/main/figur
 
 ---
 
-## Scaling for different figure sizes
+## Figure scales
 
-The template is tailored for the common case in which the figures are inserted in pairs [in an academic paper](/a/#figures) or [in an academic book](/g/#figures). The scaling factor in LaTeX to insert two figures side by side is 0.2. The template is designed so that the PDF pages created by MATLAB, and annotated through Keynote, have readable font and line sizes once they are scaled by a factor of 0.2. For instance to obtain 8pt text and 1pt lines, we need 8/0.2 = 40pt text and 1/0.2 = 5pt lines in Keynote. This is what the current template produces.
+The template is tailored for the common case in which the figures are inserted in pairs [in an academic paper](/a/#figures) or [in an academic book](/g/#figures). The scale in LaTeX to insert two figures side by side is 0.2. The template is designed so that the PDF pages created by MATLAB, and annotated through Keynote, have readable font and line sizes once they are scaled by a factor of 0.2. For instance to obtain 8pt text and 1pt lines, we need 8/0.2 = 40pt text and 1/0.2 = 5pt lines in Keynote. This is what the current template produces.
 
-To insert bigger figures into LaTeX, the template should be adjusted so that the final figures maintain the same text and line sizes as the current figures. For instance to insert twice-larger figures, the scaling factor in LaTeX can be increased to 0.4. Then all the font, line, and marker sizes should be divided by two in the template so all text, markers, and lines maintain a consistent size across figures, irrespective of the figure size.
+To insert bigger figures into LaTeX, the scale should be adjusted so that the final figures maintain the same text and line sizes as the current figures. For instance to insert twice-larger figures, the scale in LaTeX can be increased to 0.4. Then all the font, line, and marker sizes should be divided by two in the template so all text, markers, and lines maintain a consistent size across figures, irrespective of the figure size.

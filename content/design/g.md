@@ -236,7 +236,7 @@ The template uses author-year citation style through the `natbib` package. All `
 
 ---
 
-## Theorems and other results
+## Theorems
 
 As is standard, the text of theorems is in italic—providing subtle emphasis. The theorem label is in small caps—again providing subtle emphasis. For consistency, all other types of results—propositions, lemmas, assumptions, definitions, and so on—are formatted just like theorems. Each type of result gets its own counter that resets every chapter and every appendix. So in Chapter 3 you can have Theorem 3.1, Proposition 3.1, Lemma 3.1, Lemma 3.2, Lemma 3.3, and so on in parallel.
 

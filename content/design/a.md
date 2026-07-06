@@ -135,7 +135,7 @@ The template does not tailor formatting for subsubsections and smaller headings.
 
 ---
 
-## Theorems and other results
+## Theorems
 
 As is standard, the text of theorems is in italic—providing subtle emphasis. The theorem label is in small caps—again providing subtle emphasis. For consistency, all other types of result—propositions, lemmas, assumptions, definitions, and so on—are formatted just like theorems. Each type of result gets its own counter.
 
