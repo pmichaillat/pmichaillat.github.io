@@ -6,8 +6,8 @@ cover:
     image: "/dashboard.png"
     alt: "US recession probability from dual-threshold Michez rule"
 editPost:
-    URL: "https://pascalmichaillat.org/18/"
-    Text: "Theoretical foundations and policy implications"
+    URL: "https://github.com/pmichaillat/pmichaillat.github.io/blob/main/content/dashboard/dashboard.py"
+    Text: "Source code"
 showToc: true
 disableAnchoredHeadings: false
 
