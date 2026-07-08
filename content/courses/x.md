@@ -11,17 +11,6 @@ aliases:
     - /uploads/7/0/2/0/70200055/t3d.pdf
     - /uploads/7/0/2/0/70200055/t3e.pdf
     - /uploads/7/0/2/0/70200055/t3f.pdf 
-    - /tags/benveniste-scheinkman-equation/
-    - /tags/optimization/
-    - /tags/differential-equations/
-    - /tags/hjb-equation/
-    - /tags/phase-diagrams/
-    - /tags/euler-equation/
-    - /tags/dynamical-systems/
-    - /tags/optimal-control/
-    - /tags/hamiltonian/
-    - /tags/bellman-equation/
-    - /tags/dynamic-programming/
 author: "Pascal Michaillat"
 description: "This graduate minicourse covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations." 
 summary: "This minicourse covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations. The methods are used to study dynamical macroeconomic systems in discrete time and continuous time." 

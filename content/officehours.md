@@ -1,7 +1,5 @@
 ---
 title: "Office Hours"
-aliases:
-    - /oh.html
 author: ["Pascal Michaillat"]
 description: "Schedule and location of Prof. Michaillat's office hours at the University of California, Santa Cruz."
 hidemeta: true

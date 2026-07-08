@@ -3,33 +3,9 @@ title: "Economic Slack"
 date: 2025-09-11
 url: /w/
 aliases:
-    - /tags/matching-function/
     - /c2/
     - /t5.html
     - /t4.html
-    - /w1.html
-    - /w85.html
-    - /w19.html
-    - /w15.html
-    - /w21.html
-    - /w22.html
-    - /w6.html
-    - /w7.html
-    - /w8.html
-    - /w4.html
-    - /w9.html
-    - /w90.html
-    - /w94.html
-    - /w13.html
-    - /w11.html
-    - /w12.html
-    - /w109.html
-    - /w111.html
-    - /w119.html
-    - /w105.html
-    - /w106.html
-    - /w125.html
-    - /w114.html
 author: "Pascal Michaillat"
 description: "This graduate course develops a model of economic slack. The model is used to study business-cycle fluctuations, monetary policy, and fiscal policy." 
 summary: "This course develops a model of economic slack. The model is used to study business-cycle fluctuations; Keynesian, classical, and frictional unemployment; optimal monetary policy and the zero lower bound; and optimal fiscal policy." 
