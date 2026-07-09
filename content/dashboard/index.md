@@ -140,7 +140,7 @@ This dashboard provides real-time indicators of labor market slack and business 
 + [View in full screen](/dashboard/recession_probability.html)
 + [Download recession probability](/dashboard/recession_probability.csv)
 + *Construction* - The recession probability is computed from the dual-threshold extension of the Michez rule. The recession probability is the fraction of the 0.29pp–0.81pp range that the recession indicator has covered: $p =$ (indicator $-$ 0.29) $/$ (0.81 $-$ 0.29).
-+ *Interpretation* - The dual-threshold Michez rule works as follows: values of the indicator below 0.29pp signal no recession; values between 0.29pp and 0.81pp signal a probable recession; values above 0.81pp signal a certain recession. The dual-threshold extension accounts for uncertainty in the true recession threshold and provides a simple way to nowcast recession risk. 
++ *Interpretation* - The dual-threshold Michez rule works as follows: values of the indicator below 0.29pp signal no recession; values between 0.29pp and 0.81pp signal a possible recession; values above 0.81pp signal a certain recession. The dual-threshold extension accounts for uncertainty in the true recession threshold and provides a simple way to nowcast recession risk. 
 + *Source* - [Michaillat and Saez (2025)](/16/)
 
 ---
