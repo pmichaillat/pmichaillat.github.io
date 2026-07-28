@@ -193,6 +193,18 @@ Specifically, the [BLS asks firms to report](https://www.bls.gov/jlt/jltc1.pdf) 
 
 These questions are similar to the questions asked by the BLS to workers in order to assess their labor force status, so the bar for reporting a job vacancy is as high as the bar for being counted as a job seeker. 
 
+### Is the FERU the same as the NAIRU?
+
+No. The non-accelerating-inflation rate of unemployment (NAIRU) is the unemployment rate at which inflation stays stable, and US policymakers commonly use it as their full-employment target. The Joint Economic Committee of the US Congress, for instance, [recently wrote](https://perma.cc/E9V8-XTFH):
+
+> Today, full employment is considered by many to be synonymous with the non-accelerating inflationary rate of unemployment (NAIRU)—the rate of unemployment that neither stokes nor slows inflation.
+
+But the NAIRU is a different concept than the FERU—and the NAIRU is arguably not synonymous with full employment. The NAIRU is simply the unemployment rate consistent with stable inflation. The FERU is the socially efficient unemployment rate: the unemployment rate that maximizes social welfare by minimizing the nonproductive use of labor—both unemployment and recruiting. Since there is no guarantee that the unemployment rate stabilizing inflation is also socially efficient, there is no guarantee that the NAIRU and FERU coincide.
+
+### Is the FERU the same as the CBO's NRU?
+
+No. The Congressional Budget Office (CBO) also tracks a full-employment benchmark, the natural rate of unemployment (NRU). The [CBO's NRU](https://perma.cc/NU5V-8ZY4) is a slow-moving trend obtained by assuming the labor market was at full employment in 2005 and adjusting for demographic changes since then. But without a theory of full employment, there is no way to verify that the labor market really was at full employment in 2005. So the NRU cannot be validated as a measure of full employment, unlike the FERU, which is derived directly from the condition for social efficiency.
+
 ### Why is the FERU not constant?
 
 The FERU describes the socially efficient position of the labor market on the Beveridge curve, so it is not constant but determined by the location of the Beveridge curve. When the Beveridge curve shifts outward, the FERU increases; when the Beveridge curve shifts inward, the FERU decreases. Typical Beveridge curve shifts do not affect the FERU much. For instance, between 1951 and 2019, the FERU remained broadly between 3% and 5.5%. The Beveridge curve did shift in and out during the postwar period, but the shifts were not large enough to produce noteworthy changes in the FERU. 
@@ -201,7 +213,7 @@ During the coronavirus pandemic, the Beveridge curve shifted out dramatically, w
 
 ### How does the Michez rule relate to the Sahm rule?
 
-The Michez rule is based on the same idea as the Sahm rule: looking for a rapid deterioration of the labor market to detect recessions. But while the Sahm rule only uses the unemployment rate for detection, the Michez rule uses both unemployment and vacancy rates. By combining data on unemployment and vacancies, the Michez rule obtains a less noisy signal of recessions, so it can detect recessions faster than the Sahm rule: 
+The Michez rule is based on the same idea as the [Sahm rule](https://fred.stlouisfed.org/series/SAHMCURRENT): looking for a rapid deterioration of the labor market to detect recessions. But while the Sahm rule only uses the unemployment rate for detection, the Michez rule uses both unemployment and vacancy rates. By combining data on unemployment and vacancies, the Michez rule obtains a less noisy signal of recessions, so it can detect recessions faster than the Sahm rule: 
 
 + Average detection delay, 1960–2021: 1.2 months < 2.7 months
 + Maximum detection delay, 1960–2021: 3 months < 7 months
