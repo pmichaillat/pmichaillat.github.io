@@ -15,14 +15,12 @@ disableAnchoredHeadings: false
 
 This dashboard provides real-time indicators of labor market slack and business cycle conditions in the United States. All charts automatically update as new data become [available on FRED](https://fred.stlouisfed.org/).
 
----
-
-## US unemployment rate
+## Unemployment rate
 
 <iframe
     src="/dashboard/unemployment_rate.html"
-    title="US unemployment rate"
-    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+    title="Unemployment rate"
+    style="width: 100%; aspect-ratio: 4 / 3;">
 </iframe>
 
 + [View in full screen](/dashboard/unemployment_rate.html)
@@ -31,14 +29,12 @@ This dashboard provides real-time indicators of labor market slack and business 
 + *Interpretation* - The unemployment rate measures the share of people who have not succeeded in finding a job, among all those who are available and willing to work. This is the standard, official unemployment rate (U3).
 + *Source* - The numbers of [job seekers](https://fred.stlouisfed.org/series/UNEMPLOY) and [labor force participants](https://fred.stlouisfed.org/series/CLF16OV) are measured by the US Bureau of Labor Statistics (BLS) from the [Current Population Survey](https://www.bls.gov/cps/home.htm) (CPS), which is a large-scale household survey. 
 
----
-
-## US vacancy rate
+## Vacancy rate
 
 <iframe
     src="/dashboard/vacancy_rate.html"
-    title="US vacancy rate"
-    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+    title="Vacancy rate"
+    style="width: 100%; aspect-ratio: 4 / 3;">
 </iframe>
 
 + [View in full screen](/dashboard/vacancy_rate.html)
@@ -47,62 +43,54 @@ This dashboard provides real-time indicators of labor market slack and business 
 + *Interpretation* - The vacancy rate measures the number of job openings per labor force participant. 
 + *Source* - The number of [job openings](https://fred.stlouisfed.org/series/JTSJOL) is measured by the BLS from the [Job Openings and Labor Turnover Survey](https://www.bls.gov/jlt/) (JOLTS), which is a large-scale firm survey.
 
----
-
-## US labor market tightness
+## Labor market tightness
 
 <iframe
     src="/dashboard/labor_market_tightness.html"
-    title="US labor market tightness"
-    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+    title="Labor market tightness"
+    style="width: 100%; aspect-ratio: 4 / 3;">
 </iframe>
 
 + [View in full screen](/dashboard/labor_market_tightness.html)
 + [Download labor market tightness](/dashboard/labor_market_tightness.csv)
 + *Construction* - Labor market tightness is the vacancy rate divided by the unemployment rate. 
-+ *Interpretation* - Labor market tightness measures the number of job openings per job seeker. A tightness of 1 marks full employment, or equivalently labor market efficiency. When tightness is below 1, the labor market is inefficiently slack. When tightness is above 1, the labor market is inefficiently tight.
++ *Interpretation* - Labor market tightness measures the number of job openings per job seeker. In the United States, a tightness of 1 marks full employment, or equivalently labor market efficiency. When tightness is below 1, the labor market is inefficiently slack. When tightness is above 1, the labor market is inefficiently tight.
 + *Source* - [Michaillat and Saez (2024)](/13/)
 
----
-
-## US Beveridge curve
+## Beveridge curve
 
 <iframe
     src="/dashboard/beveridge_curve.html"
-    title="US Beveridge curve"
-    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+    title="Beveridge curve"
+    style="width: 100%; aspect-ratio: 4 / 3;">
 </iframe>
 
 + [View in full screen](/dashboard/beveridge_curve.html)
 + *Construction* - The Beveridge curve is a scatter plot of the vacancy rate against the unemployment rate. 
-+ *Interpretation* - The Beveridge curve is one of the most robust relationships in macroeconomics. Over the business cycle, the economy moves along the curve. In recessions the unemployment rate increases while the vacancy rate decreases; in expansions the unemployment rate decreases while the vacancy rate increases. Since the economy is at full employment when the unemployment and vacancy rates are equal, the economy is inefficiently slack when it is below the 45° ray and inefficiently tight otherwise.
++ *Interpretation* - The Beveridge curve is one of the most robust relationships in macroeconomics. Over the business cycle, the economy moves along the curve. In recessions the unemployment rate increases while the vacancy rate decreases; in expansions the unemployment rate decreases while the vacancy rate increases. Since the US economy is at full employment when the unemployment and vacancy rates are equal, it is inefficiently slack when it sits below the 45° ray and inefficiently tight when it sits above the 45° ray.
 + *Source* - [Michaillat and Saez (2024)](/13/)
 
----
-
-## US full-employment rate of unemployment (FERU)
+## Full-employment rate of unemployment (FERU)
 
 <iframe 
     src="/dashboard/feru.html"
-    title="US full-employment rate of unemployment (FERU)"
-    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+    title="Full-employment rate of unemployment"
+    style="width: 100%; aspect-ratio: 4 / 3;">
 </iframe>
 
 + [View in full screen](/dashboard/feru.html)
 + [Download FERU](/dashboard/feru.csv)
 + *Construction* - The FERU ($u^\ast$) is the geometric average of the unemployment rate ($u$) and vacancy rate ($v$): $u^\ast = \sqrt{u \times v}$. 
-+ *Interpretation* - The FERU marks full employment. The [1946 Employment Act](https://fraser.stlouisfed.org/title/1099) and [1978 Full Employment and Balanced Growth Act](https://fraser.stlouisfed.org/title/1034) state that achieving full employment is a way to maximize social welfare. So we compute the FERU as the unemployment rate that maximizes social welfare by minimizing socially unproductive uses of labor—both job seeking and recruiting. By construction, therefore, the FERU is also the efficient unemployment rate.
-+ *Visualization* - On the Beveridge diagram, the FERU is at the intersection of the Beveridge curve and the 45° ray. The FERU is therefore determined by the location of the Beveridge curve: it is higher when the Beveridge curve is further outward.
++ *Interpretation* - The FERU marks full employment in the United States. The [1946 Employment Act](https://fraser.stlouisfed.org/title/1099) and [1978 Full Employment and Balanced Growth Act](https://fraser.stlouisfed.org/title/1034) state that achieving full employment is a way to maximize social welfare. So we compute the FERU as the unemployment rate that maximizes social welfare by minimizing socially unproductive uses of labor—both job seeking and recruiting. By construction, therefore, the FERU is also the efficient unemployment rate.
++ *Visualization* - On the Beveridge diagram, the FERU is at the intersection of the Beveridge curve and the 45° ray. The FERU is therefore determined by the location of the Beveridge curve: it is higher when the Beveridge curve is further outward and lower when the Beveridge curve is further inward.
 + *Source* - [Michaillat and Saez (2024)](/13/)
 
----
-
-## US unemployment gap
+## Unemployment gap
 
 <iframe 
     src="/dashboard/unemployment_gap.html"
-    title="US unemployment gap"
-    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+    title="Unemployment gap"
+    style="width: 100%; aspect-ratio: 4 / 3;">
 </iframe>
 
 + [View in full screen](/dashboard/unemployment_gap.html)
@@ -111,36 +99,32 @@ This dashboard provides real-time indicators of labor market slack and business 
 + *Interpretation* - The unemployment gap indicates the distance from full employment. A positive gap marks an inefficiently slack labor market. A negative gap marks an inefficiently tight labor market. The unemployment gap is a key determinant of optimal monetary and fiscal policy.
 + *Source* - [Michaillat and Saez (2024)](/13/)
 
----
-
-## US recession indicator
+## Recession indicator
 
 <iframe 
     src="/dashboard/recession_indicator.html" 
-    title="US recession indicator"
-    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+    title="Recession indicator"
+    style="width: 100%; aspect-ratio: 4 / 3;">
 </iframe>
 
 + [View in full screen](/dashboard/recession_indicator.html)
 + [Download recession indicator](/dashboard/recession_indicator.csv)
 + *Construction* - The recession indicator is the minimum of two indicators. The first is the unemployment indicator from the Sahm rule: the increase in the 3-month average of the unemployment rate above its 12-month low ([view](/dashboard/unemployment_indicator.html) or [download](/dashboard/unemployment_indicator.csv) that indicator). The second is a vacancy indicator constructed analogously: the decrease in the 3-month average of the vacancy rate below its 12-month high ([view](/dashboard/vacancy_indicator.html) or [download](/dashboard/vacancy_indicator.csv) that indicator).
-+ *Interpretation* - The Michez rule signals a recession whenever the recession indicator is above the threshold of 0.29pp. The detected recession start date is the month when the indicator crosses the 0.29pp threshold from below.
++ *Interpretation* - The Michez rule signals a US recession whenever the recession indicator is above the threshold of 0.29pp. The detected recession start date is the month when the indicator crosses the 0.29pp threshold from below.
 + *Source* - [Michaillat and Saez (2025)](/16/)
 
----
-
-## US recession probability
+## Recession probability
 
 <iframe 
     src="/dashboard/recession_probability.html" 
-    title="US recession probability"
-    style="width: 100%; aspect-ratio: 4 / 3; border: none;">
+    title="Recession probability"
+    style="width: 100%; aspect-ratio: 4 / 3;">
 </iframe>
 
 + [View in full screen](/dashboard/recession_probability.html)
 + [Download recession probability](/dashboard/recession_probability.csv)
 + *Construction* - The recession probability is computed from the dual-threshold extension of the Michez rule. The recession probability is the fraction of the 0.29pp–0.81pp range that the recession indicator has covered: $p =$ (indicator $-$ 0.29) $/$ (0.81 $-$ 0.29).
-+ *Interpretation* - The dual-threshold Michez rule works as follows: values of the indicator below 0.29pp signal no recession; values between 0.29pp and 0.81pp signal a possible recession; values above 0.81pp signal a certain recession. The dual-threshold extension accounts for uncertainty in the true recession threshold and provides a simple way to nowcast recession risk. 
++ *Interpretation* - The dual-threshold Michez rule works as follows: values of the indicator below 0.29pp signal no recession; values between 0.29pp and 0.81pp signal a possible recession; values above 0.81pp signal a certain recession. The dual-threshold extension accounts for uncertainty in the true recession threshold and provides a simple way to nowcast US recession risk. 
 + *Source* - [Michaillat and Saez (2025)](/16/)
 
 ---
@@ -201,21 +185,21 @@ No. The non-accelerating-inflation rate of unemployment (NAIRU) is the unemploym
 
 But the NAIRU is a different concept than the FERU—and the NAIRU is arguably not synonymous with full employment. The NAIRU is simply the unemployment rate consistent with stable inflation. The FERU is the socially efficient unemployment rate: the unemployment rate that maximizes social welfare by minimizing the nonproductive use of labor—both unemployment and recruiting. Since there is no guarantee that the unemployment rate stabilizing inflation is also socially efficient, there is no guarantee that the NAIRU and FERU coincide.
 
-### Is the FERU the same as the CBO's NRU?
+### Is the FERU the same as the CBO's natural rate of unemployment?
 
-No. The Congressional Budget Office (CBO) also tracks a full-employment benchmark, the natural rate of unemployment (NRU). The [CBO's NRU](https://perma.cc/NU5V-8ZY4) is a slow-moving trend obtained by assuming the labor market was at full employment in 2005 and adjusting for demographic changes since then. But without a theory of full employment, there is no way to verify that the labor market really was at full employment in 2005. So the NRU cannot be validated as a measure of full employment, unlike the FERU, which is derived directly from the condition for social efficiency.
+No. The US Congressional Budget Office (CBO) also tracks a full-employment benchmark, the natural rate of unemployment. The [CBO's natural rate of unemployment](https://perma.cc/NU5V-8ZY4) is a slow-moving trend obtained by assuming the labor market was at full employment in 2005 and adjusting for demographic changes since then. But without a theory of full employment, there is no way to verify that the labor market really was at full employment in 2005. So the natural rate of unemployment cannot be validated as a measure of full employment, unlike the FERU, which is derived directly from the condition for social efficiency.
 
 ### Why is the FERU not constant?
 
-The FERU describes the socially efficient position of the labor market on the Beveridge curve, so it is not constant but determined by the location of the Beveridge curve. When the Beveridge curve shifts outward, the FERU increases; when the Beveridge curve shifts inward, the FERU decreases. Typical Beveridge curve shifts do not affect the FERU much. For instance, between 1951 and 2019, the FERU remained broadly between 3% and 5.5%. The Beveridge curve did shift in and out during the postwar period, but the shifts were not large enough to produce noteworthy changes in the FERU. 
+The FERU describes the socially efficient position of the labor market on the Beveridge curve, so it is not constant but determined by the location of the Beveridge curve. When the Beveridge curve shifts outward, the FERU increases; when the Beveridge curve shifts inward, the FERU decreases. Typical Beveridge curve shifts do not affect the FERU much. For instance, between 1951 and 2019, the FERU remained broadly between 3% and 5.5%. The US Beveridge curve did shift in and out during the postwar period, but the shifts were not large enough to produce noteworthy changes in the FERU. 
 
-During the coronavirus pandemic, the Beveridge curve shifted out dramatically, which raised the FERU significantly. As the Beveridge curve normalized in the years after the pandemic, the FERU returned to normal levels. The FERU increase that followed the pandemic is extraordinary: the pandemic is the first time in the past century that the FERU crossed 6%.
+During the coronavirus pandemic, the US Beveridge curve shifted out dramatically, which raised the FERU significantly. As the Beveridge curve normalized in the years after the pandemic, the FERU returned to normal levels. The FERU increase that followed the pandemic is extraordinary: the pandemic is the first time in the past century that the FERU crossed 6%.
 
 ### How does the Michez rule relate to the Sahm rule?
 
-The Michez rule is based on the same idea as the [Sahm rule](https://fred.stlouisfed.org/series/SAHMCURRENT): looking for a rapid deterioration of the labor market to detect recessions. But while the Sahm rule only uses the unemployment rate for detection, the Michez rule uses both unemployment and vacancy rates. By combining data on unemployment and vacancies, the Michez rule obtains a less noisy signal of recessions, so it can detect recessions faster than the Sahm rule: 
+The Michez rule is based on the same idea as the [Sahm rule](https://fred.stlouisfed.org/series/SAHMCURRENT): looking for a rapid deterioration of the labor market to detect recessions. But while the Sahm rule only uses the unemployment rate for detection, the Michez rule uses both unemployment and vacancy rates. By combining data on unemployment and vacancies, the Michez rule obtains a less noisy signal of recessions, so it can detect US recessions faster than the Sahm rule: 
 
 + Average detection delay, 1960–2021: 1.2 months < 2.7 months
 + Maximum detection delay, 1960–2021: 3 months < 7 months
 
-The Michez rule is also more robust: it identifies all 15 recessions since 1929 without false positives, whereas the Sahm rule breaks down before 1960.
+The Michez rule is also more robust: it identifies all 15 US recessions since 1929 without false positives, whereas the Sahm rule breaks down before 1960.

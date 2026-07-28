@@ -62,6 +62,12 @@
     color: currentColor;
 }
 
+/* Live frames */
+
+.post-content iframe {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
 
 /* Content */
 
