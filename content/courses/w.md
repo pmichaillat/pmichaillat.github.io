@@ -7,11 +7,11 @@ aliases:
     - /t5.html
     - /t4.html
 author: "Pascal Michaillat"
-description: "This graduate course develops a model of economic slack. The model is used to study business-cycle fluctuations, monetary policy, and fiscal policy." 
-summary: "This course develops a model of economic slack. The model is used to study business-cycle fluctuations; Keynesian, classical, and frictional unemployment; optimal monetary policy and the zero lower bound; and optimal fiscal policy." 
+description: "This graduate course is on the topic of economic slack. It develops a matching model of the economy to study business cycles and monetary and fiscal policy."
+summary: "This course is on the topic of economic slack. It develops a matching model of the economy, studies business-cycle fluctuations and Keynesian, classical, and frictional unemployment, and analyzes optimal monetary and fiscal policy, including at the zero lower bound."
 cover:
     image: "/w.png"
-    alt: "Optimal monetary and fiscal policy in slackish model"
+    alt: "Optimal monetary and fiscal policy in matching model"
 editPost:
     URL: "https://github.com/pmichaillat/econ-221"
     Text: "Course portal"
@@ -26,9 +26,7 @@ This course covers research topics related to economic slack. So what is economi
 
 Economic slack represents a waste of productive resources, and it therefore is something that should be limited. In addition to being wasteful, unemployment imposes other, large costs on society. People who are unemployed suffer from lower mental and physical health than employed workers. Even employed people in areas with high unemployment report lower well-being. Accordingly, good economic policy should stabilize economic slack at a desirable level and avoid periods of elevated slack.
 
-In the course we introduce a basic slackish model of the economy and several variants of it. The term ``slackish'' is used to describe a class of models where economic slack is not only prevalent but also the central mechanism to equalize supply and demand. In these models the amount of slack---measured by the market tightness---is the key mediating variable, irrespective of whether the market is inefficiently slack or tight. Slackish does not imply that markets are always too slack; rather, it refers to the structural mechanism through which markets operate. In these markets, the market tightness, not the market price, adjusts to equilibrate supply and demand and to determine allocations and welfare.
-
-We use the slackish model to answer a range of questions: 
+In the course we introduce a basic matching model of the economy and several variants of it. We use the matching model to answer a range of questions: 
 
 + Why does slack exist? 
 + How does slack affect economic life? 
@@ -125,9 +123,9 @@ The business-cycle model developed in this course differs from canonical busines
 
 ---
 
-## Basic slackish model
+## Basic matching model
 
-This section develops a basic slackish model of the economy. The model is static. It is built around a matching function. Because of the matching function, self-employed workers are not able to sell all their services: there is always some slack. Wealth (in the form of real money balances) enters the utility function. People derive direct utility from wealth because wealth is a marker of social status, and people value high social status. Thanks to this assumption, and although the model is static, the aggregate demand is nondegenerate.
+This section develops a basic matching model of the economy. The model is static. It is built around a matching function. Because of the matching function, self-employed workers are not able to sell all their services: there is always some slack. Wealth (in the form of real money balances) enters the utility function. People derive direct utility from wealth because wealth is a marker of social status, and people value high social status. Thanks to this assumption, and although the model is static, the aggregate demand is nondegenerate.
 
 ###### Lecture videos
 
@@ -155,21 +153,21 @@ This section develops a basic slackish model of the economy. The model is static
 
 ###### Main readings
 
-+ [Michaillat and Saez (2015, sections 1–2)](/3/) – These sections develop the basic slackish model.
++ [Michaillat and Saez (2015, sections 1–2)](/3/) – These sections develop the basic matching model.
 + [Camerer, Loewenstein, and Prelec (2005)](https://doi.org/10.1257/0022051053737843) – This survey reviews advances in neuroeconomics—a field that uses results from biology and neuroscience to develop better economic models. One key insight from the survey is that people value money in and of itself—not solely as future consumption.
 
 ###### Additional readings
 
 + [Diamond (1982)](https://www.jstor.org/stable/1837124) – This paper develops the first matching model of the product market and uses it to study stabilization policy.
 + [Gourio and Rudanko (2014)](https://doi.org/10.1093/restud/rdu007) – This paper develops a dynamic matching model of the product market. Prices are set through competitive search.
-+ [Barro (1977)](https://doi.org/10.1016/0304-3932(77)90024-1) – This paper argues that prices should be bilaterally efficient when buyers and sellers are engaged in long-term relationships. In the slackish model developed in this course, prices are always bilaterally efficient.
++ [Barro (1977)](https://doi.org/10.1016/0304-3932(77)90024-1) – This paper argues that prices should be bilaterally efficient when buyers and sellers are engaged in long-term relationships. In the matching model developed in this course, prices are always bilaterally efficient.
 + [Huo and Rios-Rull (2020)](https://doi.org/10.1257/mac.20180290) – This paper shows that in New Keynesian models with sticky wages, workers are required to work against their will 15%–30% of the time. 
 
 ---
 
-## Slackish model with income and wealth inequality
+## Matching model with income and wealth inequality
 
-This section introduces income and wealth inequality in the slackish model. We compute the aggregate demand and aggregate supply curves with inequality, and show how the model with inequality can be solved. In the model the marginal propensity to spend varies with slack, and the deviation from Say's Law appears clearly.
+This section introduces income and wealth inequality in the matching model. We compute the aggregate demand and aggregate supply curves with inequality, and show how the model with inequality can be solved. In the model the marginal propensity to spend varies with slack, and the deviation from Say's Law appears clearly.
 
 ###### Lecture videos
 
@@ -197,7 +195,7 @@ This section introduces income and wealth inequality in the slackish model. We c
 
 ## Discussion of the solution concept
 
-This section provides additional discussions of the solution concept used in the slackish model, and discusses an interesting special case. It also shows how the model solution is the equilibrium (in the sense from physics not economics) of a dynamical model in which households slowly learn the market tightness.
+This section provides additional discussions of the solution concept used in the matching model, and discusses an interesting special case. It also shows how the model solution is the equilibrium (in the sense from physics not economics) of a dynamical model in which households slowly learn the market tightness.
 
 ###### Lecture videos
 
@@ -212,7 +210,7 @@ This section provides additional discussions of the solution concept used in the
 
 ###### Main reading
 
-+ [Michaillat and Saez (2015, sections 2D and 2H)](/3/) – These sections discuss the equilibrium concept in the slackish model, and solve the model in the special case with no matching cost.
++ [Michaillat and Saez (2015, sections 2D and 2H)](/3/) – These sections discuss the equilibrium concept in the matching model, and solve the model in the special case with no matching cost.
 
 ###### Additional reading
 
@@ -222,9 +220,9 @@ This section provides additional discussions of the solution concept used in the
 
 ## Price and wage rigidities
 
-The slackish model requires specifying price norms. Theoretically, there are many possibilities. We could assume that prices equilibrate supply and demand while tightness remains fixed. If the tightness is fixed at the right level, the economy is always efficient, in the spirit of a perfectly competitive, Walrasian model. We could also assume that tightness equilibrates supply and demand while prices remain fixed, in the spirit of a fixprice, Keynesian model. In that case, the economy is generically inefficient, either too slack or too tight. Or we could assume something in between, where tightness and prices jointly adjust to equilibrate supply and demand. 
+The matching model requires specifying price norms. Theoretically, there are many possibilities. We could assume that prices equilibrate supply and demand while tightness remains fixed. If the tightness is fixed at the right level, the economy is always efficient, in the spirit of a perfectly competitive, Walrasian model. We could also assume that tightness equilibrates supply and demand while prices remain fixed, in the spirit of a fixprice, Keynesian model. In that case, the economy is generically inefficient, either too slack or too tight. Or we could assume something in between, where tightness and prices jointly adjust to equilibrate supply and demand. 
 
-This section reviews evidence from microdata and ethnographic surveys. The evidence suggests that prices and wages are not fully flexible but instead somewhat rigid, and that fairness is a key reason behind price and wage rigidities. The section then shows how realistic pricing norms can be inserted into the slackish model. It also derives comparative statics in response to aggregate demand and aggregate supply shocks under fixed prices and rigid prices. It contrasts these results to those obtained under bargained prices.
+This section reviews evidence from microdata and ethnographic surveys. The evidence suggests that prices and wages are not fully flexible but instead somewhat rigid, and that fairness is a key reason behind price and wage rigidities. The section then shows how realistic pricing norms can be inserted into the matching model. It also derives comparative statics in response to aggregate demand and aggregate supply shocks under fixed prices and rigid prices. It contrasts these results to those obtained under bargained prices.
 
 ###### Lecture videos
 
@@ -259,9 +257,9 @@ This section reviews evidence from microdata and ethnographic surveys. The evide
 
 ---
 
-## Slackish model with labor and product markets
+## Matching model with labor and product markets
 
-This section presents a slackish model with two markets: a labor market with unemployment and a product market with idleness. Each market is organized around a matching function. Unemployment and idleness interact with each other. For instance, after an increase in aggregate demand, firms find more customers. This reduces the idle time of firms' employees and thus increases firms' labor demand. This in turn reduces unemployment.
+This section presents a matching model with two markets: a labor market with unemployment and a product market with idleness. Each market is organized around a matching function. Unemployment and idleness interact with each other. For instance, after an increase in aggregate demand, firms find more customers. This reduces the idle time of firms' employees and thus increases firms' labor demand. This in turn reduces unemployment.
 
 In this two-market model, not all workers are employed, and not all goods and services produced by firms are sold. The model therefore incorporates the three traditional types of unemployment: Keynesian, classical, and frictional. Unemployment has a Keynesian component because it depends on how easy or difficult it is for firms to sell their goods. It has a classical component because it depends on the real wage. And it has a frictional component because it depends on how costly it is for firms to recruit workers.
 
@@ -287,21 +285,21 @@ Moreover, the comovements between output, employment, product-market tightness, 
 
 ###### Main readings
 
-+ [Michaillat and Saez (2015, sections 3–6)](/3/) – These sections develop the slackish model with labor and product markets, and assess the sources of unemployment fluctuations in the United States.
-+ [Barro and Grossman (1971)](https://www.jstor.org/stable/1910543) – This paper develops a disequilibrium model with labor and product markets. This model is a precursor to the two-market slackish model used in the course.
++ [Michaillat and Saez (2015, sections 3–6)](/3/) – These sections develop the matching model with labor and product markets, and assess the sources of unemployment fluctuations in the United States.
++ [Barro and Grossman (1971)](https://www.jstor.org/stable/1910543) – This paper develops a disequilibrium model with labor and product markets. This model is a precursor to the two-market matching model used in the course.
 
 ###### Additional readings
 
-+ [Barro (2025)](https://doi.org/10.3386/w33850) – This paper revisits the disequilibrium model with labor and product markets, summarizes its qualities and limitations, and argues that the limitations can be remedied by using the type of slackish models developed in this course. The paper also reviews some of the limitations of the New Keynesian model.
++ [Barro (2025)](https://doi.org/10.3386/w33850) – This paper revisits the disequilibrium model with labor and product markets, summarizes its qualities and limitations, and argues that the limitations can be remedied by using the type of matching models developed in this course. The paper also reviews some of the limitations of the New Keynesian model.
 + [Michaillat (2012)](/1/) – This paper establishes that usual matching models of the labor market do not have job rationing. It then develops a matching model with job rationing, which is a precursor for the two-market model developed here.
 + [Diamond (2011)](https://doi.org/10.1257/aer.101.4.1045) – In this Nobel lecture, Peter Diamond discusses the applications of the matching framework to the product market and other markets.
 + [Wasmer and Weil (2004)](https://doi.org/10.1257/0002828042002525) – This paper develops a model with labor and financial markets organized around matching functions. 
 
 ---
 
-## Dynamic slackish model
+## Dynamic matching model
 
-This section presents a dynamic version of the slackish model. In the dynamic model, unemployment is determined by the intersection of an aggregate demand curve, stemming from households' consumption-saving decisions, and an aggregate supply curve, corresponding to the Beveridge curve.
+This section presents a dynamic version of the matching model. In the dynamic model, unemployment is determined by the intersection of an aggregate demand curve, stemming from households' consumption-saving decisions, and an aggregate supply curve, corresponding to the Beveridge curve.
 
 An advantage of moving to a dynamic environment is that interest rates appear into the model. Indeed, the real interest rate is a key determinant of aggregate demand. By setting a nominal interest rate, the central bank can stabilize the economy. The model is therefore useful to study the effect of monetary policy on unemployment—for instance to assess the possibility of a soft landing in the aftermath of the pandemic inflation spike.
 
@@ -325,21 +323,21 @@ An advantage of moving to a dynamic environment is that interest rates appear in
 
 ###### Main readings
 
-+ [Michaillat and Saez (2022, sections 1–4)](/7/) – These sections develop the dynamic slackish model and perform various comparative statics.
-+ [Michaillat and Saez (2024)](/15/) – This paper develops a business-cycle model with divine coincidence: inflation is on target when unemployment is efficient. The model uses the structure of the dynamic slackish model and generates price dynamics by introducing price competition through directed search. To ensure that unemployment fluctuates, the model introduces price rigidity through quadratic price-adjustment costs.
++ [Michaillat and Saez (2022, sections 1–4)](/7/) – These sections develop the dynamic matching model and perform various comparative statics.
++ [Michaillat and Saez (2024)](/15/) – This paper develops a business-cycle model with divine coincidence: inflation is on target when unemployment is efficient. The model uses the structure of the dynamic matching model and generates price dynamics by introducing price competition through directed search. To ensure that unemployment fluctuates, the model introduces price rigidity through quadratic price-adjustment costs.
 
 ###### Additional readings
 
 + [Ball, Leigh, and Loungani (2017)](https://doi.org/10.1111/jmcb.12420) – This paper documents the prevalence of Okun's law—the negative correlation between output and unemployment rate—in the United States since 1948. Okun's law implies that output and market tightness are negatively correlated over the business cycle, which in turn implies that aggregate demand shocks are the main source of cyclical fluctuations.
-+ [Basu, Fernald, and Kimball (2006)](https://doi.org/10.1257/aer.96.5.1418) – This paper shows that in the United States, employment falls when technology improves. The same occurs in the dynamic slackish model.
++ [Basu, Fernald, and Kimball (2006)](https://doi.org/10.1257/aer.96.5.1418) – This paper shows that in the United States, employment falls when technology improves. The same occurs in the dynamic matching model.
 + [Benigno and Eggertsson (2023)](https://doi.org/10.3386/w31197) – This paper provides evidence that the divine coincidence holds in the United States in recent decades: inflation is above target whenever the labor market is inefficiently tight. It also documents a kink in the Phillips curve at the point of divine coincidence: the Phillips curve is much steeper when the economy is hot than when it is cold.
-+ [Michaillat and Saez (2021)](/11/) – The dynamic slackish model assumes that wealth enters people's utility function. This paper exports this assumption to the New Keynesian model and shows that it is also helpful there. Indeed, the assumption resolves all the anomalies of the New Keynesian model at the zero lower bound.
++ [Michaillat and Saez (2021)](/11/) – The dynamic matching model assumes that wealth enters people's utility function. This paper exports this assumption to the New Keynesian model and shows that it is also helpful there. Indeed, the assumption resolves all the anomalies of the New Keynesian model at the zero lower bound.
 
 ---
 
 ## Social welfare, efficiency, and inefficiency
 
-Unlike in neoclassical models, in slackish models the economy generally operates inefficiently. Except in knife-edge cases, there is too much or too little slack. Since the unemployment rate is generally inefficient, it is critical to know whether the current unemployment rate is above or below the efficient unemployment rate.
+Unlike in neoclassical models, in matching models the economy generally operates inefficiently. Except in knife-edge cases, there is too much or too little slack. Since the unemployment rate is generally inefficient, it is critical to know whether the current unemployment rate is above or below the efficient unemployment rate.
 
 This section therefore develops a simple formula for the efficient amount of unemployment. It shows that under simple but realistic assumptions, the efficient unemployment rate is the geometric average of the unemployment and vacancy rates: $u^\ast = \sqrt{uv}$. Hence, the economy is efficient when there are as many vacancies as jobseekers, inefficiently tight when there are more vacancies than jobseekers, and inefficiently slack when there are more jobseekers than vacancies.
 
@@ -429,11 +427,11 @@ This section studies how fiscal policy should be adjusted when unemployment is i
 ###### Main readings
 
 + [Michaillat and Saez (2019)](/6/) – This paper studies optimal government spending in the presence of inefficient unemployment. It derives the sufficient-statistic formula for optimal stimulus spending.
-+ [Michaillat (2014)](/2/) – This paper establishes that in a slackish model, the public-employment multiplier is positive but less than one, and the multiplier is larger when the unemployment rate is higher.
++ [Michaillat (2014)](/2/) – This paper establishes that in a matching model, the public-employment multiplier is positive but less than one, and the multiplier is larger when the unemployment rate is higher.
 
 ###### Additional readings
 
 + [Samuelson (1954)](https://doi.org/10.2307/1925895) – This paper studies optimal government spending in a neoclassical model and derives the famous Samuelson rule.
 + [Ramey (2013)]( http://www.nber.org/chapters/c12632) – This paper uses structural VARs on US data to estimate the unemployment multiplier—the effect of an increase in government spending on the unemployment rate.
 + [Auerbach and Gorodnichenko (2012)](https://doi.org/10.1257/pol.4.2.1) – This paper finds that in the United States, government multipliers are larger when the unemployment rate is higher.
-+ [Ghassibe and Zanetti (2022)](https://doi.org/10.1016/j.jmoneco.2022.09.003) – This paper describes the state-dependence of multipliers in a slackish model under both demand and supply shocks, for both demand-side and supply-side policies.
++ [Ghassibe and Zanetti (2022)](https://doi.org/10.1016/j.jmoneco.2022.09.003) – This paper describes the state-dependence of multipliers in a matching model under both demand and supply shocks, for both demand-side and supply-side policies.

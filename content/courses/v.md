@@ -6,8 +6,8 @@ aliases:
     - /c1/
     - /t1.html
 author: "Pascal Michaillat"
-description: "This advanced undergraduate course develops a model of unemployment. The model is used to study unemployment fluctuations and labor market policies." 
-summary: "This course develops a model of unemployment. The model is used to study unemployment fluctuations; job rationing; efficient unemployment and unemployment gap; and labor market policies such as minimum wage, public employment, and unemployment insurance." 
+description: "This undergraduate course is on the topic of unemployment. It develops a  matching model of the labor market to study unemployment fluctuations and policies."
+summary: "This course is on the topic of unemployment. It develops a matching model of the labor market, studies unemployment fluctuations, job rationing, and the unemployment gap, and analyzes labor market policies such as the minimum wage, public employment, and unemployment insurance."
 cover:
     image: "/v.png"
     alt: "Rationing and frictional unemployment in the United States, 1964–2009"
@@ -89,7 +89,7 @@ for the shift from print job advertising to online job advertising in the 1990s.
 
 ## Matching model of the labor market
 
-This section introduces the matching model of the labor market. This is the model that we will use to study unemployment and labor market policies in this course. Early work on this model was conducted by Peter Diamond, Dale Mortensen, and Christopher Pissarides in the 1970s and 1980s, so the canonical version of the model is often called the Diamond-Mortensen-Pissarides model, or DMP model. For their work, Diamond, Mortensen, and Pissarides received the Economics Nobel Prize in 2010. In the matching model, unlike in the neoclassical model, all trades are mediated by a matching function. Nevertheless, we can construct labor supply and labor demand curves, and use them to solve the model.
+This section introduces the matching model of the labor market. This is the model that we will use to study unemployment and labor market policies in this course. In the matching model, unlike in the neoclassical model, all trades are mediated by a matching function. Nevertheless, we can construct labor supply and labor demand curves, and use them to solve the model.
 
 ###### Lecture videos
 
@@ -120,7 +120,7 @@ This section introduces the matching model of the labor market. This is the mode
 ###### Main readings
 
 + [Kuhn (1957, chapters 1 and 5)](https://www.hup.harvard.edu/catalog.php?isbn=9780674171039) – This book studies the Copernican Revolution in astronomy and in the process isolates the three properties of a good model: economy, accuracy, and fruitfulness.
-+ [Pissarides (2001, chapter 1)](https://mitpress.mit.edu/9780262533980/equilibrium-unemployment-theory/) – This chapter introduces the canonical version of the matching model of the labor market (the DMP model).
++ [Pissarides (2001, chapter 1)](https://mitpress.mit.edu/9780262533980/equilibrium-unemployment-theory/) –  Early work on matching models was conducted by Peter Diamond, Dale Mortensen, and Christopher Pissarides in the 1970s and 1980s, so the canonical version of the matching model is called the Diamond-Mortensen-Pissarides model, or DMP model. For their work, Diamond, Mortensen, and Pissarides received the Economics Nobel Prize in 2010. This chapter introduces the DMP model.
 
 ###### Additional readings
 
@@ -209,7 +209,7 @@ This section discusses unemployment fluctuations in the matching model. We first
 
 ###### Main readings
 
-+ [Shimer (2005)](https://doi.org/10.1257/0002828053828572) – This paper shows that the canonical matching model of the labor market (the DMP model) cannot generate realistic fluctuations in unemployment and vacancies. This anomaly of the DMP model is known as the Shimer puzzle. The reason behind the Shimer puzzle is that the wage bargaining protocol assumed in the DMP model—Nash bargaining—produces wages that are too flexible. 
++ [Shimer (2005)](https://doi.org/10.1257/0002828053828572) – This paper shows that the DMP model cannot generate realistic fluctuations in unemployment and vacancies. This anomaly of the DMP model is known as the Shimer puzzle. The reason behind the Shimer puzzle is that the wage bargaining protocol assumed in the DMP model—Nash bargaining—produces wages that are too flexible. 
 + [Hall (2005)](https://doi.org/10.1257/0002828053828482) – This paper shows that a matching model with fixed real wages generates large fluctuations in unemployment and vacancies—larger in fact that the fluctuations observed in the United States. Hence fixed real wages solve the Shimer puzzle.
 
 ###### Additional readings
