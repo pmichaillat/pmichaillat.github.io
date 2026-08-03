@@ -22,9 +22,6 @@ disableAnchoredHeadings: false
 
 This minicourse is about business cycles. It first reviews basic facts about business cycles. It then presents a matching model of business cycles—both a static version for theoretical insights, and a dynamic version for policy analysis. It finally discusses the inefficiency of business cycles, and explain how monetary and fiscal policy can be used to tame business cycles.
 
-
-<!-- The term ``slackish'' is used to describe a class of models where economic slack is not only prevalent but also the central mechanism to equalize supply and demand. In these models the amount of slack---measured by the market tightness---is the key mediating variable, irrespective of whether the market is inefficiently slack or tight. Slackish does not imply that markets are always too slack; rather, it refers to the structural mechanism through which markets operate. In these markets, the market tightness, not the market price, adjusts to equilibrate supply and demand and to determine allocations and welfare. -->
-
 The main take-away from the course is that business cycles are essentially fluctuations in economic slack. Indeed, business cycles correspond to fluctuations in the utilization of capacity, not fluctuations in capacity itself. Then we will see that business-cycle fluctuations can be explained by aggregate-demand shocks, in the presence of price and wage rigidity. We will then see that business cycles lead to inefficient utilization of capacity: there is too much slack in slumps and too little slack in booms. Finally, we will argue that monetary policy should set interest rates to maintain slack at its efficient level. When monetary policy is ineffective—at the zero lower bound for example—government spending should respond to fluctuations in slack to bring slack closer to its efficient level.
 
 ---
