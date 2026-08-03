@@ -5,8 +5,8 @@ url: /z/
 aliases:
     - /c5/
 author: "Pascal Michaillat"
-description: "This graduate minicourse describes business cycles, develops a slackish model to explain them, and discusses how monetary and fiscal policy can tame them."
-summary: "This minicourse presents basic facts about business cycles. It then develops a slackish model to explain these facts. Finally, it explains how monetary policy and fiscal policy should be designed to tame business cycles." 
+description: "This graduate minicourse describes business cycles, develops a matching model to explain them, and discusses how monetary and fiscal policy can tame them."
+summary: "This minicourse presents basic facts about business cycles. It then develops a matching model to explain these facts. Finally, it explains how monetary policy and fiscal policy should be designed to tame business cycles." 
 cover:
     image: "/z.png"
     alt: "Slack and GDP over the business cycle"
@@ -20,11 +20,12 @@ disableAnchoredHeadings: false
 
 ## Introduction
 
-This minicourse is about business cycles. It first reviews basic facts about business cycles. It then presents a slackish model of business cycles—both a static version for theoretical insights, and a dynamic version for policy analysis. It finally discusses the inefficiency of business cycles, and explain how monetary and fiscal policy can be used to tame business cycles.
+This minicourse is about business cycles. It first reviews basic facts about business cycles. It then presents a matching model of business cycles—both a static version for theoretical insights, and a dynamic version for policy analysis. It finally discusses the inefficiency of business cycles, and explain how monetary and fiscal policy can be used to tame business cycles.
 
-The term ``slackish'' is used to describe a class of models where economic slack is not only prevalent but also the central mechanism to equalize supply and demand. In these models the amount of slack---measured by the market tightness---is the key mediating variable, irrespective of whether the market is inefficiently slack or tight. Slackish does not imply that markets are always too slack; rather, it refers to the structural mechanism through which markets operate. In these markets, the market tightness, not the market price, adjusts to equilibrate supply and demand and to determine allocations and welfare.
 
-The main take-away from the course is that business cycles are essentially fluctuations in economic slack. Indeed, business cycles correspond to fluctuations in the utilization of capacity, not fluctuations in capacity itself. Then we will see that through the lens of a slackish business-cycle model, business-cycle fluctuations can be explained by aggregate-demand shocks, in the presence of price and wage rigidity. We will then see that business cycles lead to inefficient utilization of capacity: there is too much slack in slumps and too little slack in booms. Finally, we will argue that monetary policy should set interest rates to maintain slack at its efficient level. When monetary policy is ineffective—at the zero lower bound for example—government spending should respond to fluctuations in slack to bring slack closer to its efficient level.
+<!-- The term ``slackish'' is used to describe a class of models where economic slack is not only prevalent but also the central mechanism to equalize supply and demand. In these models the amount of slack---measured by the market tightness---is the key mediating variable, irrespective of whether the market is inefficiently slack or tight. Slackish does not imply that markets are always too slack; rather, it refers to the structural mechanism through which markets operate. In these markets, the market tightness, not the market price, adjusts to equilibrate supply and demand and to determine allocations and welfare. -->
+
+The main take-away from the course is that business cycles are essentially fluctuations in economic slack. Indeed, business cycles correspond to fluctuations in the utilization of capacity, not fluctuations in capacity itself. Then we will see that business-cycle fluctuations can be explained by aggregate-demand shocks, in the presence of price and wage rigidity. We will then see that business cycles lead to inefficient utilization of capacity: there is too much slack in slumps and too little slack in booms. Finally, we will argue that monetary policy should set interest rates to maintain slack at its efficient level. When monetary policy is ineffective—at the zero lower bound for example—government spending should respond to fluctuations in slack to bring slack closer to its efficient level.
 
 ---
 
@@ -38,9 +39,9 @@ This first section reviews basic facts about business cycles. It decomposes busi
 
 ---
 
-## Slackish business-cycle model: static version
+## Basic business-cycle model
 
-This section develops a slackish model of business cycles. The model is static. It is built around a matching function. The matching function summarizes the complex process through which workers searching for jobs meet firms searching for employees, and firms searching for customers meet consumers searching for sellers. Because of the matching function, self-employed workers are not able to sell all their services: there is always some slack. 
+This section develops a basic model of business cycles. The model is static. It is built around a matching function. The matching function summarizes the complex process through which workers searching for jobs meet firms searching for employees, and firms searching for customers meet consumers searching for sellers. Because of the matching function, self-employed workers are not able to sell all their services: there is always some slack. 
 
 Wealth enters the utility function. People derive direct utility from wealth, maybe because wealth is a marker of social status, and people value high social status. Thanks to this assumption, and although the model is static, the aggregate demand is nondegenerate.
 
@@ -52,9 +53,9 @@ The matching model requires to specify price norms. Theoretically, there are man
 
 ---
 
-## Slackish business-cycle model: dynamic version
+## Dynamic business-cycle model
 
-This section presents a dynamic version of the slackish business-cycle model. In the dynamic model, unemployment is determined by the intersection of an aggregate demand curve, stemming from households' Euler equation, and an aggregate supply curve, corresponding to the Beveridge curve.
+This section presents a dynamic version of the business-cycle model. In the dynamic model, unemployment is determined by the intersection of an aggregate demand curve, stemming from households' Euler equation, and an aggregate supply curve, corresponding to the Beveridge curve.
 
 An advantage of moving to a dynamic environment is that interest rates appear into the model. Indeed, the real interest rate is a key determinant of aggregate demand. By setting a nominal interest rate, the central bank can stabilize the economy. The model is therefore useful to study the effect of monetary policy on unemployment—for instance to assess the possibility of a soft landing in the aftermath of the pandemic inflation spike.
 
@@ -65,7 +66,7 @@ An advantage of moving to a dynamic environment is that interest rates appear in
 
 ## Taming business cycles with monetary and fiscal policy
 
-Unlike in neoclassical models, in slackish models the economy generally operates inefficiently. Except in knife-edge cases, there is too much or too little unemployment. Since the unemployment rate is generally inefficient, it is critical to know whether the current unemployment rate is above or below the efficient unemployment rate.
+Unlike in neoclassical models, in matching models the economy generally operates inefficiently. Except in knife-edge cases, there is too much or too little unemployment. Since the unemployment rate is generally inefficient, it is critical to know whether the current unemployment rate is above or below the efficient unemployment rate.
 
 This section therefore develops a simple formula for the efficient amount of unemployment. In general the US economy is inefficient. It is especially inefficiently slack in slumps.  For instance, the unemployment gap reached 6 percentage points during the Volcker Recession, the Great Recession, and the Pandemic Recession. By contrast, in 2022, the US economy is inefficiently tight. The unemployment gap has been below -1 percentage point during the whole of 2022.
 
