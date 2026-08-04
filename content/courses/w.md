@@ -7,8 +7,8 @@ aliases:
     - /t5.html
     - /t4.html
 author: "Pascal Michaillat"
-description: "This graduate course is on the topic of economic slack. It develops a matching model of the economy to study business cycles and monetary and fiscal policy."
-summary: "This course is on the topic of economic slack. It develops a matching model of the economy, studies business-cycle fluctuations and Keynesian, classical, and frictional unemployment, and analyzes optimal monetary and fiscal policy, including at the zero lower bound."
+description: "This graduate course is on the topic of economic slack. It develops a matching model of economic slack to study business cycles and monetary and fiscal policy."
+summary: "This course is on the topic of economic slack. It develops a matching model of economic slack to study business cycle fluctuations; Keynesian, classical, and frictional unemployment; optimal monetary policy and the zero lower bound; and optimal government spending."
 cover:
     image: "/w.png"
     alt: "Optimal monetary and fiscal policy in matching model"

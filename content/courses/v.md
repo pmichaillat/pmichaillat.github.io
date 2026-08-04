@@ -6,8 +6,8 @@ aliases:
     - /c1/
     - /t1.html
 author: "Pascal Michaillat"
-description: "This undergraduate course is on the topic of unemployment. It develops a  matching model of the labor market to study unemployment fluctuations and policies."
-summary: "This course is on the topic of unemployment. It develops a matching model of the labor market, studies unemployment fluctuations, job rationing, and the unemployment gap, and analyzes labor market policies such as the minimum wage, public employment, and unemployment insurance."
+description: "This undergraduate course is on the topic of unemployment. It develops a  matching model of unemployment to study labor market fluctuations and policies."
+summary: "This course is on the topic of unemployment. It develops a matching model of the unemployment to study labor market fluctuations; job rationing; efficient unemployment and unemployment gap; and labor market policies such as public employment and unemployment insurance."
 cover:
     image: "/v.png"
     alt: "Rationing and frictional unemployment in the United States, 1964–2009"
