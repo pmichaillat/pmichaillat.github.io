@@ -62,12 +62,6 @@
     color: currentColor;
 }
 
-/* Live frames */
-
-.post-content iframe {
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-}
 
 /* Content */
 
@@ -283,10 +277,16 @@
     border: 0;
 }
 
-/* Images */
+/* Frames */
+
 .post-content iframe {
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
 }
+
+/* Images */
 
 .post-content img {
     border-radius: var(--radius-code);

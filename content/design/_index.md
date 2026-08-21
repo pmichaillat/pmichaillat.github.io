@@ -1,8 +1,8 @@
 ---
-title: "Design"
-author: ["Pascal Michaillat"]
-description: "A suite of minimalist templates for academic work: papers, presentations, books, CVs, websites, and scientific figures. Built with LaTeX, Hugo, and MATLAB."
+title: Design
+author: Pascal Michaillat
+description: "This webpage provides a suite of minimalist templates for academic work—for papers, books, presentations, scientific figures, websites, and CVs."
 cover:
-    image: "/design.png"
+    image: /design.png
     alt: "Minimalist Hugo template for academic websites"
 ---

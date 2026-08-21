@@ -2,14 +2,14 @@
 title: "Minimalist LaTeX Template for Academic Books" 
 date: 2026-04-02
 url: /g/
-author: "Pascal Michaillat"
+author: Pascal Michaillat
 description: "This template produces an academic book with LaTeX. The template follows typographical best practices and has a minimalist design."
 summary: "This template produces an academic book with LaTeX. The template follows typographical best practices and has a minimalist design." 
 cover:
-    image: "/g.png"
-    alt: "Book produced with template"
+    image: /g.png
+    alt: "Book page produced with the template"
 editPost:
-    URL: "https://github.com/pmichaillat/latex-book"
+    URL: https://github.com/pmichaillat/latex-book
     Text: "GitHub repository"
 showToc: true
 disableAnchoredHeadings: false

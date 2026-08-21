@@ -5,14 +5,14 @@ url: /d/
 aliases: 
     - /d4/
     - /d4.pdf
-author: "Pascal Michaillat"
+author: Pascal Michaillat
 description: "This template produces scientific figures with MATLAB. The template follow best practices for the visual display of quantitative information."
 summary: "This template produces scientific figures with MATLAB. The template follow best practices for the visual display of quantitative information."
 cover:
-    image: "/d.png"
+    image: /d.png
     alt: "Figure produced with the template"
 editPost:
-    URL: "https://github.com/pmichaillat/matlab-figures"
+    URL: https://github.com/pmichaillat/matlab-figures
     Text: "GitHub repository"
 showToc: true
 disableAnchoredHeadings: false

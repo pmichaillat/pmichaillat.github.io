@@ -6,14 +6,14 @@ aliases:
     - /d2/
     - /d2.pdf
     - /d2a.pdf
-author: "Pascal Michaillat"
+author: Pascal Michaillat
 description: "This template produces an academic paper with LaTeX. The template follows typographical best practices and has a minimalist design."
 summary: "This template produces an academic paper with LaTeX. The template follows typographical best practices and has a minimalist design." 
 cover:
-    image: "/a.png"
+    image: /a.png
     alt: "Paper page produced with the template"
 editPost:
-    URL: "https://github.com/pmichaillat/latex-paper"
+    URL: https://github.com/pmichaillat/latex-paper
     Text: "GitHub repository"
 showToc: true
 disableAnchoredHeadings: false

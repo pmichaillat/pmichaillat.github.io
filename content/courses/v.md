@@ -5,14 +5,14 @@ url: /v/
 aliases:
     - /c1/
     - /t1.html
-author: "Pascal Michaillat"
+author: Pascal Michaillat
 description: "This undergraduate course is on the topic of unemployment. It develops a  matching model of unemployment to study labor market fluctuations and policies."
 summary: "This course is on the topic of unemployment. It develops a matching model of the unemployment to study labor market fluctuations; job rationing; efficient unemployment and unemployment gap; and labor market policies such as public employment and unemployment insurance."
 cover:
-    image: "/v.png"
+    image: /v.png
     alt: "Rationing and frictional unemployment in the United States, 1964–2009"
 editPost:
-    URL: "https://github.com/pmichaillat/econ-182"
+    URL: https://github.com/pmichaillat/econ-182
     Text: "Course portal"
 showToc: true
 disableAnchoredHeadings: false

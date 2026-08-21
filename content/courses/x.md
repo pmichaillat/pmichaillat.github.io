@@ -5,14 +5,14 @@ url: /x/
 aliases:
     - /c3/
     - /t3.html
-author: "Pascal Michaillat"
+author: Pascal Michaillat
 description: "This graduate minicourse covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations." 
 summary: "This minicourse covers basic mathematical methods for macroeconomics: dynamic programming, optimal control, and differential equations. The methods are used to study dynamical macroeconomic systems in discrete time and continuous time." 
 cover:
-    image: "/x.png"
+    image: /x.png
     alt: "Phase diagram depicting a saddle path"
 editPost:
-    URL: "https://github.com/pmichaillat/math-for-macro"
+    URL: https://github.com/pmichaillat/math-for-macro
     Text: "Source files"
 showToc: true
 disableAnchoredHeadings: false

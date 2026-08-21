@@ -4,14 +4,14 @@ date: 2024-06-26
 url: /e/
 aliases: 
     - /d3/
-author: "Pascal Michaillat"
+author: Pascal Michaillat
 description: "These commands simplify mathematical writing with LaTeX while automatically respecting the rules of mathematical typography." 
 summary: "These commands simplify mathematical writing with LaTeX while automatically respecting the rules of mathematical typography." 
 cover:
-    image: "/e.png"
+    image: /e.png
     alt: "Mathematical expressions produced with the commands"
 editPost:
-    URL: "https://github.com/pmichaillat/latex-math"
+    URL: https://github.com/pmichaillat/latex-math
     Text: "GitHub repository"
 showToc: true
 disableAnchoredHeadings: false

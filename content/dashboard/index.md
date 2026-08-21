@@ -1,12 +1,12 @@
 ---
 title: "Automated Business Cycle Dashboard"
-author: ["Pascal Michaillat","Emmanuel Saez"]
+author: [Pascal Michaillat, Emmanuel Saez]
 description: "This dashboard provides real-time charts on US unemployment rate, vacancy rate, labor market tightness, FERU, unemployment gap, and recession probability."
 cover:
-    image: "/dashboard.png"
+    image: /dashboard.png
     alt: "US recession probability from dual-threshold Michez rule"
 editPost:
-    URL: "https://github.com/pmichaillat/pmichaillat.github.io/blob/main/content/dashboard/dashboard.py"
+    URL: https://github.com/pmichaillat/pmichaillat.github.io/blob/main/content/dashboard/dashboard.py
     Text: "Source code"
 showToc: true
 disableAnchoredHeadings: false
@@ -20,8 +20,7 @@ This dashboard provides real-time indicators of labor market slack and business 
 <iframe
     src="/dashboard/unemployment_rate.html"
     title="Unemployment rate"
-    style="width: 100%; aspect-ratio: 4 / 3;">
-</iframe>
+></iframe>
 
 + [View in full screen](/dashboard/unemployment_rate.html)
 + [Download unemployment rate](/dashboard/unemployment_rate.csv)
@@ -34,8 +33,7 @@ This dashboard provides real-time indicators of labor market slack and business 
 <iframe
     src="/dashboard/vacancy_rate.html"
     title="Vacancy rate"
-    style="width: 100%; aspect-ratio: 4 / 3;">
-</iframe>
+></iframe>
 
 + [View in full screen](/dashboard/vacancy_rate.html)
 + [Download vacancy rate](/dashboard/vacancy_rate.csv)
@@ -48,8 +46,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 <iframe
     src="/dashboard/labor_market_tightness.html"
     title="Labor market tightness"
-    style="width: 100%; aspect-ratio: 4 / 3;">
-</iframe>
+    loading="lazy"
+></iframe>
 
 + [View in full screen](/dashboard/labor_market_tightness.html)
 + [Download labor market tightness](/dashboard/labor_market_tightness.csv)
@@ -62,8 +60,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 <iframe
     src="/dashboard/beveridge_curve.html"
     title="Beveridge curve"
-    style="width: 100%; aspect-ratio: 4 / 3;">
-</iframe>
+    loading="lazy"
+></iframe>
 
 + [View in full screen](/dashboard/beveridge_curve.html)
 + *Construction* - The Beveridge curve is a scatter plot of the vacancy rate against the unemployment rate. 
@@ -75,8 +73,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 <iframe 
     src="/dashboard/feru.html"
     title="Full-employment rate of unemployment"
-    style="width: 100%; aspect-ratio: 4 / 3;">
-</iframe>
+    loading="lazy"
+></iframe>
 
 + [View in full screen](/dashboard/feru.html)
 + [Download FERU](/dashboard/feru.csv)
@@ -90,8 +88,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 <iframe 
     src="/dashboard/unemployment_gap.html"
     title="Unemployment gap"
-    style="width: 100%; aspect-ratio: 4 / 3;">
-</iframe>
+    loading="lazy"
+></iframe>
 
 + [View in full screen](/dashboard/unemployment_gap.html)
 + [Download unemployment gap](/dashboard/unemployment_gap.csv)
@@ -104,8 +102,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 <iframe 
     src="/dashboard/recession_indicator.html" 
     title="Recession indicator"
-    style="width: 100%; aspect-ratio: 4 / 3;">
-</iframe>
+    loading="lazy"
+></iframe>
 
 + [View in full screen](/dashboard/recession_indicator.html)
 + [Download recession indicator](/dashboard/recession_indicator.csv)
@@ -118,8 +116,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 <iframe 
     src="/dashboard/recession_probability.html" 
     title="Recession probability"
-    style="width: 100%; aspect-ratio: 4 / 3;">
-</iframe>
+    loading="lazy"
+></iframe>
 
 + [View in full screen](/dashboard/recession_probability.html)
 + [Download recession probability](/dashboard/recession_probability.csv)

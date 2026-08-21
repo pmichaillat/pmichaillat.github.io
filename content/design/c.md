@@ -5,14 +5,14 @@ url: /c/
 aliases: 
     - /d1/
     - /d1.pdf
-author: "Pascal Michaillat"
+author: Pascal Michaillat
 description: "This template produces an academic presentation with LaTeX and Beamer. The template follows typographical best practices and has a minimalist design."
 summary: "This template produces an academic presentation with LaTeX and the Beamer class. The template follows typographical best practices and has a minimalist design."
 cover:
-    image: "/c.png"
+    image: /c.png
     alt: "Presentation slide produced with the template"
 editPost:
-    URL: "https://github.com/pmichaillat/latex-presentation"
+    URL: https://github.com/pmichaillat/latex-presentation
     Text: "GitHub repository"
 showToc: true
 disableAnchoredHeadings: false

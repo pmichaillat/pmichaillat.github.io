@@ -4,14 +4,14 @@ date: 2025-10-20
 url: /f/
 aliases:
     - /f1.pdf
-author: "Pascal Michaillat"
+author: Pascal Michaillat
 description: "This template produces an academic CV with LaTeX. The template follows typographical best practices and has a minimalist design."
 summary: "This template produces an academic CV with LaTeX. The template follows typographical best practices and has a minimalist design. Also available is a more compact version of the template that produces a one-page CV." 
 cover:
-    image: "/f.png"
+    image: /f.png
     alt: "CV produced with the template"
 editPost:
-    URL: "https://github.com/pmichaillat/latex-cv"
+    URL: https://github.com/pmichaillat/latex-cv
     Text: "GitHub repository"
 showToc: true
 disableAnchoredHeadings: false

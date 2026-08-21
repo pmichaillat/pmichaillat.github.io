@@ -5,14 +5,14 @@ url: /y/
 aliases:
     - /c4/
     - /t2.html
-author: "Pascal Michaillat"
+author: Pascal Michaillat
 description: "This undergraduate course covers IS-LM model of business cycles, matching model of unemployment, inflation, and Malthusian and Solowian models of growth."
 summary: "This course introduces macroeconomic concepts such as GDP and covers the IS-LM model of business cycles, matching model of unemployment, Phillips curve, Malthusian model of growth, and Solowian model of growth."
 cover:
-    image: "/y.png"
+    image: /y.png
     alt: "Comparative statics in the matching model of unemployment"
 editPost:
-    URL: "https://github.com/pmichaillat/intermediate-macro"
+    URL: https://github.com/pmichaillat/intermediate-macro
     Text: "Source files"
 showToc: true
 disableAnchoredHeadings: false

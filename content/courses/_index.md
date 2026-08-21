@@ -1,8 +1,8 @@
 ---
-title: "Courses"
-author: ["Pascal Michaillat"]
-description: "Undergraduate and graduate courses on business cycles, economic slack, unemployment, macroeconomics, and mathematical methods."
+title: Courses
+author: Pascal Michaillat
+description: "This webpage offers a suite of graduate and undergraduate macroeconomic courses—on economic slack, unemployment, business cycles, and mathematical methods."
 cover:
-    image: "/courses.png"
-    alt: "Optimal monetary policy and government spending in the model of slack"
+    image: /courses.png
+    alt: "Optimal monetary policy and government spending in the presence of slack"
 ---
