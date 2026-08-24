@@ -1,6 +1,6 @@
 ---
 title: "LaTeX Commands to Write Math" 
-date: 2024-06-26
+date: 2026-04-12
 url: /e/
 aliases: 
     - /d3/
@@ -75,6 +75,7 @@ The commands below produce functions and operators with parentheses that scale a
 |                      |    `\exp{x}`    |          $\exp(x)$           |
 | Indicator            |      `\ind`     |         $\mathbb{1}$         |
 |                      |    `\ind{X}`    |       $\mathbb{1}(X)$        |
+|                      |    `\ind[t]{X}` |       $\mathbb{1}_t(X)$        |
 | Trace                |      `\tr`      |     $\operatorname{tr}$      |
 |                      |     `\tr{M}`    |    $\operatorname{tr}(M)$    |
 | Probability          |       `\P`      |         $\mathbb{P}$         |
@@ -230,7 +231,7 @@ The commands below are shortcuts to produce blackboard-bold letters.
 
 ## Bold letters
 
-The commands below are shortcuts to produce bold lowercase letters.
+The commands below are shortcuts to produce lowercase bold letters.
 
 | Letter | Command |    Output    |
 | :----- | :-----: | :----------: |
@@ -241,7 +242,7 @@ The commands below are shortcuts to produce bold lowercase letters.
 | y      |   `\y`  | $\mathbf{y}$ |
 
 
-The commands below are shortcuts to produce bold uppercase letters.
+The commands below are shortcuts to produce uppercase bold letters.
 
 | Letter | Command |    Output    |
 | :----- | :-----: | :----------: |

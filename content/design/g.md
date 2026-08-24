@@ -1,6 +1,6 @@
 ---
 title: "Minimalist LaTeX Template for Academic Books" 
-date: 2026-04-02
+date: 2026-06-15
 url: /g/
 author: Pascal Michaillat
 description: "This template produces an academic book with LaTeX. The template follows typographical best practices and has a minimalist design."

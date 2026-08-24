@@ -1,6 +1,6 @@
 ---
 title: "Minimalist LaTeX Template for Academic CVs" 
-date: 2025-10-20
+date: 2026-04-11
 url: /f/
 aliases:
     - /f1.pdf
