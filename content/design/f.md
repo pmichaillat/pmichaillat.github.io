@@ -6,7 +6,7 @@ aliases:
     - /f1.pdf
 author: Pascal Michaillat
 description: "This template produces an academic CV with LaTeX. The template follows typographical best practices and has a minimalist design."
-summary: "This template produces an academic CV with LaTeX. The template follows typographical best practices and has a minimalist design. Also available is a more compact version of the template that produces a one-page CV." 
+summary: "This template produces an academic CV with LaTeX. The template follows typographical best practices and has a minimalist design. Also available is a variant of the template that produces a one-page CV." 
 cover:
     image: /f.png
     alt: "CV produced with the template"
@@ -17,14 +17,14 @@ showToc: true
 disableAnchoredHeadings: false
 ---
 
-The template produces an academic CV with [LaTeX](https://www.latex-project.org). The template adheres to typographical best practices and has a minimalist design. It is well suited for researchers at all levels, including students, postdocs, faculty members, and professional scientists. The design emphasizes structural clarity and visual simplicity. A more compact version of the template is also available to produce a one-page CV.
+The template produces an academic CV with [LaTeX](https://www.latex-project.org). The template adheres to typographical best practices and has a minimalist design. It is well suited for researchers at all levels, including students, postdocs, faculty members, and professional scientists. The design emphasizes structural clarity and visual simplicity. A variant of the template is also available to produce a one-page CV.
 
 ---
 
 ## View
 
 + [LaTeX CV template](https://github.com/pmichaillat/latex-cv)
-+ [Regular CV produced by the template](/f.pdf)
++ [CV produced by the template](/f.pdf)
 + [One-page CV produced by the template](/fo.pdf)
 
 ---
@@ -36,7 +36,7 @@ The template produces an academic CV with [LaTeX](https://www.latex-project.org)
 + The template uses only gray and black to reduce distraction and print flawlessly.
 + Margins, spacing, and font size are set for comfortable reading.
 + Headings, lists, and footer are designed so the CV is well organized and easy to skim.
-+ A more compact version of the template produces a one-page CV.
++ A variant of the template produces a one-page CV.
 
 ---
 
@@ -150,4 +150,4 @@ How long should your CV be? After the PhD job market—where CVs are typically c
 
 ## One-page variant
 
-The template also includes a more compact version to produce a one-page CV. The one-page CV might be particularly helpful for job-market candidates and others who are required to fit their CV on one page. Compared to the main template, the one-page variant has narrower margins and narrower spacing between lines.
+The repository also includes a variant of the template that produces a one-page CV. The one-page CV might be particularly helpful for job-market candidates and others who are required to fit their CV on one page. Compared to the baseline CV, the one-page variant has narrower margins and narrower spacing between lines.
