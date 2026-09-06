@@ -33,40 +33,18 @@ The template produces an academic presentation using [LaTeX](https://www.latex-p
 
 ## Main features
 
-+ There are no frills at the periphery of the slides.
 + The font for text, roman math, and numbers is Source Sans Pro.
 + The font for Greek and calligraphic math is Euler.
-+ The font for blackboard bold is Fourier.
 + The font for mathematical symbols is MnSymbol.
-+ The font for monospaced text is Source Code Pro.
++ The font for blackboard bold is Fourier.
++ Font size, spacing, and margins are set for comfortable reading.
++ There are no frills at the periphery of the slides.
 + No colors are used in the text (only grayscale) to reduce distraction; colors are reserved for figures and text alerts.
-+ Margins, spacing, and font size are set for comfortable reading.
 + Formatting is specified for theorems, propositions, lemmas, definitions, assumptions, corollaries, and remarks.
 + Formatting is specified for figures and tables.
 + Section slides and final slide can easily be inserted into the presentation.
 + The recommended aspect ratio is 4:3, but the template can also produce wide slides with 16:9 aspect ratio.
 
----
-
-## 4:3 versus 16:9 aspect ratio
-
-There has been a shift from slides with a 4:3 aspect ratio to wider slides with a 16:9 aspect ratio. By default, however, this template sticks to the traditional 4:3 aspect ratio. 
-
-First, 4:3 slides are better at effectively presenting supporting information. And slides are here as support, not as a substitute, for what the speaker is talking about. 4:3 slides force presenters to display only essential information on slides—leading to more effective presentations. 16:9 slides are often used to present two graphs at a time, or two paragraphs at a time, or a graph with some side text. This is confusing and possibly distracting for listeners, who do not know what to look at, and may be looking at the wrong part of the slide. 4:3 slides can only display one graph or one paragraph at a time—focusing the attention of the audience on that one piece of information. 
-
-Second, lines of text on 16:9 slides are often excessively long. The lines cannot be read at one glance, so reading them distracts from the presentation. 
-
-Third, 4:3 slides are more robust. They are easily readable with all projectors, both new and old. By contrast, the text of 16:9 slides becomes very small when they are displayed on old 4:3 projectors.
-
-Fourth, 4:3 slides work better on tablets because most tablets have a 4:3 aspect ratio (iPads for instance). It has become very common to read or display slides on tablets, or watch online presentations on tablets. In that context, 4:3 slides display better.
-
-Sometimes, however, host institutions or conferences require presenters to use a 16:9 aspect ratio. The template can be adjusted to produce such wide slides. Just add the `aspectratio=169` option to the `\documentclass` command. Specifically, the first line of the presentation should be:
-
-```tex
-\documentclass[11pt, aspectratio=169, xcolor={dvipsnames}, usepdftitle=false]{beamer}
-```
-
-The repository also includes the variant of the template that produces 16:9 slides.
 
 ---
 
@@ -306,21 +284,6 @@ Line 2 & M & N & O \\
 \end{frame}
 ```
 
----
-
-## Section slide
-
-The template has a command to divide the presentation into sections, which adds structure to longer talks. To produce the section slide, just use the following code:
-
-```tex
-\begin{frame}
-\heading{Section title}
-\end{frame}
-```
-
-The text on the section slide is in small caps, and with moderately large font (17pt).
-
-This section slide is a good point to stop, recap what has already been showed, and discuss what comes ahead. It is also a good point to take questions.
 
 ---
 
@@ -363,8 +326,46 @@ Each successive slide is automatically numbered with an Arabic number in square 
 
 ---
 
+## Section slide
+
+The template has a command to divide the presentation into sections, which adds structure to longer talks. To produce the section slide, just use the following code:
+
+```tex
+\begin{frame}
+\heading{Section title}
+\end{frame}
+```
+
+The text on the section slide is in small caps, and with moderately large font (17pt).
+
+This section slide is a good point to stop, summarize what has been discussed, and sketch what comes ahead. It is also a good point to take questions.
+
+---
+
 ## Last slide
 
 The template also comes with a last slide, which is just a gray square, and which is called with the command `\lastslide`. The last slide can be used instead of conclusion slides—to say thank you, to recap what the presentation showed, and to discuss next steps or related projects.
 
 Conclusion slides are generally ineffective and even mildly upsetting. The audience has been listening for an hour or an hour and a half. They know what they have just been told. At that point they are happy to go on with their day without having to hear again a summary of the same material.
+
+---
+
+## 4:3 versus 16:9 aspect ratio
+
+There has been a shift from slides with a 4:3 aspect ratio to wider slides with a 16:9 aspect ratio. By default, however, this template sticks to the traditional 4:3 aspect ratio. 
+
+First, 4:3 slides are better at effectively presenting supporting information. And slides are here as support, not as a substitute, for what the speaker is talking about. 4:3 slides force presenters to display only essential information on slides—leading to more effective presentations. 16:9 slides are often used to present two graphs at a time, or two paragraphs at a time, or a graph with some side text. This is confusing and possibly distracting for listeners, who do not know what to look at, and may be looking at the wrong part of the slide. 4:3 slides can only display one graph or one paragraph at a time—focusing the attention of the audience on that one piece of information. 
+
+Second, lines of text on 16:9 slides are often excessively long. The lines cannot be read at one glance, so reading them distracts from the presentation. 
+
+Third, 4:3 slides are more robust. They are easily readable with all projectors, both new and old. By contrast, the text of 16:9 slides becomes very small when they are displayed on old 4:3 projectors.
+
+Fourth, 4:3 slides work better on tablets because most tablets have a 4:3 aspect ratio (iPads for instance). It has become very common to read or display slides on tablets, or watch online presentations on tablets. In that context, 4:3 slides display better.
+
+Sometimes, however, host institutions or conferences require presenters to use a 16:9 aspect ratio. The template can be adjusted to produce such wide slides. Just add the `aspectratio=169` option to the `\documentclass` command. Specifically, the first line of the presentation should be:
+
+```tex
+\documentclass[11pt, aspectratio=169, xcolor={dvipsnames}, usepdftitle=false]{beamer}
+```
+
+The repository also includes the variant of the template that produces 16:9 slides.
