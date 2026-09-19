@@ -108,7 +108,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 + [View in full screen](/dashboard/recession_indicator.html)
 + [Download recession indicator](/dashboard/recession_indicator.csv)
 + *Construction* - The recession indicator is the minimum of two indicators. The first is the unemployment indicator from the Sahm rule: the increase in the 3-month average of the unemployment rate above its 12-month low ([view](/dashboard/unemployment_indicator.html) or [download](/dashboard/unemployment_indicator.csv) that indicator). The second is a vacancy indicator constructed analogously: the decrease in the 3-month average of the vacancy rate below its 12-month high ([view](/dashboard/vacancy_indicator.html) or [download](/dashboard/vacancy_indicator.csv) that indicator).
-+ *Interpretation* - The Michez rule signals a US recession whenever the recession indicator is above the threshold of 0.29pp. The detected recession start date is the month when the indicator crosses the 0.29pp threshold from below.
++ *Interpretation of the single-threshold Michez rule* - The single-threshold Michez rule is the fastest threshold rule that produces no errors over the training period, 1960–2021. It signals a US recession whenever the recession indicator is above the threshold of 0.29pp. The detected recession start date is the month when the indicator crosses the 0.29pp threshold from below. 
++ *Interpretation of the dual-threshold Michez rule* - The dual-threshold Michez rule accounts for uncertainty in the true recession threshold. The dual-threshold Michez rule signals no recession when the indicator is below 0.29pp; signals a possible recession when the indicator is between 0.29pp and 0.81pp; and signals a certain recession when the indicator is above 0.81pp. 
 + *Source* - [Michaillat and Saez (2025)](/16/)
 
 ## Recession probability
@@ -121,8 +122,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 
 + [View in full screen](/dashboard/recession_probability.html)
 + [Download recession probability](/dashboard/recession_probability.csv)
-+ *Construction* - The recession probability is computed from the dual-threshold extension of the Michez rule. The recession probability is the fraction of the 0.29pp–0.81pp range that the recession indicator has covered: $p =$ (indicator $-$ 0.29) $/$ (0.81 $-$ 0.29).
-+ *Interpretation* - The dual-threshold Michez rule works as follows: values of the indicator below 0.29pp signal no recession; values between 0.29pp and 0.81pp signal a possible recession; values above 0.81pp signal a certain recession. The dual-threshold extension accounts for uncertainty in the true recession threshold and provides a simple way to nowcast US recession risk. 
++ *Construction* - The recession probability is computed from the dual-threshold Michez rule. The recession probability is the fraction of the 0.29pp–0.81pp range that the recession indicator has covered: $p =$ (indicator $-$ 0.29) $/$ (0.81 $-$ 0.29).
++ *Interpretation* - 0.29pp is the lowest threshold that produces no false positives over 1960–2021, and 0.81pp is the highest threshold that produces no false negatives over 1960–2021. So all thresholds between 0.29pp and 0.81pp produce no errors over 1960–2021, and might be the true threshold. The recession probability measures the share of the error-free thresholds already crossed by the indicator. It therefore provides a simple way to nowcast US recession risk.
 + *Source* - [Michaillat and Saez (2025)](/16/)
 
 ---
@@ -200,4 +201,12 @@ The Michez rule is based on the same idea as the [Sahm rule](https://fred.stloui
 + Average detection delay, 1960–2021: 1.2 months < 2.7 months
 + Maximum detection delay, 1960–2021: 3 months < 7 months
 
-The Michez rule is also more robust: it identifies all 15 US recessions since 1929 without false positives, whereas the Sahm rule breaks down before 1960.
+The Michez rule is also more robust: it identifies all 15 US recessions between 1929 and 2021 without false positives, whereas the Sahm rule breaks down before 1960.
+
+### What happened to the Michez rule in 2024–2026?
+
+In March 2024 the recession indicator crossed the 0.29pp threshold, so the single-threshold Michez rule signaled a US recession. By June 2026, the indicator reached 0, and remained at 0 in July and August 2026. The NBER has not declared a recession in 2024–2026, and it seems unlikely that they will, given that [real GDP](https://fred.stlouisfed.org/series/gdpc1) only contracted between 2024:Q4 and 2025:Q1. Accordingly, the single-threshold Michez rule produced a false positive during the period.
+
+The dual-threshold Michez rule—designed to be slower but more robust—never indicated a recession with certainty. The indicator entered the 0.29pp–0.81pp band, implying that a recession was possible, but never reached 0.81pp, so the rule never assigned a 100% recession probability. The dual-threshold rule therefore signaled that a recession was possible in 2024–2026, based on how much the labor market had cooled, but it never called a certain recession. So the dual-threshold rule operated quite well during the period.
+
+That false positive produced by the single-threshold Michez rule is useful information. It can be incorporated into the training of future recession classifiers: by discarding classifiers that would have called a recession in 2024–2026, while still requiring perfect detection of historical recessions. [Michaillat (2025)](https://pascalmichaillat.org/17/) develops that approach by selecting the fastest and most accurate recession classifiers among all those that do not produce false positives or negatives over the training period. A large number of candidates is generated by considering many thresholds and ways to filter labor market data.

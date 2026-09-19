@@ -107,6 +107,7 @@ def plot_and_save_series(
     y_min,
     y_max,
     hline=None,
+    hline2=None,
     precision=2,
     title_precision=2,
     log_processed=False
@@ -137,6 +138,7 @@ def plot_and_save_series(
         y_min_value,
         y_max_value,
         hline=hline,
+        hline2=hline2,
         precision=precision
     )
 
@@ -249,7 +251,7 @@ def plot_beveridge_curve(u_rate, v_rate):
     print(f"Successfully wrote HTML to: {beveridge_curve_html_path}")
 
 # Plot time-series dashboard chart
-def make_plot(df, y_column, title, filename, y_label, usrec, x_min, x_max, y_min, y_max, hline=None, precision=2):
+def make_plot(df, y_column, title, filename, y_label, usrec, x_min, x_max, y_min, y_max, hline=None, hline2=None, precision=2):
     precision = int(precision)
     hovertemplate = f"%{{x|%b %Y}}<br>%{{y:.{precision}f}}<extra></extra>"
     fig = go.Figure()
@@ -273,16 +275,17 @@ def make_plot(df, y_column, title, filename, y_label, usrec, x_min, x_max, y_min
                 line_width=0
             )
  
-    if hline is not None:
-        fig.add_shape(
-            type='line',
-            x0=df.index.min(),
-            x1=df.index.max(),
-            y0=hline,
-            y1=hline,
-            line=dict(color='rgba(217, 95, 2, 0.7)', width=1),
-            layer='above'
-        )
+    for y in (hline, hline2):
+        if y is not None:
+            fig.add_shape(
+                type='line',
+                x0=df.index.min(),
+                x1=df.index.max(),
+                y0=y,
+                y1=y,
+                line=dict(color='rgba(217, 95, 2, 0.7)', width=1),
+                layer='above'
+            )
 
     fig.update_layout(
         title=title,
@@ -505,7 +508,8 @@ plot_and_save_series(
     usrec=usrec,
     y_min=0,
     y_max=lambda frame: frame["data"].max() * 1.05,
-    hline=0.29
+    hline=0.29,
+    hline2=0.81
 )
 
 # Plot recession probability
