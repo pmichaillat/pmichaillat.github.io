@@ -1,7 +1,7 @@
 ---
 title: Location
 author: Pascal Michaillat
-description: "This webpage provides Pascal Michaillat's office location and mailing address at the University of California, Santa Cruz."
+description: "This webpage provides Pascal Michaillat's office and mailing address at the University of California, Santa Cruz."
 hidemeta: true
 
 ---
