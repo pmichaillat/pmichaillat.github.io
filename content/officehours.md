@@ -8,17 +8,16 @@ hidemeta: true
 
 ---
 
-##### Schedule for Fall 2026
+##### Fall 2026 schedule
 
-+ Day: Wednesday
-+ Time: 2:30pm–4:30pm
-+ Location: [room 437, Engineering 2 building](/location/)
-+ Modality: first-come-first-served
++ Wednesday, 2:30pm–4:30pm
++ [Room 437, Engineering 2 building](/location/)
 
 ---
 
-##### Meeting material
+##### Meeting guidelines
 
-+ If we are meeting to discuss your research, please send me a written description of the work that you would like to discuss. A paper draft is preferred, but presentation slides are fine as well. If you do not have those, please send a one-page description of the research. 
-+ If we have already met in the past to discuss your research, please send me an update on your work since our previous meeting. Include responses to each point on your to-do list from the previous meeting. 
-+ Please send me the material by 8pm on the evening before our meeting.
++ Office hours are first-come-first-served: there is no need to sign up or email in advance.
++ If we are meeting to discuss your research, please send me a written description of your work. A paper draft is preferred, but presentation slides are fine too. If you do not have those, a one-page writeup of your research will do. 
++ If we have met in the past to discuss research, please send me a progress update. Include responses to the items on your to-do list from the previous meeting. 
++ Please send me the material by 8pm on the day before our meeting.
