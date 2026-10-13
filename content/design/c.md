@@ -17,11 +17,11 @@ cover:
 showToc: false
 disableAnchoredHeadings: false
 buttons:
-    - name: Template
+    - name: Template repository
       url: https://github.com/pmichaillat/latex-presentation
-    - name: Presentation
+    - name: Example presentation
       url: /c.pdf
-    - name: Wide presentation
+    - name: Example wide presentation
       url: /cw.pdf
 
 ---

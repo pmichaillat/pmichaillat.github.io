@@ -11,10 +11,10 @@ menu:
           weight: 1
         - name: Dashboard
           url: /dashboard/
-          weight: 2
+          weight: 3
         - name: Papers
           url: /papers/
-          weight: 3
+          weight: 2
         - name: Courses
           url: /courses/
           weight: 4
@@ -54,10 +54,10 @@ params:
           buttons:
             - name: Book
               url: /18/
-            - name: Dashboard
-              url: /dashboard/  
             - name: Papers
               url: /papers/
+            - name: Dashboard
+              url: /dashboard/  
             - name: Courses
               url: /courses/
             - name: Design

@@ -17,9 +17,9 @@ cover:
 showToc: false
 disableAnchoredHeadings: false
 buttons:
-    - name: Template
+    - name: Template repository
       url: https://github.com/pmichaillat/matlab-figures
-    - name: Figures
+    - name: Example figures
       url: /d.pdf
 
 ---

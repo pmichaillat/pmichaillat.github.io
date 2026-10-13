@@ -16,9 +16,9 @@ cover:
 showToc: false
 disableAnchoredHeadings: false
 buttons:
-    - name: Template
+    - name: Template repository
       url: https://github.com/pmichaillat/hugo-website
-    - name: Website
+    - name: Example website
       url: https://pascalmichaillat.org/hugo-website/
 
 ---

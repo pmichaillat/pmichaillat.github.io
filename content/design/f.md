@@ -16,11 +16,11 @@ cover:
 showToc: false
 disableAnchoredHeadings: false
 buttons:
-    - name: Template
+    - name: Template repository
       url: https://github.com/pmichaillat/latex-cv
-    - name: CV
+    - name: Example CV
       url: /f.pdf
-    - name: One-page CV
+    - name: Example one-page CV
       url: /fo.pdf
 ---
 ---

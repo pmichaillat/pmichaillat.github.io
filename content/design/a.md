@@ -18,11 +18,11 @@ cover:
 showToc: false
 disableAnchoredHeadings: false
 buttons:
-    - name: Template
+    - name: Template repository
       url: https://github.com/pmichaillat/latex-paper
-    - name: Paper
+    - name: Example paper
       url: /a.pdf
-    - name: Online appendix
+    - name: Example appendix
       url: /aa.pdf
 ---
 ---
