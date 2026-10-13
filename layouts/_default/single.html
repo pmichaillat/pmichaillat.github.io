@@ -31,6 +31,14 @@
 
   {{- if .Content }}
   <div class="post-content">
+    {{- with .Params.buttons }}
+    <hr>
+    <div class="buttons page-buttons">
+      {{- range . }}
+      {{ partial "button.html" . }}
+      {{- end }}
+    </div>
+    {{- end }}
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}

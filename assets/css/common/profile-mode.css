@@ -30,6 +30,16 @@
     margin-top: 8px;
 }
 
+/* Horizontal lines */
+
+.profile-rule {
+    align-self: stretch;
+    height: 1px;
+    margin: 4px 0;
+    background: var(--border);
+    border: 0;
+}
+
 /* Profile picture */
 
 .profile img {
@@ -59,4 +69,22 @@
 .button:hover {
     background: var(--graypurple);
     border: 1px solid var(--purple);
+}
+
+/* Buttons on single pages */
+
+.page-buttons {
+    font-size: var(--entry-size);
+}
+
+.page-buttons .button {
+    background: var(--code-bg);
+}
+
+.page-buttons .button:hover {
+    background: var(--graypurple);
+}
+
+.post-content .page-buttons a {
+    text-decoration: none;
 }

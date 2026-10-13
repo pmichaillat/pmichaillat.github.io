@@ -8,21 +8,20 @@ summary: "This template produces an academic book with LaTeX. The template follo
 cover:
     image: /g.png
     alt: "Book page produced with the template"
-editPost:
-    URL: https://github.com/pmichaillat/latex-book
-    Text: "GitHub repository"
-showToc: true
+# editPost:
+#     URL: https://github.com/pmichaillat/latex-book
+#     Text: "GitHub repository"
+showToc: false
 disableAnchoredHeadings: false
+buttons:
+    - name: Template
+      url: https://github.com/pmichaillat/latex-book
+    - name: Book
+      url: /g.pdf
+---
 ---
 
 The template produces an academic book with [LaTeX](https://www.latex-project.org). The template adheres to typographical best practices and has a minimalist design. The template is particularly well suited for research monographs and textbooks. It is designed so books are comfortable to read and easy to scan, both in print and on screen.
-
----
-
-## View
-
-- [LaTeX book template](https://github.com/pmichaillat/latex-book)
-- [Book produced by the template](/g.pdf)
 
 ---
 

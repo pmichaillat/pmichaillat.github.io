@@ -15,6 +15,8 @@ disableAnchoredHeadings: false
 
 This dashboard provides real-time indicators of labor market slack and business cycle conditions in the United States. All charts automatically update as new data become [available on FRED](https://fred.stlouisfed.org/).
 
+---
+
 ## Unemployment rate
 
 <iframe
@@ -28,6 +30,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 + *Interpretation* - The unemployment rate measures the share of people who have not succeeded in finding a job, among all those who are available and willing to work. This is the standard, official unemployment rate (U3).
 + *Source* - The numbers of [job seekers](https://fred.stlouisfed.org/series/UNEMPLOY) and [labor force participants](https://fred.stlouisfed.org/series/CLF16OV) are measured by the US Bureau of Labor Statistics (BLS) from the [Current Population Survey](https://www.bls.gov/cps/home.htm) (CPS), which is a large-scale household survey. 
 
+---
+
 ## Vacancy rate
 
 <iframe
@@ -40,6 +44,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 + *Construction* - The vacancy rate is the number of job openings divided by the number of labor force participants. 
 + *Interpretation* - The vacancy rate measures the number of job openings per labor force participant. 
 + *Source* - The number of [job openings](https://fred.stlouisfed.org/series/JTSJOL) is measured by the BLS from the [Job Openings and Labor Turnover Survey](https://www.bls.gov/jlt/) (JOLTS), which is a large-scale firm survey.
+
+---
 
 ## Labor market tightness
 
@@ -55,6 +61,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 + *Interpretation* - Labor market tightness measures the number of job openings per job seeker. In the United States, a tightness of 1 marks full employment, or equivalently labor market efficiency. When tightness is below 1, the labor market is inefficiently slack. When tightness is above 1, the labor market is inefficiently tight.
 + *Source* - [Michaillat and Saez (2024)](/13/)
 
+---
+
 ## Beveridge curve
 
 <iframe
@@ -67,6 +75,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 + *Construction* - The Beveridge curve is a scatter plot of the vacancy rate against the unemployment rate. 
 + *Interpretation* - The Beveridge curve is one of the most robust relationships in macroeconomics. Over the business cycle, the economy moves along the curve. In recessions the unemployment rate increases while the vacancy rate decreases; in expansions the unemployment rate decreases while the vacancy rate increases. Since the US economy is at full employment when the unemployment and vacancy rates are equal, it is inefficiently slack when it sits below the 45° ray and inefficiently tight when it sits above the 45° ray.
 + *Source* - [Michaillat and Saez (2024)](/13/)
+
+---
 
 ## Full-employment rate of unemployment (FERU)
 
@@ -83,6 +93,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 + *Visualization* - On the Beveridge diagram, the FERU is at the intersection of the Beveridge curve and the 45° ray. The FERU is therefore determined by the location of the Beveridge curve: it is higher when the Beveridge curve is further outward and lower when the Beveridge curve is further inward.
 + *Source* - [Michaillat and Saez (2024)](/13/)
 
+---
+
 ## Unemployment gap
 
 <iframe 
@@ -96,6 +108,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 + *Construction* - The unemployment gap is the distance $u - u^\ast$ between the unemployment rate ($u$) and the FERU ($u^\ast$). 
 + *Interpretation* - The unemployment gap indicates the distance from full employment. A positive gap marks an inefficiently slack labor market. A negative gap marks an inefficiently tight labor market. The unemployment gap is a key determinant of optimal monetary and fiscal policy.
 + *Source* - [Michaillat and Saez (2024)](/13/)
+
+---
 
 ## Recession indicator
 
@@ -111,6 +125,8 @@ This dashboard provides real-time indicators of labor market slack and business 
 + *Interpretation of the single-threshold Michez rule* - The single-threshold Michez rule is the fastest threshold rule that produces no errors over the training period, 1960–2021. It signals a US recession whenever the recession indicator is above the threshold of 0.29pp. The detected recession start date is the month when the indicator crosses the 0.29pp threshold from below. 
 + *Interpretation of the dual-threshold Michez rule* - The dual-threshold Michez rule accounts for uncertainty in the true recession threshold. The dual-threshold Michez rule signals no recession when the indicator is below 0.29pp; signals a possible recession when the indicator is between 0.29pp and 0.81pp; and signals a certain recession when the indicator is above 0.81pp. 
 + *Source* - [Michaillat and Saez (2025)](/16/)
+
+---
 
 ## Recession probability
 

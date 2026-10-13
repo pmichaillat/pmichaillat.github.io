@@ -221,6 +221,10 @@
     border-bottom: 2px solid var(--archive);
 }
 
+.post-content table:not(.highlight table, .gist .highlight) tr:last-child td {
+    border-bottom: 0;
+}
+
 .post-content table td code:only-child {
     margin: auto 0;
 }
@@ -273,7 +277,7 @@
 .post-content hr {
     margin: var(--hr-gap) 0;
     height: 1px;
-    background: var(--archive);
+    background: var(--border);
     border: 0;
 }
 
@@ -282,6 +286,7 @@
 .post-content iframe {
     width: 100%;
     aspect-ratio: 4 / 3;
+    margin: var(--content-gap) 0;
     border: 1px solid var(--border);
     border-radius: var(--radius);
 }

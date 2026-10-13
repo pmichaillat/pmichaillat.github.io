@@ -10,22 +10,22 @@ summary: "This template produces an academic CV with LaTeX. The template follows
 cover:
     image: /f.png
     alt: "CV produced with the template"
-editPost:
-    URL: https://github.com/pmichaillat/latex-cv
-    Text: "GitHub repository"
-showToc: true
+# editPost:
+#     URL: https://github.com/pmichaillat/latex-cv
+#     Text: "GitHub repository"
+showToc: false
 disableAnchoredHeadings: false
+buttons:
+    - name: Template
+      url: https://github.com/pmichaillat/latex-cv
+    - name: CV
+      url: /f.pdf
+    - name: One-page CV
+      url: /fo.pdf
+---
 ---
 
 The template produces an academic CV with [LaTeX](https://www.latex-project.org). The template adheres to typographical best practices and has a minimalist design. It is well suited for researchers at all levels, including students, postdocs, faculty members, and professional scientists. The design emphasizes structural clarity and visual simplicity. A variant of the template is also available to produce a one-page CV.
-
----
-
-## View
-
-+ [LaTeX CV template](https://github.com/pmichaillat/latex-cv)
-+ [CV produced by the template](/f.pdf)
-+ [One-page CV produced by the template](/fo.pdf)
 
 ---
 

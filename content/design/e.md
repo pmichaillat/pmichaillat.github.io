@@ -10,21 +10,19 @@ summary: "These commands simplify mathematical writing with LaTeX while automati
 cover:
     image: /e.png
     alt: "Mathematical expressions produced with the commands"
-editPost:
-    URL: https://github.com/pmichaillat/latex-math
-    Text: "GitHub repository"
-showToc: true
+# editPost:
+#     URL: https://github.com/pmichaillat/latex-math
+#     Text: "GitHub repository"
+showToc: false
 disableAnchoredHeadings: false
+buttons:
+    - name: Commands
+      url: https://github.com/pmichaillat/latex-math
 
+---
 ---
 
 This collection of commands simplifies writing mathematical expressions with [LaTeX](https://www.latex-project.org) while automatically respecting the rules of mathematical typography. The commands were developed to write math in economics, but they might also be helpful to write math in other fields. 
-
----
-
-## View
-
-+ [LaTeX commands to write math](https://github.com/pmichaillat/latex-math)
 
 ---
 
@@ -62,6 +60,8 @@ The commands below produce brackets that scale automatically.
 
 
 [^1]: Spacing between the function `f` and the argument `(x)` is  appropriate. `f\bp{x}` gives $f\left( x\right)$, which introduces too much space between the function `f` and the argument `(x)`.
+
+---
 
 ## Functions and operators
 
@@ -116,6 +116,8 @@ The commands below produce functions and operators with parentheses that scale a
 |                      |    `\inf{S}`    |          $\inf(S)$           |
 |                      |  `\inf[n]{y_n}` |        $\inf_n(y_n)$         |
 
+---
+
 ## Derivatives
 
 The commands below produce various derivatives. Some commands produce derivatives for displays while others produce derivatives for text. Some commands have an option to indicate the order of the derivative.
@@ -139,6 +141,7 @@ The commands below produce various derivatives. Some commands produce derivative
 |                     |  `\pe{y}{x}{z}` | $\left.\frac{\partial\ln(y)}{\partial\ln(x)}\right\vert_{z}$ |
 |                     | `\pex{y}{x}{z}` |     $\left.\partial\ln(y)/\partial\ln(x)\right\vert_{z}$     |
 
+---
 
 ## Statistical relations
 
@@ -150,6 +153,8 @@ The commands below are shortcuts to produce statistical relations.
 | Almost sure convergence                           | `\asto` |  $\overset{as}{\to}$  |
 | Convergence in probability                        | `\pto`  |   $\overset{p}{\to}$  |
 | Convergence in distribution                       | `\dto`  |   $\overset{d}{\to}$  |
+
+---
 
 ## Accents
 
@@ -163,6 +168,8 @@ The commands below are shortcuts to produce accents that scale automatically.
 | Hat       | `\wh{x}` |    $\widehat{x}$     |
 | Tilde     | `\wt{x}` |   $\widetilde{x}$    |
 
+---
+
 ## Complex numbers
 
 The commands below designate parts of complex numbers.
@@ -171,6 +178,8 @@ The commands below designate parts of complex numbers.
 | :------------- | :------: | :--------------------: |
 | Real part      | `\Re(z)` | $\operatorname{Re}(z)$ |
 | Imaginary part | `\Im(z)` | $\operatorname{Im}(z)$ |
+
+---
 
 ## Greek letters
 
@@ -217,6 +226,8 @@ And the commands below are shortcuts to produce uppercase Greek letters.
 | upsilon          |   `\U`  |   $\Upsilon$  |
 | xi               |   `\X`  |     $\Xi$     |
 
+---
+
 ## Blackboard-bold letters
 
 The commands below are shortcuts to produce blackboard-bold letters.
@@ -228,6 +239,8 @@ The commands below are shortcuts to produce blackboard-bold letters.
 | Z      |   `\Z`  | $\mathbb{Z}$ |
 | Q      |   `\Q`  | $\mathbb{Q}$ |
 | C      |   `\C`  | $\mathbb{C}$ |
+
+---
 
 ## Bold letters
 
@@ -255,6 +268,8 @@ The commands below are shortcuts to produce uppercase bold letters.
 | V      |   `\V`  | $\mathbf{V}$ |
 | W      |   `\W`  | $\mathbf{W}$ |
 | Y      |   `\Y`  | $\mathbf{Y}$ |
+
+---
 
 ## Calligraphic letters
 
@@ -303,6 +318,8 @@ Finally, remaining one-letter macros are allocated to bold Roman letters---to be
 
 [^2]: Coincidentally, none of the blackboard-bold letters are used for uppercase Greek letters, so there is no conflict here.
 
+---
+
 ## Command overrides
 
 The short one-letter macros are intended for math-heavy documents and prioritize fast math typing. But they override a small set of LaTeX text commands, which may create conflicts in text-heavy documents, especially with multilingual text workflows. In modern Unicode-first workflows, many users type accented characters and non-English letters directly from the keyboard (for example é, è, ê) instead of using LaTeX text macros. This reduces the practical risk of conflicts from overridden commands—but of course conflicts can still appear in legacy sources, bibliographic data, or documents that rely on accent commands.
@@ -310,6 +327,8 @@ The short one-letter macros are intended for math-heavy documents and prioritize
 Some accent commands no longer produce their usual text output: `\b` (underbar accent), `\c` (cedilla accent), `\d` (dot-under accent), `\H` (double-acute accent), `\i` (dotless i), `\k` (ogonek accent), `\r` (ring accent), `\t` (tie-after accent), `\u` (breve accent), and `\v` (caron accent).  A few non-English letters are also overridden: `\l` (Polish letter ł), `\L` (Polish letter Ł), `\o` (Scandinavian letter ø), `\O` (Scandinavian letter Ø), and `\oe` (ligature œ). Finally, some text symbols are overridden: `\P` (paragraph sign ¶) and `\S` (section sign §).
 
 If your document needs these text symbols and accents in their original meaning, please rename these macros in the style file.
+
+---
 
 ## Command extensions
 

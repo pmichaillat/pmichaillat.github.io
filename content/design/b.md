@@ -10,22 +10,21 @@ summary: "This template produces a personal academic website with Hugo. The temp
 cover:
     image: /b.png
     alt: "Webpage produced with the template"
-editPost:
-    URL: https://github.com/pmichaillat/hugo-website
-    Text: "GitHub repository"
-showToc: true
+# editPost:
+#     URL: https://github.com/pmichaillat/hugo-website
+#     Text: "GitHub repository"
+showToc: false
 disableAnchoredHeadings: false
+buttons:
+    - name: Template
+      url: https://github.com/pmichaillat/hugo-website
+    - name: Website
+      url: https://pascalmichaillat.org/hugo-website/
 
+---
 ---
 
 The template produces a personal website with [Hugo](https://gohugo.io), which is a fast, open-source static website generator. The template is based on [PaperMod](https://github.com/adityatelange/hugo-PaperMod), which is a minimalist, fast, and flexible Hugo theme. The template is hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages); but it could easily be hosted on other services. The template is tailored to academic websites: it is easy to navigate, it is easy to maintain and expand, it highlights research and teaching materials, and it performs well—it is fast to load, with good SEO and good accessibility, on both [mobile and desktop devices](https://github.com/pmichaillat/hugo-website#performance).
-
----
-
-## View
-
-+ [Hugo website template](https://github.com/pmichaillat/hugo-website)
-+ [Website produced by the template](https://pascalmichaillat.org/hugo-website/)
 
 ---
 

@@ -11,23 +11,23 @@ summary: "This template produces an academic presentation with LaTeX and the Bea
 cover:
     image: /c.png
     alt: "Presentation slide produced with the template"
-editPost:
-    URL: https://github.com/pmichaillat/latex-presentation
-    Text: "GitHub repository"
-showToc: true
+# editPost:
+#     URL: https://github.com/pmichaillat/latex-presentation
+#     Text: "GitHub repository"
+showToc: false
 disableAnchoredHeadings: false
+buttons:
+    - name: Template
+      url: https://github.com/pmichaillat/latex-presentation
+    - name: Presentation
+      url: /c.pdf
+    - name: Wide presentation
+      url: /cw.pdf
 
+---
 ---
 
 The template produces an academic presentation using [LaTeX](https://www.latex-project.org) with the [Beamer class](https://ctan.org/pkg/beamer). The template adheres to typographical best practices and has a minimalist design. The template is particularly well suited for research presentations: it is designed to convey scientific arguments and results effectively.
-
----
-
-## View
-
-+ [LaTeX presentation template](https://github.com/pmichaillat/latex-presentation)
-+ [Presentation produced by the template](/c.pdf)
-+ [Wide (16:9) presentation produced by the template](/cw.pdf)
 
 ---
 

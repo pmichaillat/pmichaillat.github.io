@@ -12,22 +12,22 @@ summary: "This template produces an academic paper with LaTeX. The template foll
 cover:
     image: /a.png
     alt: "Paper page produced with the template"
-editPost:
-    URL: https://github.com/pmichaillat/latex-paper
-    Text: "GitHub repository"
-showToc: true
+# editPost:
+#     URL: https://github.com/pmichaillat/latex-paper
+#     Text: "GitHub repository"
+showToc: false
 disableAnchoredHeadings: false
+buttons:
+    - name: Template
+      url: https://github.com/pmichaillat/latex-paper
+    - name: Paper
+      url: /a.pdf
+    - name: Online appendix
+      url: /aa.pdf
+---
 ---
 
 The template produces an academic paper with [LaTeX](https://www.latex-project.org). The template adheres to typographical best practices and has a minimalist design. The template is particularly well suited for research papers. It is designed so papers are comfortable to read and easy to scan, both in print and on screen. 
-
----
-
-## View
-
-+ [LaTeX paper template](https://github.com/pmichaillat/latex-paper)
-+ [Paper produced by the template](/a.pdf)
-+ [Online appendix produced by the template](/aa.pdf)
 
 ---
 

@@ -9,12 +9,12 @@ menu:
         - name: Book
           url: /18/
           weight: 1
-        - name: Papers
-          url: /papers/
-          weight: 3
         - name: Dashboard
           url: /dashboard/
           weight: 2
+        - name: Papers
+          url: /papers/
+          weight: 3
         - name: Courses
           url: /courses/
           weight: 4
@@ -62,10 +62,10 @@ params:
               url: /courses/
             - name: Design
               url: /design/
+            - name: CV
+              url: /cv.pdf
 
     socialIcons:
-        - name: CV
-          url: /cv.pdf
         - name: Email
           url: mailto:pascal.michaillat@gmail.com
         - name: Location

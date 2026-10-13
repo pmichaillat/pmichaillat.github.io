@@ -11,22 +11,21 @@ summary: "This template produces scientific figures with MATLAB. The template fo
 cover:
     image: /d.png
     alt: "Figure produced with the template"
-editPost:
-    URL: https://github.com/pmichaillat/matlab-figures
-    Text: "GitHub repository"
-showToc: true
+# editPost:
+#     URL: https://github.com/pmichaillat/matlab-figures
+#     Text: "GitHub repository"
+showToc: false
 disableAnchoredHeadings: false
+buttons:
+    - name: Template
+      url: https://github.com/pmichaillat/matlab-figures
+    - name: Figures
+      url: /d.pdf
 
+---
 ---
 
 The template produces a collection of scientific figures using [MATLAB](https://matlab.mathworks.com). The template follow best practices for the visual display of quantitative information—with the aim to convey quantitative information effectively on screen and in print.
-
----
-
-## View
-
-+ [MATLAB figure template](https://github.com/pmichaillat/matlab-figures)
-+ [Figures produced by the template](/d.pdf)
 
 ---
 
