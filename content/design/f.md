@@ -1,6 +1,6 @@
 ---
 title: "Minimalist LaTeX Template for Academic CVs" 
-date: 2026-04-11
+date: 2026-10-14
 url: /f/
 aliases:
     - /f1.pdf
@@ -75,9 +75,9 @@ Baseline spacing between lines is only 110% of the point size, but spacing is in
 
 ## Text margins
 
-The left and right margins are 1.2 inch. With such margins, plus the space taken by the bullet points, there are at most 90 characters per line, just as [Butterick recommends](https://practicaltypography.com/line-length.html) to ensure comfortable reading. 
+The left and right margins are 1.25 inches. With such margins, plus the space taken by the bullet points, there are at most 90 characters per line, just as [Butterick recommends](https://practicaltypography.com/line-length.html) to ensure comfortable reading. 
 
-The top margin is 0.9 inch, which is about standard. The bottom margin is 1.1 inch so the text [appears centered in the page](https://practicaltypography.com/page-margins.html). 
+The top margin is 1 inch, which is standard. The bottom margin is 1.1 inch so the text [appears centered in the page](https://practicaltypography.com/page-margins.html). 
 
 ---
 
@@ -129,21 +129,21 @@ All the information in the CV is organized in lists. Listed information is order
 + Itemized list (`itemize` environment) - Used in most blocks of information
 + Reverse-ordered list (`etaremune` environment) - Used for the article list, so articles are presented in reverse chronological order but numbered in chronological order
 
-The list bullet points are small and gray, so they are [not overbearing](https://practicaltypography.com/resumes.html). Indentation is the same for all lists. To maintain a clean and simple structure, the template does not include pre-formatted nested lists.
+The bullet points are empty and gray, so they are [not overbearing](https://practicaltypography.com/resumes.html). Indentation is the same for all lists. To maintain a clean and simple structure, the template does not include nested lists.
 
 ---
 
 ## Organizing information
 
-The CV highlights the [most relevant information](https://practicaltypography.com/resumes.html): names of schools, employers, journals, and so on. 
+The CV highlights the [most relevant information](https://practicaltypography.com/resumes.html): names of schools, names of employers, names of journals, and so on. 
 
-Scholars often give the full bibliographical information for their publications. That does not seem necessary: beside the name of the journal and date of publication, the rest of the information (such as journal volume, issue, DOI, and page range) is not relevant to a CV. For transparency and convenience, each publication can be linked to a webpage with the full text and full bibliographical information for interested readers.
+Scholars often give the full bibliographical information for their publications. That does not seem necessary: beside the name of the journal and date of publication, the rest of the information (such as journal volume, issue, DOI, and page range) is not relevant to a CV. For transparency and convenience, each publication can be linked to a webpage with the full text and full bibliographical information.
 
 ---
 
 ## Overall length
 
-How long should your CV be? After the PhD job market—where CVs are typically confined to a single page—academic CVs often become excessively long, which may dilute their effectiveness by burying relevant information. [Butterick advises](https://practicaltypography.com/resumes.html) students to stick to one page and older people to limit themselves to just a couple of pages, which seems like very good advice.
+How long should your CV be? During the PhD job market, CVs are typically confined to a single page. After that, academic CVs often become excessively long, which may dilute their effectiveness by burying relevant information. [Butterick advises](https://practicaltypography.com/resumes.html) students to stick to one page and older people to limit themselves to just a couple of pages, which seems like very good advice.
 
 ---
 
