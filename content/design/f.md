@@ -43,9 +43,7 @@ The template produces an academic CV with [LaTeX](https://www.latex-project.org)
 
 The font determines the appearance and readability of the entire CV, so choosing a good font is key. Following [Butterick's advice](https://practicaltypography.com/free-fonts.html), the template uses [Source Serif Pro](https://mirror.las.iastate.edu/tex-archive/fonts/sourceserifpro/doc/sourceserifpro.pdf) for the text. 
 
-Source Serif Pro is a serif font. It is not part of typical CV templates so it has a fresh feel. And since it was designed in the last decade, it also has a modern feel.
-
-The Source Pro family also includes a nice monospaced font: [Source Code Pro](https://mirrors.rit.edu/CTAN/fonts/sourcecodepro/doc/sourcecodepro.pdf). The template uses Source Code Pro as a monospaced font for URLs.
+Source Serif Pro is a serif font. It is not part of typical CV templates so it has a fresh feel. And since it was designed in the 21st century, it also has a modern feel.
 
 ---
 
@@ -89,7 +87,7 @@ Colors are distracting, and many colors are hard to read when they are printed i
 
 ## Title
 
-The CV title is just your name. The title is produced by the command `\name{}`. The title is typeset in small caps with a 25pt font size. 
+The CV title is just your name. The title is produced by the command `\name{}`. The title is typeset in semibold and small caps, at a 20pt font size. 
 
 --- 
 
@@ -116,7 +114,7 @@ The CV is organized in blocks containing key information. The blocks are ordered
 + Service
 + Awards
 
-The block headings follow [Butterick's advice](https://practicaltypography.com/headings.html). Because they are in small caps and bold, and they are located at the top of each block, the headings are clearly visible and help organize the CV. But because the font size is not too large (12pt) and they are in gray, they [do not dominate the page](https://practicaltypography.com/resumes.html).
+The block headings follow [Butterick's advice](https://practicaltypography.com/headings.html). Because they are in small caps and semibold, and they are located at the top of each block, the headings are clearly visible and help organize the CV. But because the font is gray and not too large, the headings [do not dominate the page](https://practicaltypography.com/resumes.html).
 
 Block headings are produced with the command `\block{}`.
 
