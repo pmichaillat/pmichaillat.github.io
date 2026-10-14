@@ -14,9 +14,9 @@ cover:
 showToc: false
 disableAnchoredHeadings: false
 buttons:
-    - name: Template repository
+    - name: Code
       url: https://github.com/pmichaillat/latex-book
-    - name: Example book
+    - name: Preview
       url: /g.pdf
 ---
 ---

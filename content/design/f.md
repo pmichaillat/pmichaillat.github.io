@@ -16,12 +16,11 @@ cover:
 showToc: false
 disableAnchoredHeadings: false
 buttons:
-    - name: Template repository
+    - name: Code
       url: https://github.com/pmichaillat/latex-cv
-    - name: Example CV
+    - name: Preview
       url: /f.pdf
-    - name: Example one-page CV
-      url: /fo.pdf
+
 ---
 ---
 
@@ -148,6 +147,6 @@ How long should your CV be? After the PhD job market—where CVs are typically c
 
 ---
 
-## One-page variant
+## One-page CV
 
-The repository also includes a variant of the template that produces a one-page CV. The one-page CV might be particularly helpful for job-market candidates and others who are required to fit their CV on one page. Compared to the baseline CV, the one-page variant has narrower margins and narrower spacing between lines.
+The repository also includes a variant of the template that produces [a one-page CV](/fo.pdf). The one-page CV might be particularly helpful for job-market candidates and others who are required to fit their CV on one page. Compared to the baseline CV, the one-page variant has narrower margins and narrower spacing between lines.

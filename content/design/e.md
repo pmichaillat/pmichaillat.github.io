@@ -16,7 +16,7 @@ cover:
 showToc: false
 disableAnchoredHeadings: false
 buttons:
-    - name: Command repository
+    - name: Code
       url: https://github.com/pmichaillat/latex-math
 
 ---

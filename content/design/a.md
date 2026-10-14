@@ -18,12 +18,11 @@ cover:
 showToc: false
 disableAnchoredHeadings: false
 buttons:
-    - name: Template repository
+    - name: Code
       url: https://github.com/pmichaillat/latex-paper
-    - name: Example paper
+    - name: Preview
       url: /a.pdf
-    - name: Example appendix
-      url: /aa.pdf
+
 ---
 ---
 
@@ -43,9 +42,9 @@ The template produces an academic paper with [LaTeX](https://www.latex-project.o
 + Headings are designed so the paper is easy to scan.
 + Formatting is specified for theorems, propositions, lemmas, definitions, assumptions, corollaries, remarks, and proofs.
 + Formatting is specified for figures and tables.
-+ Formatting is specified for the appendix and a separate online appendix.
 + Formatting is specified for references.
 + All labels are set to make cross-referencing easy.
++ Formatting is specified for the appendix and a separate online appendix.
 
 ---
 
@@ -290,7 +289,7 @@ All labels in the appendix start with an `A`, so it is clear that they point to 
 
 ## Online appendix
 
-Once a research paper gets published, the appendix must often be transformed into an online appendix. To help with this task, the repository also includes a template for online appendices. In the appendix template, the abstract is replaced by a table of contents. In addition, all the labels from the main text (equation numbers, figure and table numbers, theorem numbers, section numbers) continue to be usable in the online appendix. So the cross-references from main text to appendix are not broken even though the appendix is now in a separate file. [This requires the following](https://ctan.math.illinois.edu/macros/latex/required/tools/xr.pdf):
+Once a research paper gets published, the appendix must often be transformed into an online appendix. To help with this task, the repository also includes a variant of the template for [online appendices](/aa.pdf). In the online appendix, the abstract is replaced by a table of contents. All the labels from the main text (equation numbers, figure and table numbers, theorem numbers, section numbers) continue to be usable: the cross-references from main text to appendix are not broken even though the appendix is now in a separate file. [This requires the following](https://ctan.math.illinois.edu/macros/latex/required/tools/xr.pdf):
 
 + `appendix.tex` is in the same folder as `paper.tex`.
 + `paper.tex` is compiled first.

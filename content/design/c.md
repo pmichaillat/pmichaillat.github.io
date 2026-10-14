@@ -17,13 +17,11 @@ cover:
 showToc: false
 disableAnchoredHeadings: false
 buttons:
-    - name: Template repository
+    - name: Code
       url: https://github.com/pmichaillat/latex-presentation
-    - name: Example presentation
+    - name: Preview
       url: /c.pdf
-    - name: Example wide presentation
-      url: /cw.pdf
-
+      
 ---
 ---
 
@@ -362,10 +360,8 @@ Third, 4:3 slides are more robust. They are easily readable with all projectors,
 
 Fourth, 4:3 slides work better on tablets because most tablets have a 4:3 aspect ratio (iPads for instance). It has become very common to read or display slides on tablets, or watch online presentations on tablets. In that context, 4:3 slides display better.
 
-Sometimes, however, host institutions or conferences require presenters to use a 16:9 aspect ratio. The template can be adjusted to produce such wide slides. Just add the `aspectratio=169` option to the `\documentclass` command. Specifically, the first line of the presentation should be:
+Sometimes, however, host institutions or conferences require presenters to use a 16:9 aspect ratio. The template can be adjusted to produce such [wide, 16:9 slides](/cw.pdf). Just add the `aspectratio=169` option to the `\documentclass` command:
 
 ```tex
 \documentclass[11pt, aspectratio=169, xcolor={dvipsnames}, usepdftitle=false]{beamer}
 ```
-
-The repository also includes the variant of the template that produces 16:9 slides.
