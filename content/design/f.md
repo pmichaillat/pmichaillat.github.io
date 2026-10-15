@@ -1,6 +1,6 @@
 ---
 title: "Minimalist LaTeX Template for Academic CVs" 
-date: 2026-10-14
+date: 2026-10-15
 url: /f/
 aliases:
     - /f1.pdf
@@ -73,7 +73,7 @@ Baseline spacing between lines is only 110% of the point size, but spacing is in
 
 ## Text margins
 
-The left and right margins are 1.25 inches. With such margins, plus the space taken by the bullet points, there are at most 90 characters per line, just as [Butterick recommends](https://practicaltypography.com/line-length.html) to ensure comfortable reading. 
+The left and right margins are 1.3 inches. With such margins, plus the space taken by the bullet points, there are at most 90 characters per line, just as [Butterick recommends](https://practicaltypography.com/line-length.html) to ensure comfortable reading. 
 
 The top margin is 1 inch, which is standard. The bottom margin is 1.1 inch so the text [appears centered in the page](https://practicaltypography.com/page-margins.html). 
 
