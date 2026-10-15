@@ -210,6 +210,10 @@ The FERU describes the socially efficient position of the labor market on the Be
 
 During the coronavirus pandemic, the US Beveridge curve shifted out dramatically, which raised the FERU significantly. As the Beveridge curve normalized in the years after the pandemic, the FERU returned to normal levels. The FERU increase that followed the pandemic is extraordinary: the pandemic is the first time in the past century that the FERU crossed 6%.
 
+### Is the square-root formula for the FERU a law of nature?
+
+No, the FERU formula $u^\ast = \sqrt{uv}$ is not a law of nature: it only holds for a  calibration of the welfare cost of unemployment, welfare cost of recruiting, and shape of the Beveridge curve that is valid in the modern United States. Under other calibrations, the FERU must be computed from a [more general formula](/9/). The calibration in question, obtained from US evidence, requires that the psychosocial cost of unemployment offsets the value of home production, that one full-time recruiter is devoted to each vacancy, and that the Beveridge curve is a rectangular hyperbola.  Under such a calibration, the general FERU formula collapses to a simple expression: $u^\ast=\sqrt{uv}$. 
+
 ### How does the Michez rule relate to the Sahm rule?
 
 The Michez rule is based on the same idea as the [Sahm rule](https://fred.stlouisfed.org/series/SAHMCURRENT): looking for a rapid deterioration of the labor market to detect recessions. But while the Sahm rule only uses the unemployment rate for detection, the Michez rule uses both unemployment and vacancy rates. By combining data on unemployment and vacancies, the Michez rule obtains a less noisy signal of recessions, so it can detect US recessions faster than the Sahm rule: 
