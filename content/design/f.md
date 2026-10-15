@@ -87,7 +87,7 @@ Colors are distracting, and many colors are hard to read when they are printed i
 
 ## Title
 
-The CV title is just your name. The title is produced by the command `\name{}`. The title is typeset in semibold and small caps, at a 20pt font size. 
+The CV title is just your name. The title is produced by the command `\name{}`. The title is typeset in small caps, at a 25pt font size. 
 
 --- 
 
