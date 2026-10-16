@@ -10,9 +10,6 @@ summary: "This template produces an academic CV with LaTeX. The template follows
 cover:
     image: /f.png
     alt: "CV produced with the template"
-# editPost:
-#     URL: https://github.com/pmichaillat/latex-cv
-#     Text: "GitHub repository"
 showToc: false
 disableAnchoredHeadings: false
 buttons:
@@ -24,7 +21,7 @@ buttons:
 ---
 ---
 
-The template produces an academic CV with [LaTeX](https://www.latex-project.org). The template adheres to typographical best practices and has a minimalist design. It is well suited for researchers at all levels, including students, postdocs, faculty members, and professional scientists. The design emphasizes structural clarity and visual simplicity. A variant of the template is also available to produce a one-page CV.
+The template produces an academic CV with [LaTeX](https://www.latex-project.org). The template adheres to typographical best practices and has a minimalist design. It is well suited for graduate students, postdocs, faculty members, and other researchers. The design emphasizes structural clarity and visual simplicity. A variant of the template is also available to produce a one-page CV.
 
 ---
 
@@ -49,9 +46,9 @@ Source Serif Pro is a serif font. It is not part of typical CV templates so it h
 
 ## Math fonts and symbols
 
-If required anywhere in the CV—in titles of article or courses—mathematical expressions are typeset using the [following math fonts](/a/#math-fonts):
+If required anywhere in the CV—in titles of articles or courses—mathematical expressions are typeset using the [following math fonts](/a/#math-fonts):
 
-+ Roman letters - [Source Serif Pro font](https://ctan.mirrors.hoobly.com/macros/latex/contrib/mathastext/mathastext.pdf)
++ Roman letters - [Source Serif Pro font](https://mirror.las.iastate.edu/tex-archive/fonts/sourceserifpro/doc/sourceserifpro.pdf)
 + Greek letters - [Euler font](https://ctan.math.utah.edu/ctan/tex-archive/fonts/eulervm/doc/latex/eulervm/eulervm.pdf)
 + Calligraphic letters - [Euler font](https://ctan.math.utah.edu/ctan/tex-archive/fonts/eulervm/doc/latex/eulervm/eulervm.pdf)
 + Blackboard-bold letters - [Fourier font](https://mirror.mwt.me/ctan/macros/latex/contrib/mathalpha/doc/mathalpha-doc.pdf) 
@@ -67,7 +64,7 @@ The font size is 10pt, in line with [Butterick's recommendation](https://practic
 
 ## Line spacing
 
-Baseline spacing between lines is only 110% of the point size, but spacing is increased between the bullet points, so reading remains comfortable. Overall the line spacing prevents the text from appearing too cramped or too spread out.
+The baseline is set to 1.1 times LaTeX's normal baseline. At a 10pt font size, that normal baseline is 12pt, so the baseline is 13.2pt, or about 130% of the font size—in line with [Butterick's advice](https://practicaltypography.com/line-spacing.html).. Spacing between bullet points is larger than the spacing between lines, so reading remains comfortable. Overall the line spacing prevents the text from appearing too cramped or too spread out.
 
 ---
 
@@ -87,7 +84,7 @@ Colors are distracting, and many colors are hard to read when they are printed i
 
 ## Title
 
-The CV title is just your name. The title is produced by the command `\name{}`. The title is typeset in small caps, at a 25pt font size. 
+The CV title is just your name. The title is produced by the command `\name{}`. It is centered and typeset in black small caps at a 25pt font size. The small caps are letterspaced. 
 
 --- 
 
@@ -99,7 +96,7 @@ The footer also includes the date when the CV was last updated.
 
 The footer font size is 8pt, just like footnotes would be, and the font color is gray. As a result, the footer is not too obtrusive.
 
-The commands to populate the footer are `\grayfoot{C}{}`, `\grayfoot{L}{}`, and `\grayfoot{R}{}` in the document preamble.
+The commands to populate the footer, used in the document preamble, are `\cvfoot{L}{}` for the website, `\cvfoot{C}{}` for the email address, and `\cvfoot{R}{}` for the date.
 
 ---
 
@@ -109,14 +106,13 @@ The CV is organized in blocks containing key information. The blocks are ordered
 
 + Employment
 + Education
-+ Articles published
-+ Courses taught
++ Books, articles, and preprints
++ Courses
 + Service
++ Grants
 + Awards
 
-The block headings follow [Butterick's advice](https://practicaltypography.com/headings.html). Because they are in small caps and semibold, and they are located at the top of each block, the headings are clearly visible and help organize the CV. But because the font is gray and not too large, the headings [do not dominate the page](https://practicaltypography.com/resumes.html).
-
-Block headings are produced with the command `\block{}`.
+Each block heading is produced with `\block{}`. The command places a gray horizontal rule above a heading set in letterspaced small caps. Because the headings sit at the top of each block, they are clearly visible and help organize the CV. But because the font is gray and not larger than the text font, the headings [do not dominate the page](https://practicaltypography.com/resumes.html).
 
 ---
 
@@ -133,9 +129,9 @@ The bullet points are empty and gray, so they are [not overbearing](https://prac
 
 ## Organizing information
 
-The CV highlights the [most relevant information](https://practicaltypography.com/resumes.html): names of schools, names of employers, names of journals, and so on. 
+The CV highlights the [most relevant information](https://practicaltypography.com/resumes.html): names of schools, names of employers, names of journals, and so on. Fields within an entry are separated with `\sep`, which inserts a black centered dot. Coauthors are indicated with the command `\with{}`.
 
-Scholars often give the full bibliographical information for their publications. That does not seem necessary: beside the name of the journal and date of publication, the rest of the information (such as journal volume, issue, DOI, and page range) is not relevant to a CV. For transparency and convenience, each publication can be linked to a webpage with the full text and full bibliographical information.
+Scholars often give the full bibliographical information for their publications. That does not seem necessary: besides the name of the journal and date of publication, the rest of the information (such as journal volume, issue, DOI, and page range) is not relevant to a CV. For transparency and convenience, each publication can be linked to a webpage with the full text and full bibliographical information. The same applies to courses, books, data, and software. These links are uncolored.
 
 ---
 
@@ -147,4 +143,4 @@ How long should your CV be? During the PhD job market, CVs are typically confine
 
 ## One-page CV
 
-The repository also includes a variant of the template that produces [a one-page CV](/fo.pdf). The one-page CV might be particularly helpful for job-market candidates and others who are required to fit their CV on one page. Compared to the baseline CV, the one-page variant has narrower margins and narrower spacing between lines.
+The repository also includes a variant of the template that produces [a one-page CV](/fo.pdf). The one-page CV might be particularly helpful for job-market candidates and others who are required to fit their CV on one page. Compared to the baseline CV, the one-page variant has 1.2 inch side margins, a 0.8 inch top margin, and a 1 inch bottom margin. Its line spacing is 1.05 times LaTeX's normal baseline, and the spacing between list items is tighter.
