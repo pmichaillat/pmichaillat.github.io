@@ -48,9 +48,7 @@ The template produces a personal website with [Hugo](https://gohugo.io), which i
 + Since the website is hosted on GitHub Pages, it is convenient to install [GitHub Desktop](https://desktop.github.com) first. Via GitHub Desktop, you will be able to install the website on your local machine and update the website from your local machine—without ever going to GitHub.
 + Next, install [Hugo](https://gohugo.io/installation/). On a Mac, this is easily done with [Homebrew](https://brew.sh). Simply run the following command in the terminal: `brew install hugo`.
 + If you already have Hugo on your machine, make sure to install the latest version. You can verify the installed version with: `hugo version`. To update Hugo if it is outdated on your local machine, run: `brew upgrade hugo`. 
-+ Then, clone the template repository to your local machine. This can be done in two steps:
-  1. Click "Use this template" and then "Create a new repository" at the top of the repository [on GitHub](https://github.com/pmichaillat/hugo-website).
-  2. Once the new repository is created on your GitHub account, open GitHub Desktop and click "File" and then "Clone repository". Find the newly created repository under the "GitHub.com" tab and clone it.
++ Then, clone the template repository to your local machine. First, click "Use this template" and then "Create a new repository" at the top of the repository [on GitHub](https://github.com/pmichaillat/hugo-website). Then, open GitHub Desktop and click "Clone repository". Find the newly created repository under the "GitHub.com" tab and clone it.
 + Update the `baseURL` parameter in `config.yml` with the website URL that you plan to use.
 
 ### On your GitHub account

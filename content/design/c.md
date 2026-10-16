@@ -164,24 +164,17 @@ The headline is set against the same white background as the text—not against 
 
 The template comes with a set of predefined alert commands:
 
-+ Standard alert:
-    + `\al{text}` colors the text in magenta.
-    + `\al[n]{text}` colors the text in magenta on nth click.
-+ Green alerts (for instance to indicate a positive number):
-    + `\alg{text}` colors the text in green.
-    + `\alg[n]{text}` colors the text in green on nth click.
-+ Red alerts (for instance to indicate a negative number):
-    + `\alr{text}` colors the text in red.
-    + `\alr[n]{text}` colors the text in red on nth click.
-+ Blue alerts (for instance to indicate a zero):
-    + `\alb{text}` colors the text in blue.
-    + `\alb[n]{text}` colors the text in blue on nth click.
++ Standard alert: `\al{text}`
++ Green alerts (for instance to indicate a positive number): `\alg{text}`
++ Red alerts (for instance to indicate a negative number): `\alr{text}`
++ Blue alerts (for instance to indicate a zero): `\alb{text}`
++ The commands `\al[n]{text}`, `\alg[n]{text}`, `\alr[n]{text}`, `\alb[n]{text}` color the text on nth click.
 
 The standard alert is set in magenta, which is a color that stands out but unlike red does not induce anger. [Apparently](https://www.canva.com/colors/color-meanings/magenta/):
 
 > A color that, for centuries, has captivated many, magenta is a mixture of violet and red. Magenta is known as a color of harmony and balance. It's used in Feng Shui and is often considered spiritual.
 
-Of course alerts should be used with restraint.
+Of course, alerts should be used with restraint.
 
 ---
 
@@ -281,7 +274,6 @@ Line 2 & M & N & O \\
 \end{table}
 \end{frame}
 ```
-
 
 ---
 
